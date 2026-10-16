@@ -42,3 +42,218 @@
 @media(max-width:900px){.nav{height:auto}.tabs.segmented.platform-segmented{width:min(520px,100%)}.hero-inner{padding-top:82px}}
 @media(max-width:640px){.hero-inner{padding-top:64px}.hero-points span{background:rgba(255,255,255,.82)}.tabs.segmented{width:250px}.tabs.segmented button{width:auto}.news-tabs{justify-content:flex-start;gap:26px}}
 .inner-page{min-height:calc(100vh - 64px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 20px;background:linear-gradient(135deg,#f4faff,#fff)}.inner-page>p:first-child{color:var(--blue);font-size:14px}.inner-page h1{font:700 42px/1.2 "Alimama ShuHeiTi","PingFang SC",sans-serif;margin:12px 0}.inner-page #pageDescription{color:#6d7480;margin:0 0 28px}
+
+/* MasterGo advertising area: 1920 × 480, four-image carousel */
+.hero{width:100%;height:480px;background:none;overflow:hidden;position:relative}
+.hero-track{position:absolute;inset:0;display:flex;width:100%;transition:transform .55s cubic-bezier(.22,.61,.36,1);will-change:transform}
+.hero-slide{position:relative;display:block;flex:0 0 100%}
+.hero-slide img{display:block;width:100%;height:100%;object-fit:cover}
+.banner-button-hitarea{position:absolute;left:16.2%;top:59%;width:9.2%;height:13%;z-index:2;border-radius:999px;cursor:pointer}
+.banner-button-hitarea:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.banner-full-link{cursor:pointer}
+.nav-chevron{width:12px;height:12px;margin-left:6px;fill:currentColor;flex:none}
+.hero .dots{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);z-index:3;display:flex;gap:8px;height:6px}
+.hero .dots button{width:40px;height:6px;padding:0;border:0;border-radius:3px;background:rgba(255,255,255,.55);cursor:pointer;transition:.2s}
+.hero .dots button.active{background:#fff}
+@media(max-width:1440px){.hero{height:calc(100vw / 3)}.hero-slide img{object-position:center}}
+@media(max-width:640px){.hero .dots{bottom:8px;gap:5px;height:6px}.hero .dots button{width:24px;height:6px}}
+
+/* Global typography and card sizing refinements */
+.nav{font-size:16px}
+.section-heading h2{font-size:30px}
+.section-heading p{font-size:18px}
+.tabs.segmented button{font-size:18px}
+.tabs.segmented .active{font-weight:700}
+.platform-card{font-size:18px}
+.platform-card img{width:32px;height:32px}
+.platform-card em{font-size:14px}
+
+/* MasterGo: 首页 / 支持平台 / 平台卡片 */
+.platform-grid{gap:8px}
+.platform-card{
+  min-width:200px;
+  min-height:80px;
+  height:auto;
+  padding:24px;
+  gap:12px;
+  overflow:hidden;
+  background:#f7fafd;
+  border:0;
+  border-radius:12px;
+  font-size:18px;
+  font-weight:500;
+  line-height:25px;
+}
+.platform-card img{width:32px;height:32px;flex:0 0 32px}
+.platform-card em{
+  position:absolute;
+  top:1px;
+  right:1px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:80px;
+  height:24px;
+  padding:1px 12px;
+  color:#fff;
+  background:#f18c03;
+  border:1px solid #fff;
+  border-radius:0 12px 0 12px;
+  font-size:14px;
+  font-weight:500;
+  font-style:normal;
+  line-height:20px;
+  white-space:nowrap;
+}
+
+/* MasterGo: 首页 / 资讯动态 / 选项卡 */
+.news-tabs{
+  width:min(1200px,100%);
+  margin:-8px auto 30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:0;
+  color:rgba(0,0,0,.7);
+  border-bottom:1.5px solid #f0f1f2;
+  font-size:18px;
+  font-weight:500;
+  line-height:25px;
+}
+.news-tabs span{
+  position:relative;
+  flex:0 0 200px;
+  width:200px;
+  padding:12px;
+  text-align:center;
+  cursor:pointer;
+}
+.news-tabs .active{color:#0888ff;border:0;padding:12px}
+.news-tabs .active:after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-1.5px;
+  width:200px;
+  height:4px;
+  transform:none;
+  background:#0888ff;
+  clip-path:polygon(0 75%,42% 75%,46% 0,54% 0,58% 75%,100% 75%,100% 100%,0 100%);
+  border-radius:0;
+}
+.news-tabs span:last-child{
+  flex:0 0 78px;
+  width:78px;
+  height:20px;
+  padding:0;
+  line-height:20px;
+}
+
+@media(max-width:1100px){
+  .platform-card{min-width:0;padding:20px 16px}
+  .news-tabs{justify-content:flex-start;overflow-x:auto}
+}
+.feature-grid img{width:80px;height:80px}
+.feature-grid h3{font-size:24px}
+.feature-grid p{font-size:16px}
+.matrix-grid b{font-size:32px}
+.matrix-grid h3{font-size:24px}
+.matrix-grid p{font-size:16px}
+.benefit-grid h3{font-size:24px}
+.benefit-grid p{font-size:16px}
+.benefit-grid img{width:88px;height:88px}
+.solution-showcase p{font-size:20px}
+.solution-showcase .primary-btn.small{font-family:Inter,"PingFang SC","Microsoft YaHei",sans-serif;font-weight:400}
+@media(max-width:640px){.feature-grid article{grid-template-columns:80px 1fr}}
+
+/* MasterGo spacing, statistics and footer */
+.tabs.segmented,.tabs.segmented.platform-segmented{width:max-content;height:60px;padding:4px;gap:4px;border-radius:12px}
+.tabs.segmented button{width:200px;flex:0 0 200px;height:52px;border-radius:8px}
+.solution-showcase>div:first-child{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+.solution-showcase h3,.solution-showcase p{margin:0}
+.solution-showcase .primary-btn.small{margin-top:0;font-size:20px}
+.benefit-grid article{padding:24px}
+.about-grid p{font-size:18px;position:relative;z-index:1}
+.about-grid>div{position:relative}
+.about-grid>div:before{content:"";position:absolute;left:-6px;top:14px;width:379px;height:17px;border-radius:2px;background:linear-gradient(269deg,rgba(29,142,255,0),#1d8eff);opacity:.2}
+.about-grid a{font-size:16px}
+.stats{position:relative;display:flex;flex-direction:column;align-items:center;gap:40px;padding:80px 20px;background:rgba(8,136,255,.8);overflow:hidden}
+.stats:before{content:"";position:absolute;left:50%;top:-18px;width:112px;height:32px;transform:translateX(-50%);border-radius:0 0 56px 56px;background:#fff}
+.stats>.stats-heading{width:auto;margin:0;display:block;text-align:center;position:relative;z-index:1}
+.stats-heading h2{margin:0;color:#fff;font-size:30px;line-height:42px;font-weight:600}
+.stats-heading p{margin:8px 0 0;color:rgba(255,255,255,.5);font-size:18px;line-height:25px;font-weight:500}
+.stats>.stats-grid{width:min(1200px,100%);margin:0;display:grid;grid-template-columns:repeat(5,1fr);gap:20px;position:relative;z-index:1}
+.stats-grid strong{font-size:50px;line-height:70px;font-weight:600;background:linear-gradient(180deg,#fff,rgba(255,255,255,.8));background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stats-grid small{display:block;margin-top:4px;color:rgba(255,255,255,.9);font-size:16px;line-height:24px;font-weight:500;-webkit-text-fill-color:rgba(255,255,255,.9)}
+footer{background:#232932;padding:64px 20px 32px}
+.footer-inner{width:min(1200px,100%);margin:auto;display:grid;grid-template-columns:140px 1fr 1fr 1.35fr 150px;gap:64px;align-items:start}
+.footer-logo{width:140px;height:40px;object-fit:contain;object-position:left center;filter:none}
+.footer-nav-column{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+.footer-nav-column h4,.qr h4{margin:0;color:#fff;font-size:20px;line-height:28px;font-weight:500}
+.footer-rule{width:160px;height:1px;background:rgba(255,255,255,.2)}
+.footer-nav-column a,.footer-nav-column p{margin:0;color:rgba(255,255,255,.7);font-size:14px;line-height:20px}
+.footer-contact p{display:grid;grid-template-columns:20px 1fr;gap:4px}
+.footer-contact b{font-weight:400;text-align:center;color:rgba(255,255,255,.7)}
+.qr{width:150px;height:auto;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:16px;background:transparent;color:#fff;border-radius:0}
+.qr:before,.qr i{display:none}
+.qr h4{font-size:16px;line-height:22px}
+.qr img{display:block;width:150px;height:150px;object-fit:cover;background:#fff}
+.qr span{font-size:14px;line-height:20px;color:rgba(255,255,255,.7)}
+.copyright{margin:64px auto 0!important;padding:0!important;border:0!important;display:flex;justify-content:center;gap:24px;color:rgba(255,255,255,.7);font-size:14px;line-height:20px}
+.copyright a{color:inherit;text-decoration:underline}
+@media(max-width:1100px){.footer-inner{grid-template-columns:140px repeat(2,1fr);gap:40px}.footer-contact,.qr{margin-top:8px}.stats>.stats-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:640px){.tabs.segmented,.tabs.segmented.platform-segmented{max-width:100%;overflow-x:auto}.tabs.segmented button{width:200px;flex-basis:200px}.stats>.stats-grid{grid-template-columns:repeat(2,1fr)}.footer-inner{grid-template-columns:1fr 1fr}.footer-logo{grid-column:1/-1}.qr{display:flex}.copyright{flex-direction:column;align-items:center;gap:8px;text-align:center}}
+
+/* Latest homepage review */
+.tabs.segmented.platform-segmented button{width:160px;flex-basis:160px}
+.matrix-grid h3{font-size:20px}
+.matrix-grid p{font-size:14px}
+.stats{background:url("assets/images/bg4.svg") center top/100% 100% no-repeat}
+.stats:before{display:none}
+.solution-showcase .primary-btn.small{height:44px}
+@media(max-width:640px){.tabs.segmented.platform-segmented button{width:160px;flex-basis:160px}}
+
+/* Latest MasterGo structure and supplied icons */
+.about-grid p{margin:0 0 16px}
+.matrix-grid article{grid-template-columns:32px 1fr}
+.matrix-grid b,.matrix-grid b img{display:block;width:32px;height:32px}
+.stats{display:block;padding:0;background:none;overflow:hidden}
+.stats>.stats-arrow{width:100%;height:41px;margin:0;display:block;overflow:hidden}
+.stats-arrow img{display:block;width:100%;height:auto;min-height:41px;object-fit:cover;object-position:center top}
+.stats>.stats-body{width:100%;margin:0;display:flex;flex-direction:column;align-items:center;gap:40px;padding:60px 20px 80px;background:#39a0ff}
+.stats-body>.stats-heading{width:auto;margin:0;display:block;text-align:center}
+.stats-body>.stats-grid{width:min(1200px,100%);margin:0;display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.footer-contact p{grid-template-columns:20px 1fr;align-items:start}
+.footer-contact p img{display:block;width:20px;height:20px;object-fit:contain}
+@media(max-width:1100px){.stats-body>.stats-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:640px){.stats-body>.stats-grid{grid-template-columns:repeat(2,1fr)}}
+.solution-showcase #solutionImage{transition:opacity .2s ease}
+
+/* Latest MasterGo news assets and alignment */
+.platform-card{font-weight:400}
+.news-tabs .active:after{
+  bottom:.5px;
+  height:5.5px;
+  background:url("assets/images/指示条.svg") left bottom/201.5px 5.5px no-repeat;
+  clip-path:none;
+}
+.news-tabs .news-more{
+  flex:0 0 78px;
+  width:78px;
+  height:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  color:rgba(0,0,0,.7);
+  font-size:14px;
+  font-weight:400;
+  line-height:20px;
+  white-space:nowrap;
+}
+.news-tabs .news-more i{font-size:18px;font-style:normal;line-height:18px}
+.news-grid{gap:24px}
+.news-grid article{border:1.5px solid #f0f1f2;border-radius:12px;background:#fff}
+.news-cover{height:160px;display:block;background:#fff;font-size:0}
+.news-cover img{display:block;width:100%;height:100%;object-fit:cover}
+.news-grid p{height:72px;margin:0;padding:16px 24px;color:rgba(0,0,0,.7);font-size:14px;line-height:20px}
