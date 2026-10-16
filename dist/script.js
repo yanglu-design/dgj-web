@@ -1,0 +1,3 @@
+const platforms=[['抖音','抖音20.svg'],['淘宝/淘特','淘宝20.svg'],['天猫','天猫20.svg'],['微信小店/视频号','微信小店20.svg'],['闲鱼回收','闲鱼20.svg'],['京东','京东20.svg'],['快手','快手20.svg'],['拼多多','拼多多20.svg'],['小红书','小红书20.svg'],['淘工厂','淘工厂20.svg'],['自由商城','自由商城20.svg'],['开放平台','其他平台20.svg']];
+document.querySelector('#platformGrid').innerHTML=platforms.map((p,i)=>`<div class="platform-card"><img src="assets/icon/${p[1]}" alt=""><span>${p[0]}</span>${i<9?'<em>免费试用</em>':''}</div>`).join('');
+const toggle=document.querySelector('.nav-toggle'),nav=document.querySelector('.nav');toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open)});nav.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false')});
