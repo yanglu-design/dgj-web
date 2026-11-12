@@ -55,12 +55,19 @@
     { label: '帮助中心', href: 'help.html', active: currentPage === 'help.html' },
     { label: '新闻动态', href: 'news.html', active: currentPage === 'news.html' },
     { label: '关于我们', href: 'about.html', active: currentPage === 'about.html' },
-    { label: '新客免费试用', href: 'service.html', className: 'nav-cta', active: currentPage === 'service.html' }
+    {
+      label: '新客免费试用',
+      href: 'https://tfxportal.dgjapp.com/FFAccount',
+      className: 'nav-cta',
+      target: '_blank',
+      rel: 'noopener noreferrer',
+      active: false
+    }
   ];
 
   const navLinks = navigation.map(item => {
     const classNames = [item.className, item.active ? 'is-active' : ''].filter(Boolean).join(' ');
-    return `<a${classNames ? ` class="${classNames}"` : ''} href="${item.href}"${item.active ? ' aria-current="page"' : ''}>${item.label}</a>`;
+    return `<a${classNames ? ` class="${classNames}"` : ''} href="${item.href}"${item.target ? ` target="${item.target}"` : ''}${item.rel ? ` rel="${item.rel}"` : ''}${item.active ? ' aria-current="page"' : ''}>${item.label}</a>`;
   });
 
   navLinks.splice(1, 0, `
