@@ -16,10 +16,6 @@ function showSlide(index){slideIndex=(index+slides.length)%slides.length;heroTra
 function startCarousel(){clearInterval(carouselTimer);carouselTimer=setInterval(()=>showSlide(slideIndex+1),5000)}
 dots.forEach((dot,i)=>dot.addEventListener('click',()=>{showSlide(i);startCarousel()}));hero.addEventListener('mouseenter',()=>clearInterval(carouselTimer));hero.addEventListener('mouseleave',startCarousel);showSlide(0);startCarousel();
 
-const solutionPlans={
-  distribution:{title:'分销代发',description:'低至20元/月，功能更全面，适合全平台多店铺卖家',image:'assets/images/分销代发方案.svg',alt:'分销代发产品界面'},
-  printing:{title:'打单发货',description:'低至18元/月，单平台多店铺卖家首选',image:'assets/images/打单发货方案.svg',alt:'打单发货产品界面'}
-};
-const solutionTabs=[...document.querySelectorAll('.solution-tabs button')],solutionTitle=document.querySelector('#solutionTitle'),solutionDescription=document.querySelector('#solutionDescription'),solutionImage=document.querySelector('#solutionImage');
-function showSolutionPlan(key){const plan=solutionPlans[key];if(!plan)return;solutionTitle.textContent=plan.title;solutionDescription.textContent=plan.description;solutionImage.src=plan.image;solutionImage.alt=plan.alt;solutionTabs.forEach(tab=>{const active=tab.dataset.plan===key;tab.classList.toggle('active',active);tab.setAttribute('aria-selected',String(active))})}
+const solutionTabs=[...document.querySelectorAll('.solution-tabs button')],solutionSlider=document.querySelector('.solution-slider'),solutionPanels=[...document.querySelectorAll('[data-plan-panel]')];
+function showSolutionPlan(key){if(!solutionSlider||solutionSlider.dataset.active===key)return;solutionSlider.dataset.active=key;solutionTabs.forEach(tab=>{const active=tab.dataset.plan===key;tab.classList.toggle('active',active);tab.setAttribute('aria-selected',String(active))});solutionPanels.forEach(panel=>{const active=panel.dataset.planPanel===key;panel.setAttribute('aria-hidden',String(!active));panel.inert=!active})}
 solutionTabs.forEach(tab=>tab.addEventListener('click',()=>showSolutionPlan(tab.dataset.plan)));

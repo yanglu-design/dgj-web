@@ -5,22 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="店管家——面向电商卖家的全渠道订单管理与打单发货平台。" />
   <title>店管家｜专业打单发货</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=20261112-3" />
+  <link rel="stylesheet" href="shared-header.css?v=20261112-2" />
 </head>
-<body>
+<body class="home-page">
   <header class="site-header">
     <a class="brand" href="#top"><img src="assets/icon/dgjlogo1.svg" alt="店管家" /></a>
     <button class="nav-toggle" aria-label="展开导航" aria-expanded="false">☰</button>
     <nav class="nav" aria-label="主导航">
       <a href="index.html">首页</a>
       <a href="products.html">产品与服务<svg class="nav-chevron" viewBox="0 0 1024 1024" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.4-13 6.4L512 642 228 262.4a16 16 0 0 0-13-6.4h-75c-6.5 0-10.3 7.4-6.5 12.6l352 470.9a32 32 0 0 0 51 0l352-470.9c3.8-5.2 0-12.6-6.5-12.6z"/></svg></a>
-      <a href="solutions.html">解决方案<svg class="nav-chevron" viewBox="0 0 1024 1024" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.4-13 6.4L512 642 228 262.4a16 16 0 0 0-13-6.4h-75c-6.5 0-10.3 7.4-6.5 12.6l352 470.9a32 32 0 0 0 51 0l352-470.9c3.8-5.2 0-12.6-6.5-12.6z"/></svg></a>
+      <a href="open-platform.html">开放平台</a>
       <a href="help.html">帮助中心</a>
       <a href="news.html">新闻动态</a>
       <a href="about.html">关于我们</a>
       <a class="nav-cta" href="service.html">新客免费试用</a>
     </nav>
   </header>
+  <script src="shared-header.js?v=20261112-6"></script>
 
   <main>
     <section class="hero" id="top" aria-label="首页广告轮播">
@@ -87,9 +89,17 @@
     <section class="section solutions" id="solutions">
       <div class="section-heading"><h2>个性化灵活订购方案</h2></div>
       <div class="tabs segmented solution-tabs" role="tablist" aria-label="订购方案切换"><button class="active" data-plan="distribution" role="tab" aria-selected="true">分销代发</button><button data-plan="printing" role="tab" aria-selected="false">打单发货</button></div>
-      <div class="solution-showcase">
-        <div><h3 id="solutionTitle">分销代发</h3><p id="solutionDescription">低至20元/月，功能更全面，适合全平台多店铺卖家</p><a class="primary-btn small" id="solutionLink" href="#contact">立即订购 →</a></div>
-        <img id="solutionImage" src="assets/images/分销代发方案.svg" alt="分销代发产品界面" />
+      <div class="solution-slider" data-active="distribution">
+        <div class="solution-track">
+          <div class="solution-showcase solution-slide" data-plan-panel="distribution" role="tabpanel" aria-hidden="false">
+            <div><h3>分销代发</h3><p>低至20元/月，功能更全面，适合全平台多店铺卖家</p><a class="primary-btn small" href="#contact">立即订购 →</a></div>
+            <img src="assets/images/分销代发方案.svg" alt="分销代发产品界面" />
+          </div>
+          <div class="solution-showcase solution-slide" data-plan-panel="printing" role="tabpanel" aria-hidden="true" inert>
+            <div><h3>打单发货</h3><p>低至18元/月，单平台多店铺卖家首选</p><a class="primary-btn small" href="#contact">立即订购 →</a></div>
+            <img src="assets/images/打单发货方案.svg" alt="打单发货产品界面" />
+          </div>
+        </div>
       </div>
     </section>
 
@@ -123,16 +133,8 @@
     </section>
   </main>
 
-  <footer id="contact">
-    <div class="footer-inner">
-      <img class="footer-logo" src="assets/icon/dgjlogo2.svg" alt="店管家"/>
-      <div class="footer-nav-column"><h4>产品与服务</h4><span class="footer-rule"></span><a href="products.html">批量打单发货</a><a href="products.html">分销代发ERP</a><a href="products.html">铺货代发</a><a href="products.html">打印控件下载</a></div>
-      <div class="footer-nav-column"><h4>活动与资源</h4><span class="footer-rule"></span><a href="about.html">关于店管家</a><a href="service.html">产品试用</a><a href="news.html">新闻动态</a><a href="help.html">帮助中心</a><a href="products.html">开放平台</a></div>
-      <div class="footer-nav-column footer-contact"><h4>联系我们</h4><span class="footer-rule"></span><p><img src="assets/icon/call.svg" alt=""/>400 863 8288</p><p><img src="assets/icon/logo-qq.svg" alt=""/>800183731</p><p><img src="assets/icon/客服.svg" alt=""/>中恒电商</p><p><img src="assets/icon/service.svg" alt=""/>周一至周天，9:00–23:00</p><p><img src="assets/icon/location.svg" alt=""/>广东省深圳市福田区福田街道办深南中路3039号深圳国际文化大厦</p></div>
-      <div class="qr"><h4>店管家公众号</h4><img src="assets/images/公众号@2x.png" alt="店管家公众号二维码"/><span>扫码关注，了解更多</span></div>
-    </div>
-    <div class="copyright"><span>深圳店管家软件有限公司（店管家官网-www.dgjapp.com）</span><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">粤ICP备14060770号</a></div>
-  </footer>
-  <script src="script.js"></script>
+  <footer id="contact" data-shared-footer></footer>
+  <script src="shared-footer.js?v=20261112-1"></script>
+  <script src="script.js?v=20261111-6"></script>
 </body>
 </html>

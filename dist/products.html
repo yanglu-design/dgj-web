@@ -1,3 +1,97 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>店管家</title><link rel="stylesheet" href="styles.css"></head><body>
-<header class="site-header"><a class="brand" href="index.html"><img src="assets/icon/dgjlogo1.svg" alt="店管家"></a><button class="nav-toggle" aria-label="展开导航">☰</button><nav class="nav"><a href="index.html">首页</a><a href="products.html">产品与服务<svg class="nav-chevron" viewBox="0 0 1024 1024" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.4-13 6.4L512 642 228 262.4a16 16 0 0 0-13-6.4h-75c-6.5 0-10.3 7.4-6.5 12.6l352 470.9a32 32 0 0 0 51 0l352-470.9c3.8-5.2 0-12.6-6.5-12.6z"/></svg></a><a href="solutions.html">解决方案<svg class="nav-chevron" viewBox="0 0 1024 1024" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.4-13 6.4L512 642 228 262.4a16 16 0 0 0-13-6.4h-75c-6.5 0-10.3 7.4-6.5 12.6l352 470.9a32 32 0 0 0 51 0l352-470.9c3.8-5.2 0-12.6-6.5-12.6z"/></svg></a><a href="help.html">帮助中心</a><a href="news.html">新闻动态</a><a href="about.html">关于我们</a><a class="nav-cta" href="service.html">新客免费试用</a></nav></header>
-<main class="inner-page"><p>店管家企业官网</p><h1 id="pageTitle">页面建设中</h1><p id="pageDescription">页面入口已按官网信息架构预留，后续可继续依据对应设计稿完善。</p><a class="primary-btn" href="index.html">返回首页</a></main><script>const pages={products:['产品与服务','分销代发、打单发货与订单管理产品页面'],solutions:['解决方案','面向不同电商经营场景的解决方案页面'],help:['帮助中心','产品帮助、教程与常见问题页面'],news:['新闻动态','公司动态、行业新闻与电商干货页面'],about:['关于我们','公司介绍、发展历程与品牌信息页面'],service:['商务服务咨询','企业客户咨询与服务对接页面']};const key=location.pathname.split('/').pop().replace('.html','');const data=pages[key]||['店管家','页面建设中'];document.title=data[0]+'｜店管家';document.querySelector('#pageTitle').textContent=data[0];document.querySelector('#pageDescription').textContent=data[1];document.querySelector('.nav-toggle').onclick=()=>document.querySelector('.nav').classList.toggle('open');</script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="店管家专业打单发货工具，支持多平台多店铺订单统一管理、自动打单、合单、拣货和物流预警。">
+  <title>店管家专业打单发货｜产品与服务</title>
+  <link rel="stylesheet" href="styles.css?v=20261112-5"><link rel="stylesheet" href="shared-header.css?v=20261112-2">
+  <link rel="stylesheet" href="products.css?v=20261112-1">
+</head>
+<body class="product-intro-page">
+  <header class="site-header"></header>
+  <script src="shared-header.js?v=20261112-6"></script>
+
+  <main>
+    <section class="product-hero">
+      <div class="product-shell product-hero-content">
+        <h1>店管家 · 专业打单发货</h1>
+        <p>针对多平台多店铺场景，打造一体化打印发货解决方案</p>
+        <div class="product-hero-tags">
+          <span>📦 多平台多店铺聚合打单</span>
+          <span>⚡ 自动化订单处理</span>
+          <span>🚚 线上/线下对账结算</span>
+        </div>
+        <a class="product-primary-button" href="service.html">立即使用</a>
+      </div>
+    </section>
+
+    <section class="product-values" aria-label="店管家核心数据">
+      <div class="product-shell value-panel">
+        <article><img src="assets/icon/服务@2x.png" alt=""><strong>120W+</strong><span>累计服务用户数</span></article>
+        <article><img src="assets/icon/物流@2x.png" alt=""><strong>50+</strong><span>物流服务商</span></article>
+        <article><img src="assets/icon/提升@2x.png" alt=""><strong>200%</strong><span>降本增效提升</span></article>
+        <article><img src="assets/icon/奖杯@2x.png" alt=""><strong>金牌服务</strong><span>服务市场优秀合作伙伴</span></article>
+      </div>
+    </section>
+
+    <section class="product-section platform-support">
+      <div class="product-section-title"><h2>支持平台</h2><p>无缝对接主流电商平台，多平台多店铺聚合管理</p></div>
+      <div class="product-shell product-platform-grid" id="productPlatformGrid"></div>
+    </section>
+
+    <section class="product-section product-features">
+      <div class="product-section-title"><h2>九大核心功能</h2><p>覆盖打单发货全流程，助力商家降本增效</p></div>
+      <div class="product-shell product-feature-grid">
+        <article><div><h3>多店铺关联</h3><i></i><p>全平台多店铺自动一体化处理订单，效率翻倍</p></div><img src="assets/icon/店铺@2x.png" alt=""></article>
+        <article><div><h3>密文打单</h3><i></i><p>一键识别全平台密文订单，自动匹配面单，高效便捷</p></div><img src="assets/icon/密文@2x.png" alt=""></article>
+        <article><div><h3>自动合并</h3><i></i><p>自动合并同买家订单，统一打单发货，降低快递成本</p></div><img src="assets/icon/合并@2x.png" alt=""></article>
+        <article><div><h3>聚合打单</h3><i></i><p>一个模板，一键打印全平台密文订单，提升人工效率</p></div><img src="assets/icon/集合@2x.png" alt=""></article>
+        <article><div><h3>自动打单</h3><i></i><p>自动监控新订单，爆单自动打单，智能筛选批量打印</p></div><img src="assets/icon/打单@2x.png" alt=""></article>
+        <article><div><h3>异常售后单通知</h3><i></i><p>异常订单智能提醒，一键定位，大幅度减少售后损失</p></div><img src="assets/icon/异常@2x.png" alt=""></article>
+        <article><div><h3>拣货/备货</h3><i></i><p>自动生成货品数据，快速识别，一键备货，提升效率</p></div><img src="assets/icon/备货@2x.png" alt=""></article>
+        <article><div><h3>智能改价</h3><i></i><p>客户差异化定价，店管家一键改价，省心省力</p></div><img src="assets/icon/价格@2x.png" alt=""></article>
+        <article><div><h3>密文认证</h3><i></i><p>密文认证自动同步，助力店铺拓展分销渠道，轻松爆单</p></div><img src="assets/icon/认证@2x.png" alt=""></article>
+      </div>
+    </section>
+
+    <section class="product-section product-benefits">
+      <h2>选择店管家打单发货，<em>效率提升</em>看得见</h2>
+      <div class="product-shell product-benefit-grid">
+        <article class="rich"><div><strong>功能丰富</strong><span>覆盖全业务场景</span></div><img src="assets/icon/功能@2x.png" alt=""></article>
+        <article class="speed"><div><strong>效率倍增</strong><span>高效处理订单</span></div><img src="assets/icon/效率@2x.png" alt=""></article>
+        <article class="save"><div><strong>节省人工</strong><span>降低运营成本</span></div><img src="assets/icon/节省@2x.png" alt=""></article>
+      </div>
+    </section>
+
+    <section class="product-section product-comparison">
+      <div class="product-section-title"><h2>核心功能</h2></div>
+      <div class="product-shell comparison-table-wrap">
+        <table class="comparison-table">
+          <thead><tr><th>功能名称/服务类型</th><th>功能描述</th><th>标准版</th><th class="advanced"><span>高级版</span><img src="assets/icon/推荐版本@2x.png" alt="推荐版本"></th></tr></thead>
+          <tbody>
+            <tr><td>多店铺关联批量打单</td><td>多平台多店铺订单统一管理，高效批量打单</td><td>✓</td><td>✓</td></tr>
+            <tr><td>单号分享</td><td>电子面单多商家共享，降低打单成本</td><td>✓</td><td>✓</td></tr>
+            <tr><td>合并订单</td><td>自动识别同买家订单，统一处理发货</td><td>✓</td><td>✓</td></tr>
+            <tr><td>批量发货</td><td>订单批量处理并自动回传物流单号</td><td>✓</td><td>✓</td></tr>
+            <tr><td>手机端打单发货</td><td>随时随地处理订单与打印发货</td><td>✓</td><td>✓</td></tr>
+            <tr><td>自动打单</td><td>监控新订单并自动触发打印流程</td><td class="no">×</td><td>✓</td></tr>
+            <tr><td>异常单通知</td><td>异常售后订单实时提醒和定位</td><td class="no">×</td><td>✓</td></tr>
+            <tr><td>直播打单标签</td><td>直播订单智能识别与自动打印</td><td class="no">×</td><td>✓</td></tr>
+            <tr><td>售后订单</td><td>集中处理售后订单，降低运营损失</td><td class="no">×</td><td>✓</td></tr>
+            <tr><td>定时自动发货</td><td>按设定时间自动完成发货操作</td><td class="no">×</td><td>✓</td></tr>
+            <tr><td>智能合单</td><td>智能识别可合并订单，减少物流成本</td><td class="no">×</td><td>✓</td></tr>
+            <tr><td>赠品打印</td><td>依据规则自动匹配赠品并打印</td><td class="no">×</td><td>✓</td></tr>
+            <tr><td>物流预警</td><td>实时监控物流状态和异常信息</td><td class="no">×</td><td>✓</td></tr>
+          </tbody>
+        </table>
+        <div class="comparison-cta"><strong>店管家_打单发货</strong><span>低至18元/月，单平台多店铺卖家首选</span><a href="service.html">立即订购 →</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" data-shared-footer></footer>
+  <script src="shared-footer.js?v=20261112-1"></script>
+  <script src="products.js"></script>
+</body>
+</html>

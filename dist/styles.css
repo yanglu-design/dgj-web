@@ -9,6 +9,7 @@
 .brand img{width:112px;height:32px}
 .nav{height:100%;gap:32px}
 .nav a{display:flex;align-items:center;height:100%;white-space:nowrap}
+.nav a.is-active:not(.nav-cta){color:#0888ff;font-weight:500}
 .nav-cta{height:40px!important;padding:0 17px!important;border-radius:20px;background:linear-gradient(107deg,#1d8eff 0%,#4cc4ff 99%)!important;box-shadow:none!important;font-size:16px}
 .hero-inner{padding-top:112px}
 .hero h1{font-family:"Alimama ShuHeiTi","PingFang SC",sans-serif;font-size:38px;font-weight:700;letter-spacing:0;margin-bottom:17px}
@@ -101,7 +102,7 @@
   border:1px solid #fff;
   border-radius:0 12px 0 12px;
   font-size:14px;
-  font-weight:500;
+  font-weight:400;
   font-style:normal;
   line-height:20px;
   white-space:nowrap;
@@ -230,7 +231,11 @@ footer{background:#232932;padding:64px 20px 32px}
 .footer-contact p img{display:block;width:20px;height:20px;object-fit:contain}
 @media(max-width:1100px){.stats-body>.stats-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:640px){.stats-body>.stats-grid{grid-template-columns:repeat(2,1fr)}}
-.solution-showcase #solutionImage{transition:opacity .2s ease}
+.solution-slider{width:min(1200px,100%);margin:0 auto;overflow:hidden}
+.solution-track{display:flex;transform:translate3d(0,0,0);transition:transform .55s cubic-bezier(.22,.61,.36,1);will-change:transform}
+.solution-slider[data-active="printing"] .solution-track{transform:translate3d(-100%,0,0)}
+.solution-slider .solution-showcase{width:100%;margin:0;flex:0 0 100%}
+@media(prefers-reduced-motion:reduce){.solution-track{transition:none}}
 
 /* Latest MasterGo news assets and alignment */
 .platform-card{font-weight:400}
@@ -317,6 +322,7 @@ footer{background:#232932;padding:64px 20px 32px}
 .feature-grid article:hover button{opacity:1;transform:translateY(0);pointer-events:auto}
 
 .matrix-grid article{
+  border-radius:12px;
   transition:transform .36s cubic-bezier(.22,1,.36,1),box-shadow .36s ease;
 }
 .matrix-grid article:hover{
@@ -325,6 +331,7 @@ footer{background:#232932;padding:64px 20px 32px}
 }
 
 .benefit-grid article{
+  border-radius:12px;
   background:linear-gradient(180deg,#ffffff62 7%,#ffffffa3 100%);
   border-color:#fff;
   transition:background .28s ease,box-shadow .36s ease;
@@ -356,4 +363,83 @@ footer{background:#232932;padding:64px 20px 32px}
   font-weight:500;
   line-height:26px;
   cursor:pointer;
+}
+
+/* MasterGo: 产品与服务下拉菜单 */
+.nav-product{height:100%;display:flex;align-items:center}
+.nav-product-trigger{display:flex;align-items:center;height:100%;white-space:nowrap;transition:.2s}
+.nav-product-trigger:hover,.nav-product-trigger.is-active,.nav-product.is-current>.nav-product-trigger{color:#0888ff}
+.nav-product:hover .nav-chevron,.nav-product.is-open .nav-chevron{transform:rotate(180deg)}
+.nav-chevron{transition:transform .2s ease}
+.product-mega-menu{
+  position:absolute;
+  top:100%;
+  left:50%;
+  width:min(1200px,calc(100vw - 48px));
+  min-height:364px;
+  padding:24px;
+  color:var(--text);
+  background:#fff;
+  border-radius:0 0 16px 16px;
+  box-shadow:0 12px 20px -12px rgba(0,30,77,.18);
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transform:translate(-50%,0);
+  transition:opacity .2s ease,visibility .2s;
+}
+.nav-product:hover .product-mega-menu,.nav-product.is-open .product-mega-menu{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+  transform:translate(-50%,0);
+}
+.product-menu-inner{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.product-menu-group h2{margin:0 0 24px;color:rgba(0,0,0,.9);font-size:20px;font-weight:500;line-height:28px}
+.product-menu-list{display:flex;flex-direction:column;gap:8px}
+.nav a.product-menu-item{
+  height:64px;
+  padding:8px;
+  gap:8px;
+  border-radius:12px;
+  align-items:center;
+  white-space:normal;
+  transition:background .2s ease;
+}
+.nav a.product-menu-item:hover{color:inherit;background:#f5f9ff}
+.product-menu-item img{width:48px;height:48px;flex:0 0 48px;border-radius:12px;object-fit:cover}
+.product-menu-item span{min-width:0;display:flex;flex-direction:column;gap:2px}
+.product-menu-item strong{overflow:hidden;color:rgba(0,0,0,.9);font-size:16px;font-weight:600;line-height:22px;text-overflow:ellipsis;white-space:nowrap}
+.product-menu-item small{overflow:hidden;color:rgba(0,0,0,.5);font-size:14px;font-weight:400;line-height:20px;text-overflow:ellipsis;white-space:nowrap}
+
+/* Typography weight normalization for the home and product pages. */
+:is(.home-page,.product-intro-page){font-weight:400}
+:is(.home-page,.product-intro-page) :where(p,span,a,button,small,del,em,label,h4){font-weight:400!important}
+:is(.home-page,.product-intro-page) :where(h1,h2,h3,strong,b,th),.home-page .news-cover{font-weight:500!important}
+:is(.home-page,.product-intro-page) .tabs.segmented .active{font-weight:500!important}
+:is(.home-page,.product-intro-page) .product-menu-group h2{font-weight:500!important}
+.home-page{font-weight:400}
+.home-page :where(p,span,a,button,small,del,em,label,h4){font-weight:400!important}
+.home-page :where(h1,h2,h3,strong,b,th),.home-page .news-cover{font-weight:500!important}
+.home-page .tabs.segmented .active{font-weight:500!important}
+.product-menu-item:hover strong{color:#0888ff}
+
+/* Browser review refinements: news cards and shared footer. */
+.home-page .news-grid p{padding-left:16px;padding-right:16px}
+.product-menu-group h2{font-weight:500!important}
+:is(.home-page,.product-intro-page,.open-platform-page) .footer-nav-column h4,
+:is(.home-page,.product-intro-page,.open-platform-page) .qr h4{font-weight:500!important}
+
+@media(max-width:900px){
+  .nav{max-height:calc(100vh - 62px);overflow-y:auto}
+  .nav-product{width:100%;height:auto;display:block}
+  .nav-product-trigger{width:100%;height:auto;justify-content:space-between}
+  .product-mega-menu{position:static;width:100%;min-height:0;margin-top:14px;padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(34,72,110,.08);display:none;opacity:1;visibility:visible;pointer-events:auto;transform:none;transition:none}
+  .nav-product:hover .product-mega-menu{display:none;transform:none}
+  .nav-product.is-open .product-mega-menu{display:block;transform:none}
+  .product-menu-inner{grid-template-columns:1fr;gap:24px}
+  .product-menu-group h2{margin-bottom:10px;font-size:18px}
+  .product-menu-list{gap:4px}
+  .nav a.product-menu-item{height:62px;padding:7px}
+  .product-menu-item small{white-space:normal}
 }
