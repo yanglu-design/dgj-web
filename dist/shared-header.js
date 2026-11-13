@@ -3,8 +3,9 @@
   if (!header) return;
 
   const chevron = '<svg class="nav-chevron" viewBox="0 0 1024 1024" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.4-13 6.4L512 642 228 262.4a16 16 0 0 0-13-6.4h-75c-6.5 0-10.3 7.4-6.5 12.6l352 470.9a32 32 0 0 0 51 0l352-470.9c3.8-5.2 0-12.6-6.5-12.6z"/></svg>';
-  const currentPage = location.pathname.split('/').pop() || 'index.html';
-  const productsActive = currentPage === 'products.html';
+  const normalizedPath = decodeURIComponent(location.pathname).replace(/\/+$/, '');
+  const currentPage = (normalizedPath.split('/').pop() || 'index').replace(/\.html$/i, '');
+  const productsActive = currentPage === 'products';
 
   const productGroups = [
     {
@@ -50,11 +51,11 @@
   `).join('');
 
   const navigation = [
-    { label: '首页', href: 'index.html', active: currentPage === 'index.html' },
-    { label: '开放平台', href: 'open-platform.html', active: currentPage === 'open-platform.html' },
-    { label: '帮助中心', href: 'help.html', active: currentPage === 'help.html' },
-    { label: '新闻动态', href: 'news.html', active: currentPage === 'news.html' },
-    { label: '关于我们', href: 'about.html', active: currentPage === 'about.html' },
+    { label: '首页', href: 'index.html', active: currentPage === 'index' },
+    { label: '开放平台', href: 'open-platform.html', active: currentPage === 'open-platform' },
+    { label: '帮助中心', href: 'help.html', active: currentPage === 'help' },
+    { label: '新闻动态', href: 'news.html', active: currentPage === 'news' },
+    { label: '关于我们', href: 'about.html', active: currentPage === 'about' },
     {
       label: '新客免费试用',
       href: 'https://tfxportal.dgjapp.com/FFAccount',
