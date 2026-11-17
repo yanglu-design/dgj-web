@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>抖店_在线寄件</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="/public/css/setBase.css">
+    <link rel="stylesheet" href="/public/css/newCommon.css">
+    <link rel="stylesheet" href="/public/fonts/iconfont.css">
+    <link rel="stylesheet" href="../../public/css/xcConfirm.css">
+    <link rel="shortcut icon" type="image/ico" href="/public/images/favicon.ico">
+
+    
+<meta name="keywords" content=在线寄件，免充单号>
+    
+<style>
+    .content {
+        padding-bottom: 80px;
+        padding-top: 20px;
+        width: 1220px;
+        margin: 0 auto;
+    }
+
+    .helpContent_01 {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    header {
+        position: static;
+        /*background-color: #8958ff;*/
+        box-shadow: 0 2px 5px 3px #ddd;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 5px;
+    }
+
+    .content_main>.search {
+        padding: 10px;
+        text-align: right;
+        width: 100%;
+
+    }
+
+    .search_box {
+        display: inline-block;
+        width: 400px;
+        height: 40px;
+        border: 2px solid #3aadff;
+    }
+
+    .search_box>ul {
+        width: 100%;
+        height: 40px;
+    }
+
+    .search_box>ul>li {
+        height: 40px;
+        float: left;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .search_box_condition {
+        width: 11%;
+        border-right: 1px solid #ddd;
+        box-sizing: border-box;
+    }
+
+    .search_box_content {
+        width: 78%;
+    }
+
+    .search_box_content input {
+        width: 100%;
+        height: 39px;
+        border: none;
+        position: relative;
+        left: 0;
+        top: -1px;
+    }
+
+    .search_box_do {
+        width: 11%;
+        background-color: #3aadff;
+        color: #fff;
+    }
+
+    .platform>div {
+        float: left;
+
+    }
+
+    .platform>.platform_helpInformation {
+        border-left: 1px solid #ddd;
+        padding: 0 10px;
+    }
+
+    /*.platform>div:first-child{*/
+    /*border-left: none;*/
+    /*}*/
+    .platform>div>ul>li {
+        padding: 10px 0;
+    }
+
+    .platform>div>ul>.active,
+    .platform>div>dl>.active {
+        color: #3aadff;
+    }
+
+    .platform>div>dl>dd .active {
+        color: #3aadff;
+    }
+
+    .platform_helpInformation>dl>dd {
+        padding: 10px 0;
+        cursor: pointer;
+        width: 220px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+    }
+
+    .platform_helpInformation>dl>dd:hover {
+        color: #3aadff;
+    }
+
+    .platform_helpInformation>dl>dt {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 14px;
+        color: #f7941f;
+        border-bottom: 1px solid #f7941f;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        cursor: pointer;
+
+    }
+
+    .content_main_content {
+        min-width: 735px;
+        width: 970px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        padding: 0 8px 10px 8px;
+        box-sizing: border-box;
+    }
+
+    .content_main_content_title {
+        border-bottom: 1px dashed #ddd;
+        padding: 10px 0;
+
+    }
+
+    .ask_main_title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #000;
+        padding: 30px 10px;
+        font-family: 微软雅黑;
+        text-align: center;
+        line-height: 22px;
+    }
+
+    .ask_main_content_li {
+        height: 35px;
+        background-color: #d3ecfd;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .ask_main_content {
+        margin-bottom: 20px;
+    }
+
+    .ask_main_content>img {
+        width: 100%;
+    }
+
+    .askIcon {
+        width: 30px;
+        height: 30px;
+        background-color: #3aadff;
+        border-radius: 15px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+
+    @media (max-width: 1080px) {
+        .platform_helpInformation>dl>dd {
+            float: left;
+            margin-right: 10px;
+        }
+
+        .content_main_content {
+            margin-left: 20px;
+        }
+
+    }
+
+    @media (max-width: 768px) {
+        .content {
+            padding-top: 0;
+        }
+
+        .content_main_content {
+            margin-left: 0;
+
+        }
+
+        .content_main_content {
+            width: 100%;
+            min-width: auto;
+            max-width: auto;
+        }
+
+        .footer-content-left {
+            display: none;
+        }
+
+        .platform_helpInformation {
+            display: none;
+        }
+
+        .content {
+            width: 100%;
+        }
+
+        .ask_main_content img {
+            width: 100% !important;
+        }
+
+        .ask_main_content_li {
+            height: unset;
+            min-height: 35px;
+        }
+
+        .helpContent_step,
+        .helpContent_explain {
+            width: 100% !important;
+            box-sizing: border-box;
+        }
+
+        .content_main_content_main img {
+            width: 100% !important;
+            margin: 0 !important;
+            height: unset!important;
+        }
+
+    }
+
+    .telType {
+        height: 600px;
+        width: unset;
+    }
+
+    .normalType {
+        width: 950px;
+    }
+    table{
+        font-size: 12px;
+        line-height: 30px;
+        border-left: solid 1px #dbdbdb;
+        width: 100%;
+        background-color: #fff;
+    }
+    table thead tr {
+        background-color: #f6f9fd;
+    }
+    table thead tr th, table tbody tr td {
+    border-right: solid 1px #e6e6e6;
+    border-top: solid 1px #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    font-weight: normal;
+    min-height: 20px;
+    line-height: 20px;
+    padding: 8px 10px;
+    text-align: left;
+}
+</style>
+
+    <script src="/public/js/shanqian.js"></script>
+    <script> var _hmt = _hmt || []; (function () { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?7fe1adc7d0527596576659f543a531ea"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })();</script>
+</head>
+
+<body>
+    <!-- <div class="loginAilogin" onclick="headerLoginCommon.openOrCloselogin(true)"> -->
+<div class="loginAilogin">
+
+    <div class="loginWrap_content_inputDiv" onclick="$$.stopM(event)">
+        <div class="loginWrap_title">登录</div>
+        <div class="iconfont icon-dengchu" style="font-size: 22px;color: #666;position: absolute;top: 20px;right: 20px;cursor: pointer;" onclick="headerLoginCommon.openOrCloselogin(true)"></div>
+        <div class="loginWrap_content_warn"></div>
+        <ul class="loginWrap_content_inputUl" id="intoLoginSelf" style="display: flex;">
+            <li><input type="text" placeholder="请输入11位手机号" id="loginTelePhone" maxlength="11"></li>
+            <li><input type="password" placeholder="请输入密码:大于6位，由数字和字母组成" id="loginPassword"></li>
+            <li>
+
+                <!-- <input type="text" style="width: 135px" placeholder="请输入验证码" id="loginValidCode"  maxlength="6">
+                <div  class="loginCode"> <img id="vCodeId" src="http://erp.dgjapp.com/Account/ValidCode?t=1" onclick="headerLoginCommon.validCode()" /></div> -->
+                <input type="text" id="code_input" value="" placeholder="请输入验证码" style="width: 120px;"/>
+                <!-- <div id="v_container" style="width: 150px;height: 50px;display: inline-block;position: relative;top: 12px;"></div> -->
+                <img src="/getCode" id="getCode" alt=""  onclick='headerLoginCommon.getCheckForm(this);'>
+
+
+            </li>
+            <li>
+                <span  id="check-btn2" class="loginWrap_content_btn login" onclick="headerLoginCommon.login()" >登录</span>
+                <span class="loginWrap_content_btn Loading" onclick="headerLoginCommon.login()" >登录中<i class="loading"></i></span>
+            </li>
+        </ul>
+
+        <ul class="loginWrap_content_inputUl" id="intoRegisterSelf" style="display: none;">
+            <li><input type="text" placeholder="请输入11位手机号" id="intoRegisterTelePhone" maxlength="11"></li>
+            <li><input type="text" style="width: 135px" placeholder="请输入短信验证码" id="intoRegisterValidCode" maxlength="8">
+                <input type="button" class="getCode" id="LoginCode1" value="免费获取验证码"
+                    onclick="headerLoginCommon.postMobileMessageCode('1')"></li>
+            <li><input type="password" placeholder="请输入密码" id="intoRegisterTelePass"></li>
+            <li><input type="password" placeholder="请确认密码" id="sureIntoRegisterTelePass"></li>
+            <li><span class="loginWrap_content_btn" onclick="headerLoginCommon.register()">注册</span></li>
+        </ul>
+
+        <ul class="loginWrap_content_inputUl" id="setLoginPwd" style="display: none;">
+            <li><input type="text" placeholder="请输入11位手机号" id="againSetPhone" maxlength="11"></li>
+            <li><input type="text" style="width: 135px" placeholder="请输入短信验证码" id="againRegisterValidCode"
+                    maxlength="8"> <input type="button" class="getCode" id="LoginCode2" value="免费获取验证码"
+                    onclick="headerLoginCommon.postMobileMessageCode('2')"></li>
+            <li><input type="password" placeholder="请输入密码" id="againSetPassword"></li>
+            <li><input type="password" placeholder="请确认密码" id="sureAgainSetPassword"></li>
+            <li><span class="loginWrap_content_btn" onclick="headerLoginCommon.againSetPassword()">重设密码</span></li>
+        </ul>
+
+        <div class="loginWrap_content_btns"><span onclick="headerLoginCommon.registerSkip()">注册</span><span onclick="headerLoginCommon.amendPwdSkip()">忘记密码</span><span onclick="headerLoginCommon.goBackLogin()" style="margin-left: 80px;color: #3cc3a2;">返回登录</span></div>
+
+    </div>
+</div>
+
+    <header class="header">
+    <div class="nav"></div>
+    <div id="menu_hover_bg" style="height: 0px; overflow: hidden;"></div>
+    <div class="w1200">
+        <div class="logo">
+            <a href="./index.html">
+                <span class="header-left-icon"></span>
+                <span class="header-left-fuTitle">批量打印发货系统</span>
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="yidong-log">
+                    <span></span>
+                    <span>深圳店管家软件有限公司</span>
+                </li>
+                <li id="men_pro">
+                    <h2><a href="./../index.html" class="index"><span class="iconfont icon-002-home2"></span>首页</a></h2>
+                </li>
+                <li id="men_sol" class="men_list">
+                    <h2><a href="./../productIntroduce.html" class="productIntroduce"><span style="font-size: 16px"
+                                class="iconfont icon-renshifuwu"></span>产品与服务</a></h2>
+
+                    <div class="sub_menu">
+                        <ul id="sub_menu_ul" style="display: flex;">
+                            <li class="more-list" id="platform-primaryHeader" style="width: 250px;">
+                                <div class="w1200">
+                                    <h3>主流平台</h3>
+                                </div>
+                            </li>
+                            <li class="more-list" id="platform-optimizedHeader" style="width: 750px;">
+                                <div class="w1200">
+                                    <h3>优选平台</h3>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+                <!-- <li id="men_fuwu" class="men_list">
+                    <h2>
+                        <a href="#" class="fuwu"><span class="iconfont icon-fangan2"
+                                style="font-size: 19px"></span>行业方案</a>
+                        <span class="menu-new-icon"><i style="margin-top: -1px;display: block;">hot</i></span>
+                    </h2>
+                    <div class="sub_menu">
+                        <div class="w1200">
+                            <h3>企业服务方案</h3>
+                        </div>
+                        <div class="sub_menu_list02">
+                            <a class="youzhanfu" href="./../kuaishouPlatform.html">快手服务</a>
+                        </div>
+                        <div class="sub_menu_list02">
+                            <a class="youzhanfu" href="./../youzhanCatalog.html">有赞服务</a>
+                        </div>
+                    </div>
+                </li> -->
+                <li>
+                    <h2>
+                        <a href="./../newShareWayBillAccount.html" class="newShareWayBillAccount"><span
+                                class="iconfont icon-002-home2"></span>快递单号共用</a>
+                        <span class="menu-new-icon"><i style="margin-top: -1px;display: block;">hot</i></span>
+                    </h2>
+                </li>
+                <li id="men_new">
+                    <h2>
+                        <a href="./../Sharefendan.html" class="Sharefendan"><span
+                                class="iconfont icon-002-home2"></span>分销代发ERP</a>
+                        <!-- <span class="menu-new-icon"><i style="margin-top: -1px;display: block;">new</i></span> -->
+                    </h2>
+                </li>
+                <li id="men_new">
+                    <h2>
+                        <a href="./../puHuo.html" class="puHuo"><span
+                                class="iconfont icon-002-home2"></span>铺货代发</a>
+                        <span class="menu-new-icon"><i style="margin-top: -1px;display: block;">new</i></span>
+                    </h2>
+                </li>
+                <li class="menu-new">
+                    <h2>
+                        <a href="./../openPlatform.html" class="openPlatform"><span class="iconfont icon-shiyong-"
+                                style="font-size: 19px"></span>开放平台</a>
+                    </h2>
+                </li>
+                <li>
+                    <h2><a href="http://erp.dgjapp.com/" target="_blank"><span class="iconfont icon-shiyong-"
+                                style="font-size: 19px"></span>产品试用</a></h2>
+                </li>
+                <li>
+                    <h2><a href="./../newHelps.html" class="help"><span
+                                class="iconfont icon-shiyongshouce"></span>帮助中心</a></h2>
+                </li>
+                <li>
+                    <h2><a href="./../news.html" class="news"><span class="iconfont icon-xinwenzhongxin"></span>新闻动态</a>
+                    </h2>
+                </li>
+                <!-- <li>
+                    <h2><a href="./../PreLiveVideo.html" class="PreLive"><span
+                                class="iconfont icon-guanyuwomen1"></span>直播预告</a></h2>
+                </li> -->
+                <li>
+                    <h2><a href="./../aboutMy.html" class="aboutMy"><span
+                                class="iconfont icon-guanyuwomen1"></span>关于我们</a></h2>
+                </li>
+
+            </ul>
+        </div>
+        <div class="login">
+            <!--            <a href="#">登陆</a>-->
+            <a href="#">服务热线</a>
+            <a href="#">400 863 8288</a>
+        </div>
+        <div class="fixedShade"></div>
+
+    </div>
+    <!-- <div class="usersLogin">
+        <span class="usersLogin-into"><i onclick="headerLoginCommon.showLogin('AppStore')">登录</i>|<i  onclick="headerLoginCommon.showRegister()">注册</i></span>
+        <span id="loginSuccess">
+            <i class="iconfont icon-zhucedengluyonghuming">：</i><a id="loginUserName" target="_blank"></a>
+            <i style="margin-left: 5px;" class="iconfont icon-dengchu" title="登出" onclick="headerLoginCommon.loginOut()"></i>
+        </span>
+    </div> -->
+    <div class="xeixinshop" style="display:none;">
+        视频号小店入口
+        <span class="xeixinshop-ad-back"></span>
+        <div class="xeixinshop-wrap">
+            <img src="../../public/images/kaifang/xiaodianerweima.png" alt="">
+            <span class="xeixinshop-wrap-title">扫码添加好友，优先使用打单功能</span>
+        </div>
+    </div>
+</header>
+
+
+
+    
+    
+<div class="content">
+    <div class="content_main platform clearfix">
+        <div class="platform_helpInformation">
+            <dl>
+                <dt>其它相关文档</dt>
+                
+                <!-- <dd data-id=&#34;64794d7f9520dc1ae809d455&#34;></dd> -->
+                
+                <dd data-id=1685671295998> <a
+                        href="./newHelpsShow.html?id=1685671295998">抖店_发货探查</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5f728f767699310d4c00c0f0&#34;></dd> -->
+                
+                <dd data-id=1601343350852> <a
+                        href="./newHelpsShow.html?id=1601343350852">淘宝特价版怎么打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5f87ec8cf67cf91f882a3ea4&#34;></dd> -->
+                
+                <dd data-id=1602743436491> <a
+                        href="./newHelpsShow.html?id=1602743436491">抖店如何使用店管家打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;624eabc5dcf0e71ff88f7e12&#34;></dd> -->
+                
+                <dd data-id=1649322950030> <a
+                        href="./newHelpsShow.html?id=1649322950030">疫情期间，这样处理不可达订单更快捷哟！</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;62abde0a287be71570976019&#34;></dd> -->
+                
+                <dd data-id=1655430667183> <a
+                        href="./newHelpsShow.html?id=1655430667183">拼多多_重新发货、分包发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;666aaf2f17e0c10c104b4609&#34;></dd> -->
+                
+                <dd data-id=1718267695875> <a
+                        href="./newHelpsShow.html?id=1718267695875">京东_分包发货，重新发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;67453d9922fc271d20147d4e&#34;></dd> -->
+                
+                <dd data-id=1732591002139> <a
+                        href="./newHelpsShow.html?id=1732591002139">抖音_周期配送订单</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e44fab21a8bda12708a5bbb&#34;></dd> -->
+                
+                <dd data-id=1581578931455> <a
+                        href="./newHelpsShow.html?id=1581578931455">快手小店怎么打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e44fb2a1a8bda12708a5bbd&#34;></dd> -->
+                
+                <dd data-id=1581579051179> <a
+                        href="./newHelpsShow.html?id=1581579051179">有赞怎么打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e510e7a6015d20c2cb45de4&#34;></dd> -->
+                
+                <dd data-id=1582370427104> <a
+                        href="./newHelpsShow.html?id=1582370427104">拼多多怎么打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5eb3798e43b5cd10747aaeb4&#34;></dd> -->
+                
+                <dd data-id=1588820365244> <a
+                        href="./newHelpsShow.html?id=1588820365244">淘工厂怎么打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5f520202da209516a07f3014&#34;></dd> -->
+                
+                <dd data-id=1599209985884> <a
+                        href="./newHelpsShow.html?id=1599209985884">魔筷星选怎么打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5f605cb4ceff931aec210775&#34;></dd> -->
+                
+                <dd data-id=1600150707215> <a
+                        href="./newHelpsShow.html?id=1600150707215">微信小商店怎么打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5fb4bc90909f3022c49f7625&#34;></dd> -->
+                
+                <dd data-id=1605680271985> <a
+                        href="./newHelpsShow.html?id=1605680271985">拼多多客户端怎么打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e44faed1a8bda12708a5bbc&#34;></dd> -->
+                
+                <dd data-id=1581578990493> <a
+                        href="./newHelpsShow.html?id=1581578990493">抖音小店怎么打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5f448afb8c4e261b683f1cc7&#34;></dd> -->
+                
+                <dd data-id=1598327548348> <a
+                        href="./newHelpsShow.html?id=1598327548348">阿里巴巴怎么打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;63106ac3d73313293c9bd5ea&#34;></dd> -->
+                
+                <dd data-id=1662020290472> <a
+                        href="./newHelpsShow.html?id=1662020290472">微信视频号怎么打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;6375db03b8e9a205b8823ba6&#34;></dd> -->
+                
+                <dd data-id=1668668163359> <a
+                        href="./newHelpsShow.html?id=1668668163359">快手_重新发货、分包发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;63847711b2ad060708c919c6&#34;></dd> -->
+                
+                <dd data-id=1669625619817> <a
+                        href="./newHelpsShow.html?id=1669625619817">抖音_重新发货、分包发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;63b7ca940908d72b004c55a1&#34;></dd> -->
+                
+                <dd data-id=1672989331944> <a
+                        href="./newHelpsShow.html?id=1672989331944">淘宝_同城配送、商家配送</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;64190dfd0877a41e503e1b0f&#34;></dd> -->
+                
+                <dd data-id=1679363581164> <a
+                        href="./newHelpsShow.html?id=1679363581164">淘宝_分包发货、重新发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;64f7f0c18eb2461a40954a31&#34;></dd> -->
+                
+                <dd data-id=1693970625736> <a
+                        href="./newHelpsShow.html?id=1693970625736">抖店_承诺日达</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;6538c78761e08818585340ed&#34;></dd> -->
+                
+                <dd data-id=1698219911741> <a
+                        href="./newHelpsShow.html?id=1698219911741">抖店_在线寄件</a></dd>
+                
+
+                
+            </dl>
+        </div>
+        <div class="content_main_content">
+            <div class="content_main_content_title">
+                位置：<a href="newHelps.html">帮助中心</a><span style="margin:0 5px">》<a
+                        href="newHelpsClassify.html?id=1698219911741&columnId=1619344695726&type=helps">
+                            打单发货</a><span
+                        style="padding-left:5px;">》</span></span>抖店_在线寄件
+            </div>
+            <div class="content_main_content_main">
+                <h1 class="ask_main_title">抖店_在线寄件</h1>
+                <!--循环的内容-->
+
+                
+                <h2 class="heading-2 ace-line old-record-id-doxcnGpvBszoRJhVWmntWOwAfYb" style="line-height: 3em;"><span style="font-size: 24px;">1.抖店后台开通该功能</span></h2><p style="line-height: 3em;"><span style="font-size: 20px;">在抖店后台-订单-物流服务去开通该功能。</span></p><p style="text-align: center; line-height: 3em;"><img src="https://k3pkkunpwx.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2FlN2VmYTBkNTJlMTMyNDUyZTAzY2IxOWQyNTQxN2NfWVNsT3RodVJFVE5wc1lNSDRYMXBBMlNNcUpoNkIxQ2pfVG9rZW46TlF1N2JVSmxHb0ZnaGV4aFY1NWNoZU84bnZmXzE3MDEyNDkxOTQ6MTcwMTI1Mjc5NF9WNA" data-single-block="true" data-snapshot="eyJpbWFnZSI6eyJoZWlnaHQiOjczNCwibmFtZSI6ImltYWdlLnBuZyIsImNyb3AiOlswLDAsMCwwXSwicm90YXRpb24iOjAsImNhcHRpb24iOnsidGV4dCI6eyJpbml0aWFsQXR0cmlidXRlZFRleHRzIjp7ImF0dHJpYnMiOm51bGwsInRleHQiOm51bGx9LCJhcG9vbCI6eyJuZXh0TnVtIjowLCJudW1Ub0F0dHJpYiI6bnVsbH19fSwic2l6ZSI6MTg5NTU2LCJzY2FsZSI6MSwid2lkdGgiOjEwODIsInRva2VuIjoiTlF1N2JVSmxHb0ZnaGV4aFY1NWNoZU84bnZmIiwibWltZVR5cGUiOiJpbWFnZS9wbmcifSwiYXV0aG9yIjoiNzEzNjUwMTU4OTc2NTc5OTk0MCIsImFsaWduIjoiY2VudGVyIiwiY29tbWVudHMiOltdLCJyZXZpc2lvbnMiOm51bGwsImxvY2tlZCI6ZmFsc2UsImhpZGRlbiI6ZmFsc2UsInR5cGUiOiJpbWFnZSIsInBhcmVudF9pZCI6IlhRcG9kNTVjY29BNWhYeE9PSnJjOXpqSW40ZyJ9" data-suite="eyJmaWxlVG9rZW4iOiJOUXU3YlVKbEdvRmdoZXhoVjU1Y2hlTzhudmYiLCJvYmpUeXBlIjoiZG9jeCIsIm9ialRva2VuIjoiRjFUYmRDMDl0b2hNMlV4VWFkOGNNRUx5bmFiIiwib3JpZ2luU3JjIjoiaHR0cHM6Ly9pbnRlcm5hbC1hcGktZHJpdmUtc3RyZWFtLmZlaXNodS5jbi9zcGFjZS9hcGkvYm94L3N0cmVhbS9kb3dubG9hZC9wcmV2aWV3L05RdTdiVUpsR29GZ2hleGhWNTVjaGVPOG52Zi8/cHJldmlld190eXBlPTE2In0=" data-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/NQu7bUJlGoFghexhV55cheO8nvf/?mount_node_token=F1TbdC09tohM2UxUad8cMELynab&amp;mount_point=docx_image" data-width="1082" data-height="734" width="930" style="width: 930px; height: 630.887px;" height="631"/></p><article class="4ever-article" data-clipboard-cangjie="[&quot;root&quot;,{},[&quot;h2&quot;,{&quot;jc&quot;:&quot;left&quot;,&quot;ind&quot;:{},&quot;spacing&quot;:{&quot;before&quot;:21.333333333333332,&quot;after&quot;:12,&quot;line&quot;:0.8529411764705882},&quot;uuid&quot;:&quot;lpjf4za60poqfae8ezn&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;bold&quot;:true,&quot;sz&quot;:16,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;2.充值管家账号&quot;]]],[&quot;p&quot;,{&quot;ind&quot;:{&quot;left&quot;:0},&quot;uuid&quot;:&quot;lpjeziey880aqb7r8f4&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;highlight&quot;:&quot;#E4EDDB&quot;,&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;路径：抖音左侧菜单栏资金-账户中心-管家账号。&quot;]]],[&quot;p&quot;,{&quot;ind&quot;:{&quot;left&quot;:0},&quot;uuid&quot;:&quot;lpjf0ov3zgx45n6x6qe&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;在线寄件的线上付款都在这里扣钱，需要保证余额足够才能正常打印。&quot;]]],[&quot;p&quot;,{&quot;jc&quot;:&quot;center&quot;,&quot;ind&quot;:{},&quot;spacing&quot;:{},&quot;uuid&quot;:&quot;lpjey77w9zyny6pln3&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]],[&quot;img&quot;,{&quot;id&quot;:&quot;n0k8cg&quot;,&quot;name&quot;:&quot;image.png&quot;,&quot;size&quot;:132255,&quot;width&quot;:748,&quot;height&quot;:398.30022404779686,&quot;uuid&quot;:&quot;lpjeykldwq1tjdux60h&quot;,&quot;src&quot;:&quot;https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/3BMqYazmZezGqwZL/img/0487abd6-62f6-4a80-87bc-7028d3955351.png&quot;,&quot;extraData&quot;:{&quot;resourceId&quot;:&quot;907221d4-7f21-4f5f-bef1-8911fd6ff61b&quot;,&quot;metaData&quot;:{&quot;size&quot;:132255,&quot;originWidth&quot;:1339,&quot;originHeight&quot;:713,&quot;format&quot;:&quot;png&quot;,&quot;ratio&quot;:1}}},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]]]" data-identifier-application__slash__x-cangjie-fragment="JTdCJTIya2xhc3MlMjIlM0ElMjJkb2N1bWVudCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIyYmxvY2slMjIlMkMlMjJ0eXBlJTIyJTNBJTIyaGVhZGluZy0yJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMmpjJTIyJTNBJTIybGVmdCUyMiUyQyUyMmluZCUyMiUzQSU3QiU3RCUyQyUyMnNwYWNpbmclMjIlM0ElN0IlMjJiZWZvcmUlMjIlM0EyMS4zMzMzMzMzMzMzMzMzMzIlMkMlMjJhZnRlciUyMiUzQTEyJTJDJTIybGluZSUyMiUzQTAuODUyOTQxMTc2NDcwNTg4MiU3RCUyQyUyMnV1aWQlMjIlM0ElMjJscGpmNHphNjBwb3FmYWU4ZXpuJTIyJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyMi4lRTUlODUlODUlRTUlODAlQkMlRTclQUUlQTElRTUlQUUlQjYlRTglQjQlQTYlRTUlOEYlQjclMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybWFyayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJib2xkJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiU3RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIybWFyayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJzeiUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJzelVuaXQlMjIlM0ElMjJwdCUyMiUyQyUyMnZhbHVlJTIyJTNBMTYlN0QlN0QlNUQlN0QlNUQlN0QlNUQlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMmJsb2NrJTIyJTJDJTIydHlwZSUyMiUzQSUyMnBhcmFncmFwaCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJpbmQlMjIlM0ElN0IlMjJsZWZ0JTIyJTNBMCU3RCUyQyUyMnV1aWQlMjIlM0ElMjJscGplemlleTg4MGFxYjdyOGY0JTIyJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJUU4JUI3JUFGJUU1JUJFJTg0JUVGJUJDJTlBJUU2JThBJTk2JUU5JTlGJUIzJUU1JUI3JUE2JUU0JUJFJUE3JUU4JThGJTlDJUU1JThEJTk1JUU2JUEwJThGJUU4JUI1JTg0JUU5JTg3JTkxLSVFOCVCNCVBNiVFNiU4OCVCNyVFNCVCOCVBRCVFNSVCRiU4My0lRTclQUUlQTElRTUlQUUlQjYlRTglQjQlQTYlRTUlOEYlQjclRTMlODAlODIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybWFyayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJoaWdobGlnaHQlMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydmFsdWUlMjIlM0ElMjIlMjNFNEVEREIlMjIlN0QlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc3olMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydmFsdWUlMjIlM0ExMiUyQyUyMnN6VW5pdCUyMiUzQSUyMnB0JTIyJTdEJTdEJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIyaW5kJTIyJTNBJTdCJTIybGVmdCUyMiUzQTAlN0QlMkMlMjJ1dWlkJTIyJTNBJTIybHBqZjBvdjN6Z3g0NW42eDZxZSUyMiU3RCUyQyUyMm5vZGVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMiVFNSU5QyVBOCVFNyVCQSVCRiVFNSVBRiU4NCVFNCVCQiVCNiVFNyU5QSU4NCVFNyVCQSVCRiVFNCVCOCU4QSVFNCVCQiU5OCVFNiVBQyVCRSVFOSU4MyVCRCVFNSU5QyVBOCVFOCVCRiU5OSVFOSU4NyU4QyVFNiU4OSVBMyVFOSU5MiVCMSVFRiVCQyU4QyVFOSU5QyU4MCVFOCVBNiU4MSVFNCVCRiU5RCVFOCVBRiU4MSVFNCVCRCU5OSVFOSVBMiU5RCVFOCVCNiVCMyVFNSVBNCU5RiVFNiU4OSU4RCVFOCU4MyVCRCVFNiVBRCVBMyVFNSVCOCVCOCVFNiU4OSU5MyVFNSU4RCVCMCVFMyU4MCU4MiUyMiUyQyUyMm1hcmtzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJtYXJrJTIyJTJDJTIydHlwZSUyMiUzQSUyMnN6JTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMnZhbHVlJTIyJTNBMTIlMkMlMjJzelVuaXQlMjIlM0ElMjJwdCUyMiU3RCU3RCU1RCU3RCU1RCU3RCU1RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIyYmxvY2slMjIlMkMlMjJ0eXBlJTIyJTNBJTIycGFyYWdyYXBoJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMmpjJTIyJTNBJTIyY2VudGVyJTIyJTJDJTIyaW5kJTIyJTNBJTdCJTdEJTJDJTIyc3BhY2luZyUyMiUzQSU3QiU3RCUyQyUyMnV1aWQlMjIlM0ElMjJscGpleTc3dzl6eW55NnBsbjMlMjIlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIyaW5saW5lJTIyJTJDJTIydHlwZSUyMiUzQSUyMmltYWdlJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMmlkJTIyJTNBJTIybjBrOGNnJTIyJTJDJTIybmFtZSUyMiUzQSUyMmltYWdlLnBuZyUyMiUyQyUyMnNpemUlMjIlM0ExMzIyNTUlMkMlMjJ3aWR0aCUyMiUzQTc0OCUyQyUyMmhlaWdodCUyMiUzQTM5OC4zMDAyMjQwNDc3OTY4NiUyQyUyMnV1aWQlMjIlM0ElMjJscGpleWtsZHdxMXRqZHV4NjBoJTIyJTJDJTIyc3JjJTIyJTNBJTIyaHR0cHMlM0ElMkYlMkZhbGlkb2NzLm9zcy1jbi16aGFuZ2ppYWtvdS5hbGl5dW5jcy5jb20lMkZyZXMlMkYzQk1xWWF6bVplekdxd1pMJTJGaW1nJTJGMDQ4N2FiZDYtNjJmNi00YTgwLTg3YmMtNzAyOGQzOTU1MzUxLnBuZyUyMiUyQyUyMmV4dHJhRGF0YSUyMiUzQSU3QiUyMnJlc291cmNlSWQlMjIlM0ElMjI5MDcyMjFkNC03ZjIxLTRmNWYtYmVmMS04OTExZmQ2ZmY2MWIlMjIlMkMlMjJtZXRhRGF0YSUyMiUzQSU3QiUyMnNpemUlMjIlM0ExMzIyNTUlMkMlMjJvcmlnaW5XaWR0aCUyMiUzQTEzMzklMkMlMjJvcmlnaW5IZWlnaHQlMjIlM0E3MTMlMkMlMjJmb3JtYXQlMjIlM0ElMjJwbmclMjIlMkMlMjJyYXRpbyUyMiUzQTElN0QlN0QlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCU1RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCU1RCU3RCU1RCU3RA==" data-identifier-application__slash__x-doc-key="3BMqYazmZezGqwZL"><h2 style="font-size: 16pt; margin-top: 21.3333px; margin-bottom: 12px; margin-left: 0px; line-height: 3em;"><span style="font-size: 24px;">2.充值管家账号</span></h2><article class="4ever-article" data-clipboard-cangjie="[&quot;root&quot;,{},[&quot;p&quot;,{&quot;ind&quot;:{&quot;left&quot;:0},&quot;uuid&quot;:&quot;lpjeziey880aqb7r8f4&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;highlight&quot;:&quot;#E4EDDB&quot;,&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;路径：抖音左侧菜单栏资金-账户中心-管家账号。&quot;]]],[&quot;p&quot;,{&quot;ind&quot;:{&quot;left&quot;:0},&quot;uuid&quot;:&quot;lpjf0ov3zgx45n6x6qe&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;在线寄件的线上付款都在这里扣钱，需要保证余额足够才能正常打印。&quot;]]],[&quot;p&quot;,{&quot;jc&quot;:&quot;center&quot;,&quot;ind&quot;:{},&quot;spacing&quot;:{},&quot;uuid&quot;:&quot;lpjey77w9zyny6pln3&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]],[&quot;img&quot;,{&quot;id&quot;:&quot;n0k8cg&quot;,&quot;name&quot;:&quot;image.png&quot;,&quot;size&quot;:132255,&quot;width&quot;:748,&quot;height&quot;:398.30022404779686,&quot;uuid&quot;:&quot;lpjeykldwq1tjdux60h&quot;,&quot;src&quot;:&quot;https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/3BMqYazmZezGqwZL/img/0487abd6-62f6-4a80-87bc-7028d3955351.png&quot;,&quot;extraData&quot;:{&quot;resourceId&quot;:&quot;907221d4-7f21-4f5f-bef1-8911fd6ff61b&quot;,&quot;metaData&quot;:{&quot;size&quot;:132255,&quot;originWidth&quot;:1339,&quot;originHeight&quot;:713,&quot;format&quot;:&quot;png&quot;,&quot;ratio&quot;:1}}},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]]]" data-identifier-application__slash__x-cangjie-fragment="JTdCJTIya2xhc3MlMjIlM0ElMjJkb2N1bWVudCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIyYmxvY2slMjIlMkMlMjJ0eXBlJTIyJTNBJTIycGFyYWdyYXBoJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMmluZCUyMiUzQSU3QiUyMmxlZnQlMjIlM0EwJTdEJTJDJTIydXVpZCUyMiUzQSUyMmxwamV6aWV5ODgwYXFiN3I4ZjQlMjIlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlRTglQjclQUYlRTUlQkUlODQlRUYlQkMlOUElRTYlOEElOTYlRTklOUYlQjMlRTUlQjclQTYlRTQlQkUlQTclRTglOEYlOUMlRTUlOEQlOTUlRTYlQTAlOEYlRTglQjUlODQlRTklODclOTEtJUU4JUI0JUE2JUU2JTg4JUI3JUU0JUI4JUFEJUU1JUJGJTgzLSVFNyVBRSVBMSVFNSVBRSVCNiVFOCVCNCVBNiVFNSU4RiVCNyVFMyU4MCU4MiUyMiUyQyUyMm1hcmtzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJtYXJrJTIyJTJDJTIydHlwZSUyMiUzQSUyMmhpZ2hsaWdodCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJ2YWx1ZSUyMiUzQSUyMiUyM0U0RUREQiUyMiU3RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIybWFyayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJzeiUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJ2YWx1ZSUyMiUzQTEyJTJDJTIyc3pVbml0JTIyJTNBJTIycHQlMjIlN0QlN0QlNUQlN0QlNUQlN0QlNUQlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMmJsb2NrJTIyJTJDJTIydHlwZSUyMiUzQSUyMnBhcmFncmFwaCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJpbmQlMjIlM0ElN0IlMjJsZWZ0JTIyJTNBMCU3RCUyQyUyMnV1aWQlMjIlM0ElMjJscGpmMG92M3pneDQ1bjZ4NnFlJTIyJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJUU1JTlDJUE4JUU3JUJBJUJGJUU1JUFGJTg0JUU0JUJCJUI2JUU3JTlBJTg0JUU3JUJBJUJGJUU0JUI4JThBJUU0JUJCJTk4JUU2JUFDJUJFJUU5JTgzJUJEJUU1JTlDJUE4JUU4JUJGJTk5JUU5JTg3JThDJUU2JTg5JUEzJUU5JTkyJUIxJUVGJUJDJThDJUU5JTlDJTgwJUU4JUE2JTgxJUU0JUJGJTlEJUU4JUFGJTgxJUU0JUJEJTk5JUU5JUEyJTlEJUU4JUI2JUIzJUU1JUE0JTlGJUU2JTg5JThEJUU4JTgzJUJEJUU2JUFEJUEzJUU1JUI4JUI4JUU2JTg5JTkzJUU1JThEJUIwJUUzJTgwJTgyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc3olMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydmFsdWUlMjIlM0ExMiUyQyUyMnN6VW5pdCUyMiUzQSUyMnB0JTIyJTdEJTdEJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIyamMlMjIlM0ElMjJjZW50ZXIlMjIlMkMlMjJpbmQlMjIlM0ElN0IlN0QlMkMlMjJzcGFjaW5nJTIyJTNBJTdCJTdEJTJDJTIydXVpZCUyMiUzQSUyMmxwamV5Nzd3OXp5bnk2cGxuMyUyMiU3RCUyQyUyMm5vZGVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMiUyMiUyQyUyMm1hcmtzJTIyJTNBJTVCJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJpbmxpbmUlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyaW1hZ2UlMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIyaWQlMjIlM0ElMjJuMGs4Y2clMjIlMkMlMjJuYW1lJTIyJTNBJTIyaW1hZ2UucG5nJTIyJTJDJTIyc2l6ZSUyMiUzQTEzMjI1NSUyQyUyMndpZHRoJTIyJTNBNzQ4JTJDJTIyaGVpZ2h0JTIyJTNBMzk4LjMwMDIyNDA0Nzc5Njg2JTJDJTIydXVpZCUyMiUzQSUyMmxwamV5a2xkd3ExdGpkdXg2MGglMjIlMkMlMjJzcmMlMjIlM0ElMjJodHRwcyUzQSUyRiUyRmFsaWRvY3Mub3NzLWNuLXpoYW5namlha291LmFsaXl1bmNzLmNvbSUyRnJlcyUyRjNCTXFZYXptWmV6R3F3WkwlMkZpbWclMkYwNDg3YWJkNi02MmY2LTRhODAtODdiYy03MDI4ZDM5NTUzNTEucG5nJTIyJTJDJTIyZXh0cmFEYXRhJTIyJTNBJTdCJTIycmVzb3VyY2VJZCUyMiUzQSUyMjkwNzIyMWQ0LTdmMjEtNGY1Zi1iZWYxLTg5MTFmZDZmZjYxYiUyMiUyQyUyMm1ldGFEYXRhJTIyJTNBJTdCJTIyc2l6ZSUyMiUzQTEzMjI1NSUyQyUyMm9yaWdpbldpZHRoJTIyJTNBMTMzOSUyQyUyMm9yaWdpbkhlaWdodCUyMiUzQTcxMyUyQyUyMmZvcm1hdCUyMiUzQSUyMnBuZyUyMiUyQyUyMnJhdGlvJTIyJTNBMSU3RCU3RCU3RCUyQyUyMm5vZGVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMiUyMiUyQyUyMm1hcmtzJTIyJTNBJTVCJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMiUyMiUyQyUyMm1hcmtzJTIyJTNBJTVCJTVEJTdEJTVEJTdEJTVEJTdEJTVEJTdE" data-identifier-application__slash__x-doc-key="3BMqYazmZezGqwZL"><p style="line-height: 3em;"><span style="font-size: 20px;">路径：抖音左侧菜单栏资金-账户中心-管家账号。</span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span style="font-size: 20px;">在线寄件的线上付款都在这里扣钱，需要保证余额足够才能正常打印。</span></p><p style="text-align: center; margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span data-type="text"></span><img src="https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/3BMqYazmZezGqwZL/img/0487abd6-62f6-4a80-87bc-7028d3955351.png" style="width: 917px; height: 488.291px;" width="917" height="488"/><span data-type="text"></span></p></article><p style="text-align: center; margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span data-type="text"></span></p></article><h2 class="heading-2 ace-line old-record-id-doxcnaLNlJVk37G1GVuI7muSAJc" style="line-height: 3em;">2.在软件里添加对应的快递模板<br/></h2><p style="line-height: 3em;"><span style="font-size: 20px;">在新手打单指引这边点击添加快递模板。</span></p><p style="text-align: center; line-height: 3em;"><img src="/public/images/midleAloaigPic/17044467135501？添加快递模板.png" width="904" style="width: 904px; height: 456.527px;" height="457"/></p><p style="line-height: 3em;"><span style="font-size: 20px;">选择支持在线寄件的快递商<strong>（目前暂时仅支持</strong><span style="color: rgb(216, 57, 49);"><strong>极兔、申通、圆通</strong></span><strong>）。</strong></span></p><p style="text-align: center; line-height: 3em;"><img src="/public/images/midleAloaigPic/17044467466122.添加快递模板.png" width="919" style="width: 919px; height: 464.102px;" height="464"/></p><p style="line-height: 3em;"><span style="font-size: 20px;">确认网点地址为在线寄件后保存。</span></p><p style="text-align: center; line-height: 3em;"><img src="/public/images/midleAloaigPic/17044467902283.保存模板.png" width="931" style="width: 931px; height: 466.47px;" height="466"/><img src="https://k3pkkunpwx.feishu.cn/space/api/box/stream/download/asynccode/?code=OGNlYjE2YzVhZjhjYmU0NmUyZTU0Y2VhYzBiMWE4NGJfM3NrR3VMdjlnNzJ4d3dBdWlzUDlRNVhtY3BKS3dNSzlfVG9rZW46WVhYOGJQNW01b3ZmeDR4TUpFemNDSzRMbkNmXzE3MDEyNDkxOTQ6MTcwMTI1Mjc5NF9WNA" data-single-block="true" data-snapshot="eyJ0eXBlIjoiaW1hZ2UiLCJwYXJlbnRfaWQiOiJYUXBvZDU1Y2NvQTVoWHhPT0pyYzl6akluNGciLCJyZXZpc2lvbnMiOm51bGwsImF1dGhvciI6IjcxMzY1MDE1ODk3NjU3OTk5NDAiLCJjb21tZW50cyI6W10sImxvY2tlZCI6ZmFsc2UsImhpZGRlbiI6ZmFsc2UsImFsaWduIjoiY2VudGVyIiwiaW1hZ2UiOnsibWltZVR5cGUiOiJpbWFnZS9wbmciLCJzaXplIjoxNDEyNzAsIndpZHRoIjoxOTIwLCJuYW1lIjoiMy7kv53lrZjmqKHmnb8ucG5nIiwicm90YXRpb24iOjAsImNhcHRpb24iOnsidGV4dCI6eyJhcG9vbCI6eyJudW1Ub0F0dHJpYiI6bnVsbCwibmV4dE51bSI6MH0sImluaXRpYWxBdHRyaWJ1dGVkVGV4dHMiOnsidGV4dCI6bnVsbCwiYXR0cmlicyI6bnVsbH19fSwidG9rZW4iOiJZWFg4YlA1bTVvdmZ4NHhNSkV6Y0NLNExuQ2YiLCJzY2FsZSI6MSwiaGVpZ2h0Ijo5NjIsImNyb3AiOlswLDAsMCwwXX19" data-suite="eyJmaWxlVG9rZW4iOiJZWFg4YlA1bTVvdmZ4NHhNSkV6Y0NLNExuQ2YiLCJvYmpUeXBlIjoiZG9jeCIsIm9ialRva2VuIjoiTlVBcmQ4Z1NJb1pSckJ4UFk1RGNQTUxlbmZoIiwib3JpZ2luU3JjIjoiaHR0cHM6Ly9pbnRlcm5hbC1hcGktZHJpdmUtc3RyZWFtLmZlaXNodS5jbi9zcGFjZS9hcGkvYm94L3N0cmVhbS9kb3dubG9hZC9wcmV2aWV3L1lYWDhiUDVtNW92Zng0eE1KRXpjQ0s0TG5DZi8/cHJldmlld190eXBlPTE2In0=" data-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/YXX8bP5m5ovfx4xMJEzcCK4LnCf/?mount_node_token=NUArd8gSIoZRrBxPY5DcPMLenfh&amp;mount_point=docx_image" data-width="1920" data-height="962" width="1" style="width: 1px; height: 0.501042px;" height="1"/></p><p><br/></p><h2 class="heading-2 ace-line old-record-id-BWAMd63J6o1pF6xANfxcrhqWnOf" style="line-height: 3em;">3.进行打单发货</h2><p style="line-height: 3em;">选择在线寄件的快递模板，勾选订单后点击在线寄件。</p><div data-page-id="XQpod55ccoA5hXxOOJrc9zjIn4g" data-docx-has-block-data="true"><p style="text-align: center; line-height: 3em;"><img src="/public/images/midleAloaigPic/17044475155805.打单.png" width="900" style="width: 900px; height: 450.941px;" height="451"/></p></div><p style="line-height: 3em;"><span data-lark-record-data="{&quot;isCut&quot;:false,&quot;rootId&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;parentId&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;blockIds&quot;:[110,111],&quot;recordIds&quot;:[&quot;MJaid99ILoCOlvxYB9McUryJnFf&quot;,&quot;R9I1dzE2CoqFXLxHFdJcxFPcn2f&quot;],&quot;recordMap&quot;:{&quot;MJaid99ILoCOlvxYB9McUryJnFf&quot;:{&quot;id&quot;:&quot;MJaid99ILoCOlvxYB9McUryJnFf&quot;,&quot;snapshot&quot;:{&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;children&quot;:[],&quot;text&quot;:{&quot;initialAttributedTexts&quot;:{&quot;text&quot;:{&quot;0&quot;:&quot;3.1 选择在线寄件的快递模板，勾选订单后点击在线寄件。&quot;},&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+s&quot;}},&quot;apool&quot;:{&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7136501589765799940&quot;]},&quot;nextNum&quot;:1}},&quot;type&quot;:&quot;bullet&quot;,&quot;comments&quot;:[],&quot;revisions&quot;:null,&quot;align&quot;:&quot;&quot;,&quot;folded&quot;:false,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;locked&quot;:false,&quot;hidden&quot;:false}},&quot;R9I1dzE2CoqFXLxHFdJcxFPcn2f&quot;:{&quot;id&quot;:&quot;R9I1dzE2CoqFXLxHFdJcxFPcn2f&quot;,&quot;snapshot&quot;:{&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;comments&quot;:[],&quot;hidden&quot;:false,&quot;image&quot;:{&quot;mimeType&quot;:&quot;image/png&quot;,&quot;width&quot;:1912,&quot;rotation&quot;:0,&quot;caption&quot;:{&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:0,&quot;numToAttrib&quot;:null},&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:null,&quot;text&quot;:null}}},&quot;name&quot;:&quot;5.打单.png&quot;,&quot;crop&quot;:[0,0,0,0],&quot;token&quot;:&quot;EEnEbcUiqoXBMexlUYic9uYinHe&quot;,&quot;size&quot;:143317,&quot;scale&quot;:1,&quot;height&quot;:958},&quot;type&quot;:&quot;image&quot;,&quot;revisions&quot;:null,&quot;locked&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;align&quot;:&quot;center&quot;}},&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;:{&quot;id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;snapshot&quot;:{&quot;comments&quot;:[],&quot;revisions&quot;:[],&quot;locked&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;children&quot;:[&quot;doxcnnTRlFH87FgIS9Tl2DUsK1d&quot;,&quot;doxcnMiEZ22ZKFeZPITiHafT6mh&quot;,&quot;doxcnLyC7HZHjASlqm4tSpMN4sh&quot;,&quot;doxcnLHsA3DJfL4ebYjO4QxZWic&quot;,&quot;doxcnQ1lJh2MMBgHQuTuH2OV5Ge&quot;,&quot;doxcnNlH2m5DJHM8ZvEGb9HevJg&quot;,&quot;doxcn0zUm1ljSFS6LHlqan7nKFg&quot;,&quot;doxcnub2CR27ycR6Zf80SDH5Xj1&quot;,&quot;doxcngQ118exf5Z8zlhMaUt8YJH&quot;,&quot;doxcnGpvBszoRJhVWmntWOwAfYb&quot;,&quot;doxcn6XqQ1nZn1dW5LD7TJKBtlf&quot;,&quot;F1TbdC09tohM2UxUad8cMELynab&quot;,&quot;Nd2VdMI3co3k9DxaaoacLxEVnf5&quot;,&quot;doxcnaLNlJVk37G1GVuI7muSAJc&quot;,&quot;doxcnGf7MZAkTbTWSMSPnCZObpf&quot;,&quot;Oe6tdvOTKoAVpox1Q00cUlGHn5b&quot;,&quot;doxcn71un28XA1oNa1YooOiYnGe&quot;,&quot;VrWId78opoVONOxvoIGcxzdxnTh&quot;,&quot;U71idaYi1o3Y0oxeIzDc8Vyxnqf&quot;,&quot;NUArd8gSIoZRrBxPY5DcPMLenfh&quot;,&quot;ESvZd99bYoBswRxUwVrcs3gAnDf&quot;,&quot;XeUWd0w00o9TfhxApkccb73xnCh&quot;,&quot;WPujdVMa4oi46zxgJBdcg2EAnGe&quot;,&quot;BWAMd63J6o1pF6xANfxcrhqWnOf&quot;,&quot;MJaid99ILoCOlvxYB9McUryJnFf&quot;,&quot;R9I1dzE2CoqFXLxHFdJcxFPcn2f&quot;,&quot;L4kjdRS8Zox1TMxt5PHcKZhSnRf&quot;,&quot;V2o0d0MBVosYhTxKw8lcKfTEnub&quot;,&quot;OrvUdoexko4et5x6ePCc4sdxnVe&quot;,&quot;Q3D1dylrTouTTnxpBsScXue2nhh&quot;,&quot;MN1SdIOcIoVj1qxI5jrc2WyXnKe&quot;,&quot;FyUgddeEsov2Uax2guvcMxQGnfd&quot;,&quot;SL7CdLvyEoHh7uxmW66cQcCPnCh&quot;,&quot;doxcnjeTrRF5c1peyMObBGSuPbe&quot;,&quot;doxcnU3WjkPTP9WrATA0G4d6xQg&quot;,&quot;SfLMdl3tnoToMYxq9ZJcuW8Mnth&quot;,&quot;Jfkjdw5Gvobq7NxNPtccpQn8nLe&quot;,&quot;H822dkAtDo4KCxx0BEdcmwPZnPd&quot;,&quot;TiMGd01sJolE56xkZHScsugZnhe&quot;,&quot;QxYzdSdEHocAqZxA61Vco5cJnMf&quot;,&quot;Nsz4drBccotcbdx0lqccnJ02ncd&quot;,&quot;RL2udF43xozjIcxAWsIcNXSen2c&quot;,&quot;R4Cqdlr4ioDip5xoBA3cZZ3BnPh&quot;,&quot;TEpXdIJmLo587IxCkrycwNDinsg&quot;,&quot;KSofdniTDoBWo1x1rAWcwHjtnce&quot;,&quot;P1kQdnLuyoYAiSxv0h8c9xBOn2f&quot;,&quot;P1okdDSttoI2TCxb0yicpORunPg&quot;,&quot;DZbcdVD6do2UMTxHqrYcgKb3nGb&quot;,&quot;UE2DdfWi8oUwqDxR1EHcKih8n8b&quot;,&quot;Kos3d4uM3oSzy4xFnBlcUTEDn7c&quot;,&quot;HHT7do1vsosRbMxXQzxcBvS6nif&quot;,&quot;XrLxdWXJaozzLexNETUcihvDn1B&quot;],&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:1,&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7136501589765799940&quot;]}},&quot;initialAttributedTexts&quot;:{&quot;text&quot;:{&quot;0&quot;:&quot;在线寄件培训文档&quot;},&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+8&quot;}}},&quot;align&quot;:&quot;&quot;,&quot;type&quot;:&quot;page&quot;,&quot;parent_id&quot;:&quot;&quot;,&quot;hidden&quot;:false}}},&quot;payloadMap&quot;:{},&quot;extra&quot;:{&quot;mention_page_title&quot;:{},&quot;external_mention_url&quot;:{}},&quot;isKeepQuoteContainer&quot;:false,&quot;selection&quot;:[{&quot;id&quot;:110,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:28},&quot;recordId&quot;:&quot;MJaid99ILoCOlvxYB9McUryJnFf&quot;},{&quot;id&quot;:111,&quot;type&quot;:&quot;block&quot;,&quot;recordId&quot;:&quot;R9I1dzE2CoqFXLxHFdJcxFPcn2f&quot;}],&quot;pasteFlag&quot;:&quot;9ab3ea78-3d0a-4ab5-a842-87465421b35e&quot;}" data-lark-record-format="docx/record" class="lark-record-clipboard"></span></p><p style="text-align: center; line-height: 3em;"><img src="https://k3pkkunpwx.feishu.cn/space/api/box/stream/download/asynccode/?code=N2VlM2RkYzRiMmRmNmRiM2I4NTBlNmQzN2YzMGI3ZmFfMU4yZzBvalJBck9lelB3MElUN3JwMWFXRDBadjJVZ25fVG9rZW46RUVuRWJjVWlxb1hCTWV4bFVZaWM5dVlpbkhlXzE3MDEyNDkxOTQ6MTcwMTI1Mjc5NF9WNA" data-single-block="true" data-snapshot="eyJwYXJlbnRfaWQiOiJYUXBvZDU1Y2NvQTVoWHhPT0pyYzl6akluNGciLCJjb21tZW50cyI6W10sImhpZGRlbiI6ZmFsc2UsImltYWdlIjp7Im1pbWVUeXBlIjoiaW1hZ2UvcG5nIiwid2lkdGgiOjE5MTIsInJvdGF0aW9uIjowLCJjYXB0aW9uIjp7InRleHQiOnsiYXBvb2wiOnsibmV4dE51bSI6MCwibnVtVG9BdHRyaWIiOm51bGx9LCJpbml0aWFsQXR0cmlidXRlZFRleHRzIjp7ImF0dHJpYnMiOm51bGwsInRleHQiOm51bGx9fX0sIm5hbWUiOiI1LuaJk+WNlS5wbmciLCJjcm9wIjpbMCwwLDAsMF0sInRva2VuIjoiRUVuRWJjVWlxb1hCTWV4bFVZaWM5dVlpbkhlIiwic2l6ZSI6MTQzMzE3LCJzY2FsZSI6MSwiaGVpZ2h0Ijo5NTh9LCJ0eXBlIjoiaW1hZ2UiLCJyZXZpc2lvbnMiOm51bGwsImxvY2tlZCI6ZmFsc2UsImF1dGhvciI6IjcxMzY1MDE1ODk3NjU3OTk5NDAiLCJhbGlnbiI6ImNlbnRlciJ9" data-suite="eyJmaWxlVG9rZW4iOiJFRW5FYmNVaXFvWEJNZXhsVVlpYzl1WWluSGUiLCJvYmpUeXBlIjoiZG9jeCIsIm9ialRva2VuIjoiUjlJMWR6RTJDb3FGWEx4SEZkSmN4RlBjbjJmIiwib3JpZ2luU3JjIjoiaHR0cHM6Ly9pbnRlcm5hbC1hcGktZHJpdmUtc3RyZWFtLmZlaXNodS5jbi9zcGFjZS9hcGkvYm94L3N0cmVhbS9kb3dubG9hZC9wcmV2aWV3L0VFbkViY1VpcW9YQk1leGxVWWljOXVZaW5IZS8/cHJldmlld190eXBlPTE2In0=" data-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/EEnEbcUiqoXBMexlUYic9uYinHe/?mount_node_token=R9I1dzE2CoqFXLxHFdJcxFPcn2f&amp;mount_point=docx_image" data-width="1912" data-height="958" width="1" style="width: 1px; height: 0.501046px;" height="1"/></p><p style="line-height: 3em;">选择想要的快递后点击在线寄件。</p><p style="text-align: center; line-height: 3em;"><img src="/public/images/midleAloaigPic/17044475596726.在线寄件ing.png" width="908" style="width: 908px; height: 458.547px;" height="459"/></p><p style="line-height: 3em;">选择完打印机后点击打印。</p><p style="text-align: center; line-height: 3em;"><img src="/public/images/midleAloaigPic/17044475850847.打印机打印.png" width="922" style="width: 922px; height: 465.617px;" height="466"/></p><p style="line-height: 3em;">点击发货就完成了。</p><p style="text-align: center; line-height: 3em;"><img src="/public/images/midleAloaigPic/17044476413048.发货.png" width="894" style="width: 894px; height: 451.477px;" height="451"/></p><h1 class="heading-1 ace-line old-record-id-doxcnjeTrRF5c1peyMObBGSuPbe" style="line-height: 3em;">二、常见问题</h1><h2 class="heading-2 ace-line old-record-id-doxcnU3WjkPTP9WrATA0G4d6xQg" style="line-height: 3em;">发现其他快递更低价的话应该怎么操作？</h2><p style="line-height: 3em;">点击一键添加快递模板，会自动生成一个对应模板。</p><p style="text-align: center; line-height: 3em;"><img src="/public/images/midleAloaigPic/1704447664369tip1.png" width="887" style="width: 887px; height: 446.539px;" height="447"/></p><p style="line-height: 3em;">添加成功后直接点击在线寄件打印快递单即可。</p><p style="text-align: center; line-height: 3em;"><img src="/public/images/midleAloaigPic/1704447720203tips2.png" width="906" style="width: 906px; height: 457.537px;" height="458"/></p><p style="line-height: 3em;"><span data-lark-record-data="{&quot;isCut&quot;:false,&quot;rootId&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;parentId&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;blockIds&quot;:[95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125],&quot;recordIds&quot;:[&quot;doxcnGpvBszoRJhVWmntWOwAfYb&quot;,&quot;doxcn6XqQ1nZn1dW5LD7TJKBtlf&quot;,&quot;F1TbdC09tohM2UxUad8cMELynab&quot;,&quot;Nd2VdMI3co3k9DxaaoacLxEVnf5&quot;,&quot;doxcnaLNlJVk37G1GVuI7muSAJc&quot;,&quot;doxcnGf7MZAkTbTWSMSPnCZObpf&quot;,&quot;Oe6tdvOTKoAVpox1Q00cUlGHn5b&quot;,&quot;doxcn71un28XA1oNa1YooOiYnGe&quot;,&quot;VrWId78opoVONOxvoIGcxzdxnTh&quot;,&quot;U71idaYi1o3Y0oxeIzDc8Vyxnqf&quot;,&quot;NUArd8gSIoZRrBxPY5DcPMLenfh&quot;,&quot;ESvZd99bYoBswRxUwVrcs3gAnDf&quot;,&quot;XeUWd0w00o9TfhxApkccb73xnCh&quot;,&quot;WPujdVMa4oi46zxgJBdcg2EAnGe&quot;,&quot;BWAMd63J6o1pF6xANfxcrhqWnOf&quot;,&quot;MJaid99ILoCOlvxYB9McUryJnFf&quot;,&quot;R9I1dzE2CoqFXLxHFdJcxFPcn2f&quot;,&quot;L4kjdRS8Zox1TMxt5PHcKZhSnRf&quot;,&quot;V2o0d0MBVosYhTxKw8lcKfTEnub&quot;,&quot;OrvUdoexko4et5x6ePCc4sdxnVe&quot;,&quot;Q3D1dylrTouTTnxpBsScXue2nhh&quot;,&quot;MN1SdIOcIoVj1qxI5jrc2WyXnKe&quot;,&quot;FyUgddeEsov2Uax2guvcMxQGnfd&quot;,&quot;SL7CdLvyEoHh7uxmW66cQcCPnCh&quot;,&quot;doxcnjeTrRF5c1peyMObBGSuPbe&quot;,&quot;doxcnU3WjkPTP9WrATA0G4d6xQg&quot;,&quot;SfLMdl3tnoToMYxq9ZJcuW8Mnth&quot;,&quot;Jfkjdw5Gvobq7NxNPtccpQn8nLe&quot;,&quot;H822dkAtDo4KCxx0BEdcmwPZnPd&quot;,&quot;TiMGd01sJolE56xkZHScsugZnhe&quot;,&quot;QxYzdSdEHocAqZxA61Vco5cJnMf&quot;],&quot;recordMap&quot;:{&quot;doxcnGpvBszoRJhVWmntWOwAfYb&quot;:{&quot;id&quot;:&quot;doxcnGpvBszoRJhVWmntWOwAfYb&quot;,&quot;snapshot&quot;:{&quot;align&quot;:&quot;&quot;,&quot;type&quot;:&quot;heading2&quot;,&quot;comments&quot;:[],&quot;revisions&quot;:[],&quot;hidden&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;text&quot;:{&quot;initialAttributedTexts&quot;:{&quot;text&quot;:{&quot;0&quot;:&quot;1.抖店后台开通该功能&quot;},&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+b&quot;}},&quot;apool&quot;:{&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7136501589765799940&quot;]},&quot;nextNum&quot;:1}},&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;locked&quot;:false,&quot;children&quot;:[]}},&quot;doxcn6XqQ1nZn1dW5LD7TJKBtlf&quot;:{&quot;id&quot;:&quot;doxcn6XqQ1nZn1dW5LD7TJKBtlf&quot;,&quot;snapshot&quot;:{&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;children&quot;:[],&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:1,&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7136501589765799940&quot;]}},&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+k&quot;},&quot;text&quot;:{&quot;0&quot;:&quot;在抖店后台-订单-物流服务去开通该功能。&quot;}}},&quot;comments&quot;:[],&quot;revisions&quot;:[],&quot;hidden&quot;:false,&quot;align&quot;:&quot;&quot;,&quot;type&quot;:&quot;bullet&quot;,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;locked&quot;:false}},&quot;F1TbdC09tohM2UxUad8cMELynab&quot;:{&quot;id&quot;:&quot;F1TbdC09tohM2UxUad8cMELynab&quot;,&quot;snapshot&quot;:{&quot;image&quot;:{&quot;height&quot;:734,&quot;name&quot;:&quot;image.png&quot;,&quot;crop&quot;:[0,0,0,0],&quot;rotation&quot;:0,&quot;caption&quot;:{&quot;text&quot;:{&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:null,&quot;text&quot;:null},&quot;apool&quot;:{&quot;nextNum&quot;:0,&quot;numToAttrib&quot;:null}}},&quot;size&quot;:189556,&quot;scale&quot;:1,&quot;width&quot;:1082,&quot;token&quot;:&quot;NQu7bUJlGoFghexhV55cheO8nvf&quot;,&quot;mimeType&quot;:&quot;image/png&quot;},&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;align&quot;:&quot;center&quot;,&quot;comments&quot;:[],&quot;revisions&quot;:null,&quot;locked&quot;:false,&quot;hidden&quot;:false,&quot;type&quot;:&quot;image&quot;,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;}},&quot;Nd2VdMI3co3k9DxaaoacLxEVnf5&quot;:{&quot;id&quot;:&quot;Nd2VdMI3co3k9DxaaoacLxEVnf5&quot;,&quot;snapshot&quot;:{&quot;type&quot;:&quot;text&quot;,&quot;comments&quot;:[],&quot;locked&quot;:false,&quot;children&quot;:[],&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:0,&quot;numToAttrib&quot;:{}},&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:{&quot;0&quot;:&quot;&quot;},&quot;text&quot;:{&quot;0&quot;:&quot;&quot;}}},&quot;align&quot;:&quot;&quot;,&quot;folded&quot;:false,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;revisions&quot;:null,&quot;hidden&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;}},&quot;doxcnaLNlJVk37G1GVuI7muSAJc&quot;:{&quot;id&quot;:&quot;doxcnaLNlJVk37G1GVuI7muSAJc&quot;,&quot;snapshot&quot;:{&quot;revisions&quot;:[],&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:1,&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7136501589765799940&quot;]}},&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+f&quot;},&quot;text&quot;:{&quot;0&quot;:&quot;2.在软件里添加对应的快递模板&quot;}}},&quot;align&quot;:&quot;&quot;,&quot;type&quot;:&quot;heading2&quot;,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;comments&quot;:[],&quot;locked&quot;:false,&quot;hidden&quot;:false,&quot;children&quot;:[]}},&quot;doxcnGf7MZAkTbTWSMSPnCZObpf&quot;:{&quot;id&quot;:&quot;doxcnGf7MZAkTbTWSMSPnCZObpf&quot;,&quot;snapshot&quot;:{&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;revisions&quot;:[],&quot;locked&quot;:false,&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:1,&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7136501589765799940&quot;]}},&quot;initialAttributedTexts&quot;:{&quot;text&quot;:{&quot;0&quot;:&quot;2.1在萌新三部曲这边点击添加快递模板。&quot;},&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+k&quot;}}},&quot;type&quot;:&quot;bullet&quot;,&quot;comments&quot;:[],&quot;hidden&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;children&quot;:[],&quot;align&quot;:&quot;&quot;}},&quot;Oe6tdvOTKoAVpox1Q00cUlGHn5b&quot;:{&quot;id&quot;:&quot;Oe6tdvOTKoAVpox1Q00cUlGHn5b&quot;,&quot;snapshot&quot;:{&quot;type&quot;:&quot;image&quot;,&quot;comments&quot;:[],&quot;revisions&quot;:null,&quot;locked&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;align&quot;:&quot;center&quot;,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;hidden&quot;:false,&quot;image&quot;:{&quot;height&quot;:958,&quot;rotation&quot;:0,&quot;width&quot;:1897,&quot;mimeType&quot;:&quot;image/png&quot;,&quot;size&quot;:121865,&quot;scale&quot;:1,&quot;name&quot;:&quot;1？添加快递模板.png&quot;,&quot;crop&quot;:[0,0,0,0],&quot;caption&quot;:{&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:0,&quot;numToAttrib&quot;:null},&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:null,&quot;text&quot;:null}}},&quot;token&quot;:&quot;K1cVbawviomxxPx9aKrcNKQqnlj&quot;}}},&quot;doxcn71un28XA1oNa1YooOiYnGe&quot;:{&quot;id&quot;:&quot;doxcn71un28XA1oNa1YooOiYnGe&quot;,&quot;snapshot&quot;:{&quot;type&quot;:&quot;bullet&quot;,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;revisions&quot;:[],&quot;locked&quot;:false,&quot;text&quot;:{&quot;apool&quot;:{&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7136501589765799940&quot;],&quot;1&quot;:[&quot;bold&quot;,&quot;true&quot;],&quot;2&quot;:[&quot;textHighlight&quot;,&quot;rgb(216,57,49)&quot;]},&quot;nextNum&quot;:3},&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+g*0*1+1*0*1*2+8*0*1+2&quot;},&quot;text&quot;:{&quot;0&quot;:&quot;2.2 选择支持在线寄件的快递商（极兔、申通、圆通）。&quot;}}},&quot;align&quot;:&quot;&quot;,&quot;comments&quot;:[],&quot;hidden&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;children&quot;:[]}},&quot;VrWId78opoVONOxvoIGcxzdxnTh&quot;:{&quot;id&quot;:&quot;VrWId78opoVONOxvoIGcxzdxnTh&quot;,&quot;snapshot&quot;:{&quot;locked&quot;:false,&quot;hidden&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;revisions&quot;:null,&quot;align&quot;:&quot;center&quot;,&quot;image&quot;:{&quot;name&quot;:&quot;2.添加快递模板.png&quot;,&quot;rotation&quot;:0,&quot;caption&quot;:{&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:0,&quot;numToAttrib&quot;:null},&quot;initialAttributedTexts&quot;:{&quot;text&quot;:null,&quot;attribs&quot;:null}}},&quot;scale&quot;:1,&quot;width&quot;:1897,&quot;size&quot;:217309,&quot;height&quot;:958,&quot;crop&quot;:[0,0,0,0],&quot;token&quot;:&quot;DQCvbOpGRo5mFpxhCybck1Qwnof&quot;,&quot;mimeType&quot;:&quot;image/png&quot;},&quot;type&quot;:&quot;image&quot;,&quot;comments&quot;:[]}},&quot;U71idaYi1o3Y0oxeIzDc8Vyxnqf&quot;:{&quot;id&quot;:&quot;U71idaYi1o3Y0oxeIzDc8Vyxnqf&quot;,&quot;snapshot&quot;:{&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;comments&quot;:[],&quot;revisions&quot;:null,&quot;locked&quot;:false,&quot;align&quot;:&quot;&quot;,&quot;folded&quot;:false,&quot;type&quot;:&quot;bullet&quot;,&quot;hidden&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;children&quot;:[],&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:1,&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7136501589765799940&quot;]}},&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+j&quot;},&quot;text&quot;:{&quot;0&quot;:&quot;2.3 确认网点地址为在线寄件后保存。&quot;}}}}},&quot;NUArd8gSIoZRrBxPY5DcPMLenfh&quot;:{&quot;id&quot;:&quot;NUArd8gSIoZRrBxPY5DcPMLenfh&quot;,&quot;snapshot&quot;:{&quot;type&quot;:&quot;image&quot;,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;revisions&quot;:null,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;comments&quot;:[],&quot;locked&quot;:false,&quot;hidden&quot;:false,&quot;align&quot;:&quot;center&quot;,&quot;image&quot;:{&quot;mimeType&quot;:&quot;image/png&quot;,&quot;size&quot;:141270,&quot;width&quot;:1920,&quot;name&quot;:&quot;3.保存模板.png&quot;,&quot;rotation&quot;:0,&quot;caption&quot;:{&quot;text&quot;:{&quot;apool&quot;:{&quot;numToAttrib&quot;:null,&quot;nextNum&quot;:0},&quot;initialAttributedTexts&quot;:{&quot;text&quot;:null,&quot;attribs&quot;:null}}},&quot;token&quot;:&quot;YXX8bP5m5ovfx4xMJEzcCK4LnCf&quot;,&quot;scale&quot;:1,&quot;height&quot;:962,&quot;crop&quot;:[0,0,0,0]}}},&quot;ESvZd99bYoBswRxUwVrcs3gAnDf&quot;:{&quot;id&quot;:&quot;ESvZd99bYoBswRxUwVrcs3gAnDf&quot;,&quot;snapshot&quot;:{&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;comments&quot;:[],&quot;locked&quot;:false,&quot;hidden&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;children&quot;:[],&quot;align&quot;:&quot;&quot;,&quot;type&quot;:&quot;bullet&quot;,&quot;revisions&quot;:null,&quot;text&quot;:{&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+n&quot;},&quot;text&quot;:{&quot;0&quot;:&quot;tip:添加完后可以在三部曲这边设置为默认模板&quot;}},&quot;apool&quot;:{&quot;nextNum&quot;:1,&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7136501589765799940&quot;]}}},&quot;folded&quot;:false}},&quot;XeUWd0w00o9TfhxApkccb73xnCh&quot;:{&quot;id&quot;:&quot;XeUWd0w00o9TfhxApkccb73xnCh&quot;,&quot;snapshot&quot;:{&quot;type&quot;:&quot;image&quot;,&quot;comments&quot;:[],&quot;locked&quot;:false,&quot;align&quot;:&quot;center&quot;,&quot;image&quot;:{&quot;crop&quot;:[0,0,0,0],&quot;mimeType&quot;:&quot;image/png&quot;,&quot;size&quot;:139228,&quot;width&quot;:1897,&quot;name&quot;:&quot;4.建议.png&quot;,&quot;rotation&quot;:0,&quot;caption&quot;:{&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:0,&quot;numToAttrib&quot;:null},&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:null,&quot;text&quot;:null}}},&quot;token&quot;:&quot;QX5cb4PgvoTMuhxForGcXv6anxb&quot;,&quot;scale&quot;:1,&quot;height&quot;:958},&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;revisions&quot;:null,&quot;hidden&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;}},&quot;WPujdVMa4oi46zxgJBdcg2EAnGe&quot;:{&quot;id&quot;:&quot;WPujdVMa4oi46zxgJBdcg2EAnGe&quot;,&quot;snapshot&quot;:{&quot;type&quot;:&quot;text&quot;,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;hidden&quot;:false,&quot;children&quot;:[],&quot;text&quot;:{&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:{&quot;0&quot;:&quot;&quot;},&quot;text&quot;:{&quot;0&quot;:&quot;&quot;}},&quot;apool&quot;:{&quot;nextNum&quot;:0,&quot;numToAttrib&quot;:{}}},&quot;comments&quot;:[],&quot;revisions&quot;:null,&quot;locked&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;align&quot;:&quot;&quot;,&quot;folded&quot;:false}},&quot;BWAMd63J6o1pF6xANfxcrhqWnOf&quot;:{&quot;id&quot;:&quot;BWAMd63J6o1pF6xANfxcrhqWnOf&quot;,&quot;snapshot&quot;:{&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;comments&quot;:[],&quot;children&quot;:[],&quot;text&quot;:{&quot;apool&quot;:{&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7136501589765799940&quot;]},&quot;nextNum&quot;:1},&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+8&quot;},&quot;text&quot;:{&quot;0&quot;:&quot;3.进行打单发货&quot;}}},&quot;folded&quot;:false,&quot;type&quot;:&quot;heading2&quot;,&quot;locked&quot;:false,&quot;hidden&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;align&quot;:&quot;&quot;,&quot;revisions&quot;:null}},&quot;MJaid99ILoCOlvxYB9McUryJnFf&quot;:{&quot;id&quot;:&quot;MJaid99ILoCOlvxYB9McUryJnFf&quot;,&quot;snapshot&quot;:{&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;children&quot;:[],&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:1,&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7136501589765799940&quot;]}},&quot;initialAttributedTexts&quot;:{&quot;text&quot;:{&quot;0&quot;:&quot;3.1 选择在线寄件的快递模板，勾选订单后点击在线寄件。&quot;},&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+s&quot;}}},&quot;type&quot;:&quot;bullet&quot;,&quot;comments&quot;:[],&quot;revisions&quot;:null,&quot;align&quot;:&quot;&quot;,&quot;folded&quot;:false,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;locked&quot;:false,&quot;hidden&quot;:false}},&quot;R9I1dzE2CoqFXLxHFdJcxFPcn2f&quot;:{&quot;id&quot;:&quot;R9I1dzE2CoqFXLxHFdJcxFPcn2f&quot;,&quot;snapshot&quot;:{&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;comments&quot;:[],&quot;hidden&quot;:false,&quot;image&quot;:{&quot;mimeType&quot;:&quot;image/png&quot;,&quot;width&quot;:1912,&quot;rotation&quot;:0,&quot;caption&quot;:{&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:0,&quot;numToAttrib&quot;:null},&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:null,&quot;text&quot;:null}}},&quot;name&quot;:&quot;5.打单.png&quot;,&quot;crop&quot;:[0,0,0,0],&quot;token&quot;:&quot;EEnEbcUiqoXBMexlUYic9uYinHe&quot;,&quot;size&quot;:143317,&quot;scale&quot;:1,&quot;height&quot;:958},&quot;type&quot;:&quot;image&quot;,&quot;revisions&quot;:null,&quot;locked&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;align&quot;:&quot;center&quot;}},&quot;L4kjdRS8Zox1TMxt5PHcKZhSnRf&quot;:{&quot;id&quot;:&quot;L4kjdRS8Zox1TMxt5PHcKZhSnRf&quot;,&quot;snapshot&quot;:{&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;children&quot;:[],&quot;folded&quot;:false,&quot;type&quot;:&quot;bullet&quot;,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;comments&quot;:[],&quot;locked&quot;:false,&quot;revisions&quot;:null,&quot;hidden&quot;:false,&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:1,&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7136501589765799940&quot;]}},&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+j&quot;},&quot;text&quot;:{&quot;0&quot;:&quot;3.2 选择想要的快递后点击在线寄件。&quot;}}},&quot;align&quot;:&quot;&quot;}},&quot;V2o0d0MBVosYhTxKw8lcKfTEnub&quot;:{&quot;id&quot;:&quot;V2o0d0MBVosYhTxKw8lcKfTEnub&quot;,&quot;snapshot&quot;:{&quot;revisions&quot;:null,&quot;comments&quot;:[],&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;locked&quot;:false,&quot;hidden&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;align&quot;:&quot;center&quot;,&quot;image&quot;:{&quot;scale&quot;:1,&quot;height&quot;:958,&quot;crop&quot;:[0,0,0,0],&quot;mimeType&quot;:&quot;image/png&quot;,&quot;size&quot;:140010,&quot;name&quot;:&quot;6.在线寄件ing.png&quot;,&quot;rotation&quot;:0,&quot;caption&quot;:{&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:0,&quot;numToAttrib&quot;:null},&quot;initialAttributedTexts&quot;:{&quot;text&quot;:null,&quot;attribs&quot;:null}}},&quot;token&quot;:&quot;WURZbDJFYo1i7kxg7ejcz1bNnyg&quot;,&quot;width&quot;:1897},&quot;type&quot;:&quot;image&quot;}},&quot;OrvUdoexko4et5x6ePCc4sdxnVe&quot;:{&quot;id&quot;:&quot;OrvUdoexko4et5x6ePCc4sdxnVe&quot;,&quot;snapshot&quot;:{&quot;locked&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;text&quot;:{&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+g&quot;},&quot;text&quot;:{&quot;0&quot;:&quot;3.3 选择完打印机后点击打印。&quot;}},&quot;apool&quot;:{&quot;nextNum&quot;:1,&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7136501589765799940&quot;]}}},&quot;align&quot;:&quot;&quot;,&quot;folded&quot;:false,&quot;type&quot;:&quot;bullet&quot;,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;comments&quot;:[],&quot;revisions&quot;:null,&quot;hidden&quot;:false,&quot;children&quot;:[]}},&quot;Q3D1dylrTouTTnxpBsScXue2nhh&quot;:{&quot;id&quot;:&quot;Q3D1dylrTouTTnxpBsScXue2nhh&quot;,&quot;snapshot&quot;:{&quot;type&quot;:&quot;image&quot;,&quot;comments&quot;:[],&quot;align&quot;:&quot;center&quot;,&quot;hidden&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;image&quot;:{&quot;scale&quot;:1,&quot;name&quot;:&quot;7.打印机打印.png&quot;,&quot;crop&quot;:[0,0,0,0],&quot;rotation&quot;:0,&quot;caption&quot;:{&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:0,&quot;numToAttrib&quot;:null},&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:null,&quot;text&quot;:null}}},&quot;token&quot;:&quot;X8hUbUVXsoLYDHxqUjScoprgnsc&quot;,&quot;mimeType&quot;:&quot;image/png&quot;,&quot;size&quot;:121250,&quot;width&quot;:1897,&quot;height&quot;:958},&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;revisions&quot;:null,&quot;locked&quot;:false}},&quot;MN1SdIOcIoVj1qxI5jrc2WyXnKe&quot;:{&quot;id&quot;:&quot;MN1SdIOcIoVj1qxI5jrc2WyXnKe&quot;,&quot;snapshot&quot;:{&quot;align&quot;:&quot;&quot;,&quot;folded&quot;:false,&quot;comments&quot;:[],&quot;revisions&quot;:null,&quot;locked&quot;:false,&quot;hidden&quot;:false,&quot;children&quot;:[],&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:1,&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7136501589765799940&quot;]}},&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+d&quot;},&quot;text&quot;:{&quot;0&quot;:&quot;3.4 点击发货就完成了。&quot;}}},&quot;type&quot;:&quot;bullet&quot;,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;author&quot;:&quot;7136501589765799940&quot;}},&quot;FyUgddeEsov2Uax2guvcMxQGnfd&quot;:{&quot;id&quot;:&quot;FyUgddeEsov2Uax2guvcMxQGnfd&quot;,&quot;snapshot&quot;:{&quot;image&quot;:{&quot;token&quot;:&quot;RqwUb7J0EoFmDkxeiRfcY4sPnlb&quot;,&quot;mimeType&quot;:&quot;image/png&quot;,&quot;rotation&quot;:0,&quot;caption&quot;:{&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:0,&quot;numToAttrib&quot;:null},&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:null,&quot;text&quot;:null}}},&quot;size&quot;:101892,&quot;scale&quot;:1,&quot;width&quot;:1897,&quot;height&quot;:958,&quot;name&quot;:&quot;8.发货.png&quot;,&quot;crop&quot;:[0,0,0,0]},&quot;type&quot;:&quot;image&quot;,&quot;comments&quot;:[],&quot;hidden&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;align&quot;:&quot;center&quot;,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;revisions&quot;:null,&quot;locked&quot;:false}},&quot;SL7CdLvyEoHh7uxmW66cQcCPnCh&quot;:{&quot;id&quot;:&quot;SL7CdLvyEoHh7uxmW66cQcCPnCh&quot;,&quot;snapshot&quot;:{&quot;revisions&quot;:null,&quot;locked&quot;:false,&quot;children&quot;:[],&quot;align&quot;:&quot;&quot;,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;comments&quot;:[],&quot;hidden&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:0,&quot;numToAttrib&quot;:{}},&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:{&quot;0&quot;:&quot;&quot;},&quot;text&quot;:{&quot;0&quot;:&quot;&quot;}}},&quot;folded&quot;:false,&quot;type&quot;:&quot;text&quot;}},&quot;doxcnjeTrRF5c1peyMObBGSuPbe&quot;:{&quot;id&quot;:&quot;doxcnjeTrRF5c1peyMObBGSuPbe&quot;,&quot;snapshot&quot;:{&quot;align&quot;:&quot;&quot;,&quot;type&quot;:&quot;heading1&quot;,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;children&quot;:[],&quot;hidden&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;text&quot;:{&quot;initialAttributedTexts&quot;:{&quot;text&quot;:{&quot;0&quot;:&quot;三、常见问题&quot;},&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+6&quot;}},&quot;apool&quot;:{&quot;nextNum&quot;:1,&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7136501589765799940&quot;]}}},&quot;comments&quot;:[],&quot;revisions&quot;:[],&quot;locked&quot;:false}},&quot;doxcnU3WjkPTP9WrATA0G4d6xQg&quot;:{&quot;id&quot;:&quot;doxcnU3WjkPTP9WrATA0G4d6xQg&quot;,&quot;snapshot&quot;:{&quot;comments&quot;:[],&quot;hidden&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:1,&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7136501589765799940&quot;]}},&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+k&quot;},&quot;text&quot;:{&quot;0&quot;:&quot;1.发现其他快递更低价的话应该怎么操作？&quot;}}},&quot;type&quot;:&quot;heading2&quot;,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;children&quot;:[],&quot;align&quot;:&quot;&quot;,&quot;revisions&quot;:[],&quot;locked&quot;:false}},&quot;SfLMdl3tnoToMYxq9ZJcuW8Mnth&quot;:{&quot;id&quot;:&quot;SfLMdl3tnoToMYxq9ZJcuW8Mnth&quot;,&quot;snapshot&quot;:{&quot;type&quot;:&quot;bullet&quot;,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;locked&quot;:false,&quot;hidden&quot;:false,&quot;children&quot;:[],&quot;align&quot;:&quot;&quot;,&quot;folded&quot;:false,&quot;comments&quot;:[],&quot;revisions&quot;:null,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:1,&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7136501589765799940&quot;]}},&quot;initialAttributedTexts&quot;:{&quot;text&quot;:{&quot;0&quot;:&quot;1.1 点击一键添加快递模板，会自动生成一个对应模板。&quot;},&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+r&quot;}}}}},&quot;Jfkjdw5Gvobq7NxNPtccpQn8nLe&quot;:{&quot;id&quot;:&quot;Jfkjdw5Gvobq7NxNPtccpQn8nLe&quot;,&quot;snapshot&quot;:{&quot;align&quot;:&quot;center&quot;,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;comments&quot;:[],&quot;revisions&quot;:null,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;type&quot;:&quot;image&quot;,&quot;locked&quot;:false,&quot;hidden&quot;:false,&quot;image&quot;:{&quot;crop&quot;:[0,0,0,0],&quot;caption&quot;:{&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:0,&quot;numToAttrib&quot;:null},&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:null,&quot;text&quot;:null}}},&quot;mimeType&quot;:&quot;image/png&quot;,&quot;scale&quot;:1,&quot;name&quot;:&quot;tip1.png&quot;,&quot;height&quot;:955,&quot;rotation&quot;:0,&quot;token&quot;:&quot;FdmCbFqmookhqAxa3j7cnxJBnEe&quot;,&quot;size&quot;:145372,&quot;width&quot;:1897}}},&quot;H822dkAtDo4KCxx0BEdcmwPZnPd&quot;:{&quot;id&quot;:&quot;H822dkAtDo4KCxx0BEdcmwPZnPd&quot;,&quot;snapshot&quot;:{&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;comments&quot;:[],&quot;revisions&quot;:null,&quot;locked&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;children&quot;:[],&quot;align&quot;:&quot;&quot;,&quot;type&quot;:&quot;bullet&quot;,&quot;folded&quot;:false,&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:1,&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7136501589765799940&quot;]}},&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+p&quot;},&quot;text&quot;:{&quot;0&quot;:&quot;1.2 添加成功后直接点击在线寄件打印快递单即可。&quot;}}},&quot;hidden&quot;:false}},&quot;TiMGd01sJolE56xkZHScsugZnhe&quot;:{&quot;id&quot;:&quot;TiMGd01sJolE56xkZHScsugZnhe&quot;,&quot;snapshot&quot;:{&quot;align&quot;:&quot;center&quot;,&quot;image&quot;:{&quot;token&quot;:&quot;LYqebSnDNo9UouxO2IpcCSrWndD&quot;,&quot;mimeType&quot;:&quot;image/png&quot;,&quot;size&quot;:141800,&quot;width&quot;:1897,&quot;height&quot;:958,&quot;scale&quot;:1,&quot;name&quot;:&quot;tips2.png&quot;,&quot;crop&quot;:[0,0,0,0],&quot;rotation&quot;:0,&quot;caption&quot;:{&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:0,&quot;numToAttrib&quot;:null},&quot;initialAttributedTexts&quot;:{&quot;attribs&quot;:null,&quot;text&quot;:null}}}},&quot;type&quot;:&quot;image&quot;,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;comments&quot;:[],&quot;revisions&quot;:null,&quot;locked&quot;:false,&quot;hidden&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;}},&quot;QxYzdSdEHocAqZxA61Vco5cJnMf&quot;:{&quot;id&quot;:&quot;QxYzdSdEHocAqZxA61Vco5cJnMf&quot;,&quot;snapshot&quot;:{&quot;type&quot;:&quot;heading2&quot;,&quot;hidden&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;children&quot;:[],&quot;text&quot;:{&quot;initialAttributedTexts&quot;:{&quot;text&quot;:{&quot;0&quot;:&quot;2.同一个订单可以多次下单吗？可以用不同的快递吗？&quot;},&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+p&quot;}},&quot;apool&quot;:{&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7136501589765799940&quot;]},&quot;nextNum&quot;:1}},&quot;folded&quot;:false,&quot;parent_id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;comments&quot;:[],&quot;revisions&quot;:null,&quot;locked&quot;:false,&quot;align&quot;:&quot;&quot;}},&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;:{&quot;id&quot;:&quot;XQpod55ccoA5hXxOOJrc9zjIn4g&quot;,&quot;snapshot&quot;:{&quot;comments&quot;:[],&quot;revisions&quot;:[],&quot;locked&quot;:false,&quot;author&quot;:&quot;7136501589765799940&quot;,&quot;children&quot;:[&quot;doxcnnTRlFH87FgIS9Tl2DUsK1d&quot;,&quot;doxcnMiEZ22ZKFeZPITiHafT6mh&quot;,&quot;doxcnLyC7HZHjASlqm4tSpMN4sh&quot;,&quot;doxcnLHsA3DJfL4ebYjO4QxZWic&quot;,&quot;doxcnQ1lJh2MMBgHQuTuH2OV5Ge&quot;,&quot;doxcnNlH2m5DJHM8ZvEGb9HevJg&quot;,&quot;doxcn0zUm1ljSFS6LHlqan7nKFg&quot;,&quot;doxcnub2CR27ycR6Zf80SDH5Xj1&quot;,&quot;doxcngQ118exf5Z8zlhMaUt8YJH&quot;,&quot;doxcnGpvBszoRJhVWmntWOwAfYb&quot;,&quot;doxcn6XqQ1nZn1dW5LD7TJKBtlf&quot;,&quot;F1TbdC09tohM2UxUad8cMELynab&quot;,&quot;Nd2VdMI3co3k9DxaaoacLxEVnf5&quot;,&quot;doxcnaLNlJVk37G1GVuI7muSAJc&quot;,&quot;doxcnGf7MZAkTbTWSMSPnCZObpf&quot;,&quot;Oe6tdvOTKoAVpox1Q00cUlGHn5b&quot;,&quot;doxcn71un28XA1oNa1YooOiYnGe&quot;,&quot;VrWId78opoVONOxvoIGcxzdxnTh&quot;,&quot;U71idaYi1o3Y0oxeIzDc8Vyxnqf&quot;,&quot;NUArd8gSIoZRrBxPY5DcPMLenfh&quot;,&quot;ESvZd99bYoBswRxUwVrcs3gAnDf&quot;,&quot;XeUWd0w00o9TfhxApkccb73xnCh&quot;,&quot;WPujdVMa4oi46zxgJBdcg2EAnGe&quot;,&quot;BWAMd63J6o1pF6xANfxcrhqWnOf&quot;,&quot;MJaid99ILoCOlvxYB9McUryJnFf&quot;,&quot;R9I1dzE2CoqFXLxHFdJcxFPcn2f&quot;,&quot;L4kjdRS8Zox1TMxt5PHcKZhSnRf&quot;,&quot;V2o0d0MBVosYhTxKw8lcKfTEnub&quot;,&quot;OrvUdoexko4et5x6ePCc4sdxnVe&quot;,&quot;Q3D1dylrTouTTnxpBsScXue2nhh&quot;,&quot;MN1SdIOcIoVj1qxI5jrc2WyXnKe&quot;,&quot;FyUgddeEsov2Uax2guvcMxQGnfd&quot;,&quot;SL7CdLvyEoHh7uxmW66cQcCPnCh&quot;,&quot;doxcnjeTrRF5c1peyMObBGSuPbe&quot;,&quot;doxcnU3WjkPTP9WrATA0G4d6xQg&quot;,&quot;SfLMdl3tnoToMYxq9ZJcuW8Mnth&quot;,&quot;Jfkjdw5Gvobq7NxNPtccpQn8nLe&quot;,&quot;H822dkAtDo4KCxx0BEdcmwPZnPd&quot;,&quot;TiMGd01sJolE56xkZHScsugZnhe&quot;,&quot;QxYzdSdEHocAqZxA61Vco5cJnMf&quot;,&quot;Nsz4drBccotcbdx0lqccnJ02ncd&quot;,&quot;RL2udF43xozjIcxAWsIcNXSen2c&quot;,&quot;R4Cqdlr4ioDip5xoBA3cZZ3BnPh&quot;,&quot;TEpXdIJmLo587IxCkrycwNDinsg&quot;,&quot;KSofdniTDoBWo1x1rAWcwHjtnce&quot;,&quot;P1kQdnLuyoYAiSxv0h8c9xBOn2f&quot;,&quot;P1okdDSttoI2TCxb0yicpORunPg&quot;,&quot;DZbcdVD6do2UMTxHqrYcgKb3nGb&quot;,&quot;UE2DdfWi8oUwqDxR1EHcKih8n8b&quot;,&quot;Kos3d4uM3oSzy4xFnBlcUTEDn7c&quot;,&quot;HHT7do1vsosRbMxXQzxcBvS6nif&quot;,&quot;XrLxdWXJaozzLexNETUcihvDn1B&quot;],&quot;text&quot;:{&quot;apool&quot;:{&quot;nextNum&quot;:1,&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7136501589765799940&quot;]}},&quot;initialAttributedTexts&quot;:{&quot;text&quot;:{&quot;0&quot;:&quot;在线寄件培训文档&quot;},&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+8&quot;}}},&quot;align&quot;:&quot;&quot;,&quot;type&quot;:&quot;page&quot;,&quot;parent_id&quot;:&quot;&quot;,&quot;hidden&quot;:false}}},&quot;payloadMap&quot;:{&quot;Nd2VdMI3co3k9DxaaoacLxEVnf5&quot;:{&quot;level&quot;:1},&quot;WPujdVMa4oi46zxgJBdcg2EAnGe&quot;:{&quot;level&quot;:1},&quot;SL7CdLvyEoHh7uxmW66cQcCPnCh&quot;:{&quot;level&quot;:1}},&quot;extra&quot;:{&quot;mention_page_title&quot;:{},&quot;external_mention_url&quot;:{}},&quot;isKeepQuoteContainer&quot;:false,&quot;selection&quot;:[{&quot;id&quot;:95,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:11},&quot;recordId&quot;:&quot;doxcnGpvBszoRJhVWmntWOwAfYb&quot;},{&quot;id&quot;:96,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:20},&quot;recordId&quot;:&quot;doxcn6XqQ1nZn1dW5LD7TJKBtlf&quot;},{&quot;id&quot;:97,&quot;type&quot;:&quot;block&quot;,&quot;recordId&quot;:&quot;F1TbdC09tohM2UxUad8cMELynab&quot;},{&quot;id&quot;:98,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:0},&quot;recordId&quot;:&quot;Nd2VdMI3co3k9DxaaoacLxEVnf5&quot;},{&quot;id&quot;:99,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:15},&quot;recordId&quot;:&quot;doxcnaLNlJVk37G1GVuI7muSAJc&quot;},{&quot;id&quot;:100,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:20},&quot;recordId&quot;:&quot;doxcnGf7MZAkTbTWSMSPnCZObpf&quot;},{&quot;id&quot;:101,&quot;type&quot;:&quot;block&quot;,&quot;recordId&quot;:&quot;Oe6tdvOTKoAVpox1Q00cUlGHn5b&quot;},{&quot;id&quot;:102,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:27},&quot;recordId&quot;:&quot;doxcn71un28XA1oNa1YooOiYnGe&quot;},{&quot;id&quot;:103,&quot;type&quot;:&quot;block&quot;,&quot;recordId&quot;:&quot;VrWId78opoVONOxvoIGcxzdxnTh&quot;},{&quot;id&quot;:104,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:19},&quot;recordId&quot;:&quot;U71idaYi1o3Y0oxeIzDc8Vyxnqf&quot;},{&quot;id&quot;:105,&quot;type&quot;:&quot;block&quot;,&quot;recordId&quot;:&quot;NUArd8gSIoZRrBxPY5DcPMLenfh&quot;},{&quot;id&quot;:106,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:23},&quot;recordId&quot;:&quot;ESvZd99bYoBswRxUwVrcs3gAnDf&quot;},{&quot;id&quot;:107,&quot;type&quot;:&quot;block&quot;,&quot;recordId&quot;:&quot;XeUWd0w00o9TfhxApkccb73xnCh&quot;},{&quot;id&quot;:108,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:0},&quot;recordId&quot;:&quot;WPujdVMa4oi46zxgJBdcg2EAnGe&quot;},{&quot;id&quot;:109,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:8},&quot;recordId&quot;:&quot;BWAMd63J6o1pF6xANfxcrhqWnOf&quot;},{&quot;id&quot;:110,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:28},&quot;recordId&quot;:&quot;MJaid99ILoCOlvxYB9McUryJnFf&quot;},{&quot;id&quot;:111,&quot;type&quot;:&quot;block&quot;,&quot;recordId&quot;:&quot;R9I1dzE2CoqFXLxHFdJcxFPcn2f&quot;},{&quot;id&quot;:112,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:19},&quot;recordId&quot;:&quot;L4kjdRS8Zox1TMxt5PHcKZhSnRf&quot;},{&quot;id&quot;:113,&quot;type&quot;:&quot;block&quot;,&quot;recordId&quot;:&quot;V2o0d0MBVosYhTxKw8lcKfTEnub&quot;},{&quot;id&quot;:114,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:16},&quot;recordId&quot;:&quot;OrvUdoexko4et5x6ePCc4sdxnVe&quot;},{&quot;id&quot;:115,&quot;type&quot;:&quot;block&quot;,&quot;recordId&quot;:&quot;Q3D1dylrTouTTnxpBsScXue2nhh&quot;},{&quot;id&quot;:116,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:13},&quot;recordId&quot;:&quot;MN1SdIOcIoVj1qxI5jrc2WyXnKe&quot;},{&quot;id&quot;:117,&quot;type&quot;:&quot;block&quot;,&quot;recordId&quot;:&quot;FyUgddeEsov2Uax2guvcMxQGnfd&quot;},{&quot;id&quot;:118,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:0},&quot;recordId&quot;:&quot;SL7CdLvyEoHh7uxmW66cQcCPnCh&quot;},{&quot;id&quot;:119,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:6},&quot;recordId&quot;:&quot;doxcnjeTrRF5c1peyMObBGSuPbe&quot;},{&quot;id&quot;:120,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:20},&quot;recordId&quot;:&quot;doxcnU3WjkPTP9WrATA0G4d6xQg&quot;},{&quot;id&quot;:121,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:27},&quot;recordId&quot;:&quot;SfLMdl3tnoToMYxq9ZJcuW8Mnth&quot;},{&quot;id&quot;:122,&quot;type&quot;:&quot;block&quot;,&quot;recordId&quot;:&quot;Jfkjdw5Gvobq7NxNPtccpQn8nLe&quot;},{&quot;id&quot;:123,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:25},&quot;recordId&quot;:&quot;H822dkAtDo4KCxx0BEdcmwPZnPd&quot;},{&quot;id&quot;:124,&quot;type&quot;:&quot;block&quot;,&quot;recordId&quot;:&quot;TiMGd01sJolE56xkZHScsugZnhe&quot;},{&quot;id&quot;:125,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:25},&quot;recordId&quot;:&quot;QxYzdSdEHocAqZxA61Vco5cJnMf&quot;}],&quot;pasteFlag&quot;:&quot;9ab3ea78-3d0a-4ab5-a842-87465421b35e&quot;}" data-lark-record-format="docx/record" class="lark-record-clipboard"></span></p><p><br/></p>
+                
+
+                <!-- <div class="ask_main_content">
+                    <div  class="ask_main_content_li">
+                        <i class="askIcon">1</i>
+                        <span>进入1688首页，登录已经购买的账号</span>
+                    </div>
+                    <img src="http://101.37.106.230/help/images/1688shouye.png" alt="">
+                </div>
+                <div class="ask_main_content">
+                    <div  class="ask_main_content_li">
+                        <i class="askIcon">1</i>
+                        <span>进入1688首页，登录已经购买的账号</span>
+                    </div>
+                    <img src="http://101.37.106.230/help/images/1688shouye.png" alt="">
+                </div> -->
+
+            </div>
+            <style>
+    .shareWebs{
+        padding: 10px;
+    }
+
+    .shareWebs>span>i {
+        font-size: 18px;
+        margin-right: 20px;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border-radius: 13px;
+        text-align: center;
+        line-height: 25px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    #qrcodeShare {
+        position: absolute;
+        top: -120px;
+        left: 0;
+        display: none;
+    }
+
+    .doubian {
+        color: #658014;
+        background-color: #edf3e3;
+        font-size: 14px !important;
+        font-weight: 700;
+    }
+
+    .tieba {
+        color: #118ce4;
+        background-color: #e1f3ff;
+        font-size: 14px !important;
+        font-weight: 700;
+        font-family: 雅黑;
+    }
+    .shareWebs>span>.shoucang{
+        display: inline-block;
+        padding: 2px 3px;
+        background-color: #e1f3ff;
+        border-radius: 4px;
+        color: #3aadff;
+        cursor: pointer;
+    }
+</style>
+
+<div class="shareWebs">
+    <span>分享：
+        <i class="iconfont icon-weixin" style="color:#77bf04;background-color: #ebf9d4;">
+            <div id="qrcodeShare"></div>
+        </i>
+        <i class="iconfont icon-qq" style="color:#3aadff;background-color: #e1f3ff;"
+            onclick="shareMoule.shareToQzone(event)"></i>
+        <i class="iconfont icon-tubiaozhizuo-" style="color:#fe6f4f;background-color: #ffe7e1;"
+            onclick="shareMoule.shareToSinaWB(event)"></i>
+        <i class="iconfont doubian" onclick="shareMoule.shareToDouban(event)">豆</i>
+        <s class="shoucang" onclick="shareMoule.addFavorite()">收藏</s>
+    </span>
+</div>
+<div style="padding:10px;">
+    <a href="http://q.url.cn/ABC8fP?_type=wpa&qidian=true" target="_blank">举报</a>
+</div>
+
+<!-- <script src="../../public/js/qrcode.min.js"></script>
+<script src="../../public/js/shadeCommunity.js"></script>
+<script>
+    var url = window.location.href;
+
+    var obj = $$.GetUrlParamObj(window.location.href);
+
+    var qrcode = new QRCode("qrcodeShare", {   //分享生成二维码
+        text: url,
+        width: 120,
+        height: 120,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+    });
+
+    $(".icon-weixin").on('mouseover', function () {
+
+        $(this).children().css({ display: 'inline-block' })
+
+    })
+
+
+    $('.icon-weixin').on('mouseleave', function () {
+        $(this).children().css({ display: 'none' });
+
+    })
+
+
+</script> -->
+            <div class="discussShow">
+    <div class="discussShow-title"><span><s id="discussShow-title-s">评论:</s><i
+                style="font-size: 12px;margin: 0 10px;color:#888;">共<s id="pageNum" style="padding: 0 5px;">0</s>条</i></span></div>
+    <ul class="discussShow-main" id="discussShow_main">
+        
+    </ul>
+    <div class="page" style="width:600px;"></div>
+</div>
+<div class="discussAdd">
+    <textarea id="discussContent" placeholder="请输入您意见，我们会第一时间处理！"></textarea>
+    <input type="text" id="discussContact" class="discussContact" placeholder="请输入您的联系方式，保密处理!">
+    <div class="discussAdd-setBtn clearfix">
+        <div>
+            <span class="iconfont icon-zhucedengluyonghuming"></span>
+            <span>用户名字</span>
+        </div>
+        <div class="discussAdd-setBtn-btn">
+            <input type="text" placeholder="输入验证码" id="inputCode">
+            <img src="/getCode" id="getCode02" alt="" onclick="headerLoginCommon.getCheckForm(this);">
+            <span onclick="mainCommons.addUserDiscuss()">留言</span>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+
+</div>
+
+    
+    <div class="wrapper_video">
+        <div class="wrapper_video_close">关闭视频</div>
+        <div>
+            <video controls="controls" id="videoMain">
+            </video>
+            <span class="video_close"></span>
+            <ul class="controlVedioWidth">
+                <li onclick="mainCommons.changeVedioWidth(750)">750</li>
+                <li onclick="mainCommons.changeVedioWidth(950)">950</li>
+                <li onclick="mainCommons.changeVedioWidth(1000)">全屏</li>
+            </ul>
+        </div>   
+</div>
+    
+    
+<div  class="contact_box">
+    <div class="shrink clearfix" onmouseover="mainCommons.contactOnGzh(this)" onmouseout="mainCommons.contactOutGzh(this)">
+        <div class="contact_box_right">
+            <i class="contact_box_right_icon02"></i>
+        </div>
+        <div class="contact_box_right_img">
+            <img src="../../public/images/gzhwx-min.png" alt="">
+            <div class="img-title">公众号：扫一扫</div>
+        </div>
+    </div>
+    <div class="shrink clearfix" onmouseover="mainCommons.contactOn(this)" onmouseout="mainCommons.contactOut(this)">
+            <div class="contact_box_left">
+                <ul>
+                    <li><i></i><a href="https://wpa1.qq.com/grOmv1mS?_type=wpa&qidian=true" target="_blank">QQ客服</a></li>
+                    <li><i></i><a href="http://www.taobao.com/webww/ww.php?ver=3&touid=dianguanjia2011&siteid=cntaobao&status=1&charset=utf-8" target="_blank">淘宝客服</a></li>
+                    <li><i></i><a href="tel:4008638288">400 863 8288</a></li>
+                </ul>
+            </div>
+            <div class="contact_box_right">
+                <div class="contact_box_right_title"><i class="contact_box_right_icon"></i></div>
+                <!-- <span>咨</span><span>询</span><span>客</span><span>服</span> -->
+            </div>
+            <div class="contact_box_animation"></div>
+    </div>
+</div>
+
+
+
+
+<!-- 返回顶部或底部 -->
+<div class="allUpAndDown">
+        <div class="allUpAndDown_up iconfont icon-fanhuidingbu1"></div>
+        <div class="allUpAndDown_down iconfont icon-fanhuidingbu1"></div>
+</div>
+    <!-- <footer>
+    <span style="margin-right: 20px;"><a href="https://beian.miit.gov.cn/" target="_blank" style="color:#fff">粤ICP备14060770号</a></span>
+    <span> 深圳店管家软件有限公司（店管家官网-<a style="color:#fff" href="http://www.dgjapp.com">www.dgjapp.com</a>）</span>
+</footer> -->
+<div class="newfooter">
+    <div class="newfooter-content">
+        <div class="newfooter-title"><span>店管家</span>：电商一体化解决方案服务商</div>
+        <div class="newfooter-mid">
+            <div class="newfooter-main">
+                <dl class="newfooter-nav">
+                    <dt>产品与服务</dt>
+                    <dd><a href="/newShareWayBillAccount.html">批量打单发货</a></dd>  
+                    <dd><a href="/Sharefendan.html">分销代发ERP</a></dd>  
+                    <dd><a href="/puHuo.html">铺货代发</a></dd>  
+                </dl>
+                <dl class="newfooter-nav">
+                    <dt>开放平台</dt>
+                    <dd><a href="/openPlatform.html">开放平台介绍</a></dd>  
+                </dl>
+                <dl class="newfooter-nav">
+                    <dt>产品试用</dt>
+                    <dd><a href="http://erp.dgjapp.com/Account">批量打单发货试用</a></dd>  
+                    <dd><a href="/Sharefendan.html">分销代发ERP试用</a></dd>  
+                    <dd><a href="/puHuo.html">铺货代发试用</a></dd>  
+                </dl>
+                <dl class="newfooter-nav">
+                    <dt>帮助中心</dt>
+                    <dd><a href="/newHelps.html">批量打单发货教程</a></dd>  
+                    <dd><a href="/newHelps.html?stystemPlatform=distributiontOrder">分销代发ERP教程</a></dd>  
+                    <dd><a href="/newHelps.html?stystemPlatform=1688distributiont">铺货代发教程</a></dd>
+					<dd><a href="/widgeDownload/index.html" target="_blank">打印控件下载</a></dd> 					
+                </dl>
+                <dl class="newfooter-nav">
+                    <dt>关于我们</dt>
+                    <dd><a href="/news.html">新闻动态</a></dd>  
+                    <dd><a href="/aboutMy.html">公司介绍</a></dd>  
+                </dl>
+            </div>
+            <ul class="newfooter-contact">
+                <li>服务时间：周一~周天，9：00-23：00</li>
+                <li>联系方式：400 863 8288</li>
+                <li>旺旺联系：中恒电商</li>
+                <li>QQ联系：800183731</li>
+                <li class="newfooter-contact-icons">
+                    <span class="iconfont icon-dianhua"></span>
+                    <a class="iconfont icon-qq" href="https://wpa1.qq.com/grOmv1mS?_type=wpa&amp;qidian=true" target="_blank"></a>
+                    <a class="iconfont icon-ww" href="https://amos.alicdn.com/getcid.aw?v=2&amp;uid=%E4%B8%AD%E6%81%92%E7%94%B5%E5%95%86&amp;site=cntaobao&amp;s=1&amp;groupid=0&amp;charset=utf-8&amp;token=EB1BBA6E1EEF0757" target="_blank"></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="newfooter-down">
+        <div class="newfooter-down-content">
+            <div class="newfooter-down-left">
+                <span><a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备14060770号</a></span>
+                <span>深圳店管家软件有限公司（店管家官网-www.dgjapp.com）</span>
+            </div>
+            <div class="newfooter-down-right">地址：广东省深圳市福田区福田街道办深南中路3039号深圳国际文化大厦</div>
+        </div>
+
+
+    </div>
+</div>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/public/js/wuku.js"></script>
+    <script src="/public/js/headerLogin.js"></script>
+    <script src="/public/js/xcConfirm.js"></script>
+    
+    
+    <script src="/public/js/newHelp.js"></script>
+    
+    <script src="/public/js/common.js"></script>
+    <script src="/public/js/listenweb.js"></script>
+    
+<script src="../public/js/qrcode.min.js"></script>
+<script src="../public/js/shadeCommunity.js"></script>
+<script src="../../public/js/articleClickNum.js"></script>
+<script src="../public/js/jquery.page.js"></script>
+
+<script>
+
+
+    $(function () {
+        var url = window.location.search;
+
+        id = url.substr(4);
+        $(".platform_helpInformation dd").each(function () {
+            if ($(this).attr("data-id").replace(/"/g, "") == id) {
+                $(this).children('a').addClass('active')
+            }
+
+        })
+
+        var href = window.location.href;
+        var qrcode = new QRCode("qrcodeShare", {   //分享生成二维码
+            text: href,
+            width: 120,
+            height: 120,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+
+        var obj = $$.GetUrlParamObj(window.location.href);
+        if (obj.type == 'xcx') {
+            $(".header").hide();
+            $(".content_main_content_title").hide();
+            $(".contact_box").hide();
+            $(".shareWebs").hide();
+        }
+
+
+        $('.page').createPage(function (n) {
+
+            var data = {};
+            data.Pages = 5 * (n - 1);
+            data.PageSize = 5;
+            data.article_id = $$.GetUrlParam("id");
+            var url = '/new/newsDiscuss';
+            $.ajax({
+                type: "get",
+                url: url,
+                data: data,
+                success: function (res) {
+                    //点击量成功加1，则打印信息                    
+                    if (res.success) {
+                        var data = res.discussData;
+                        var html = '';
+                        for (var i = 0; i < data.length; i++) {
+
+                            html += '<li class="discussShow-main-item clearfix">';
+                            html += '<div class="discussShow-main-itemImg"><span class="iconfont icon-zhucedengluyonghuming"></span></div>';
+                            html += '<ul class="discussShow-main-ul">';
+                            html += '<li>' + data[i].from_uid + '</li>';
+                            html += '<li class="discussShow-main-content">' + data[i].content + '</li>';
+                            html += '<li>' + data[i].create_time + '</li>';
+                            html += '</ul>';
+                            html += '</li>';
+
+                        }
+                        $("#discussShow_main").html(html);
+                    }
+
+                },
+                error: function (res) {
+
+                }
+            });
+
+        }, {
+            pageCount: '0'//总页码
+        })
+        $("#discussShow-title-s").text("您的意见");
+    })
+
+    $(".icon-weixin").on('mouseover', function () {
+        $(this).children().css({ display: 'inline-block' })
+    })
+
+    $('.icon-weixin').on('mouseleave', function () {
+        $(this).children().css({ display: 'none' });
+
+    })
+
+
+        ; (function () {
+
+            function addclick() {  //计算文章浏览量
+
+                var id = $$.GetUrlParam("id");
+                var cookieName = 'jiaAddclick' + id;//组合独一无二的专属该文章的cookie名
+                var jsonString = { "id": id };
+                var url = '/news/newsSddclick';//调后台的接口
+
+                var getCookieName = $$.getCookie(cookieName);
+
+                if (getCookieName == "") {
+
+                    $.ajax({
+                        type: "post",
+                        url: url,
+                        data: jsonString,
+                        async: true,
+                        success: function (msg) {
+                            $$.setcookie(cookieName, cookieName, 30)
+                            //点击量成功加1，则打印信息
+                        },
+                        error: function (XMLHttpRequest, textStatus, errorThrown) {
+                            console.log("连接超时！");
+                        }
+                    });
+                }
+            };
+
+
+            addclick();
+
+            if ($("#videoMain").attr("data-type") == 1) {
+                $("#videoMain").addClass('telType')
+            } else {
+                $("#videoMain").addClass('normalType')
+
+            }
+
+
+        }())
+
+</script>
+
+    <script>
+        var active = 'help';
+        $("." + active + "").css({ color: '#3aadff' });
+
+        (function () {
+            var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?57357edf8405414ee76469b60ce6e67b" : "https://jspassport.ssl.qhimg.com/11.0.1.js?57357edf8405414ee76469b60ce6e67b";
+            document.write('<script src="' + src + '" id="sozz"><\/script>');
+
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+
+    </script>
+</body>
+
+</html>

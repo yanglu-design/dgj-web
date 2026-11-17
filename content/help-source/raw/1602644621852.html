@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>贝贝/贝店/贝仓如何使用店管家打单发货</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="/public/css/setBase.css">
+    <link rel="stylesheet" href="/public/css/newCommon.css">
+    <link rel="stylesheet" href="/public/fonts/iconfont.css">
+    <link rel="stylesheet" href="../../public/css/xcConfirm.css">
+    <link rel="shortcut icon" type="image/ico" href="/public/images/favicon.ico">
+
+    
+<meta name="keywords" content=贝贝/贝店/贝仓如何使用店管家打单发货，贝店打单，贝贝打单发货，贝店店铺打单发货，贝仓打单发货>
+    
+<style>
+    .content {
+        padding-bottom: 80px;
+        padding-top: 20px;
+        width: 1220px;
+        margin: 0 auto;
+    }
+
+    .helpContent_01 {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    header {
+        position: static;
+        /*background-color: #8958ff;*/
+        box-shadow: 0 2px 5px 3px #ddd;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 5px;
+    }
+
+    .content_main>.search {
+        padding: 10px;
+        text-align: right;
+        width: 100%;
+
+    }
+
+    .search_box {
+        display: inline-block;
+        width: 400px;
+        height: 40px;
+        border: 2px solid #3aadff;
+    }
+
+    .search_box>ul {
+        width: 100%;
+        height: 40px;
+    }
+
+    .search_box>ul>li {
+        height: 40px;
+        float: left;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .search_box_condition {
+        width: 11%;
+        border-right: 1px solid #ddd;
+        box-sizing: border-box;
+    }
+
+    .search_box_content {
+        width: 78%;
+    }
+
+    .search_box_content input {
+        width: 100%;
+        height: 39px;
+        border: none;
+        position: relative;
+        left: 0;
+        top: -1px;
+    }
+
+    .search_box_do {
+        width: 11%;
+        background-color: #3aadff;
+        color: #fff;
+    }
+
+    .platform>div {
+        float: left;
+
+    }
+
+    .platform>.platform_helpInformation {
+        border-left: 1px solid #ddd;
+        padding: 0 10px;
+    }
+
+    /*.platform>div:first-child{*/
+    /*border-left: none;*/
+    /*}*/
+    .platform>div>ul>li {
+        padding: 10px 0;
+    }
+
+    .platform>div>ul>.active,
+    .platform>div>dl>.active {
+        color: #3aadff;
+    }
+
+    .platform>div>dl>dd .active {
+        color: #3aadff;
+    }
+
+    .platform_helpInformation>dl>dd {
+        padding: 10px 0;
+        cursor: pointer;
+        width: 220px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+    }
+
+    .platform_helpInformation>dl>dd:hover {
+        color: #3aadff;
+    }
+
+    .platform_helpInformation>dl>dt {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 14px;
+        color: #f7941f;
+        border-bottom: 1px solid #f7941f;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        cursor: pointer;
+
+    }
+
+    .content_main_content {
+        min-width: 735px;
+        width: 970px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        padding: 0 8px 10px 8px;
+        box-sizing: border-box;
+    }
+
+    .content_main_content_title {
+        border-bottom: 1px dashed #ddd;
+        padding: 10px 0;
+
+    }
+
+    .ask_main_title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #000;
+        padding: 30px 10px;
+        font-family: 微软雅黑;
+        text-align: center;
+        line-height: 22px;
+    }
+
+    .ask_main_content_li {
+        height: 35px;
+        background-color: #d3ecfd;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .ask_main_content {
+        margin-bottom: 20px;
+    }
+
+    .ask_main_content>img {
+        width: 100%;
+    }
+
+    .askIcon {
+        width: 30px;
+        height: 30px;
+        background-color: #3aadff;
+        border-radius: 15px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+
+    @media (max-width: 1080px) {
+        .platform_helpInformation>dl>dd {
+            float: left;
+            margin-right: 10px;
+        }
+
+        .content_main_content {
+            margin-left: 20px;
+        }
+
+    }
+
+    @media (max-width: 768px) {
+        .content {
+            padding-top: 0;
+        }
+
+        .content_main_content {
+            margin-left: 0;
+
+        }
+
+        .content_main_content {
+            width: 100%;
+            min-width: auto;
+            max-width: auto;
+        }
+
+        .footer-content-left {
+            display: none;
+        }
+
+        .platform_helpInformation {
+            display: none;
+        }
+
+        .content {
+            width: 100%;
+        }
+
+        .ask_main_content img {
+            width: 100% !important;
+        }
+
+        .ask_main_content_li {
+            height: unset;
+            min-height: 35px;
+        }
+
+        .helpContent_step,
+        .helpContent_explain {
+            width: 100% !important;
+            box-sizing: border-box;
+        }
+
+        .content_main_content_main img {
+            width: 100% !important;
+            margin: 0 !important;
+            height: unset!important;
+        }
+
+    }
+
+    .telType {
+        height: 600px;
+        width: unset;
+    }
+
+    .normalType {
+        width: 950px;
+    }
+    table{
+        font-size: 12px;
+        line-height: 30px;
+        border-left: solid 1px #dbdbdb;
+        width: 100%;
+        background-color: #fff;
+    }
+    table thead tr {
+        background-color: #f6f9fd;
+    }
+    table thead tr th, table tbody tr td {
+    border-right: solid 1px #e6e6e6;
+    border-top: solid 1px #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    font-weight: normal;
+    min-height: 20px;
+    line-height: 20px;
+    padding: 8px 10px;
+    text-align: left;
+}
+</style>
+
+    <script src="/public/js/shanqian.js"></script>
+    <script> var _hmt = _hmt || []; (function () { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?7fe1adc7d0527596576659f543a531ea"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })();</script>
+</head>
+
+<body>
+    <!-- <div class="loginAilogin" onclick="headerLoginCommon.openOrCloselogin(true)"> -->
+<div class="loginAilogin">
+
+    <div class="loginWrap_content_inputDiv" onclick="$$.stopM(event)">
+        <div class="loginWrap_title">登录</div>
+        <div class="iconfont icon-dengchu" style="font-size: 22px;color: #666;position: absolute;top: 20px;right: 20px;cursor: pointer;" onclick="headerLoginCommon.openOrCloselogin(true)"></div>
+        <div class="loginWrap_content_warn"></div>
+        <ul class="loginWrap_content_inputUl" id="intoLoginSelf" style="display: flex;">
+            <li><input type="text" placeholder="请输入11位手机号" id="loginTelePhone" maxlength="11"></li>
+            <li><input type="password" placeholder="请输入密码:大于6位，由数字和字母组成" id="loginPassword"></li>
+            <li>
+
+                <!-- <input type="text" style="width: 135px" placeholder="请输入验证码" id="loginValidCode"  maxlength="6">
+                <div  class="loginCode"> <img id="vCodeId" src="http://erp.dgjapp.com/Account/ValidCode?t=1" onclick="headerLoginCommon.validCode()" /></div> -->
+                <input type="text" id="code_input" value="" placeholder="请输入验证码" style="width: 120px;"/>
+                <!-- <div id="v_container" style="width: 150px;height: 50px;display: inline-block;position: relative;top: 12px;"></div> -->
+                <img src="/getCode" id="getCode" alt=""  onclick='headerLoginCommon.getCheckForm(this);'>
+
+
+            </li>
+            <li>
+                <span  id="check-btn2" class="loginWrap_content_btn login" onclick="headerLoginCommon.login()" >登录</span>
+                <span class="loginWrap_content_btn Loading" onclick="headerLoginCommon.login()" >登录中<i class="loading"></i></span>
+            </li>
+        </ul>
+
+        <ul class="loginWrap_content_inputUl" id="intoRegisterSelf" style="display: none;">
+            <li><input type="text" placeholder="请输入11位手机号" id="intoRegisterTelePhone" maxlength="11"></li>
+            <li><input type="text" style="width: 135px" placeholder="请输入短信验证码" id="intoRegisterValidCode" maxlength="8">
+                <input type="button" class="getCode" id="LoginCode1" value="免费获取验证码"
+                    onclick="headerLoginCommon.postMobileMessageCode('1')"></li>
+            <li><input type="password" placeholder="请输入密码" id="intoRegisterTelePass"></li>
+            <li><input type="password" placeholder="请确认密码" id="sureIntoRegisterTelePass"></li>
+            <li><span class="loginWrap_content_btn" onclick="headerLoginCommon.register()">注册</span></li>
+        </ul>
+
+        <ul class="loginWrap_content_inputUl" id="setLoginPwd" style="display: none;">
+            <li><input type="text" placeholder="请输入11位手机号" id="againSetPhone" maxlength="11"></li>
+            <li><input type="text" style="width: 135px" placeholder="请输入短信验证码" id="againRegisterValidCode"
+                    maxlength="8"> <input type="button" class="getCode" id="LoginCode2" value="免费获取验证码"
+                    onclick="headerLoginCommon.postMobileMessageCode('2')"></li>
+            <li><input type="password" placeholder="请输入密码" id="againSetPassword"></li>
+            <li><input type="password" placeholder="请确认密码" id="sureAgainSetPassword"></li>
+            <li><span class="loginWrap_content_btn" onclick="headerLoginCommon.againSetPassword()">重设密码</span></li>
+        </ul>
+
+        <div class="loginWrap_content_btns"><span onclick="headerLoginCommon.registerSkip()">注册</span><span onclick="headerLoginCommon.amendPwdSkip()">忘记密码</span><span onclick="headerLoginCommon.goBackLogin()" style="margin-left: 80px;color: #3cc3a2;">返回登录</span></div>
+
+    </div>
+</div>
+
+    <header class="header">
+    <div class="nav"></div>
+    <div id="menu_hover_bg" style="height: 0px; overflow: hidden;"></div>
+    <div class="w1200">
+        <div class="logo">
+            <a href="./index.html">
+                <span class="header-left-icon"></span>
+                <span class="header-left-fuTitle">批量打印发货系统</span>
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="yidong-log">
+                    <span></span>
+                    <span>深圳店管家软件有限公司</span>
+                </li>
+                <li id="men_pro">
+                    <h2><a href="./../index.html" class="index"><span class="iconfont icon-002-home2"></span>首页</a></h2>
+                </li>
+                <li id="men_sol" class="men_list">
+                    <h2><a href="./../productIntroduce.html" class="productIntroduce"><span style="font-size: 16px"
+                                class="iconfont icon-renshifuwu"></span>产品与服务</a></h2>
+
+                    <div class="sub_menu">
+                        <ul id="sub_menu_ul" style="display: flex;">
+                            <li class="more-list" id="platform-primaryHeader" style="width: 250px;">
+                                <div class="w1200">
+                                    <h3>主流平台</h3>
+                                </div>
+                            </li>
+                            <li class="more-list" id="platform-optimizedHeader" style="width: 750px;">
+                                <div class="w1200">
+                                    <h3>优选平台</h3>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+                <!-- <li id="men_fuwu" class="men_list">
+                    <h2>
+                        <a href="#" class="fuwu"><span class="iconfont icon-fangan2"
+                                style="font-size: 19px"></span>行业方案</a>
+                        <span class="menu-new-icon"><i style="margin-top: -1px;display: block;">hot</i></span>
+                    </h2>
+                    <div class="sub_menu">
+                        <div class="w1200">
+                            <h3>企业服务方案</h3>
+                        </div>
+                        <div class="sub_menu_list02">
+                            <a class="youzhanfu" href="./../kuaishouPlatform.html">快手服务</a>
+                        </div>
+                        <div class="sub_menu_list02">
+                            <a class="youzhanfu" href="./../youzhanCatalog.html">有赞服务</a>
+                        </div>
+                    </div>
+                </li> -->
+                <li>
+                    <h2>
+                        <a href="./../newShareWayBillAccount.html" class="newShareWayBillAccount"><span
+                                class="iconfont icon-002-home2"></span>快递单号共用</a>
+                        <span class="menu-new-icon"><i style="margin-top: -1px;display: block;">hot</i></span>
+                    </h2>
+                </li>
+                <li id="men_new">
+                    <h2>
+                        <a href="./../Sharefendan.html" class="Sharefendan"><span
+                                class="iconfont icon-002-home2"></span>分销代发ERP</a>
+                        <!-- <span class="menu-new-icon"><i style="margin-top: -1px;display: block;">new</i></span> -->
+                    </h2>
+                </li>
+                <li id="men_new">
+                    <h2>
+                        <a href="./../puHuo.html" class="puHuo"><span
+                                class="iconfont icon-002-home2"></span>铺货代发</a>
+                        <span class="menu-new-icon"><i style="margin-top: -1px;display: block;">new</i></span>
+                    </h2>
+                </li>
+                <li class="menu-new">
+                    <h2>
+                        <a href="./../openPlatform.html" class="openPlatform"><span class="iconfont icon-shiyong-"
+                                style="font-size: 19px"></span>开放平台</a>
+                    </h2>
+                </li>
+                <li>
+                    <h2><a href="http://erp.dgjapp.com/" target="_blank"><span class="iconfont icon-shiyong-"
+                                style="font-size: 19px"></span>产品试用</a></h2>
+                </li>
+                <li>
+                    <h2><a href="./../newHelps.html" class="help"><span
+                                class="iconfont icon-shiyongshouce"></span>帮助中心</a></h2>
+                </li>
+                <li>
+                    <h2><a href="./../news.html" class="news"><span class="iconfont icon-xinwenzhongxin"></span>新闻动态</a>
+                    </h2>
+                </li>
+                <!-- <li>
+                    <h2><a href="./../PreLiveVideo.html" class="PreLive"><span
+                                class="iconfont icon-guanyuwomen1"></span>直播预告</a></h2>
+                </li> -->
+                <li>
+                    <h2><a href="./../aboutMy.html" class="aboutMy"><span
+                                class="iconfont icon-guanyuwomen1"></span>关于我们</a></h2>
+                </li>
+
+            </ul>
+        </div>
+        <div class="login">
+            <!--            <a href="#">登陆</a>-->
+            <a href="#">服务热线</a>
+            <a href="#">400 863 8288</a>
+        </div>
+        <div class="fixedShade"></div>
+
+    </div>
+    <!-- <div class="usersLogin">
+        <span class="usersLogin-into"><i onclick="headerLoginCommon.showLogin('AppStore')">登录</i>|<i  onclick="headerLoginCommon.showRegister()">注册</i></span>
+        <span id="loginSuccess">
+            <i class="iconfont icon-zhucedengluyonghuming">：</i><a id="loginUserName" target="_blank"></a>
+            <i style="margin-left: 5px;" class="iconfont icon-dengchu" title="登出" onclick="headerLoginCommon.loginOut()"></i>
+        </span>
+    </div> -->
+    <div class="xeixinshop" style="display:none;">
+        视频号小店入口
+        <span class="xeixinshop-ad-back"></span>
+        <div class="xeixinshop-wrap">
+            <img src="../../public/images/kaifang/xiaodianerweima.png" alt="">
+            <span class="xeixinshop-wrap-title">扫码添加好友，优先使用打单功能</span>
+        </div>
+    </div>
+</header>
+
+
+
+    
+    
+<div class="content">
+    <div class="content_main platform clearfix">
+        <div class="platform_helpInformation">
+            <dl>
+                <dt>其它相关文档</dt>
+                
+                <!-- <dd data-id=&#34;5df1f3d33099b42a508afdc4&#34;></dd> -->
+                
+                <dd data-id=1576137685464> <a
+                        href="./newHelpsShow.html?id=1576137685464">线上订单打单发货教程</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e4242c7bf5ffb12d4469c68&#34;></dd> -->
+                
+                <dd data-id=1581400775937> <a
+                        href="./newHelpsShow.html?id=1581400775937">如何进行快递对账</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e4255efbf5ffb12d4469c6a&#34;></dd> -->
+                
+                <dd data-id=1581405680209> <a
+                        href="./newHelpsShow.html?id=1581405680209">如何使用自动评价</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e44e6b91a8bda12708a5bb2&#34;></dd> -->
+                
+                <dd data-id=1581573818615> <a
+                        href="./newHelpsShow.html?id=1581573818615">新用户如何打印电子面单批量发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e44f2261a8bda12708a5bba&#34;></dd> -->
+                
+                <dd data-id=1581576743028> <a
+                        href="./newHelpsShow.html?id=1581576743028">苏宁如何打印订单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e44fff01a8bda12708a5bbe&#34;></dd> -->
+                
+                <dd data-id=1581580273127> <a
+                        href="./newHelpsShow.html?id=1581580273127">微盟平台如何使用软件打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e4500221a8bda12708a5bbf&#34;></dd> -->
+                
+                <dd data-id=1581580322901> <a
+                        href="./newHelpsShow.html?id=1581580322901">蘑菇街如何使用软件打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e4500421a8bda12708a5bc0&#34;></dd> -->
+                
+                <dd data-id=1581580355655> <a
+                        href="./newHelpsShow.html?id=1581580355655">微店如何使用软件打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e4500671a8bda12708a5bc1&#34;></dd> -->
+                
+                <dd data-id=1581580392753> <a
+                        href="./newHelpsShow.html?id=1581580392753">小店如何使用软件打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e4500ca1a8bda12708a5bc2&#34;></dd> -->
+                
+                <dd data-id=1581580491159> <a
+                        href="./newHelpsShow.html?id=1581580491159">萌推平台如何打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e451e9e1a8bda12708a5bc6&#34;></dd> -->
+                
+                <dd data-id=1581588127117> <a
+                        href="./newHelpsShow.html?id=1581588127117">切换浏览器模式</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e4fa9d5a396212344e45ba6&#34;></dd> -->
+                
+                <dd data-id=1582279126578> <a
+                        href="./newHelpsShow.html?id=1582279126578">微盟生鲜订单该如何打单配货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e95930d7df8ce2b70aacfd6&#34;></dd> -->
+                
+                <dd data-id=1586860811988> <a
+                        href="./newHelpsShow.html?id=1586860811988">分享出去的单号怎么对账</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e9ecf654aa2f009c4a04872&#34;></dd> -->
+                
+                <dd data-id=1587466082564> <a
+                        href="./newHelpsShow.html?id=1587466082564">热敏打印机一联单打印问题</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5efbf4974d30ed0c68696d7f&#34;></dd> -->
+                
+                <dd data-id=1593570456882> <a
+                        href="./newHelpsShow.html?id=1593570456882">抖店商家使用新授权登录方式进入店管家</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5f46302b118d37174cfe0187&#34;></dd> -->
+                
+                <dd data-id=1598435372704> <a
+                        href="./newHelpsShow.html?id=1598435372704">一单多包/部分发货怎么操作</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5f866a8edd43d117ec9533e3&#34;></dd> -->
+                
+                <dd data-id=1602644621852> <a
+                        href="./newHelpsShow.html?id=1602644621852">贝贝/贝店/贝仓如何使用店管家打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;606ec6b08d455a16bc2fe104&#34;></dd> -->
+                
+                <dd data-id=1617872559964> <a
+                        href="./newHelpsShow.html?id=1617872559964">如何设置恶意虚假地址提醒不打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;60bf173617f0470a78bb4349&#34;></dd> -->
+                
+                <dd data-id=1623136053737> <a
+                        href="./newHelpsShow.html?id=1623136053737">团好货打印电子面单教程</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;617f62b26ce5ef1ce005c972&#34;></dd> -->
+                
+                <dd data-id=1635738290764> <a
+                        href="./newHelpsShow.html?id=1635738290764">店管家 1688 优选服务工作台“打单发货”系统</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;618b275e43c81517dc03a464&#34;></dd> -->
+                
+                <dd data-id=1636509535159> <a
+                        href="./newHelpsShow.html?id=1636509535159">店管家抖音售后小助手功能介绍</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;61aec048456b980d18495481&#34;></dd> -->
+                
+                <dd data-id=1638842442009> <a
+                        href="./newHelpsShow.html?id=1638842442009">淘宝买家自助修改SKU</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;61b2cbdd31f2b8197c31c2d3&#34;></dd> -->
+                
+                <dd data-id=1639107551201> <a
+                        href="./newHelpsShow.html?id=1639107551201">虚拟号介绍</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;61c56219c760e41de0147f52&#34;></dd> -->
+                
+                <dd data-id=1640325658487> <a
+                        href="./newHelpsShow.html?id=1640325658487">使用 shift 批量选择订单</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;61e8fb438616d70e583649e2&#34;></dd> -->
+                
+                <dd data-id=1642658630039> <a
+                        href="./newHelpsShow.html?id=1642658630039">淘宝设置默认发货人</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;624824d3c059f7157488ce25&#34;></dd> -->
+                
+                <dd data-id=1648895188634> <a
+                        href="./newHelpsShow.html?id=1648895188634">如何共享不可达地区给到商家店铺呢？</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;628616cdee04510e5494e33c&#34;></dd> -->
+                
+                <dd data-id=1652954829677> <a
+                        href="./newHelpsShow.html?id=1652954829677">4G云打印机电脑端远程打印教程</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;62ec886fc56d301520e36f9b&#34;></dd> -->
+                
+                <dd data-id=1659668592310> <a
+                        href="./newHelpsShow.html?id=1659668592310">4G 云打印机</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;6322914864519a1b58289b54&#34;></dd> -->
+                
+                <dd data-id=1663209799566> <a
+                        href="./newHelpsShow.html?id=1663209799566">如何使用预发货功能</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;6322f7b764519a1b58289b8a&#34;></dd> -->
+                
+                <dd data-id=1663236021766> <a
+                        href="./newHelpsShow.html?id=1663236021766">备货单如何使用</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;632c2fb1f6fbe11d6c9a648f&#34;></dd> -->
+                
+                <dd data-id=1663840176678> <a
+                        href="./newHelpsShow.html?id=1663840176678">关于各类名词解释</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;63411f6f4b7fb42a04aeb369&#34;></dd> -->
+                
+                <dd data-id=1665212272030> <a
+                        href="./newHelpsShow.html?id=1665212272030">淘宝_打印快递单出现一堆数字</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;645364d94802a31af477df8a&#34;></dd> -->
+                
+                <dd data-id=1683186898401> <a
+                        href="./newHelpsShow.html?id=1683186898401">功能介绍</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;6582a97d338770186cd5f96a&#34;></dd> -->
+                
+                <dd data-id=1703061887326> <a
+                        href="./newHelpsShow.html?id=1703061887326">订单合并</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;65b7843ce78a6516fc8d56ff&#34;></dd> -->
+                
+                <dd data-id=1706525755826> <a
+                        href="./newHelpsShow.html?id=1706525755826">2024值班时间</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;6613b83a82acf614144ef1b9&#34;></dd> -->
+                
+                <dd data-id=1712568369022> <a
+                        href="./newHelpsShow.html?id=1712568369022">快手 中转订单履约发货说明</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;66275bbe8ac74d061c554029&#34;></dd> -->
+                
+                <dd data-id=1713855395459> <a
+                        href="./newHelpsShow.html?id=1713855395459">关闭迁移模式详情</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;66a09c5313d2731704fb2bbc&#34;></dd> -->
+                
+                <dd data-id=1721801811307> <a
+                        href="./newHelpsShow.html?id=1721801811307">抖音_买家修改地址自动审核</a></dd>
+                
+
+                
+            </dl>
+        </div>
+        <div class="content_main_content">
+            <div class="content_main_content_title">
+                位置：<a href="newHelps.html">帮助中心</a><span style="margin:0 5px">》<a
+                        href="newHelpsClassify.html?id=1602644621852&columnId=1671680387717&type=helps">
+                            其他问题</a><span
+                        style="padding-left:5px;">》</span></span>贝贝/贝店/贝仓如何使用店管家打单发货
+            </div>
+            <div class="content_main_content_main">
+                <h1 class="ask_main_title">贝贝/贝店/贝仓如何使用店管家打单发货</h1>
+                <!--循环的内容-->
+
+                
+                <p style="line-height: 300%;"><span style="font-family: 宋体; font-size: x-large; color: rgb(123, 91, 161);">第一步：进入店管家<br/>打开浏览器，输入店管家网址：</span><span style="font-size: x-large;"><a href="www.dgjapp.com" target="_blank">www.dgjapp.com</a><span style="font-family: 宋体; color: rgb(123, 91, 161);">&nbsp;</span></span><span style="font-family: 宋体; font-size: x-large; color: rgb(123, 91, 161);">贝店平台进入授权</span></p><p style="line-height: 300%;"><img src="../../public\upload\mZRIJmA_XzF279Ll9yCCGnB3.png" style="max-width:100%;"/><span style="font-family: 宋体; font-size: x-large; color: rgb(123, 91, 161);"><br/>第二步： 设置发件人信息<br/>4、进入设置，发件人管理，填写发件人信息并保存</span></p><p style="line-height: 300%;"><img src="../../public\upload\8G8RKrM9zVDpkBtzT7ocu4xT.jpg" style="max-width:920px;"/><span style="font-family: 宋体; font-size: x-large; color: rgb(123, 91, 161);"><br/>第三步：添加快递单模板<br/>5、进入订单打印页面，点击“+”添加模板</span></p><p style="line-height: 300%;"><img src="../../public\upload\ER6RtCxRsaSWLF3StVzysvko.jpg" style="max-width:920px;"/><span style="font-family: 宋体; font-size: x-large; color: rgb(123, 91, 161);"><br/>第四步： 打单发货<br/>6、点击待发货订单<br/>7、选择快递单模版<br/>8、勾选需要打印的订单，点击打印快递单<br/>9、根据打印后的发货弹窗，点击发货，单号会同步至店铺后台</span></p><p style="line-height: 300%;"><img src="../../public\upload\QNddJ1u8Lz4D1WsiTbgTXF-2.jpg" style="max-width:920px;"/><span style="font-family: 宋体; font-size: x-large; color: rgb(123, 91, 161);"><br/></span></p>
+                
+
+                <!-- <div class="ask_main_content">
+                    <div  class="ask_main_content_li">
+                        <i class="askIcon">1</i>
+                        <span>进入1688首页，登录已经购买的账号</span>
+                    </div>
+                    <img src="http://101.37.106.230/help/images/1688shouye.png" alt="">
+                </div>
+                <div class="ask_main_content">
+                    <div  class="ask_main_content_li">
+                        <i class="askIcon">1</i>
+                        <span>进入1688首页，登录已经购买的账号</span>
+                    </div>
+                    <img src="http://101.37.106.230/help/images/1688shouye.png" alt="">
+                </div> -->
+
+            </div>
+            <style>
+    .shareWebs{
+        padding: 10px;
+    }
+
+    .shareWebs>span>i {
+        font-size: 18px;
+        margin-right: 20px;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border-radius: 13px;
+        text-align: center;
+        line-height: 25px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    #qrcodeShare {
+        position: absolute;
+        top: -120px;
+        left: 0;
+        display: none;
+    }
+
+    .doubian {
+        color: #658014;
+        background-color: #edf3e3;
+        font-size: 14px !important;
+        font-weight: 700;
+    }
+
+    .tieba {
+        color: #118ce4;
+        background-color: #e1f3ff;
+        font-size: 14px !important;
+        font-weight: 700;
+        font-family: 雅黑;
+    }
+    .shareWebs>span>.shoucang{
+        display: inline-block;
+        padding: 2px 3px;
+        background-color: #e1f3ff;
+        border-radius: 4px;
+        color: #3aadff;
+        cursor: pointer;
+    }
+</style>
+
+<div class="shareWebs">
+    <span>分享：
+        <i class="iconfont icon-weixin" style="color:#77bf04;background-color: #ebf9d4;">
+            <div id="qrcodeShare"></div>
+        </i>
+        <i class="iconfont icon-qq" style="color:#3aadff;background-color: #e1f3ff;"
+            onclick="shareMoule.shareToQzone(event)"></i>
+        <i class="iconfont icon-tubiaozhizuo-" style="color:#fe6f4f;background-color: #ffe7e1;"
+            onclick="shareMoule.shareToSinaWB(event)"></i>
+        <i class="iconfont doubian" onclick="shareMoule.shareToDouban(event)">豆</i>
+        <s class="shoucang" onclick="shareMoule.addFavorite()">收藏</s>
+    </span>
+</div>
+<div style="padding:10px;">
+    <a href="http://q.url.cn/ABC8fP?_type=wpa&qidian=true" target="_blank">举报</a>
+</div>
+
+<!-- <script src="../../public/js/qrcode.min.js"></script>
+<script src="../../public/js/shadeCommunity.js"></script>
+<script>
+    var url = window.location.href;
+
+    var obj = $$.GetUrlParamObj(window.location.href);
+
+    var qrcode = new QRCode("qrcodeShare", {   //分享生成二维码
+        text: url,
+        width: 120,
+        height: 120,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+    });
+
+    $(".icon-weixin").on('mouseover', function () {
+
+        $(this).children().css({ display: 'inline-block' })
+
+    })
+
+
+    $('.icon-weixin').on('mouseleave', function () {
+        $(this).children().css({ display: 'none' });
+
+    })
+
+
+</script> -->
+            <div class="discussShow">
+    <div class="discussShow-title"><span><s id="discussShow-title-s">评论:</s><i
+                style="font-size: 12px;margin: 0 10px;color:#888;">共<s id="pageNum" style="padding: 0 5px;">0</s>条</i></span></div>
+    <ul class="discussShow-main" id="discussShow_main">
+        
+    </ul>
+    <div class="page" style="width:600px;"></div>
+</div>
+<div class="discussAdd">
+    <textarea id="discussContent" placeholder="请输入您意见，我们会第一时间处理！"></textarea>
+    <input type="text" id="discussContact" class="discussContact" placeholder="请输入您的联系方式，保密处理!">
+    <div class="discussAdd-setBtn clearfix">
+        <div>
+            <span class="iconfont icon-zhucedengluyonghuming"></span>
+            <span>用户名字</span>
+        </div>
+        <div class="discussAdd-setBtn-btn">
+            <input type="text" placeholder="输入验证码" id="inputCode">
+            <img src="/getCode" id="getCode02" alt="" onclick="headerLoginCommon.getCheckForm(this);">
+            <span onclick="mainCommons.addUserDiscuss()">留言</span>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+
+</div>
+
+    
+    <div class="wrapper_video">
+        <div class="wrapper_video_close">关闭视频</div>
+        <div>
+            <video controls="controls" id="videoMain">
+            </video>
+            <span class="video_close"></span>
+            <ul class="controlVedioWidth">
+                <li onclick="mainCommons.changeVedioWidth(750)">750</li>
+                <li onclick="mainCommons.changeVedioWidth(950)">950</li>
+                <li onclick="mainCommons.changeVedioWidth(1000)">全屏</li>
+            </ul>
+        </div>   
+</div>
+    
+    
+<div  class="contact_box">
+    <div class="shrink clearfix" onmouseover="mainCommons.contactOnGzh(this)" onmouseout="mainCommons.contactOutGzh(this)">
+        <div class="contact_box_right">
+            <i class="contact_box_right_icon02"></i>
+        </div>
+        <div class="contact_box_right_img">
+            <img src="../../public/images/gzhwx-min.png" alt="">
+            <div class="img-title">公众号：扫一扫</div>
+        </div>
+    </div>
+    <div class="shrink clearfix" onmouseover="mainCommons.contactOn(this)" onmouseout="mainCommons.contactOut(this)">
+            <div class="contact_box_left">
+                <ul>
+                    <li><i></i><a href="https://wpa1.qq.com/grOmv1mS?_type=wpa&qidian=true" target="_blank">QQ客服</a></li>
+                    <li><i></i><a href="http://www.taobao.com/webww/ww.php?ver=3&touid=dianguanjia2011&siteid=cntaobao&status=1&charset=utf-8" target="_blank">淘宝客服</a></li>
+                    <li><i></i><a href="tel:4008638288">400 863 8288</a></li>
+                </ul>
+            </div>
+            <div class="contact_box_right">
+                <div class="contact_box_right_title"><i class="contact_box_right_icon"></i></div>
+                <!-- <span>咨</span><span>询</span><span>客</span><span>服</span> -->
+            </div>
+            <div class="contact_box_animation"></div>
+    </div>
+</div>
+
+
+
+
+<!-- 返回顶部或底部 -->
+<div class="allUpAndDown">
+        <div class="allUpAndDown_up iconfont icon-fanhuidingbu1"></div>
+        <div class="allUpAndDown_down iconfont icon-fanhuidingbu1"></div>
+</div>
+    <!-- <footer>
+    <span style="margin-right: 20px;"><a href="https://beian.miit.gov.cn/" target="_blank" style="color:#fff">粤ICP备14060770号</a></span>
+    <span> 深圳店管家软件有限公司（店管家官网-<a style="color:#fff" href="http://www.dgjapp.com">www.dgjapp.com</a>）</span>
+</footer> -->
+<div class="newfooter">
+    <div class="newfooter-content">
+        <div class="newfooter-title"><span>店管家</span>：电商一体化解决方案服务商</div>
+        <div class="newfooter-mid">
+            <div class="newfooter-main">
+                <dl class="newfooter-nav">
+                    <dt>产品与服务</dt>
+                    <dd><a href="/newShareWayBillAccount.html">批量打单发货</a></dd>  
+                    <dd><a href="/Sharefendan.html">分销代发ERP</a></dd>  
+                    <dd><a href="/puHuo.html">铺货代发</a></dd>  
+                </dl>
+                <dl class="newfooter-nav">
+                    <dt>开放平台</dt>
+                    <dd><a href="/openPlatform.html">开放平台介绍</a></dd>  
+                </dl>
+                <dl class="newfooter-nav">
+                    <dt>产品试用</dt>
+                    <dd><a href="http://erp.dgjapp.com/Account">批量打单发货试用</a></dd>  
+                    <dd><a href="/Sharefendan.html">分销代发ERP试用</a></dd>  
+                    <dd><a href="/puHuo.html">铺货代发试用</a></dd>  
+                </dl>
+                <dl class="newfooter-nav">
+                    <dt>帮助中心</dt>
+                    <dd><a href="/newHelps.html">批量打单发货教程</a></dd>  
+                    <dd><a href="/newHelps.html?stystemPlatform=distributiontOrder">分销代发ERP教程</a></dd>  
+                    <dd><a href="/newHelps.html?stystemPlatform=1688distributiont">铺货代发教程</a></dd>
+					<dd><a href="/widgeDownload/index.html" target="_blank">打印控件下载</a></dd> 					
+                </dl>
+                <dl class="newfooter-nav">
+                    <dt>关于我们</dt>
+                    <dd><a href="/news.html">新闻动态</a></dd>  
+                    <dd><a href="/aboutMy.html">公司介绍</a></dd>  
+                </dl>
+            </div>
+            <ul class="newfooter-contact">
+                <li>服务时间：周一~周天，9：00-23：00</li>
+                <li>联系方式：400 863 8288</li>
+                <li>旺旺联系：中恒电商</li>
+                <li>QQ联系：800183731</li>
+                <li class="newfooter-contact-icons">
+                    <span class="iconfont icon-dianhua"></span>
+                    <a class="iconfont icon-qq" href="https://wpa1.qq.com/grOmv1mS?_type=wpa&amp;qidian=true" target="_blank"></a>
+                    <a class="iconfont icon-ww" href="https://amos.alicdn.com/getcid.aw?v=2&amp;uid=%E4%B8%AD%E6%81%92%E7%94%B5%E5%95%86&amp;site=cntaobao&amp;s=1&amp;groupid=0&amp;charset=utf-8&amp;token=EB1BBA6E1EEF0757" target="_blank"></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="newfooter-down">
+        <div class="newfooter-down-content">
+            <div class="newfooter-down-left">
+                <span><a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备14060770号</a></span>
+                <span>深圳店管家软件有限公司（店管家官网-www.dgjapp.com）</span>
+            </div>
+            <div class="newfooter-down-right">地址：广东省深圳市福田区福田街道办深南中路3039号深圳国际文化大厦</div>
+        </div>
+
+
+    </div>
+</div>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/public/js/wuku.js"></script>
+    <script src="/public/js/headerLogin.js"></script>
+    <script src="/public/js/xcConfirm.js"></script>
+    
+    
+    <script src="/public/js/newHelp.js"></script>
+    
+    <script src="/public/js/common.js"></script>
+    <script src="/public/js/listenweb.js"></script>
+    
+<script src="../public/js/qrcode.min.js"></script>
+<script src="../public/js/shadeCommunity.js"></script>
+<script src="../../public/js/articleClickNum.js"></script>
+<script src="../public/js/jquery.page.js"></script>
+
+<script>
+
+
+    $(function () {
+        var url = window.location.search;
+
+        id = url.substr(4);
+        $(".platform_helpInformation dd").each(function () {
+            if ($(this).attr("data-id").replace(/"/g, "") == id) {
+                $(this).children('a').addClass('active')
+            }
+
+        })
+
+        var href = window.location.href;
+        var qrcode = new QRCode("qrcodeShare", {   //分享生成二维码
+            text: href,
+            width: 120,
+            height: 120,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+
+        var obj = $$.GetUrlParamObj(window.location.href);
+        if (obj.type == 'xcx') {
+            $(".header").hide();
+            $(".content_main_content_title").hide();
+            $(".contact_box").hide();
+            $(".shareWebs").hide();
+        }
+
+
+        $('.page').createPage(function (n) {
+
+            var data = {};
+            data.Pages = 5 * (n - 1);
+            data.PageSize = 5;
+            data.article_id = $$.GetUrlParam("id");
+            var url = '/new/newsDiscuss';
+            $.ajax({
+                type: "get",
+                url: url,
+                data: data,
+                success: function (res) {
+                    //点击量成功加1，则打印信息                    
+                    if (res.success) {
+                        var data = res.discussData;
+                        var html = '';
+                        for (var i = 0; i < data.length; i++) {
+
+                            html += '<li class="discussShow-main-item clearfix">';
+                            html += '<div class="discussShow-main-itemImg"><span class="iconfont icon-zhucedengluyonghuming"></span></div>';
+                            html += '<ul class="discussShow-main-ul">';
+                            html += '<li>' + data[i].from_uid + '</li>';
+                            html += '<li class="discussShow-main-content">' + data[i].content + '</li>';
+                            html += '<li>' + data[i].create_time + '</li>';
+                            html += '</ul>';
+                            html += '</li>';
+
+                        }
+                        $("#discussShow_main").html(html);
+                    }
+
+                },
+                error: function (res) {
+
+                }
+            });
+
+        }, {
+            pageCount: '0'//总页码
+        })
+        $("#discussShow-title-s").text("您的意见");
+    })
+
+    $(".icon-weixin").on('mouseover', function () {
+        $(this).children().css({ display: 'inline-block' })
+    })
+
+    $('.icon-weixin').on('mouseleave', function () {
+        $(this).children().css({ display: 'none' });
+
+    })
+
+
+        ; (function () {
+
+            function addclick() {  //计算文章浏览量
+
+                var id = $$.GetUrlParam("id");
+                var cookieName = 'jiaAddclick' + id;//组合独一无二的专属该文章的cookie名
+                var jsonString = { "id": id };
+                var url = '/news/newsSddclick';//调后台的接口
+
+                var getCookieName = $$.getCookie(cookieName);
+
+                if (getCookieName == "") {
+
+                    $.ajax({
+                        type: "post",
+                        url: url,
+                        data: jsonString,
+                        async: true,
+                        success: function (msg) {
+                            $$.setcookie(cookieName, cookieName, 30)
+                            //点击量成功加1，则打印信息
+                        },
+                        error: function (XMLHttpRequest, textStatus, errorThrown) {
+                            console.log("连接超时！");
+                        }
+                    });
+                }
+            };
+
+
+            addclick();
+
+            if ($("#videoMain").attr("data-type") == 1) {
+                $("#videoMain").addClass('telType')
+            } else {
+                $("#videoMain").addClass('normalType')
+
+            }
+
+
+        }())
+
+</script>
+
+    <script>
+        var active = 'help';
+        $("." + active + "").css({ color: '#3aadff' });
+
+        (function () {
+            var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?57357edf8405414ee76469b60ce6e67b" : "https://jspassport.ssl.qhimg.com/11.0.1.js?57357edf8405414ee76469b60ce6e67b";
+            document.write('<script src="' + src + '" id="sozz"><\/script>');
+
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+
+    </script>
+</body>
+
+</html>

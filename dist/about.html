@@ -1,3 +1,53 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>店管家官网</title><link rel="icon" type="image/png" href="favicon.png"><link rel="stylesheet" href="styles.css?v=20261111-3"><link rel="stylesheet" href="shared-header.css?v=20261111-3"></head><body>
-<header class="site-header"><a class="brand" href="index.html"><img src="assets/icon/dgjlogo1.svg" alt="店管家"></a><button class="nav-toggle" aria-label="展开导航">☰</button><nav class="nav"><a href="index.html">首页</a><a href="products.html">产品与服务<svg class="nav-chevron" viewBox="0 0 1024 1024" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.4-13 6.4L512 642 228 262.4a16 16 0 0 0-13-6.4h-75c-6.5 0-10.3 7.4-6.5 12.6l352 470.9a32 32 0 0 0 51 0l352-470.9c3.8-5.2 0-12.6-6.5-12.6z"/></svg></a><a href="open-platform.html">开放平台</a><a href="help.html">帮助中心</a><a href="news.html">新闻动态</a><a href="about.html">关于我们</a><a class="nav-cta" href="service.html">新客免费试用</a></nav></header><script src="shared-header.js?v=20261113-1"></script>
-<main class="inner-page"><p>店管家企业官网</p><h1 id="pageTitle">页面建设中</h1><p id="pageDescription">页面入口已按官网信息架构预留，后续可继续依据对应设计稿完善。</p><a class="primary-btn" href="index.html">返回首页</a></main><script>const pages={products:['产品与服务','分销代发、打单发货与订单管理产品页面'],solutions:['解决方案','面向不同电商经营场景的解决方案页面'],help:['帮助中心','产品帮助、教程与常见问题页面'],news:['新闻动态','公司动态、行业新闻与电商干货页面'],about:['关于我们','公司介绍、发展历程与品牌信息页面'],service:['商务服务咨询','企业客户咨询与服务对接页面']};const key=location.pathname.split('/').pop().replace('.html','');const data=pages[key]||['店管家','页面建设中'];document.title=data[0]+'｜店管家';document.querySelector('#pageTitle').textContent=data[0];document.querySelector('#pageDescription').textContent=data[1];document.querySelector('.nav-toggle').onclick=()=>document.querySelector('.nav').classList.toggle('open');</script></body></html>
+<!doctype html>
+<html lang="zh-CN"><head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="了解店管家企业介绍、发展历程、企业文化与荣誉资质。"><title>店管家官网</title>
+  <link rel="icon" type="image/png" href="favicon.png"><link rel="stylesheet" href="styles.css?v=20261117-contact-hover"><link rel="stylesheet" href="shared-header.css?v=20261117-divider"><link rel="stylesheet" href="about.css?v=20261113-6">
+<link rel="stylesheet" href="customer-service.css?v=20261117-option-hover"></head><body class="about-page">
+  <header class="site-header"></header><script src="shared-header.js?v=20261117-product-pages"></script>
+  <main>
+    <section class="about-hero" aria-label="关于店管家"></section>
+    <section class="about-stats about-shell" aria-label="店管家核心数据">
+      <article><img src="assets/about/公司成立@2x.png" alt=""><div><strong>2011年</strong><span>公司成立</span></div></article>
+      <article><img src="assets/about/电商领域@2x.png" alt=""><div><strong>15年</strong><span>深耕打单发货领域</span></div></article>
+      <article><img src="assets/about/用户@2x.png" alt=""><div><strong>120W+</strong><span>累计服务用户数</span></div></article>
+      <article><img src="assets/about/物流@2x.png" alt=""><div><strong>50+</strong><span>物流服务商</span></div></article>
+    </section>
+    <section class="about-intro about-shell">
+      <div class="about-intro-copy"><h2>关于我们</h2><p>深圳店管家软件有限公司是国内最早一批研发电商应用软件的企业，电商一体化解决方案服务商，累计服务用户超100W+，连续8年获得星工具荣誉。店管家将继续坚守匠心、勇于创新，持续迭代产品与服务，深化多平台协同布局，构建更完善的电商服务生态，将持续为商家提供打单发货高性价比解决方案！</p></div>
+      <img src="assets/about/bg11@2x.png" alt="店管家公司办公大楼">
+    </section>
+    <section class="about-culture"><div class="about-section-title"><h2>企业文化</h2></div><div class="about-shell culture-grid">
+      <article><img src="assets/about/使命@2x.png" alt=""><div><h3>使命</h3><p>让电商经营更简单、更高效</p></div></article>
+      <article><img src="assets/about/愿景@2x.png" alt=""><div><h3>愿景</h3><p>成为值得信赖的电商服务伙伴</p></div></article>
+      <article><img src="assets/about/价值观@2x.png" alt=""><div><h3>价值观</h3><p>客户至上｜专业可靠｜共创共赢</p></div></article>
+    </div></section>
+    <section class="about-history"><div class="about-section-title"><h2>发展历程</h2></div><div class="about-shell timeline">
+      <article class="timeline-item right"><div><time>2019年</time><p>加大研发投入，壮大团队，砥砺前行，做最好用的打单软件</p></div><span></span></article>
+      <article class="timeline-item left"><span></span><div><time>2018年</time><p>店管家荣获阿里造星大赛星工具称号，标杆打单工具</p></div></article>
+      <article class="timeline-item right"><div><time>2017年</time><p>成为阿里应用服务市场打单工具销量第一名，累计服务用户数达35万</p></div><span></span></article>
+      <article class="timeline-item left"><span></span><div><time>2016年</time><p>成为阿里网页版商机助理官方指定开发商</p></div></article>
+      <article class="timeline-item right"><div><time>2015年</time><p>线上服务用户突破10000+</p></div><span></span></article>
+      <article class="timeline-item left"><span></span><div><time>2014年</time><p>店管家打单工具上线，解决了1688商家打单难的问题，并受到一致好评</p></div></article>
+      <article class="timeline-item right"><div><time>2013年</time><p>成立阿里项目研发团队，入驻阿里应用服务市场，开始专注1688打单软件研究开发</p></div><span></span></article>
+      <article class="timeline-item left"><span></span><div><time>2011年</time><p>店管家公司成立，一个新的科技企业诞生</p></div></article>
+    </div></section>
+    <section class="about-honors"><div class="about-section-title"><h2>荣誉墙</h2><p>官方认可，客户认可</p></div>
+      <div class="about-shell honor-carousel"><button class="honor-arrow prev" type="button" aria-label="上一组"><img src="assets/icon/chevron-left.svg" alt=""></button><div class="honor-window"><div class="honor-track">
+        <article><img src="assets/honors/2026京卓越@2x.png" alt=""><h3>2026年</h3><p>京东「京卓越」认证</p></article>
+        <article><img src="assets/honors/2025星工具@2x.png" alt=""><h3>2025年</h3><p>1688 优秀工具年度奖</p></article>
+        <article><img src="assets/honors/2025潜力伙伴@2x.png" alt=""><h3>2025年</h3><p>京东「潜力合作伙伴」奖项</p></article>
+        <article><img src="assets/honors/2022星工具@2x.png" alt=""><h3>2022年</h3><p>1688 星工具TOP1</p></article>
+        <article><img src="assets/honors/2019星工具@2x.png" alt=""><h3>2019年</h3><p>1688 星工具TOP1</p></article>
+        <article><img src="assets/honors/2022京卓越@2x.png" alt=""><h3>2022年</h3><p>京东「京卓越」认证</p></article>
+        <article><img src="assets/honors/2019合作伙伴@2x.png" alt=""><h3>2019年</h3><p>年度优秀合作伙伴</p></article>
+      </div></div><button class="honor-arrow next" type="button" aria-label="下一组"><img src="assets/icon/chevron-right.svg" alt=""></button></div>
+      <div class="about-shell honor-notes">
+        <article><img class="honor-laurel" src="assets/about/maisui-L@2x.png" alt=""><div><strong>2018年</strong><p>1688服务市场 <span>精品工具奖</span></p></div><img class="honor-laurel" src="assets/about/maisui-R@2x.png" alt=""></article>
+        <article><img class="honor-laurel" src="assets/about/maisui-L@2x.png" alt=""><div><strong>2018年</strong><p>1688服务市场 <span>精品工具奖</span></p></div><img class="honor-laurel" src="assets/about/maisui-R@2x.png" alt=""></article>
+        <article><img class="honor-laurel" src="assets/about/maisui-L@2x.png" alt=""><div><strong>技术被肯定，受邀到阿里巴巴总部</strong><p><span>参加开发者大会</span></p></div><img class="honor-laurel honor-laurel-right" src="assets/about/maisui-R@2x.png" alt=""></article>
+      </div>
+    </section>
+  </main>
+  <footer id="contact" data-shared-footer></footer><script src="shared-footer.js?v=20261117-contact-hover"></script><script src="about.js?v=20261113-1"></script>
+<script src="customer-service.js?v=20261117-option-hover"></script></body></html>

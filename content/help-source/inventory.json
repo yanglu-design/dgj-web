@@ -1,0 +1,1859 @@
+[
+  {
+    "id": "manufacturer-guide",
+    "title": "厂家新手引导",
+    "product": "distribution",
+    "category": "getting-started",
+    "order": 0,
+    "sourceUrl": "https://www.sohu.com/a/869893367_120542292",
+    "type": "video"
+  },
+  {
+    "id": "merchant-guide",
+    "title": "商家新手引导",
+    "product": "distribution",
+    "category": "getting-started",
+    "order": 1,
+    "sourceUrl": "https://www.sohu.com/a/869901312_120542292",
+    "type": "video"
+  },
+  {
+    "id": "intermediary-guide",
+    "title": "中间商新手引导",
+    "product": "distribution",
+    "category": "getting-started",
+    "order": 2,
+    "sourceUrl": "https://www.sohu.com/a/869951888_120542292",
+    "type": "video"
+  },
+  {
+    "id": "1612338372772",
+    "title": "如何使用代发系统打单发货",
+    "product": "distribution",
+    "category": "operations",
+    "order": 0,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1612338372772",
+    "type": "article"
+  },
+  {
+    "id": "1621581385184",
+    "title": "库存管理如何完成设置",
+    "product": "distribution",
+    "category": "operations",
+    "order": 1,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1621581385184",
+    "type": "article"
+  },
+  {
+    "id": "1618897853932",
+    "title": "如何帮商家代打发货零散订单",
+    "product": "distribution",
+    "category": "operations",
+    "order": 2,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1618897853932",
+    "type": "article"
+  },
+  {
+    "id": "1614844451705",
+    "title": "虚拟供应商导出订单操作",
+    "product": "distribution",
+    "category": "operations",
+    "order": 3,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1614844451705",
+    "type": "article"
+  },
+  {
+    "id": "1623376953492",
+    "title": "代发系统如何完成对账结算",
+    "product": "distribution",
+    "category": "operations",
+    "order": 4,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1623376953492",
+    "type": "article"
+  },
+  {
+    "id": "1624267368090",
+    "title": "分销代发系统怎么设置快递模板打印内容",
+    "product": "distribution",
+    "category": "operations",
+    "order": 5,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1624267368090",
+    "type": "article"
+  },
+  {
+    "id": "1634095743110",
+    "title": "商品绑定多厂家操作步骤",
+    "product": "distribution",
+    "category": "operations",
+    "order": 6,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1634095743110",
+    "type": "article"
+  },
+  {
+    "id": "1673489662640",
+    "title": "小程序-如何快速设置自动代发",
+    "product": "distribution",
+    "category": "operations",
+    "order": 7,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1673489662640",
+    "type": "article"
+  },
+  {
+    "id": "1667445805113",
+    "title": "抖音-如何快速设置自动代发",
+    "product": "distribution",
+    "category": "operations",
+    "order": 8,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1667445805113",
+    "type": "article"
+  },
+  {
+    "id": "1667446230966",
+    "title": "抖音-欢迎使用店管家分销代发",
+    "product": "distribution",
+    "category": "operations",
+    "order": 9,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1667446230966",
+    "type": "article"
+  },
+  {
+    "id": "1705914439274",
+    "title": "1688定制商品",
+    "product": "distribution",
+    "category": "operations",
+    "order": 10,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1705914439274",
+    "type": "article"
+  },
+  {
+    "id": "1638258218483",
+    "title": "分销代发单号分享教程",
+    "product": "distribution",
+    "category": "operations",
+    "order": 11,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1638258218483",
+    "type": "article"
+  },
+  {
+    "id": "1670487503137",
+    "title": "店管家分销代发操作教程",
+    "product": "distribution",
+    "category": "operations",
+    "order": 12,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1670487503137",
+    "type": "article"
+  },
+  {
+    "id": "1673489973673",
+    "title": "欢迎使用店管家分销代发！",
+    "product": "distribution",
+    "category": "operations",
+    "order": 13,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1673489973673",
+    "type": "article"
+  },
+  {
+    "id": "1695794138878",
+    "title": "【重要】小红书新版电子面单切换通知",
+    "product": "distribution",
+    "category": "operations",
+    "order": 14,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1695794138878",
+    "type": "article"
+  },
+  {
+    "id": "1696920181829",
+    "title": "小红书非店铺面单开通教程",
+    "product": "distribution",
+    "category": "operations",
+    "order": 15,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1696920181829",
+    "type": "article"
+  },
+  {
+    "id": "1696920759302",
+    "title": "小红书店铺面单开通教程",
+    "product": "distribution",
+    "category": "operations",
+    "order": 16,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1696920759302",
+    "type": "article"
+  },
+  {
+    "id": "1643102301108",
+    "title": "仓库怎么设置？",
+    "product": "distribution",
+    "category": "videos",
+    "order": 0,
+    "sourceUrl": "https://v2.sohu.com/v/url/652247746_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1643102478430",
+    "title": "厂家绑定商家",
+    "product": "distribution",
+    "category": "videos",
+    "order": 1,
+    "sourceUrl": "https://v2.sohu.com/v/url/652248228_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1643102517934",
+    "title": "打单发货怎么区分订单？",
+    "product": "distribution",
+    "category": "videos",
+    "order": 2,
+    "sourceUrl": "https://v2.sohu.com/v/url/651462600_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1643102730129",
+    "title": "快递单模板添加怎么区分？",
+    "product": "distribution",
+    "category": "videos",
+    "order": 3,
+    "sourceUrl": "https://v2.sohu.com/v/url/651470077_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1643102805858",
+    "title": "商家绑定厂家教程",
+    "product": "distribution",
+    "category": "videos",
+    "order": 4,
+    "sourceUrl": "https://v2.sohu.com/v/url/651463364_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1643102882207",
+    "title": "商家/厂家对运费怎么查？",
+    "product": "distribution",
+    "category": "videos",
+    "order": 5,
+    "sourceUrl": "https://v2.sohu.com/v/url/652248367_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1643102986787",
+    "title": "手机号输入绑定，厂家/商家如何同意绑定关系建立合作流程",
+    "product": "distribution",
+    "category": "videos",
+    "order": 6,
+    "sourceUrl": "https://v2.sohu.com/v/url/652249046_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1643103041180",
+    "title": "线下单推送/自己打单发货怎么打单和发货？",
+    "product": "distribution",
+    "category": "videos",
+    "order": 7,
+    "sourceUrl": "https://v2.sohu.com/v/url/652249402_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1643103112235",
+    "title": "怎么查打印多次记录？",
+    "product": "distribution",
+    "category": "videos",
+    "order": 8,
+    "sourceUrl": "https://v2.sohu.com/v/url/653216541_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1643103149863",
+    "title": "怎么查已经绑定的订单？",
+    "product": "distribution",
+    "category": "videos",
+    "order": 9,
+    "sourceUrl": "https://v2.sohu.com/v/url/651465663_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1643103225841",
+    "title": "怎么打印/不打印代发地址，怎么设置？",
+    "product": "distribution",
+    "category": "videos",
+    "order": 10,
+    "sourceUrl": "https://v2.sohu.com/v/url/651468148_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1643103254262",
+    "title": "怎么回收单号？",
+    "product": "distribution",
+    "category": "videos",
+    "order": 11,
+    "sourceUrl": "https://v2.sohu.com/v/url/653218648_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1643103287633",
+    "title": "怎么设置打印快递面单的商品内容？",
+    "product": "distribution",
+    "category": "videos",
+    "order": 12,
+    "sourceUrl": "https://v2.sohu.com/v/url/653219935_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1643103343953",
+    "title": "怎么设置停发区域？",
+    "product": "distribution",
+    "category": "videos",
+    "order": 13,
+    "sourceUrl": "https://v2.sohu.com/v/url/653220231_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1643103369803",
+    "title": "中间商上下级绑定流程",
+    "product": "distribution",
+    "category": "videos",
+    "order": 14,
+    "sourceUrl": "https://v2.sohu.com/v/url/653222419_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1643103394818",
+    "title": "自己店铺的怎么看账单数据？【备货单】",
+    "product": "distribution",
+    "category": "videos",
+    "order": 15,
+    "sourceUrl": "https://v2.sohu.com/v/url/655307659_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1643104353338",
+    "title": "线下单怎么打单和发货",
+    "product": "distribution",
+    "category": "videos",
+    "order": 16,
+    "sourceUrl": "https://v2.sohu.com/v/url/655307049_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1643104520225",
+    "title": "单号分享怎么操作",
+    "product": "distribution",
+    "category": "videos",
+    "order": 17,
+    "sourceUrl": "https://v2.sohu.com/v/url/655305255_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1643165703924",
+    "title": "手动推单怎么设置",
+    "product": "distribution",
+    "category": "videos",
+    "order": 18,
+    "sourceUrl": "https://v2.sohu.com/v/url/655306934_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1643166135266",
+    "title": "商家/厂家对账商品怎么选？",
+    "product": "distribution",
+    "category": "videos",
+    "order": 19,
+    "sourceUrl": "https://v2.sohu.com/v/url/655306266_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1644548110121",
+    "title": "库存管理如何设置？",
+    "product": "distribution",
+    "category": "videos",
+    "order": 20,
+    "sourceUrl": "https://v2.sohu.com/v/url/650359583_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1626145591864",
+    "title": "首次进入店管家铺货代发助手，操作绑定店铺并铺货",
+    "product": "listing",
+    "category": "assistant",
+    "order": 0,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1626145591864",
+    "type": "article"
+  },
+  {
+    "id": "1626145667983",
+    "title": "完成订购授权后再次选择商品进行铺货",
+    "product": "listing",
+    "category": "assistant",
+    "order": 1,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1626145667983",
+    "type": "article"
+  },
+  {
+    "id": "1626145739303",
+    "title": "关联已有抖音、快手店铺商品",
+    "product": "listing",
+    "category": "assistant",
+    "order": 2,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1626145739303",
+    "type": "article"
+  },
+  {
+    "id": "1626145769430",
+    "title": "查看快手、抖音代销商品订单并进行采购",
+    "product": "listing",
+    "category": "assistant",
+    "order": 3,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1626145769430",
+    "type": "article"
+  },
+  {
+    "id": "1626145823910",
+    "title": "代销商品",
+    "product": "listing",
+    "category": "assistant",
+    "order": 4,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1626145823910",
+    "type": "article"
+  },
+  {
+    "id": "1626145861845",
+    "title": "铺货设置",
+    "product": "listing",
+    "category": "assistant",
+    "order": 5,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1626145861845",
+    "type": "article"
+  },
+  {
+    "id": "1626145907734",
+    "title": "个人中心",
+    "product": "listing",
+    "category": "assistant",
+    "order": 6,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1626145907734",
+    "type": "article"
+  },
+  {
+    "id": "1634183919938",
+    "title": "如何将1688商品铺货到我的店铺",
+    "product": "listing",
+    "category": "pc-assistant",
+    "order": 0,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1634183919938",
+    "type": "article"
+  },
+  {
+    "id": "1765351792316",
+    "title": "app端官方仓操作指引",
+    "product": "listing",
+    "category": "pc-assistant",
+    "order": 1,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1765351792316",
+    "type": "article"
+  },
+  {
+    "id": "1634197343656",
+    "title": "如何查看店铺订单并采购发货",
+    "product": "listing",
+    "category": "pc-assistant",
+    "order": 2,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1634197343656",
+    "type": "article"
+  },
+  {
+    "id": "1634268346954",
+    "title": "如何关联店铺已有商品",
+    "product": "listing",
+    "category": "pc-assistant",
+    "order": 3,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1634268346954",
+    "type": "article"
+  },
+  {
+    "id": "1669788671590",
+    "title": "视频号小店铺货代发操作教程",
+    "product": "listing",
+    "category": "pc-assistant",
+    "order": 4,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1669788671590",
+    "type": "article"
+  },
+  {
+    "id": "1744279095539",
+    "title": "店管家_TikTok如何完成跨境代发使用教程",
+    "product": "cross-border",
+    "category": "getting-started",
+    "order": 0,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1744279095539",
+    "type": "article"
+  },
+  {
+    "id": "1744859268998",
+    "title": "店管家_如何安装采集插件与采集商品使用教程",
+    "product": "cross-border",
+    "category": "getting-started",
+    "order": 1,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1744859268998",
+    "type": "article"
+  },
+  {
+    "id": "1744859803796",
+    "title": "店管家_如何授权TikTok店铺操作教程",
+    "product": "cross-border",
+    "category": "getting-started",
+    "order": 2,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1744859803796",
+    "type": "article"
+  },
+  {
+    "id": "1663658618793",
+    "title": "如何设置合并发货订单、拆分订单？",
+    "product": "printing",
+    "category": "getting-started",
+    "order": 0,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1663658618793",
+    "type": "article"
+  },
+  {
+    "id": "1607651589443",
+    "title": "新手商家使用店管家打单发货教程",
+    "product": "printing",
+    "category": "getting-started",
+    "order": 1,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1607651589443",
+    "type": "article"
+  },
+  {
+    "id": "1581329853898",
+    "title": "线下微商表格订单如何导入打印",
+    "product": "printing",
+    "category": "getting-started",
+    "order": 2,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581329853898",
+    "type": "article"
+  },
+  {
+    "id": "1581404732371",
+    "title": "电子面单单号分享到其他店铺教程",
+    "product": "printing",
+    "category": "getting-started",
+    "order": 3,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581404732371",
+    "type": "article"
+  },
+  {
+    "id": "1581563402455",
+    "title": "多店铺如何操作关联",
+    "product": "printing",
+    "category": "getting-started",
+    "order": 4,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581563402455",
+    "type": "article"
+  },
+  {
+    "id": "1581312354186",
+    "title": "如何分享单号给其他店铺？",
+    "product": "printing",
+    "category": "getting-started",
+    "order": 5,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581312354186",
+    "type": "article"
+  },
+  {
+    "id": "1695089362667",
+    "title": "如何高效打印分销订单",
+    "product": "printing",
+    "category": "getting-started",
+    "order": 6,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1695089362667",
+    "type": "article"
+  },
+  {
+    "id": "1695089370770",
+    "title": "密文打单应该如何操作",
+    "product": "printing",
+    "category": "getting-started",
+    "order": 7,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1695089370770",
+    "type": "article"
+  },
+  {
+    "id": "1695117021420",
+    "title": "单号分享教程",
+    "product": "printing",
+    "category": "getting-started",
+    "order": 8,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1695117021420",
+    "type": "article"
+  },
+  {
+    "id": "1617186973497",
+    "title": "高效筛单、排序、打单、发货",
+    "product": "printing",
+    "category": "getting-started",
+    "order": 9,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1617186973497",
+    "type": "article"
+  },
+  {
+    "id": "1581505345407",
+    "title": "如何重新打印订单",
+    "product": "printing",
+    "category": "getting-started",
+    "order": 10,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581505345407",
+    "type": "article"
+  },
+  {
+    "id": "1581573668105",
+    "title": "如何回收电子面单单号",
+    "product": "printing",
+    "category": "getting-started",
+    "order": 11,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581573668105",
+    "type": "article"
+  },
+  {
+    "id": "1675045386992",
+    "title": "拼多多_关联店铺",
+    "product": "printing",
+    "category": "getting-started",
+    "order": 12,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1675045386992",
+    "type": "article"
+  },
+  {
+    "id": "1581996792662",
+    "title": "打印出来的快递模板偏移了怎么操作",
+    "product": "printing",
+    "category": "getting-started",
+    "order": 13,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581996792662",
+    "type": "article"
+  },
+  {
+    "id": "1695089370954",
+    "title": "如何打印密文订单",
+    "product": "printing",
+    "category": "getting-started",
+    "order": 14,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1695089370954",
+    "type": "article"
+  },
+  {
+    "id": "1648176791397",
+    "title": "如何设置快递不可达操作教程",
+    "product": "printing",
+    "category": "getting-started",
+    "order": 15,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1648176791397",
+    "type": "article"
+  },
+  {
+    "id": "1662600239458",
+    "title": "微信视频号员工账号使用权限设置",
+    "product": "printing",
+    "category": "login",
+    "order": 0,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1662600239458",
+    "type": "article"
+  },
+  {
+    "id": "1576137656224",
+    "title": "阿里进入打单软件教程",
+    "product": "printing",
+    "category": "login",
+    "order": 1,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1576137656224",
+    "type": "article"
+  },
+  {
+    "id": "1581587012441",
+    "title": "淘宝主账号授权子账号使用权限",
+    "product": "printing",
+    "category": "login",
+    "order": 2,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581587012441",
+    "type": "article"
+  },
+  {
+    "id": "1579250137186",
+    "title": "淘宝如何进入打印软件",
+    "product": "printing",
+    "category": "login",
+    "order": 3,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1579250137186",
+    "type": "article"
+  },
+  {
+    "id": "1581587011321",
+    "title": "阿里主账号授权子账号使用权限",
+    "product": "printing",
+    "category": "login",
+    "order": 4,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581587011321",
+    "type": "article"
+  },
+  {
+    "id": "1581583703343",
+    "title": "快手小店子账号如何使用店管家打单发货",
+    "product": "printing",
+    "category": "login",
+    "order": 5,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581583703343",
+    "type": "article"
+  },
+  {
+    "id": "1594351821982",
+    "title": "子账号如何使用店管家打单发货",
+    "product": "printing",
+    "category": "login",
+    "order": 6,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1594351821982",
+    "type": "article"
+  },
+  {
+    "id": "1594352865451",
+    "title": "头条系子账号如何打单发货",
+    "product": "printing",
+    "category": "login",
+    "order": 7,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1594352865451",
+    "type": "article"
+  },
+  {
+    "id": "1619086761601",
+    "title": "什么是电子面单",
+    "product": "printing",
+    "category": "waybill",
+    "order": 0,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1619086761601",
+    "type": "article"
+  },
+  {
+    "id": "1579247832225",
+    "title": "如何开通菜鸟电子面单",
+    "product": "printing",
+    "category": "waybill",
+    "order": 1,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1579247832225",
+    "type": "article"
+  },
+  {
+    "id": "1579252034669",
+    "title": "如何授权菜鸟电子面单",
+    "product": "printing",
+    "category": "waybill",
+    "order": 2,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1579252034669",
+    "type": "article"
+  },
+  {
+    "id": "1582370513430",
+    "title": "如何开通拼多多电子面单",
+    "product": "printing",
+    "category": "waybill",
+    "order": 3,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1582370513430",
+    "type": "article"
+  },
+  {
+    "id": "1576138418389",
+    "title": "如何开通菜鸟电子面单",
+    "product": "printing",
+    "category": "waybill",
+    "order": 4,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1576138418389",
+    "type": "article"
+  },
+  {
+    "id": "1753415000404",
+    "title": "如何开通抖音即时零售电子面单",
+    "product": "printing",
+    "category": "waybill",
+    "order": 5,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1753415000404",
+    "type": "article"
+  },
+  {
+    "id": "1616665534708",
+    "title": "如何开通抖音电子面单",
+    "product": "printing",
+    "category": "waybill",
+    "order": 6,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1616665534708",
+    "type": "article"
+  },
+  {
+    "id": "1642391675640",
+    "title": "快手店铺面单开通教程",
+    "product": "printing",
+    "category": "waybill",
+    "order": 7,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1642391675640",
+    "type": "article"
+  },
+  {
+    "id": "1692783281591",
+    "title": "新版小红书店铺面单开通教程",
+    "product": "printing",
+    "category": "waybill",
+    "order": 8,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1692783281591",
+    "type": "article"
+  },
+  {
+    "id": "1697162904265",
+    "title": "视频号店铺面单开通教程",
+    "product": "printing",
+    "category": "waybill",
+    "order": 9,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1697162904265",
+    "type": "article"
+  },
+  {
+    "id": "1581576383393",
+    "title": "如何使用拼多多非店铺电子面单",
+    "product": "printing",
+    "category": "waybill",
+    "order": 10,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581576383393",
+    "type": "article"
+  },
+  {
+    "id": "1581576543711",
+    "title": "如何开通菜鸟官方电子面单",
+    "product": "printing",
+    "category": "waybill",
+    "order": 11,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581576543711",
+    "type": "article"
+  },
+  {
+    "id": "1581576655669",
+    "title": "如何使用京东无界面电子面单打单发货",
+    "product": "printing",
+    "category": "waybill",
+    "order": 12,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581576655669",
+    "type": "article"
+  },
+  {
+    "id": "1670236601098",
+    "title": "抖店电子面单",
+    "product": "printing",
+    "category": "waybill",
+    "order": 13,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1670236601098",
+    "type": "article"
+  },
+  {
+    "id": "1581575545769",
+    "title": "如何开通菜鸟电子面单",
+    "product": "printing",
+    "category": "waybill",
+    "order": 14,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581575545769",
+    "type": "article"
+  },
+  {
+    "id": "1581575497880",
+    "title": "如何开通京东无界电子面单",
+    "product": "printing",
+    "category": "waybill",
+    "order": 15,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581575497880",
+    "type": "article"
+  },
+  {
+    "id": "1670581416773",
+    "title": "没有快手店铺面单开通教程",
+    "product": "printing",
+    "category": "waybill",
+    "order": 16,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1670581416773",
+    "type": "article"
+  },
+  {
+    "id": "1670581565323",
+    "title": "没有抖音店铺如何使用抖音面单",
+    "product": "printing",
+    "category": "waybill",
+    "order": 17,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1670581565323",
+    "type": "article"
+  },
+  {
+    "id": "1695089365626",
+    "title": "小红书个人面单开通教程",
+    "product": "printing",
+    "category": "waybill",
+    "order": 18,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1695089365626",
+    "type": "article"
+  },
+  {
+    "id": "1579247495621",
+    "title": "如何使用一联单模板",
+    "product": "printing",
+    "category": "templates",
+    "order": 0,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1579247495621",
+    "type": "article"
+  },
+  {
+    "id": "1581501267754",
+    "title": "快递单上如何添加自定义文字",
+    "product": "printing",
+    "category": "templates",
+    "order": 1,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581501267754",
+    "type": "article"
+  },
+  {
+    "id": "1581910637696",
+    "title": "快递单如何打印商品内容",
+    "product": "printing",
+    "category": "templates",
+    "order": 2,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581910637696",
+    "type": "article"
+  },
+  {
+    "id": "1581575319327",
+    "title": "如何使用店管家打印顺丰丰桥电子面单",
+    "product": "printing",
+    "category": "templates",
+    "order": 3,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581575319327",
+    "type": "article"
+  },
+  {
+    "id": "1597976356153",
+    "title": "京东无界众邮电子面单如何使用",
+    "product": "printing",
+    "category": "templates",
+    "order": 4,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1597976356153",
+    "type": "article"
+  },
+  {
+    "id": "1617248754009",
+    "title": "如何使用菜鸟裹裹寄件",
+    "product": "printing",
+    "category": "templates",
+    "order": 5,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1617248754009",
+    "type": "article"
+  },
+  {
+    "id": "1656670779378",
+    "title": "怎么使用丰网速运快递打单发货？",
+    "product": "printing",
+    "category": "templates",
+    "order": 6,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1656670779378",
+    "type": "article"
+  },
+  {
+    "id": "1744019458946",
+    "title": "德邦快递不可达筛单设置",
+    "product": "printing",
+    "category": "templates",
+    "order": 7,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1744019458946",
+    "type": "article"
+  },
+  {
+    "id": "1581910577171",
+    "title": "快递单打印如何添加自定义文字",
+    "product": "printing",
+    "category": "templates",
+    "order": 8,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581910577171",
+    "type": "article"
+  },
+  {
+    "id": "1619174765084",
+    "title": "如何使用1688官方物流服务打单发货",
+    "product": "printing",
+    "category": "templates",
+    "order": 9,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1619174765084",
+    "type": "article"
+  },
+  {
+    "id": "1597979177722",
+    "title": "直连众邮电子面单如何使用",
+    "product": "printing",
+    "category": "templates",
+    "order": 10,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1597979177722",
+    "type": "article"
+  },
+  {
+    "id": "1599209785193",
+    "title": "如何使用众邮快递打单发货",
+    "product": "printing",
+    "category": "templates",
+    "order": 11,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1599209785193",
+    "type": "article"
+  },
+  {
+    "id": "1653381065034",
+    "title": "菜鸟裹裹商家寄件操作教程",
+    "product": "printing",
+    "category": "templates",
+    "order": 12,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1653381065034",
+    "type": "article"
+  },
+  {
+    "id": "1599816281154",
+    "title": "如何使用极兔快递打单发货？",
+    "product": "printing",
+    "category": "templates",
+    "order": 13,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1599816281154",
+    "type": "article"
+  },
+  {
+    "id": "1703575180257",
+    "title": "1688_定制商品",
+    "product": "printing",
+    "category": "templates",
+    "order": 14,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1703575180257",
+    "type": "article"
+  },
+  {
+    "id": "1607402220095",
+    "title": "拼多多顺丰电子面单如何使用",
+    "product": "printing",
+    "category": "templates",
+    "order": 15,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1607402220095",
+    "type": "article"
+  },
+  {
+    "id": "1581498753590",
+    "title": "C-lodop 云打印控件安装",
+    "product": "printing",
+    "category": "print-components",
+    "order": 0,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581498753590",
+    "type": "article"
+  },
+  {
+    "id": "1579255899113",
+    "title": "CAINIAO菜鸟打印组件下载和安装",
+    "product": "printing",
+    "category": "print-components",
+    "order": 1,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1579255899113",
+    "type": "article"
+  },
+  {
+    "id": "1582371210827",
+    "title": "拼多多控件安装方法",
+    "product": "printing",
+    "category": "print-components",
+    "order": 2,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1582371210827",
+    "type": "article"
+  },
+  {
+    "id": "1662020290472",
+    "title": "微信视频号怎么打单发货",
+    "product": "printing",
+    "category": "shipping",
+    "order": 0,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1662020290472",
+    "type": "article"
+  },
+  {
+    "id": "1601343350852",
+    "title": "淘宝特价版怎么打单发货",
+    "product": "printing",
+    "category": "shipping",
+    "order": 1,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1601343350852",
+    "type": "article"
+  },
+  {
+    "id": "1588820365244",
+    "title": "淘工厂怎么打单发货",
+    "product": "printing",
+    "category": "shipping",
+    "order": 2,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1588820365244",
+    "type": "article"
+  },
+  {
+    "id": "1598327548348",
+    "title": "阿里巴巴怎么打单发货",
+    "product": "printing",
+    "category": "shipping",
+    "order": 3,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1598327548348",
+    "type": "article"
+  },
+  {
+    "id": "1649322950030",
+    "title": "疫情期间，这样处理不可达订单更快捷哟！",
+    "product": "printing",
+    "category": "shipping",
+    "order": 4,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1649322950030",
+    "type": "article"
+  },
+  {
+    "id": "1718267695875",
+    "title": "京东_分包发货，重新发货",
+    "product": "printing",
+    "category": "shipping",
+    "order": 5,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1718267695875",
+    "type": "article"
+  },
+  {
+    "id": "1600150707215",
+    "title": "微信小商店怎么打单发货",
+    "product": "printing",
+    "category": "shipping",
+    "order": 6,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1600150707215",
+    "type": "article"
+  },
+  {
+    "id": "1581578990493",
+    "title": "抖音小店怎么打单发货",
+    "product": "printing",
+    "category": "shipping",
+    "order": 7,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581578990493",
+    "type": "article"
+  },
+  {
+    "id": "1582370427104",
+    "title": "拼多多怎么打单发货",
+    "product": "printing",
+    "category": "shipping",
+    "order": 8,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1582370427104",
+    "type": "article"
+  },
+  {
+    "id": "1669625619817",
+    "title": "抖音_重新发货、分包发货",
+    "product": "printing",
+    "category": "shipping",
+    "order": 9,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1669625619817",
+    "type": "article"
+  },
+  {
+    "id": "1679363581164",
+    "title": "淘宝_分包发货、重新发货",
+    "product": "printing",
+    "category": "shipping",
+    "order": 10,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1679363581164",
+    "type": "article"
+  },
+  {
+    "id": "1698219911741",
+    "title": "抖店_在线寄件",
+    "product": "printing",
+    "category": "shipping",
+    "order": 11,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1698219911741",
+    "type": "article"
+  },
+  {
+    "id": "1599209985884",
+    "title": "魔筷星选怎么打单发货",
+    "product": "printing",
+    "category": "shipping",
+    "order": 12,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1599209985884",
+    "type": "article"
+  },
+  {
+    "id": "1581578931455",
+    "title": "快手小店怎么打单发货",
+    "product": "printing",
+    "category": "shipping",
+    "order": 13,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581578931455",
+    "type": "article"
+  },
+  {
+    "id": "1605680271985",
+    "title": "拼多多客户端怎么打单发货",
+    "product": "printing",
+    "category": "shipping",
+    "order": 14,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1605680271985",
+    "type": "article"
+  },
+  {
+    "id": "1581579051179",
+    "title": "有赞怎么打单发货",
+    "product": "printing",
+    "category": "shipping",
+    "order": 15,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581579051179",
+    "type": "article"
+  },
+  {
+    "id": "1685671295998",
+    "title": "抖店_发货探查",
+    "product": "printing",
+    "category": "shipping",
+    "order": 16,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1685671295998",
+    "type": "article"
+  },
+  {
+    "id": "1602743436491",
+    "title": "抖店如何使用店管家打单发货",
+    "product": "printing",
+    "category": "shipping",
+    "order": 17,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1602743436491",
+    "type": "article"
+  },
+  {
+    "id": "1668668163359",
+    "title": "快手_重新发货、分包发货",
+    "product": "printing",
+    "category": "shipping",
+    "order": 18,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1668668163359",
+    "type": "article"
+  },
+  {
+    "id": "1655430667183",
+    "title": "拼多多_重新发货、分包发货",
+    "product": "printing",
+    "category": "shipping",
+    "order": 19,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1655430667183",
+    "type": "article"
+  },
+  {
+    "id": "1672989331944",
+    "title": "淘宝_同城配送、商家配送",
+    "product": "printing",
+    "category": "shipping",
+    "order": 20,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1672989331944",
+    "type": "article"
+  },
+  {
+    "id": "1732591002139",
+    "title": "抖音_周期配送订单",
+    "product": "printing",
+    "category": "shipping",
+    "order": 21,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1732591002139",
+    "type": "article"
+  },
+  {
+    "id": "1693970625736",
+    "title": "抖店_承诺日达",
+    "product": "printing",
+    "category": "shipping",
+    "order": 22,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1693970625736",
+    "type": "article"
+  },
+  {
+    "id": "1576570067746",
+    "title": "如何设置小标签模板",
+    "product": "printing",
+    "category": "labels",
+    "order": 0,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1576570067746",
+    "type": "article"
+  },
+  {
+    "id": "1578378589644",
+    "title": "如何使用小标签，完成备货，分拣，打包，扫描打印发货流程？",
+    "product": "printing",
+    "category": "labels",
+    "order": 1,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1578378589644",
+    "type": "article"
+  },
+  {
+    "id": "1578363504564",
+    "title": "订单缺货如何处理？",
+    "product": "printing",
+    "category": "labels",
+    "order": 2,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1578363504564",
+    "type": "article"
+  },
+  {
+    "id": "1576573072105",
+    "title": "如何设置、使用分拣码，单双件订单快速分拣打包？",
+    "product": "printing",
+    "category": "labels",
+    "order": 3,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1576573072105",
+    "type": "article"
+  },
+  {
+    "id": "1592294187907",
+    "title": "如何打印小票清单完成备货",
+    "product": "printing",
+    "category": "labels",
+    "order": 4,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1592294187907",
+    "type": "article"
+  },
+  {
+    "id": "1669172891820",
+    "title": "拼多多_跨境托管单",
+    "product": "printing",
+    "category": "supplier",
+    "order": 0,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1669172891820",
+    "type": "article"
+  },
+  {
+    "id": "1589798726514",
+    "title": "拼多多_厂家代发（商家版）",
+    "product": "printing",
+    "category": "supplier",
+    "order": 1,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1589798726514",
+    "type": "article"
+  },
+  {
+    "id": "1589802666100",
+    "title": "拼多多_厂家代发如何打单发货",
+    "product": "printing",
+    "category": "supplier",
+    "order": 2,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1589802666100",
+    "type": "article"
+  },
+  {
+    "id": "1651822718732",
+    "title": "淘宝_厂家代发介绍",
+    "product": "printing",
+    "category": "supplier",
+    "order": 3,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1651822718732",
+    "type": "article"
+  },
+  {
+    "id": "1669257730895",
+    "title": "1688_密文订单",
+    "product": "printing",
+    "category": "supplier",
+    "order": 4,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1669257730895",
+    "type": "article"
+  },
+  {
+    "id": "1669270859647",
+    "title": "快手_厂家代发打单发货",
+    "product": "printing",
+    "category": "supplier",
+    "order": 5,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1669270859647",
+    "type": "article"
+  },
+  {
+    "id": "1579245420338",
+    "title": "手机小程序如何打单发货",
+    "product": "printing",
+    "category": "miniapp",
+    "order": 0,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1579245420338",
+    "type": "article"
+  },
+  {
+    "id": "1679896555958",
+    "title": "菜鸟云打印添加教程",
+    "product": "printing",
+    "category": "miniapp",
+    "order": 1,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1679896555958",
+    "type": "article"
+  },
+  {
+    "id": "1652956044504",
+    "title": "拼多多4G云打印使用教程",
+    "product": "printing",
+    "category": "miniapp",
+    "order": 2,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1652956044504",
+    "type": "article"
+  },
+  {
+    "id": "1773890104935",
+    "title": "手机小程序抖音订单打印教程",
+    "product": "printing",
+    "category": "miniapp",
+    "order": 3,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1773890104935",
+    "type": "article"
+  },
+  {
+    "id": "1586860811988",
+    "title": "分享出去的单号怎么对账",
+    "product": "printing",
+    "category": "other",
+    "order": 0,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1586860811988",
+    "type": "article"
+  },
+  {
+    "id": "1602644621852",
+    "title": "贝贝/贝店/贝仓如何使用店管家打单发货",
+    "product": "printing",
+    "category": "other",
+    "order": 1,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1602644621852",
+    "type": "article"
+  },
+  {
+    "id": "1617872559964",
+    "title": "如何设置恶意虚假地址提醒不打单发货",
+    "product": "printing",
+    "category": "other",
+    "order": 2,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1617872559964",
+    "type": "article"
+  },
+  {
+    "id": "1581573818615",
+    "title": "新用户如何打印电子面单批量发货",
+    "product": "printing",
+    "category": "other",
+    "order": 3,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581573818615",
+    "type": "article"
+  },
+  {
+    "id": "1576137685464",
+    "title": "线上订单打单发货教程",
+    "product": "printing",
+    "category": "other",
+    "order": 4,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1576137685464",
+    "type": "article"
+  },
+  {
+    "id": "1581588127117",
+    "title": "切换浏览器模式",
+    "product": "printing",
+    "category": "other",
+    "order": 5,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581588127117",
+    "type": "article"
+  },
+  {
+    "id": "1581400775937",
+    "title": "如何进行快递对账",
+    "product": "printing",
+    "category": "other",
+    "order": 6,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581400775937",
+    "type": "article"
+  },
+  {
+    "id": "1593570456882",
+    "title": "抖店商家使用新授权登录方式进入店管家",
+    "product": "printing",
+    "category": "other",
+    "order": 7,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1593570456882",
+    "type": "article"
+  },
+  {
+    "id": "1598435372704",
+    "title": "一单多包/部分发货怎么操作",
+    "product": "printing",
+    "category": "other",
+    "order": 8,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1598435372704",
+    "type": "article"
+  },
+  {
+    "id": "1623136053737",
+    "title": "团好货打印电子面单教程",
+    "product": "printing",
+    "category": "other",
+    "order": 9,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1623136053737",
+    "type": "article"
+  },
+  {
+    "id": "1636509535159",
+    "title": "店管家抖音售后小助手功能介绍",
+    "product": "printing",
+    "category": "other",
+    "order": 10,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1636509535159",
+    "type": "article"
+  },
+  {
+    "id": "1639107551201",
+    "title": "虚拟号介绍",
+    "product": "printing",
+    "category": "other",
+    "order": 11,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1639107551201",
+    "type": "article"
+  },
+  {
+    "id": "1642658630039",
+    "title": "淘宝设置默认发货人",
+    "product": "printing",
+    "category": "other",
+    "order": 12,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1642658630039",
+    "type": "article"
+  },
+  {
+    "id": "1652954829677",
+    "title": "4G云打印机电脑端远程打印教程",
+    "product": "printing",
+    "category": "other",
+    "order": 13,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1652954829677",
+    "type": "article"
+  },
+  {
+    "id": "1663209799566",
+    "title": "如何使用预发货功能",
+    "product": "printing",
+    "category": "other",
+    "order": 14,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1663209799566",
+    "type": "article"
+  },
+  {
+    "id": "1663840176678",
+    "title": "关于各类名词解释",
+    "product": "printing",
+    "category": "other",
+    "order": 15,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1663840176678",
+    "type": "article"
+  },
+  {
+    "id": "1683186898401",
+    "title": "功能介绍",
+    "product": "printing",
+    "category": "other",
+    "order": 16,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1683186898401",
+    "type": "article"
+  },
+  {
+    "id": "1706525755826",
+    "title": "2024值班时间",
+    "product": "printing",
+    "category": "other",
+    "order": 17,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1706525755826",
+    "type": "article"
+  },
+  {
+    "id": "1713855395459",
+    "title": "关闭迁移模式详情",
+    "product": "printing",
+    "category": "other",
+    "order": 18,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1713855395459",
+    "type": "article"
+  },
+  {
+    "id": "1721801811307",
+    "title": "抖音_买家修改地址自动审核",
+    "product": "printing",
+    "category": "other",
+    "order": 19,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1721801811307",
+    "type": "article"
+  },
+  {
+    "id": "1635738290764",
+    "title": "店管家 1688 优选服务工作台“打单发货”系统",
+    "product": "printing",
+    "category": "other",
+    "order": 20,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1635738290764",
+    "type": "article"
+  },
+  {
+    "id": "1581580322901",
+    "title": "蘑菇街如何使用软件打单发货",
+    "product": "printing",
+    "category": "other",
+    "order": 21,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581580322901",
+    "type": "article"
+  },
+  {
+    "id": "1638842442009",
+    "title": "淘宝买家自助修改SKU",
+    "product": "printing",
+    "category": "other",
+    "order": 22,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1638842442009",
+    "type": "article"
+  },
+  {
+    "id": "1582279126578",
+    "title": "微盟生鲜订单该如何打单配货",
+    "product": "printing",
+    "category": "other",
+    "order": 23,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1582279126578",
+    "type": "article"
+  },
+  {
+    "id": "1640325658487",
+    "title": "使用 shift 批量选择订单",
+    "product": "printing",
+    "category": "other",
+    "order": 24,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1640325658487",
+    "type": "article"
+  },
+  {
+    "id": "1581580355655",
+    "title": "微店如何使用软件打单发货",
+    "product": "printing",
+    "category": "other",
+    "order": 25,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581580355655",
+    "type": "article"
+  },
+  {
+    "id": "1648895188634",
+    "title": "如何共享不可达地区给到商家店铺呢？",
+    "product": "printing",
+    "category": "other",
+    "order": 26,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1648895188634",
+    "type": "article"
+  },
+  {
+    "id": "1587466082564",
+    "title": "热敏打印机一联单打印问题",
+    "product": "printing",
+    "category": "other",
+    "order": 27,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1587466082564",
+    "type": "article"
+  },
+  {
+    "id": "1659668592310",
+    "title": "4G 云打印机",
+    "product": "printing",
+    "category": "other",
+    "order": 28,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1659668592310",
+    "type": "article"
+  },
+  {
+    "id": "1581580392753",
+    "title": "小店如何使用软件打单发货",
+    "product": "printing",
+    "category": "other",
+    "order": 29,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581580392753",
+    "type": "article"
+  },
+  {
+    "id": "1663236021766",
+    "title": "备货单如何使用",
+    "product": "printing",
+    "category": "other",
+    "order": 30,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1663236021766",
+    "type": "article"
+  },
+  {
+    "id": "1581580491159",
+    "title": "萌推平台如何打单发货",
+    "product": "printing",
+    "category": "other",
+    "order": 31,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581580491159",
+    "type": "article"
+  },
+  {
+    "id": "1665212272030",
+    "title": "淘宝_打印快递单出现一堆数字",
+    "product": "printing",
+    "category": "other",
+    "order": 32,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1665212272030",
+    "type": "article"
+  },
+  {
+    "id": "1581580273127",
+    "title": "微盟平台如何使用软件打单发货",
+    "product": "printing",
+    "category": "other",
+    "order": 33,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581580273127",
+    "type": "article"
+  },
+  {
+    "id": "1703061887326",
+    "title": "订单合并",
+    "product": "printing",
+    "category": "other",
+    "order": 34,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1703061887326",
+    "type": "article"
+  },
+  {
+    "id": "1581405680209",
+    "title": "如何使用自动评价",
+    "product": "printing",
+    "category": "other",
+    "order": 35,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581405680209",
+    "type": "article"
+  },
+  {
+    "id": "1712568369022",
+    "title": "快手 中转订单履约发货说明",
+    "product": "printing",
+    "category": "other",
+    "order": 36,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1712568369022",
+    "type": "article"
+  },
+  {
+    "id": "1581576743028",
+    "title": "苏宁如何打印订单发货",
+    "product": "printing",
+    "category": "other",
+    "order": 37,
+    "sourceUrl": "https://www.dgjapp.com/newHelpsShow.html?id=1581576743028",
+    "type": "article"
+  },
+  {
+    "id": "1577426635188",
+    "title": "新拿货小标签",
+    "product": "printing",
+    "category": "videos",
+    "order": 0,
+    "sourceUrl": "https://v2.sohu.com/v/url/650097241_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1587363120506",
+    "title": "淘工厂授权登录店管家打单发货",
+    "product": "printing",
+    "category": "videos",
+    "order": 1,
+    "sourceUrl": "https://v2.sohu.com/v/url/650097143_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1648889595653",
+    "title": "打单系统快递不可达教程",
+    "product": "printing",
+    "category": "videos",
+    "order": 2,
+    "sourceUrl": "https://v2.sohu.com/v/url/650353333_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1602734240123",
+    "title": "快手小店新手教程",
+    "product": "printing",
+    "category": "videos",
+    "order": 3,
+    "sourceUrl": "https://v2.sohu.com/v/url/650096502_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1602744661611",
+    "title": "抖店新手操作引导教程",
+    "product": "printing",
+    "category": "videos",
+    "order": 4,
+    "sourceUrl": "https://v2.sohu.com/v/url/650357800_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1579241885913",
+    "title": "手机打单发货教程",
+    "product": "printing",
+    "category": "videos",
+    "order": 5,
+    "sourceUrl": "https://v2.sohu.com/v/url/650096851_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1582597125647",
+    "title": "单号分享教程",
+    "product": "printing",
+    "category": "videos",
+    "order": 6,
+    "sourceUrl": "https://v2.sohu.com/v/url/650095186_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1605758559755",
+    "title": "快手小店新手打单发货操作视频",
+    "product": "printing",
+    "category": "videos",
+    "order": 7,
+    "sourceUrl": "https://v2.sohu.com/v/url/650360922_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  },
+  {
+    "id": "1605770103014",
+    "title": "抖店新手打单发货操作视频",
+    "product": "printing",
+    "category": "videos",
+    "order": 8,
+    "sourceUrl": "https://v2.sohu.com/v/url/650359169_120542292.MP4",
+    "type": "video",
+    "poster": "https://www.dgjapp.com/public/images/new/video_icon.png"
+  }
+]

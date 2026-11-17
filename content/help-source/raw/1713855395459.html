@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>关闭迁移模式详情</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="/public/css/setBase.css">
+    <link rel="stylesheet" href="/public/css/newCommon.css">
+    <link rel="stylesheet" href="/public/fonts/iconfont.css">
+    <link rel="stylesheet" href="../../public/css/xcConfirm.css">
+    <link rel="shortcut icon" type="image/ico" href="/public/images/favicon.ico">
+
+    
+<meta name="keywords" content=>
+    
+<style>
+    .content {
+        padding-bottom: 80px;
+        padding-top: 20px;
+        width: 1220px;
+        margin: 0 auto;
+    }
+
+    .helpContent_01 {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    header {
+        position: static;
+        /*background-color: #8958ff;*/
+        box-shadow: 0 2px 5px 3px #ddd;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 5px;
+    }
+
+    .content_main>.search {
+        padding: 10px;
+        text-align: right;
+        width: 100%;
+
+    }
+
+    .search_box {
+        display: inline-block;
+        width: 400px;
+        height: 40px;
+        border: 2px solid #3aadff;
+    }
+
+    .search_box>ul {
+        width: 100%;
+        height: 40px;
+    }
+
+    .search_box>ul>li {
+        height: 40px;
+        float: left;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .search_box_condition {
+        width: 11%;
+        border-right: 1px solid #ddd;
+        box-sizing: border-box;
+    }
+
+    .search_box_content {
+        width: 78%;
+    }
+
+    .search_box_content input {
+        width: 100%;
+        height: 39px;
+        border: none;
+        position: relative;
+        left: 0;
+        top: -1px;
+    }
+
+    .search_box_do {
+        width: 11%;
+        background-color: #3aadff;
+        color: #fff;
+    }
+
+    .platform>div {
+        float: left;
+
+    }
+
+    .platform>.platform_helpInformation {
+        border-left: 1px solid #ddd;
+        padding: 0 10px;
+    }
+
+    /*.platform>div:first-child{*/
+    /*border-left: none;*/
+    /*}*/
+    .platform>div>ul>li {
+        padding: 10px 0;
+    }
+
+    .platform>div>ul>.active,
+    .platform>div>dl>.active {
+        color: #3aadff;
+    }
+
+    .platform>div>dl>dd .active {
+        color: #3aadff;
+    }
+
+    .platform_helpInformation>dl>dd {
+        padding: 10px 0;
+        cursor: pointer;
+        width: 220px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+    }
+
+    .platform_helpInformation>dl>dd:hover {
+        color: #3aadff;
+    }
+
+    .platform_helpInformation>dl>dt {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 14px;
+        color: #f7941f;
+        border-bottom: 1px solid #f7941f;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        cursor: pointer;
+
+    }
+
+    .content_main_content {
+        min-width: 735px;
+        width: 970px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        padding: 0 8px 10px 8px;
+        box-sizing: border-box;
+    }
+
+    .content_main_content_title {
+        border-bottom: 1px dashed #ddd;
+        padding: 10px 0;
+
+    }
+
+    .ask_main_title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #000;
+        padding: 30px 10px;
+        font-family: 微软雅黑;
+        text-align: center;
+        line-height: 22px;
+    }
+
+    .ask_main_content_li {
+        height: 35px;
+        background-color: #d3ecfd;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .ask_main_content {
+        margin-bottom: 20px;
+    }
+
+    .ask_main_content>img {
+        width: 100%;
+    }
+
+    .askIcon {
+        width: 30px;
+        height: 30px;
+        background-color: #3aadff;
+        border-radius: 15px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+
+    @media (max-width: 1080px) {
+        .platform_helpInformation>dl>dd {
+            float: left;
+            margin-right: 10px;
+        }
+
+        .content_main_content {
+            margin-left: 20px;
+        }
+
+    }
+
+    @media (max-width: 768px) {
+        .content {
+            padding-top: 0;
+        }
+
+        .content_main_content {
+            margin-left: 0;
+
+        }
+
+        .content_main_content {
+            width: 100%;
+            min-width: auto;
+            max-width: auto;
+        }
+
+        .footer-content-left {
+            display: none;
+        }
+
+        .platform_helpInformation {
+            display: none;
+        }
+
+        .content {
+            width: 100%;
+        }
+
+        .ask_main_content img {
+            width: 100% !important;
+        }
+
+        .ask_main_content_li {
+            height: unset;
+            min-height: 35px;
+        }
+
+        .helpContent_step,
+        .helpContent_explain {
+            width: 100% !important;
+            box-sizing: border-box;
+        }
+
+        .content_main_content_main img {
+            width: 100% !important;
+            margin: 0 !important;
+            height: unset!important;
+        }
+
+    }
+
+    .telType {
+        height: 600px;
+        width: unset;
+    }
+
+    .normalType {
+        width: 950px;
+    }
+    table{
+        font-size: 12px;
+        line-height: 30px;
+        border-left: solid 1px #dbdbdb;
+        width: 100%;
+        background-color: #fff;
+    }
+    table thead tr {
+        background-color: #f6f9fd;
+    }
+    table thead tr th, table tbody tr td {
+    border-right: solid 1px #e6e6e6;
+    border-top: solid 1px #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    font-weight: normal;
+    min-height: 20px;
+    line-height: 20px;
+    padding: 8px 10px;
+    text-align: left;
+}
+</style>
+
+    <script src="/public/js/shanqian.js"></script>
+    <script> var _hmt = _hmt || []; (function () { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?7fe1adc7d0527596576659f543a531ea"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })();</script>
+</head>
+
+<body>
+    <!-- <div class="loginAilogin" onclick="headerLoginCommon.openOrCloselogin(true)"> -->
+<div class="loginAilogin">
+
+    <div class="loginWrap_content_inputDiv" onclick="$$.stopM(event)">
+        <div class="loginWrap_title">登录</div>
+        <div class="iconfont icon-dengchu" style="font-size: 22px;color: #666;position: absolute;top: 20px;right: 20px;cursor: pointer;" onclick="headerLoginCommon.openOrCloselogin(true)"></div>
+        <div class="loginWrap_content_warn"></div>
+        <ul class="loginWrap_content_inputUl" id="intoLoginSelf" style="display: flex;">
+            <li><input type="text" placeholder="请输入11位手机号" id="loginTelePhone" maxlength="11"></li>
+            <li><input type="password" placeholder="请输入密码:大于6位，由数字和字母组成" id="loginPassword"></li>
+            <li>
+
+                <!-- <input type="text" style="width: 135px" placeholder="请输入验证码" id="loginValidCode"  maxlength="6">
+                <div  class="loginCode"> <img id="vCodeId" src="http://erp.dgjapp.com/Account/ValidCode?t=1" onclick="headerLoginCommon.validCode()" /></div> -->
+                <input type="text" id="code_input" value="" placeholder="请输入验证码" style="width: 120px;"/>
+                <!-- <div id="v_container" style="width: 150px;height: 50px;display: inline-block;position: relative;top: 12px;"></div> -->
+                <img src="/getCode" id="getCode" alt=""  onclick='headerLoginCommon.getCheckForm(this);'>
+
+
+            </li>
+            <li>
+                <span  id="check-btn2" class="loginWrap_content_btn login" onclick="headerLoginCommon.login()" >登录</span>
+                <span class="loginWrap_content_btn Loading" onclick="headerLoginCommon.login()" >登录中<i class="loading"></i></span>
+            </li>
+        </ul>
+
+        <ul class="loginWrap_content_inputUl" id="intoRegisterSelf" style="display: none;">
+            <li><input type="text" placeholder="请输入11位手机号" id="intoRegisterTelePhone" maxlength="11"></li>
+            <li><input type="text" style="width: 135px" placeholder="请输入短信验证码" id="intoRegisterValidCode" maxlength="8">
+                <input type="button" class="getCode" id="LoginCode1" value="免费获取验证码"
+                    onclick="headerLoginCommon.postMobileMessageCode('1')"></li>
+            <li><input type="password" placeholder="请输入密码" id="intoRegisterTelePass"></li>
+            <li><input type="password" placeholder="请确认密码" id="sureIntoRegisterTelePass"></li>
+            <li><span class="loginWrap_content_btn" onclick="headerLoginCommon.register()">注册</span></li>
+        </ul>
+
+        <ul class="loginWrap_content_inputUl" id="setLoginPwd" style="display: none;">
+            <li><input type="text" placeholder="请输入11位手机号" id="againSetPhone" maxlength="11"></li>
+            <li><input type="text" style="width: 135px" placeholder="请输入短信验证码" id="againRegisterValidCode"
+                    maxlength="8"> <input type="button" class="getCode" id="LoginCode2" value="免费获取验证码"
+                    onclick="headerLoginCommon.postMobileMessageCode('2')"></li>
+            <li><input type="password" placeholder="请输入密码" id="againSetPassword"></li>
+            <li><input type="password" placeholder="请确认密码" id="sureAgainSetPassword"></li>
+            <li><span class="loginWrap_content_btn" onclick="headerLoginCommon.againSetPassword()">重设密码</span></li>
+        </ul>
+
+        <div class="loginWrap_content_btns"><span onclick="headerLoginCommon.registerSkip()">注册</span><span onclick="headerLoginCommon.amendPwdSkip()">忘记密码</span><span onclick="headerLoginCommon.goBackLogin()" style="margin-left: 80px;color: #3cc3a2;">返回登录</span></div>
+
+    </div>
+</div>
+
+    <header class="header">
+    <div class="nav"></div>
+    <div id="menu_hover_bg" style="height: 0px; overflow: hidden;"></div>
+    <div class="w1200">
+        <div class="logo">
+            <a href="./index.html">
+                <span class="header-left-icon"></span>
+                <span class="header-left-fuTitle">批量打印发货系统</span>
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="yidong-log">
+                    <span></span>
+                    <span>深圳店管家软件有限公司</span>
+                </li>
+                <li id="men_pro">
+                    <h2><a href="./../index.html" class="index"><span class="iconfont icon-002-home2"></span>首页</a></h2>
+                </li>
+                <li id="men_sol" class="men_list">
+                    <h2><a href="./../productIntroduce.html" class="productIntroduce"><span style="font-size: 16px"
+                                class="iconfont icon-renshifuwu"></span>产品与服务</a></h2>
+
+                    <div class="sub_menu">
+                        <ul id="sub_menu_ul" style="display: flex;">
+                            <li class="more-list" id="platform-primaryHeader" style="width: 250px;">
+                                <div class="w1200">
+                                    <h3>主流平台</h3>
+                                </div>
+                            </li>
+                            <li class="more-list" id="platform-optimizedHeader" style="width: 750px;">
+                                <div class="w1200">
+                                    <h3>优选平台</h3>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+                <!-- <li id="men_fuwu" class="men_list">
+                    <h2>
+                        <a href="#" class="fuwu"><span class="iconfont icon-fangan2"
+                                style="font-size: 19px"></span>行业方案</a>
+                        <span class="menu-new-icon"><i style="margin-top: -1px;display: block;">hot</i></span>
+                    </h2>
+                    <div class="sub_menu">
+                        <div class="w1200">
+                            <h3>企业服务方案</h3>
+                        </div>
+                        <div class="sub_menu_list02">
+                            <a class="youzhanfu" href="./../kuaishouPlatform.html">快手服务</a>
+                        </div>
+                        <div class="sub_menu_list02">
+                            <a class="youzhanfu" href="./../youzhanCatalog.html">有赞服务</a>
+                        </div>
+                    </div>
+                </li> -->
+                <li>
+                    <h2>
+                        <a href="./../newShareWayBillAccount.html" class="newShareWayBillAccount"><span
+                                class="iconfont icon-002-home2"></span>快递单号共用</a>
+                        <span class="menu-new-icon"><i style="margin-top: -1px;display: block;">hot</i></span>
+                    </h2>
+                </li>
+                <li id="men_new">
+                    <h2>
+                        <a href="./../Sharefendan.html" class="Sharefendan"><span
+                                class="iconfont icon-002-home2"></span>分销代发ERP</a>
+                        <!-- <span class="menu-new-icon"><i style="margin-top: -1px;display: block;">new</i></span> -->
+                    </h2>
+                </li>
+                <li id="men_new">
+                    <h2>
+                        <a href="./../puHuo.html" class="puHuo"><span
+                                class="iconfont icon-002-home2"></span>铺货代发</a>
+                        <span class="menu-new-icon"><i style="margin-top: -1px;display: block;">new</i></span>
+                    </h2>
+                </li>
+                <li class="menu-new">
+                    <h2>
+                        <a href="./../openPlatform.html" class="openPlatform"><span class="iconfont icon-shiyong-"
+                                style="font-size: 19px"></span>开放平台</a>
+                    </h2>
+                </li>
+                <li>
+                    <h2><a href="http://erp.dgjapp.com/" target="_blank"><span class="iconfont icon-shiyong-"
+                                style="font-size: 19px"></span>产品试用</a></h2>
+                </li>
+                <li>
+                    <h2><a href="./../newHelps.html" class="help"><span
+                                class="iconfont icon-shiyongshouce"></span>帮助中心</a></h2>
+                </li>
+                <li>
+                    <h2><a href="./../news.html" class="news"><span class="iconfont icon-xinwenzhongxin"></span>新闻动态</a>
+                    </h2>
+                </li>
+                <!-- <li>
+                    <h2><a href="./../PreLiveVideo.html" class="PreLive"><span
+                                class="iconfont icon-guanyuwomen1"></span>直播预告</a></h2>
+                </li> -->
+                <li>
+                    <h2><a href="./../aboutMy.html" class="aboutMy"><span
+                                class="iconfont icon-guanyuwomen1"></span>关于我们</a></h2>
+                </li>
+
+            </ul>
+        </div>
+        <div class="login">
+            <!--            <a href="#">登陆</a>-->
+            <a href="#">服务热线</a>
+            <a href="#">400 863 8288</a>
+        </div>
+        <div class="fixedShade"></div>
+
+    </div>
+    <!-- <div class="usersLogin">
+        <span class="usersLogin-into"><i onclick="headerLoginCommon.showLogin('AppStore')">登录</i>|<i  onclick="headerLoginCommon.showRegister()">注册</i></span>
+        <span id="loginSuccess">
+            <i class="iconfont icon-zhucedengluyonghuming">：</i><a id="loginUserName" target="_blank"></a>
+            <i style="margin-left: 5px;" class="iconfont icon-dengchu" title="登出" onclick="headerLoginCommon.loginOut()"></i>
+        </span>
+    </div> -->
+    <div class="xeixinshop" style="display:none;">
+        视频号小店入口
+        <span class="xeixinshop-ad-back"></span>
+        <div class="xeixinshop-wrap">
+            <img src="../../public/images/kaifang/xiaodianerweima.png" alt="">
+            <span class="xeixinshop-wrap-title">扫码添加好友，优先使用打单功能</span>
+        </div>
+    </div>
+</header>
+
+
+
+    
+    
+<div class="content">
+    <div class="content_main platform clearfix">
+        <div class="platform_helpInformation">
+            <dl>
+                <dt>其它相关文档</dt>
+                
+                <!-- <dd data-id=&#34;5df1f3d33099b42a508afdc4&#34;></dd> -->
+                
+                <dd data-id=1576137685464> <a
+                        href="./newHelpsShow.html?id=1576137685464">线上订单打单发货教程</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e4242c7bf5ffb12d4469c68&#34;></dd> -->
+                
+                <dd data-id=1581400775937> <a
+                        href="./newHelpsShow.html?id=1581400775937">如何进行快递对账</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e4255efbf5ffb12d4469c6a&#34;></dd> -->
+                
+                <dd data-id=1581405680209> <a
+                        href="./newHelpsShow.html?id=1581405680209">如何使用自动评价</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e44e6b91a8bda12708a5bb2&#34;></dd> -->
+                
+                <dd data-id=1581573818615> <a
+                        href="./newHelpsShow.html?id=1581573818615">新用户如何打印电子面单批量发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e44f2261a8bda12708a5bba&#34;></dd> -->
+                
+                <dd data-id=1581576743028> <a
+                        href="./newHelpsShow.html?id=1581576743028">苏宁如何打印订单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e44fff01a8bda12708a5bbe&#34;></dd> -->
+                
+                <dd data-id=1581580273127> <a
+                        href="./newHelpsShow.html?id=1581580273127">微盟平台如何使用软件打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e4500221a8bda12708a5bbf&#34;></dd> -->
+                
+                <dd data-id=1581580322901> <a
+                        href="./newHelpsShow.html?id=1581580322901">蘑菇街如何使用软件打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e4500421a8bda12708a5bc0&#34;></dd> -->
+                
+                <dd data-id=1581580355655> <a
+                        href="./newHelpsShow.html?id=1581580355655">微店如何使用软件打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e4500671a8bda12708a5bc1&#34;></dd> -->
+                
+                <dd data-id=1581580392753> <a
+                        href="./newHelpsShow.html?id=1581580392753">小店如何使用软件打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e4500ca1a8bda12708a5bc2&#34;></dd> -->
+                
+                <dd data-id=1581580491159> <a
+                        href="./newHelpsShow.html?id=1581580491159">萌推平台如何打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e451e9e1a8bda12708a5bc6&#34;></dd> -->
+                
+                <dd data-id=1581588127117> <a
+                        href="./newHelpsShow.html?id=1581588127117">切换浏览器模式</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e4fa9d5a396212344e45ba6&#34;></dd> -->
+                
+                <dd data-id=1582279126578> <a
+                        href="./newHelpsShow.html?id=1582279126578">微盟生鲜订单该如何打单配货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e95930d7df8ce2b70aacfd6&#34;></dd> -->
+                
+                <dd data-id=1586860811988> <a
+                        href="./newHelpsShow.html?id=1586860811988">分享出去的单号怎么对账</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5e9ecf654aa2f009c4a04872&#34;></dd> -->
+                
+                <dd data-id=1587466082564> <a
+                        href="./newHelpsShow.html?id=1587466082564">热敏打印机一联单打印问题</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5efbf4974d30ed0c68696d7f&#34;></dd> -->
+                
+                <dd data-id=1593570456882> <a
+                        href="./newHelpsShow.html?id=1593570456882">抖店商家使用新授权登录方式进入店管家</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5f46302b118d37174cfe0187&#34;></dd> -->
+                
+                <dd data-id=1598435372704> <a
+                        href="./newHelpsShow.html?id=1598435372704">一单多包/部分发货怎么操作</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;5f866a8edd43d117ec9533e3&#34;></dd> -->
+                
+                <dd data-id=1602644621852> <a
+                        href="./newHelpsShow.html?id=1602644621852">贝贝/贝店/贝仓如何使用店管家打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;606ec6b08d455a16bc2fe104&#34;></dd> -->
+                
+                <dd data-id=1617872559964> <a
+                        href="./newHelpsShow.html?id=1617872559964">如何设置恶意虚假地址提醒不打单发货</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;60bf173617f0470a78bb4349&#34;></dd> -->
+                
+                <dd data-id=1623136053737> <a
+                        href="./newHelpsShow.html?id=1623136053737">团好货打印电子面单教程</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;617f62b26ce5ef1ce005c972&#34;></dd> -->
+                
+                <dd data-id=1635738290764> <a
+                        href="./newHelpsShow.html?id=1635738290764">店管家 1688 优选服务工作台“打单发货”系统</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;618b275e43c81517dc03a464&#34;></dd> -->
+                
+                <dd data-id=1636509535159> <a
+                        href="./newHelpsShow.html?id=1636509535159">店管家抖音售后小助手功能介绍</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;61aec048456b980d18495481&#34;></dd> -->
+                
+                <dd data-id=1638842442009> <a
+                        href="./newHelpsShow.html?id=1638842442009">淘宝买家自助修改SKU</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;61b2cbdd31f2b8197c31c2d3&#34;></dd> -->
+                
+                <dd data-id=1639107551201> <a
+                        href="./newHelpsShow.html?id=1639107551201">虚拟号介绍</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;61c56219c760e41de0147f52&#34;></dd> -->
+                
+                <dd data-id=1640325658487> <a
+                        href="./newHelpsShow.html?id=1640325658487">使用 shift 批量选择订单</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;61e8fb438616d70e583649e2&#34;></dd> -->
+                
+                <dd data-id=1642658630039> <a
+                        href="./newHelpsShow.html?id=1642658630039">淘宝设置默认发货人</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;624824d3c059f7157488ce25&#34;></dd> -->
+                
+                <dd data-id=1648895188634> <a
+                        href="./newHelpsShow.html?id=1648895188634">如何共享不可达地区给到商家店铺呢？</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;628616cdee04510e5494e33c&#34;></dd> -->
+                
+                <dd data-id=1652954829677> <a
+                        href="./newHelpsShow.html?id=1652954829677">4G云打印机电脑端远程打印教程</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;62ec886fc56d301520e36f9b&#34;></dd> -->
+                
+                <dd data-id=1659668592310> <a
+                        href="./newHelpsShow.html?id=1659668592310">4G 云打印机</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;6322914864519a1b58289b54&#34;></dd> -->
+                
+                <dd data-id=1663209799566> <a
+                        href="./newHelpsShow.html?id=1663209799566">如何使用预发货功能</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;6322f7b764519a1b58289b8a&#34;></dd> -->
+                
+                <dd data-id=1663236021766> <a
+                        href="./newHelpsShow.html?id=1663236021766">备货单如何使用</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;632c2fb1f6fbe11d6c9a648f&#34;></dd> -->
+                
+                <dd data-id=1663840176678> <a
+                        href="./newHelpsShow.html?id=1663840176678">关于各类名词解释</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;63411f6f4b7fb42a04aeb369&#34;></dd> -->
+                
+                <dd data-id=1665212272030> <a
+                        href="./newHelpsShow.html?id=1665212272030">淘宝_打印快递单出现一堆数字</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;645364d94802a31af477df8a&#34;></dd> -->
+                
+                <dd data-id=1683186898401> <a
+                        href="./newHelpsShow.html?id=1683186898401">功能介绍</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;6582a97d338770186cd5f96a&#34;></dd> -->
+                
+                <dd data-id=1703061887326> <a
+                        href="./newHelpsShow.html?id=1703061887326">订单合并</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;65b7843ce78a6516fc8d56ff&#34;></dd> -->
+                
+                <dd data-id=1706525755826> <a
+                        href="./newHelpsShow.html?id=1706525755826">2024值班时间</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;6613b83a82acf614144ef1b9&#34;></dd> -->
+                
+                <dd data-id=1712568369022> <a
+                        href="./newHelpsShow.html?id=1712568369022">快手 中转订单履约发货说明</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;66275bbe8ac74d061c554029&#34;></dd> -->
+                
+                <dd data-id=1713855395459> <a
+                        href="./newHelpsShow.html?id=1713855395459">关闭迁移模式详情</a></dd>
+                
+
+                
+                <!-- <dd data-id=&#34;66a09c5313d2731704fb2bbc&#34;></dd> -->
+                
+                <dd data-id=1721801811307> <a
+                        href="./newHelpsShow.html?id=1721801811307">抖音_买家修改地址自动审核</a></dd>
+                
+
+                
+            </dl>
+        </div>
+        <div class="content_main_content">
+            <div class="content_main_content_title">
+                位置：<a href="newHelps.html">帮助中心</a><span style="margin:0 5px">》<a
+                        href="newHelpsClassify.html?id=1713855395459&columnId=1671680387717&type=helps">
+                            其他问题</a><span
+                        style="padding-left:5px;">》</span></span>关闭迁移模式详情
+            </div>
+            <div class="content_main_content_main">
+                <h1 class="ask_main_title">关闭迁移模式详情</h1>
+                <!--循环的内容-->
+
+                
+                <article class="4ever-article" data-clipboard-cangjie="[&quot;root&quot;,{},[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuitfnz8fniwijfo63&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;您在关联店铺的时候是否遇到以下问题：&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwujgg2wugzlmgmizbo&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;问题一：在关联子店铺的时候，有时因子店铺数据太多导致等待迁移时长很久，订单都快超时了都还没迁移好且无法操作打印。&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuixt0qk7wwqatm4f&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;问题二：主店铺开启了子店铺共用主店铺的快递模板权限时，导致子店铺无法使用自己的快递模板，且经常不小心使用了主店铺的快递单号。&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuj1m33fv2f1ng3c2&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;问题三：之前也有商家单独来联系客服，希望关闭掉迁移。但是打单的方式变成了需要切换到子店铺去打单，需要给每个子店铺单独配置筛选条件/合并订单规则/快递不可达等条件……导致给子店铺打单发货的流程很繁琐，且效率很低。&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuj801wa3ofipri0b&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;bold&quot;:true,&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;现我们针对该情况，&quot;],[&quot;span&quot;,{&quot;bold&quot;:true,&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;color&quot;:&quot;#FE0300&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;推出了关闭迁移模式！能解决以上问题！&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuiukdpeab0tp2nie&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]]]" data-identifier-application__slash__x-cangjie-fragment="JTdCJTIya2xhc3MlMjIlM0ElMjJkb2N1bWVudCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIyYmxvY2slMjIlMkMlMjJ0eXBlJTIyJTNBJTIycGFyYWdyYXBoJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMnV1aWQlMjIlM0ElMjJsd3VpdGZuejhmbml3aWpmbzYzJTIyJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJUU2JTgyJUE4JUU1JTlDJUE4JUU1JTg1JUIzJUU4JTgxJTk0JUU1JUJBJTk3JUU5JTkzJUJBJUU3JTlBJTg0JUU2JTk3JUI2JUU1JTgwJTk5JUU2JTk4JUFGJUU1JTkwJUE2JUU5JTgxJTg3JUU1JTg4JUIwJUU0JUJCJUE1JUU0JUI4JThCJUU5JTk3JUFFJUU5JUEyJTk4JUVGJUJDJTlBJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc3olMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydmFsdWUlMjIlM0ExMiUyQyUyMnN6VW5pdCUyMiUzQSUyMnB0JTIyJTdEJTdEJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydXVpZCUyMiUzQSUyMmx3dWpnZzJ3dWd6bG1nbWl6Ym8lMjIlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlRTklOTclQUUlRTklQTIlOTglRTQlQjglODAlRUYlQkMlOUElRTUlOUMlQTglRTUlODUlQjMlRTglODElOTQlRTUlQUQlOTAlRTUlQkElOTclRTklOTMlQkElRTclOUElODQlRTYlOTclQjYlRTUlODAlOTklRUYlQkMlOEMlRTYlOUMlODklRTYlOTclQjYlRTUlOUIlQTAlRTUlQUQlOTAlRTUlQkElOTclRTklOTMlQkElRTYlOTUlQjAlRTYlOEQlQUUlRTUlQTQlQUElRTUlQTQlOUElRTUlQUYlQkMlRTglODclQjQlRTclQUQlODklRTUlQkUlODUlRTglQkYlODElRTclQTclQkIlRTYlOTclQjYlRTklOTUlQkYlRTUlQkUlODglRTQlQjklODUlRUYlQkMlOEMlRTglQUUlQTIlRTUlOEQlOTUlRTklODMlQkQlRTUlQkYlQUIlRTglQjYlODUlRTYlOTclQjYlRTQlQkElODYlRTklODMlQkQlRTglQkYlOTglRTYlQjIlQTElRTglQkYlODElRTclQTclQkIlRTUlQTUlQkQlRTQlQjglOTQlRTYlOTclQTAlRTYlQjMlOTUlRTYlOTMlOEQlRTQlQkQlOUMlRTYlODklOTMlRTUlOEQlQjAlRTMlODAlODIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCU1RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIyYmxvY2slMjIlMkMlMjJ0eXBlJTIyJTNBJTIycGFyYWdyYXBoJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMnV1aWQlMjIlM0ElMjJsd3VpeHQwcWs3d3dxYXRtNGYlMjIlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlRTklOTclQUUlRTklQTIlOTglRTQlQkElOEMlRUYlQkMlOUElRTQlQjglQkIlRTUlQkElOTclRTklOTMlQkElRTUlQkMlODAlRTUlOTAlQUYlRTQlQkElODYlRTUlQUQlOTAlRTUlQkElOTclRTklOTMlQkElRTUlODUlQjElRTclOTQlQTglRTQlQjglQkIlRTUlQkElOTclRTklOTMlQkElRTclOUElODQlRTUlQkYlQUIlRTklODAlOTIlRTYlQTglQTElRTYlOUQlQkYlRTYlOUQlODMlRTklOTklOTAlRTYlOTclQjYlRUYlQkMlOEMlRTUlQUYlQkMlRTglODclQjQlRTUlQUQlOTAlRTUlQkElOTclRTklOTMlQkElRTYlOTclQTAlRTYlQjMlOTUlRTQlQkQlQkYlRTclOTQlQTglRTglODclQUElRTUlQjclQjElRTclOUElODQlRTUlQkYlQUIlRTklODAlOTIlRTYlQTglQTElRTYlOUQlQkYlRUYlQkMlOEMlRTQlQjglOTQlRTclQkIlOEYlRTUlQjglQjglRTQlQjglOEQlRTUlQjAlOEYlRTUlQkYlODMlRTQlQkQlQkYlRTclOTQlQTglRTQlQkElODYlRTQlQjglQkIlRTUlQkElOTclRTklOTMlQkElRTclOUElODQlRTUlQkYlQUIlRTklODAlOTIlRTUlOEQlOTUlRTUlOEYlQjclRTMlODAlODIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCU1RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIyYmxvY2slMjIlMkMlMjJ0eXBlJTIyJTNBJTIycGFyYWdyYXBoJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMnV1aWQlMjIlM0ElMjJsd3VqMW0zM2Z2MmYxbmczYzIlMjIlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlRTklOTclQUUlRTklQTIlOTglRTQlQjglODklRUYlQkMlOUElRTQlQjklOEIlRTUlODklOEQlRTQlQjklOUYlRTYlOUMlODklRTUlOTUlODYlRTUlQUUlQjYlRTUlOEQlOTUlRTclOEIlQUMlRTYlOUQlQTUlRTglODElOTQlRTclQjMlQkIlRTUlQUUlQTIlRTYlOUMlOEQlRUYlQkMlOEMlRTUlQjglOEMlRTYlOUMlOUIlRTUlODUlQjMlRTklOTclQUQlRTYlOEUlODklRTglQkYlODElRTclQTclQkIlRTMlODAlODIlRTQlQkQlODYlRTYlOTglQUYlRTYlODklOTMlRTUlOEQlOTUlRTclOUElODQlRTYlOTYlQjklRTUlQkMlOEYlRTUlOEYlOTglRTYlODglOTAlRTQlQkElODYlRTklOUMlODAlRTglQTYlODElRTUlODglODclRTYlOEQlQTIlRTUlODglQjAlRTUlQUQlOTAlRTUlQkElOTclRTklOTMlQkElRTUlOEUlQkIlRTYlODklOTMlRTUlOEQlOTUlRUYlQkMlOEMlRTklOUMlODAlRTglQTYlODElRTclQkIlOTklRTYlQUYlOEYlRTQlQjglQUElRTUlQUQlOTAlRTUlQkElOTclRTklOTMlQkElRTUlOEQlOTUlRTclOEIlQUMlRTklODUlOEQlRTclQkQlQUUlRTclQUQlOUIlRTklODAlODklRTYlOUQlQTElRTQlQkIlQjYlMkYlRTUlOTAlODglRTUlQjklQjYlRTglQUUlQTIlRTUlOEQlOTUlRTglQTclODQlRTUlODglOTklMkYlRTUlQkYlQUIlRTklODAlOTIlRTQlQjglOEQlRTUlOEYlQUYlRTglQkUlQkUlRTclQUQlODklRTYlOUQlQTElRTQlQkIlQjYlRTIlODAlQTYlRTIlODAlQTYlRTUlQUYlQkMlRTglODclQjQlRTclQkIlOTklRTUlQUQlOTAlRTUlQkElOTclRTklOTMlQkElRTYlODklOTMlRTUlOEQlOTUlRTUlOEYlOTElRTglQjQlQTclRTclOUElODQlRTYlQjUlODElRTclQTglOEIlRTUlQkUlODglRTclQjklODElRTclOTAlOTAlRUYlQkMlOEMlRTQlQjglOTQlRTYlOTUlODglRTclOEUlODclRTUlQkUlODglRTQlQkQlOEUlRTMlODAlODIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCU1RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIyYmxvY2slMjIlMkMlMjJ0eXBlJTIyJTNBJTIycGFyYWdyYXBoJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMnV1aWQlMjIlM0ElMjJsd3VqODAxd2Ezb2ZpcHJpMGIlMjIlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlRTclOEUlQjAlRTYlODglOTElRTQlQkIlQUMlRTklOTIlODglRTUlQUYlQjklRTglQUYlQTUlRTYlODMlODUlRTUlODYlQjUlRUYlQkMlOEMlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybWFyayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJib2xkJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiU3RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIybWFyayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJzeiUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJ2YWx1ZSUyMiUzQTEyJTJDJTIyc3pVbml0JTIyJTNBJTIycHQlMjIlN0QlN0QlNUQlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJUU2JThFJUE4JUU1JTg3JUJBJUU0JUJBJTg2JUU1JTg1JUIzJUU5JTk3JUFEJUU4JUJGJTgxJUU3JUE3JUJCJUU2JUE4JUExJUU1JUJDJThGJUVGJUJDJTgxJUU4JTgzJUJEJUU4JUE3JUEzJUU1JTg2JUIzJUU0JUJCJUE1JUU0JUI4JThBJUU5JTk3JUFFJUU5JUEyJTk4JUVGJUJDJTgxJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyYm9sZCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlN0QlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc3olMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydmFsdWUlMjIlM0ExMiUyQyUyMnN6VW5pdCUyMiUzQSUyMnB0JTIyJTdEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJtYXJrJTIyJTJDJTIydHlwZSUyMiUzQSUyMmNvbG9yJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMnZhbHVlJTIyJTNBJTIyJTIzRkUwMzAwJTIyJTdEJTdEJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydXVpZCUyMiUzQSUyMmx3dWl1a2RwZWFiMHRwMm5pZSUyMiU3RCUyQyUyMm5vZGVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMiUyMiUyQyUyMm1hcmtzJTIyJTNBJTVCJTVEJTdEJTVEJTdEJTVEJTdEJTVEJTdE" data-identifier-application__slash__x-doc-key="3M0OzBYNa3N6OzeE"><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">您在关联店铺的时候是否遇到以下问题：</span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">问题一：在关联子店铺的时候，有时因子店铺数据太多导致等待迁移时长很久，订单都快超时了都还没迁移好且无法操作打印。</span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">问题二：主店铺开启了子店铺共用主店铺的快递模板权限时，导致子店铺无法使用自己的快递模板，且经常不小心使用了主店铺的快递单号。</span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">问题三：之前也有商家单独来联系客服，希望关闭掉迁移。但是打单的方式变成了需要切换到子店铺去打单，需要给每个子店铺单独配置筛选条件/合并订单规则/快递不可达等条件……导致给子店铺打单发货的流程很繁琐，且效率很低。</span><span data-type="text"><br/><br/></span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span style="font-size: 20px;"><span data-type="text" style="font-weight: bold;">现我们针对该情况，</span><span data-type="text" style="font-weight: bold; color: rgb(254, 3, 0);">推出了关闭迁移模式！能解决以上问题！</span></span><span data-type="text" style="font-weight:bold;color:#FE0300;font-size:12pt"><br/></span></p><article class="4ever-article" data-clipboard-cangjie="[&quot;root&quot;,{&quot;userData&quot;:{&quot;2341461144&quot;:{&quot;lwufx5qdrv9192gcl9l&quot;:{&quot;fold&quot;:false}}}},[&quot;h2&quot;,{&quot;spacing&quot;:{&quot;after&quot;:9,&quot;before&quot;:21.333333333333332,&quot;line&quot;:0.8529411764705882},&quot;uuid&quot;:&quot;lwufx5qdrv9192gcl9l&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;bold&quot;:true,&quot;sz&quot;:16,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;关闭迁移模式和开启迁移模式有什么区别？&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwugw6g99t1514eq5ps&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;fonts&quot;:{&quot;ascii&quot;:&quot;PingFang SC&quot;,&quot;hAnsi&quot;:&quot;PingFang SC&quot;,&quot;cs&quot;:&quot;PingFang SC&quot;,&quot;eastAsia&quot;:&quot;PingFang SC&quot;},&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;关闭迁移模式：适用于代发他人店铺场景，在关联上子店铺后，不用等待子店铺数据迁移，直接可以在主店铺这边选择子店铺操作打单发货。&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwufyo979afpv66u9fn&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;fonts&quot;:{&quot;ascii&quot;:&quot;PingFang SC&quot;,&quot;hAnsi&quot;:&quot;PingFang SC&quot;,&quot;cs&quot;:&quot;PingFang SC&quot;,&quot;eastAsia&quot;:&quot;PingFang SC&quot;},&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;开启迁移模式：适用于自己开了多个店铺，主店铺和所有子店铺的订单需要混合一起打单发货。&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwugubcrvq0v27wts&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;fonts&quot;:{&quot;ascii&quot;:&quot;PingFang SC&quot;,&quot;hAnsi&quot;:&quot;PingFang SC&quot;,&quot;cs&quot;:&quot;PingFang SC&quot;,&quot;eastAsia&quot;:&quot;PingFang SC&quot;},&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;但是在获取子店铺的订单的时候需要数据迁移，主店铺需要等待迁移完后才可以对子店铺进行打单发货。&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwugujktwtqnx2egaqd&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]],[&quot;img&quot;,{&quot;id&quot;:&quot;31l8di&quot;,&quot;name&quot;:&quot;image.png&quot;,&quot;size&quot;:315549,&quot;width&quot;:747,&quot;height&quot;:321.21,&quot;uuid&quot;:&quot;lwugytv73fb4iysjoo&quot;,&quot;src&quot;:&quot;https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5302dc3ca48bdf937ea86161f11a0c8e4fdc3649cc317cdd36fd8004cca628a7e65a117e969287064a2f34553cd12db5655dd21e36854019bf09a27c96b553c9f1af4ce0cea9a5d85ffe0161c4f7484fa62a74c4c60796216?tmpCode=fc4e0a45-d8c7-4ee5-9ba0-acce7db3f86a&quot;,&quot;extraData&quot;:{&quot;resourceId&quot;:&quot;5ddf4f7a-e8aa-4182-ac46-fdc8a4bea2dc&quot;,&quot;metaData&quot;:{&quot;size&quot;:315549,&quot;originWidth&quot;:2000,&quot;originHeight&quot;:860,&quot;format&quot;:&quot;png&quot;,&quot;ratio&quot;:1}}},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwugytv8nwucwbgeivq&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;h2&quot;,{&quot;uuid&quot;:&quot;lwug3ndme4hdsftk98e&quot;,&quot;spacing&quot;:{&quot;before&quot;:21.333333333333332,&quot;after&quot;:9,&quot;line&quot;:0.8529411764705882}},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;bold&quot;:true,&quot;sz&quot;:18,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;关闭迁移模式的优点：&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwugx5mooxgh9ldq7rc&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;1.无需等待子店铺数据迁移，直接在主店铺这边查看到子店铺的订单，勾选子店铺快速打单发货。&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwug3ozohbt9plx2t49&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]],[&quot;img&quot;,{&quot;id&quot;:&quot;4g86lh&quot;,&quot;name&quot;:&quot;image.png&quot;,&quot;size&quot;:474483,&quot;width&quot;:747,&quot;height&quot;:284.2335,&quot;uuid&quot;:&quot;lwuhjg6chhft4cxlz4&quot;,&quot;src&quot;:&quot;https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5302dc3ca48bdf937ea86161f11a0c8e4fdc3649cc317cdd36fd8004cca628a7e65a117e969287064b75220aea81e13b2f5f0dbb325d248f1cbf71be1fe970980d3f9c66cff80365faa792884f53d5f452c7cc62e6d91332a?tmpCode=fc4e0a45-d8c7-4ee5-9ba0-acce7db3f86a&quot;,&quot;extraData&quot;:{&quot;resourceId&quot;:&quot;e7fdc400-ac44-400a-bbf2-9857c7ade1eb&quot;,&quot;metaData&quot;:{&quot;size&quot;:474483,&quot;originWidth&quot;:2000,&quot;originHeight&quot;:761,&quot;format&quot;:&quot;png&quot;,&quot;ratio&quot;:1}}},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuhjg6dp18d24qgmgh&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuhjiq2gwkca3cu0zb&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;2.在主店铺即可查询导出子店铺的打印发货数据，无需切换到子店铺。&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuhlw0ghcp06lsfr6&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]],[&quot;img&quot;,{&quot;id&quot;:&quot;0cpxsz&quot;,&quot;name&quot;:&quot;image.png&quot;,&quot;size&quot;:183998,&quot;width&quot;:747,&quot;height&quot;:211.94879999999998,&quot;uuid&quot;:&quot;lwuhp52wdr0xtlwo51&quot;,&quot;src&quot;:&quot;https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5302dc3ca48bdf937ea86161f11a0c8e4fdc3649cc317cdd36fd8004cca628a7e65a117e969287064324bfcce869036b42ab7dd87d7737b0afe52fbeb37696bba9389e125349e2d5e48f48345700ccddfa5f44275aa76f220?tmpCode=fc4e0a45-d8c7-4ee5-9ba0-acce7db3f86a&quot;,&quot;extraData&quot;:{&quot;resourceId&quot;:&quot;894d0a15-d215-4dcc-8c68-4d3ac9c9f0d3&quot;,&quot;metaData&quot;:{&quot;size&quot;:183998,&quot;originWidth&quot;:1875,&quot;originHeight&quot;:532,&quot;format&quot;:&quot;png&quot;,&quot;ratio&quot;:1}}},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuhp52yhoz3gjff0dq&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuhlw664mz5dkbfx8n&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;3.在主店铺即可查看并生成子店铺的备货单，直接打印/导出备货单。&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuhpxgud2o3v7ezvtp&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]],[&quot;img&quot;,{&quot;id&quot;:&quot;82abqg&quot;,&quot;name&quot;:&quot;image.png&quot;,&quot;size&quot;:304394,&quot;width&quot;:747,&quot;height&quot;:311.1255,&quot;uuid&quot;:&quot;lwuhpxp0rv3z3p3c7o&quot;,&quot;src&quot;:&quot;https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5302dc3ca48bdf937ea86161f11a0c8e4fdc3649cc317cdd36fd8004cca628a7e65a117e9692870641f63273d312b2ada9f4078b7d013eeefa3ac80fc567a30056774610a22402469d26bead2448de499f39f100446eb8627?tmpCode=fc4e0a45-d8c7-4ee5-9ba0-acce7db3f86a&quot;,&quot;extraData&quot;:{&quot;resourceId&quot;:&quot;4fe25140-bab2-4350-9e9a-f13f37ba267e&quot;,&quot;metaData&quot;:{&quot;size&quot;:304394,&quot;originWidth&quot;:2000,&quot;originHeight&quot;:833,&quot;format&quot;:&quot;png&quot;,&quot;ratio&quot;:1}}},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuhpxp1pej5n1v7psi&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuhucb4hlqa97h5ncp&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;4.主店铺的快递模板可以设置不给子店铺使用，&quot;],[&quot;span&quot;,{&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;color&quot;:&quot;#FE0300&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;在主店铺即可操作打单，不会出现子店铺使用主店铺单号的问题。&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuhv46jlie9t8bueug&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]],[&quot;img&quot;,{&quot;id&quot;:&quot;9d79il&quot;,&quot;name&quot;:&quot;image.png&quot;,&quot;size&quot;:281623,&quot;width&quot;:747,&quot;height&quot;:319.0762756443977,&quot;uuid&quot;:&quot;lwuhvldpkzodqi0sab&quot;,&quot;src&quot;:&quot;https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5302dc3ca48bdf937ea86161f11a0c8e4fdc3649cc317cdd36fd8004cca628a7e65a117e96928706427c334a68fbd90e865504cecc5cf212e816cbbc3cfb14489950d289f496dcc45afa975c605243b0a07afbbdd4225fe9b?tmpCode=fc4e0a45-d8c7-4ee5-9ba0-acce7db3f86a&quot;,&quot;extraData&quot;:{&quot;resourceId&quot;:&quot;45176d32-be44-42e0-b48d-4dcc05f17c50&quot;,&quot;metaData&quot;:{&quot;size&quot;:281623,&quot;originWidth&quot;:1901,&quot;originHeight&quot;:812,&quot;format&quot;:&quot;png&quot;,&quot;ratio&quot;:1}}},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuhvldqfufoxonrp1&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuhv4ip1i2w2izka2d&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;5.主店铺可以对常打单的子店铺进行置顶，在筛选店铺时置顶的店铺会在最上方。&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuhx4ko8kx8aixixp5&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]],[&quot;img&quot;,{&quot;extraData&quot;:{&quot;metaData&quot;:{&quot;format&quot;:&quot;png&quot;,&quot;originHeight&quot;:859,&quot;originWidth&quot;:2000,&quot;ratio&quot;:1,&quot;size&quot;:329493},&quot;resourceId&quot;:&quot;265e0599-f915-4cdc-bbc6-7dcba32c1cdf&quot;},&quot;height&quot;:320.8365,&quot;id&quot;:&quot;vah0bd&quot;,&quot;name&quot;:&quot;image.png&quot;,&quot;size&quot;:329493,&quot;src&quot;:&quot;https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5302dc3ca48bdf937ea86161f11a0c8e4fdc3649cc317cdd36fd8004cca628a7e65a117e969287064a2638525a4241ae99123fc486a7362503b7ea4780b2bebc2fa9be694c4c86333f2255817f8ec0053606601fe23b54967?tmpCode=fc4e0a45-d8c7-4ee5-9ba0-acce7db3f86a&quot;,&quot;uuid&quot;:&quot;lwuhx4qf4xyqdje63wn&quot;,&quot;width&quot;:747},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuhx4qgzx76giyawv&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuihbskparzxnruw1&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;如图所示，打了星标的子店铺会展示在主店铺的下方。&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuih77y8oeyu27siym&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]],[&quot;img&quot;,{&quot;id&quot;:&quot;aagxwy&quot;,&quot;name&quot;:&quot;image.png&quot;,&quot;size&quot;:80918,&quot;width&quot;:604,&quot;height&quot;:631,&quot;uuid&quot;:&quot;lwuih7f2gm1qnipv5z&quot;,&quot;src&quot;:&quot;https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5302dc3ca48bdf937ea86161f11a0c8e4fdc3649cc317cdd36fd8004cca628a7e65a117e969287064c715331995c5c9b10eb652968ac186612284982b331a0e6054e2711de8d59a757e4f22663ea91093a8af4430009de0b1?tmpCode=fc4e0a45-d8c7-4ee5-9ba0-acce7db3f86a&quot;,&quot;extraData&quot;:{&quot;resourceId&quot;:&quot;85f749b5-c043-4966-994b-90a91bcc0956&quot;,&quot;metaData&quot;:{&quot;size&quot;:80918,&quot;originWidth&quot;:604,&quot;originHeight&quot;:631,&quot;format&quot;:&quot;png&quot;,&quot;ratio&quot;:1}}},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuiirsaimhsxgw4gz&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuimjm16u4wicxoh2j&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;6.可以在店铺筛选里面根据最新关联的店铺排在最前排序。&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuimhruvs0haswr5t&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]],[&quot;img&quot;,{&quot;id&quot;:&quot;5prvmx&quot;,&quot;name&quot;:&quot;image.png&quot;,&quot;size&quot;:541027,&quot;width&quot;:747,&quot;height&quot;:335.403,&quot;uuid&quot;:&quot;lwuimi9yixbax2n6xhe&quot;,&quot;src&quot;:&quot;https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5302dc3ca48bdf937ea86161f11a0c8e4fdc3649cc317cdd36fd8004cca628a7e65a117e96928706483101acf84558f4a8852667455860bbee6616eb6c165aec25be97f2429bdd230f17df06ea6a312c29508fd59fedd0e8f?tmpCode=fc4e0a45-d8c7-4ee5-9ba0-acce7db3f86a&quot;,&quot;extraData&quot;:{&quot;resourceId&quot;:&quot;576e47db-b83b-4e13-95c0-25149f30fe19&quot;,&quot;metaData&quot;:{&quot;size&quot;:541027,&quot;originWidth&quot;:2000,&quot;originHeight&quot;:898,&quot;format&quot;:&quot;png&quot;,&quot;ratio&quot;:1}}},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuimi9zm0ss99al558&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwuiirzkodsjflyey9r&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;我们欢迎大家对我们系统的不足之处提出反馈，也希望大家使用我们系统能更加流畅！若大家对系统上有使用不太明白的地方，或是有什么需求可以反馈到我们的客服同事，感谢大家对店管家的支持！&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwujbcdys9fm785q2a&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;客服值班时间：9:00-23:00 &quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwujbpwe22axlenue1l&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;联系方式：QQ 800183731，阿里 bncsm，旺旺 中恒电商&quot;]]],[&quot;p&quot;,{&quot;uuid&quot;:&quot;lwujcigc4p40azddlgv&quot;},[&quot;span&quot;,{&quot;data-type&quot;:&quot;text&quot;},[&quot;span&quot;,{&quot;sz&quot;:12,&quot;szUnit&quot;:&quot;pt&quot;,&quot;data-type&quot;:&quot;leaf&quot;},&quot;&quot;]]]]" data-identifier-application__slash__x-cangjie-fragment="JTdCJTIya2xhc3MlMjIlM0ElMjJkb2N1bWVudCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJ1c2VyRGF0YSUyMiUzQSU3QiUyMjIzNDE0NjExNDQlMjIlM0ElN0IlMjJsd3VmeDVxZHJ2OTE5MmdjbDlsJTIyJTNBJTdCJTIyZm9sZCUyMiUzQWZhbHNlJTdEJTdEJTdEJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmJsb2NrJTIyJTJDJTIydHlwZSUyMiUzQSUyMmhlYWRpbmctMiUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJzcGFjaW5nJTIyJTNBJTdCJTIyYWZ0ZXIlMjIlM0E5JTJDJTIyYmVmb3JlJTIyJTNBMjEuMzMzMzMzMzMzMzMzMzMyJTJDJTIybGluZSUyMiUzQTAuODUyOTQxMTc2NDcwNTg4MiU3RCUyQyUyMnV1aWQlMjIlM0ElMjJsd3VmeDVxZHJ2OTE5MmdjbDlsJTIyJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJUU1JTg1JUIzJUU5JTk3JUFEJUU4JUJGJTgxJUU3JUE3JUJCJUU2JUE4JUExJUU1JUJDJThGJUU1JTkyJThDJUU1JUJDJTgwJUU1JTkwJUFGJUU4JUJGJTgxJUU3JUE3JUJCJUU2JUE4JUExJUU1JUJDJThGJUU2JTlDJTg5JUU0JUJCJTgwJUU0JUI5JTg4JUU1JThDJUJBJUU1JTg4JUFCJUVGJUJDJTlGJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyYm9sZCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlN0QlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc3olMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIyc3pVbml0JTIyJTNBJTIycHQlMjIlMkMlMjJ2YWx1ZSUyMiUzQTE2JTdEJTdEJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydXVpZCUyMiUzQSUyMmx3dWd3Nmc5OXQxNTE0ZXE1cHMlMjIlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlRTUlODUlQjMlRTklOTclQUQlRTglQkYlODElRTclQTclQkIlRTYlQTglQTElRTUlQkMlOEYlRUYlQkMlOUElRTklODAlODIlRTclOTQlQTglRTQlQkElOEUlRTQlQkIlQTMlRTUlOEYlOTElRTQlQkIlOTYlRTQlQkElQkElRTUlQkElOTclRTklOTMlQkElRTUlOUMlQkElRTYlOTklQUYlRUYlQkMlOEMlRTUlOUMlQTglRTUlODUlQjMlRTglODElOTQlRTQlQjglOEElRTUlQUQlOTAlRTUlQkElOTclRTklOTMlQkElRTUlOTAlOEUlRUYlQkMlOEMlRTQlQjglOEQlRTclOTQlQTglRTclQUQlODklRTUlQkUlODUlRTUlQUQlOTAlRTUlQkElOTclRTklOTMlQkElRTYlOTUlQjAlRTYlOEQlQUUlRTglQkYlODElRTclQTclQkIlRUYlQkMlOEMlRTclOUIlQjQlRTYlOEUlQTUlRTUlOEYlQUYlRTQlQkIlQTUlRTUlOUMlQTglRTQlQjglQkIlRTUlQkElOTclRTklOTMlQkElRTglQkYlOTklRTglQkUlQjklRTklODAlODklRTYlOEIlQTklRTUlQUQlOTAlRTUlQkElOTclRTklOTMlQkElRTYlOTMlOEQlRTQlQkQlOUMlRTYlODklOTMlRTUlOEQlOTUlRTUlOEYlOTElRTglQjQlQTclRTMlODAlODIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybWFyayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJmb250cyUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJhc2NpaSUyMiUzQSUyMlBpbmdGYW5nJTIwU0MlMjIlMkMlMjJoQW5zaSUyMiUzQSUyMlBpbmdGYW5nJTIwU0MlMjIlMkMlMjJjcyUyMiUzQSUyMlBpbmdGYW5nJTIwU0MlMjIlMkMlMjJlYXN0QXNpYSUyMiUzQSUyMlBpbmdGYW5nJTIwU0MlMjIlN0QlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc3olMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydmFsdWUlMjIlM0ExMiUyQyUyMnN6VW5pdCUyMiUzQSUyMnB0JTIyJTdEJTdEJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydXVpZCUyMiUzQSUyMmx3dWZ5bzk3OWFmcHY2NnU5Zm4lMjIlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlRTUlQkMlODAlRTUlOTAlQUYlRTglQkYlODElRTclQTclQkIlRTYlQTglQTElRTUlQkMlOEYlRUYlQkMlOUElRTklODAlODIlRTclOTQlQTglRTQlQkElOEUlRTglODclQUElRTUlQjclQjElRTUlQkMlODAlRTQlQkElODYlRTUlQTQlOUElRTQlQjglQUElRTUlQkElOTclRTklOTMlQkElRUYlQkMlOEMlRTQlQjglQkIlRTUlQkElOTclRTklOTMlQkElRTUlOTIlOEMlRTYlODklODAlRTYlOUMlODklRTUlQUQlOTAlRTUlQkElOTclRTklOTMlQkElRTclOUElODQlRTglQUUlQTIlRTUlOEQlOTUlRTklOUMlODAlRTglQTYlODElRTYlQjclQjclRTUlOTAlODglRTQlQjglODAlRTglQjUlQjclRTYlODklOTMlRTUlOEQlOTUlRTUlOEYlOTElRTglQjQlQTclRTMlODAlODIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybWFyayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJmb250cyUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJhc2NpaSUyMiUzQSUyMlBpbmdGYW5nJTIwU0MlMjIlMkMlMjJoQW5zaSUyMiUzQSUyMlBpbmdGYW5nJTIwU0MlMjIlMkMlMjJjcyUyMiUzQSUyMlBpbmdGYW5nJTIwU0MlMjIlMkMlMjJlYXN0QXNpYSUyMiUzQSUyMlBpbmdGYW5nJTIwU0MlMjIlN0QlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc3olMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydmFsdWUlMjIlM0ExMiUyQyUyMnN6VW5pdCUyMiUzQSUyMnB0JTIyJTdEJTdEJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydXVpZCUyMiUzQSUyMmx3dWd1YmNydnEwdjI3d3RzJTIyJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJUU0JUJEJTg2JUU2JTk4JUFGJUU1JTlDJUE4JUU4JThFJUI3JUU1JThGJTk2JUU1JUFEJTkwJUU1JUJBJTk3JUU5JTkzJUJBJUU3JTlBJTg0JUU4JUFFJUEyJUU1JThEJTk1JUU3JTlBJTg0JUU2JTk3JUI2JUU1JTgwJTk5JUU5JTlDJTgwJUU4JUE2JTgxJUU2JTk1JUIwJUU2JThEJUFFJUU4JUJGJTgxJUU3JUE3JUJCJUVGJUJDJThDJUU0JUI4JUJCJUU1JUJBJTk3JUU5JTkzJUJBJUU5JTlDJTgwJUU4JUE2JTgxJUU3JUFEJTg5JUU1JUJFJTg1JUU4JUJGJTgxJUU3JUE3JUJCJUU1JUFFJThDJUU1JTkwJThFJUU2JTg5JThEJUU1JThGJUFGJUU0JUJCJUE1JUU1JUFGJUI5JUU1JUFEJTkwJUU1JUJBJTk3JUU5JTkzJUJBJUU4JUJGJTlCJUU4JUExJThDJUU2JTg5JTkzJUU1JThEJTk1JUU1JThGJTkxJUU4JUI0JUE3JUUzJTgwJTgyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyZm9udHMlMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIyYXNjaWklMjIlM0ElMjJQaW5nRmFuZyUyMFNDJTIyJTJDJTIyaEFuc2klMjIlM0ElMjJQaW5nRmFuZyUyMFNDJTIyJTJDJTIyY3MlMjIlM0ElMjJQaW5nRmFuZyUyMFNDJTIyJTJDJTIyZWFzdEFzaWElMjIlM0ElMjJQaW5nRmFuZyUyMFNDJTIyJTdEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJtYXJrJTIyJTJDJTIydHlwZSUyMiUzQSUyMnN6JTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMnZhbHVlJTIyJTNBMTIlMkMlMjJzelVuaXQlMjIlM0ElMjJwdCUyMiU3RCU3RCU1RCU3RCU1RCU3RCU1RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIyYmxvY2slMjIlMkMlMjJ0eXBlJTIyJTNBJTIycGFyYWdyYXBoJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMnV1aWQlMjIlM0ElMjJsd3VndWprdHd0cW54MmVnYXFkJTIyJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlNUQlN0QlNUQlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMmlubGluZSUyMiUyQyUyMnR5cGUlMjIlM0ElMjJpbWFnZSUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJpZCUyMiUzQSUyMjMxbDhkaSUyMiUyQyUyMm5hbWUlMjIlM0ElMjJpbWFnZS5wbmclMjIlMkMlMjJzaXplJTIyJTNBMzE1NTQ5JTJDJTIyd2lkdGglMjIlM0E3NDclMkMlMjJoZWlnaHQlMjIlM0EzMjEuMjElMkMlMjJ1dWlkJTIyJTNBJTIybHd1Z3l0djczZmI0aXlzam9vJTIyJTJDJTIyc3JjJTIyJTNBJTIyaHR0cHMlM0ElMkYlMkZhbGlkb2NzLmRpbmd0YWxrLmNvbSUyRmNvcmUlMkZhcGklMkZyZXNvdXJjZXMlMkZpbWclMkY1ZWVjZGFmNDg0NjBjZGU1MzAyZGMzY2E0OGJkZjkzN2VhODYxNjFmMTFhMGM4ZTRmZGMzNjQ5Y2MzMTdjZGQzNmZkODAwNGNjYTYyOGE3ZTY1YTExN2U5NjkyODcwNjRhMmYzNDU1M2NkMTJkYjU2NTVkZDIxZTM2ODU0MDE5YmYwOWEyN2M5NmI1NTNjOWYxYWY0Y2UwY2VhOWE1ZDg1ZmZlMDE2MWM0Zjc0ODRmYTYyYTc0YzRjNjA3OTYyMTYlM0Z0bXBDb2RlJTNEZmM0ZTBhNDUtZDhjNy00ZWU1LTliYTAtYWNjZTdkYjNmODZhJTIyJTJDJTIyZXh0cmFEYXRhJTIyJTNBJTdCJTIycmVzb3VyY2VJZCUyMiUzQSUyMjVkZGY0ZjdhLWU4YWEtNDE4Mi1hYzQ2LWZkYzhhNGJlYTJkYyUyMiUyQyUyMm1ldGFEYXRhJTIyJTNBJTdCJTIyc2l6ZSUyMiUzQTMxNTU0OSUyQyUyMm9yaWdpbldpZHRoJTIyJTNBMjAwMCUyQyUyMm9yaWdpbkhlaWdodCUyMiUzQTg2MCUyQyUyMmZvcm1hdCUyMiUzQSUyMnBuZyUyMiUyQyUyMnJhdGlvJTIyJTNBMSU3RCU3RCU3RCUyQyUyMm5vZGVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMiUyMiUyQyUyMm1hcmtzJTIyJTNBJTVCJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMiUyMiUyQyUyMm1hcmtzJTIyJTNBJTVCJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydXVpZCUyMiUzQSUyMmx3dWd5dHY4bnd1Y3diZ2VpdnElMjIlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCU1RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIyYmxvY2slMjIlMkMlMjJ0eXBlJTIyJTNBJTIyaGVhZGluZy0yJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMnV1aWQlMjIlM0ElMjJsd3VnM25kbWU0aGRzZnRrOThlJTIyJTJDJTIyc3BhY2luZyUyMiUzQSU3QiUyMmJlZm9yZSUyMiUzQTIxLjMzMzMzMzMzMzMzMzMzMiUyQyUyMmFmdGVyJTIyJTNBOSUyQyUyMmxpbmUlMjIlM0EwLjg1Mjk0MTE3NjQ3MDU4ODIlN0QlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlRTUlODUlQjMlRTklOTclQUQlRTglQkYlODElRTclQTclQkIlRTYlQTglQTElRTUlQkMlOEYlRTclOUElODQlRTQlQkMlOTglRTclODIlQjklRUYlQkMlOUElMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybWFyayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJib2xkJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiU3RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIybWFyayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJzeiUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJzelVuaXQlMjIlM0ElMjJwdCUyMiUyQyUyMnZhbHVlJTIyJTNBMTglN0QlN0QlNUQlN0QlNUQlN0QlNUQlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMmJsb2NrJTIyJTJDJTIydHlwZSUyMiUzQSUyMnBhcmFncmFwaCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJ1dWlkJTIyJTNBJTIybHd1Z3g1bW9veGdoOWxkcTdyYyUyMiU3RCUyQyUyMm5vZGVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMjEuJUU2JTk3JUEwJUU5JTlDJTgwJUU3JUFEJTg5JUU1JUJFJTg1JUU1JUFEJTkwJUU1JUJBJTk3JUU5JTkzJUJBJUU2JTk1JUIwJUU2JThEJUFFJUU4JUJGJTgxJUU3JUE3JUJCJUVGJUJDJThDJUU3JTlCJUI0JUU2JThFJUE1JUU1JTlDJUE4JUU0JUI4JUJCJUU1JUJBJTk3JUU5JTkzJUJBJUU4JUJGJTk5JUU4JUJFJUI5JUU2JTlGJUE1JUU3JTlDJThCJUU1JTg4JUIwJUU1JUFEJTkwJUU1JUJBJTk3JUU5JTkzJUJBJUU3JTlBJTg0JUU4JUFFJUEyJUU1JThEJTk1JUVGJUJDJThDJUU1JThCJUJFJUU5JTgwJTg5JUU1JUFEJTkwJUU1JUJBJTk3JUU5JTkzJUJBJUU1JUJGJUFCJUU5JTgwJTlGJUU2JTg5JTkzJUU1JThEJTk1JUU1JThGJTkxJUU4JUI0JUE3JUUzJTgwJTgyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc3olMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydmFsdWUlMjIlM0ExMiUyQyUyMnN6VW5pdCUyMiUzQSUyMnB0JTIyJTdEJTdEJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydXVpZCUyMiUzQSUyMmx3dWczb3pvaGJ0OXBseDJ0NDklMjIlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIyaW5saW5lJTIyJTJDJTIydHlwZSUyMiUzQSUyMmltYWdlJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMmlkJTIyJTNBJTIyNGc4NmxoJTIyJTJDJTIybmFtZSUyMiUzQSUyMmltYWdlLnBuZyUyMiUyQyUyMnNpemUlMjIlM0E0NzQ0ODMlMkMlMjJ3aWR0aCUyMiUzQTc0NyUyQyUyMmhlaWdodCUyMiUzQTI4NC4yMzM1JTJDJTIydXVpZCUyMiUzQSUyMmx3dWhqZzZjaGhmdDRjeGx6NCUyMiUyQyUyMnNyYyUyMiUzQSUyMmh0dHBzJTNBJTJGJTJGYWxpZG9jcy5kaW5ndGFsay5jb20lMkZjb3JlJTJGYXBpJTJGcmVzb3VyY2VzJTJGaW1nJTJGNWVlY2RhZjQ4NDYwY2RlNTMwMmRjM2NhNDhiZGY5MzdlYTg2MTYxZjExYTBjOGU0ZmRjMzY0OWNjMzE3Y2RkMzZmZDgwMDRjY2E2MjhhN2U2NWExMTdlOTY5Mjg3MDY0Yjc1MjIwYWVhODFlMTNiMmY1ZjBkYmIzMjVkMjQ4ZjFjYmY3MWJlMWZlOTcwOTgwZDNmOWM2NmNmZjgwMzY1ZmFhNzkyODg0ZjUzZDVmNDUyYzdjYzYyZTZkOTEzMzJhJTNGdG1wQ29kZSUzRGZjNGUwYTQ1LWQ4YzctNGVlNS05YmEwLWFjY2U3ZGIzZjg2YSUyMiUyQyUyMmV4dHJhRGF0YSUyMiUzQSU3QiUyMnJlc291cmNlSWQlMjIlM0ElMjJlN2ZkYzQwMC1hYzQ0LTQwMGEtYmJmMi05ODU3YzdhZGUxZWIlMjIlMkMlMjJtZXRhRGF0YSUyMiUzQSU3QiUyMnNpemUlMjIlM0E0NzQ0ODMlMkMlMjJvcmlnaW5XaWR0aCUyMiUzQTIwMDAlMkMlMjJvcmlnaW5IZWlnaHQlMjIlM0E3NjElMkMlMjJmb3JtYXQlMjIlM0ElMjJwbmclMjIlMkMlMjJyYXRpbyUyMiUzQTElN0QlN0QlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCU1RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCU1RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIyYmxvY2slMjIlMkMlMjJ0eXBlJTIyJTNBJTIycGFyYWdyYXBoJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMnV1aWQlMjIlM0ElMjJsd3Voamc2ZHAxOGQyNHFnbWdoJTIyJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlNUQlN0QlNUQlN0QlNUQlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMmJsb2NrJTIyJTJDJTIydHlwZSUyMiUzQSUyMnBhcmFncmFwaCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJ1dWlkJTIyJTNBJTIybHd1aGppcTJnd2tjYTNjdTB6YiUyMiU3RCUyQyUyMm5vZGVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMjIuJUU1JTlDJUE4JUU0JUI4JUJCJUU1JUJBJTk3JUU5JTkzJUJBJUU1JThEJUIzJUU1JThGJUFGJUU2JTlGJUE1JUU4JUFGJUEyJUU1JUFGJUJDJUU1JTg3JUJBJUU1JUFEJTkwJUU1JUJBJTk3JUU5JTkzJUJBJUU3JTlBJTg0JUU2JTg5JTkzJUU1JThEJUIwJUU1JThGJTkxJUU4JUI0JUE3JUU2JTk1JUIwJUU2JThEJUFFJUVGJUJDJThDJUU2JTk3JUEwJUU5JTlDJTgwJUU1JTg4JTg3JUU2JThEJUEyJUU1JTg4JUIwJUU1JUFEJTkwJUU1JUJBJTk3JUU5JTkzJUJBJUUzJTgwJTgyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc3olMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydmFsdWUlMjIlM0ExMiUyQyUyMnN6VW5pdCUyMiUzQSUyMnB0JTIyJTdEJTdEJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydXVpZCUyMiUzQSUyMmx3dWhsdzBnaGNwMDZsc2ZyNiUyMiU3RCUyQyUyMm5vZGVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMiUyMiUyQyUyMm1hcmtzJTIyJTNBJTVCJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJpbmxpbmUlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyaW1hZ2UlMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIyaWQlMjIlM0ElMjIwY3B4c3olMjIlMkMlMjJuYW1lJTIyJTNBJTIyaW1hZ2UucG5nJTIyJTJDJTIyc2l6ZSUyMiUzQTE4Mzk5OCUyQyUyMndpZHRoJTIyJTNBNzQ3JTJDJTIyaGVpZ2h0JTIyJTNBMjExLjk0ODc5OTk5OTk5OTk4JTJDJTIydXVpZCUyMiUzQSUyMmx3dWhwNTJ3ZHIweHRsd281MSUyMiUyQyUyMnNyYyUyMiUzQSUyMmh0dHBzJTNBJTJGJTJGYWxpZG9jcy5kaW5ndGFsay5jb20lMkZjb3JlJTJGYXBpJTJGcmVzb3VyY2VzJTJGaW1nJTJGNWVlY2RhZjQ4NDYwY2RlNTMwMmRjM2NhNDhiZGY5MzdlYTg2MTYxZjExYTBjOGU0ZmRjMzY0OWNjMzE3Y2RkMzZmZDgwMDRjY2E2MjhhN2U2NWExMTdlOTY5Mjg3MDY0MzI0YmZjY2U4NjkwMzZiNDJhYjdkZDg3ZDc3MzdiMGFmZTUyZmJlYjM3Njk2YmJhOTM4OWUxMjUzNDllMmQ1ZTQ4ZjQ4MzQ1NzAwY2NkZGZhNWY0NDI3NWFhNzZmMjIwJTNGdG1wQ29kZSUzRGZjNGUwYTQ1LWQ4YzctNGVlNS05YmEwLWFjY2U3ZGIzZjg2YSUyMiUyQyUyMmV4dHJhRGF0YSUyMiUzQSU3QiUyMnJlc291cmNlSWQlMjIlM0ElMjI4OTRkMGExNS1kMjE1LTRkY2MtOGM2OC00ZDNhYzljOWYwZDMlMjIlMkMlMjJtZXRhRGF0YSUyMiUzQSU3QiUyMnNpemUlMjIlM0ExODM5OTglMkMlMjJvcmlnaW5XaWR0aCUyMiUzQTE4NzUlMkMlMjJvcmlnaW5IZWlnaHQlMjIlM0E1MzIlMkMlMjJmb3JtYXQlMjIlM0ElMjJwbmclMjIlMkMlMjJyYXRpbyUyMiUzQTElN0QlN0QlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCU1RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCU1RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIyYmxvY2slMjIlMkMlMjJ0eXBlJTIyJTNBJTIycGFyYWdyYXBoJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMnV1aWQlMjIlM0ElMjJsd3VocDUyeWhvejNnamZmMGRxJTIyJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlNUQlN0QlNUQlN0QlNUQlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMmJsb2NrJTIyJTJDJTIydHlwZSUyMiUzQSUyMnBhcmFncmFwaCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJ1dWlkJTIyJTNBJTIybHd1aGx3NjY0bXo1ZGtiZng4biUyMiU3RCUyQyUyMm5vZGVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMjMuJUU1JTlDJUE4JUU0JUI4JUJCJUU1JUJBJTk3JUU5JTkzJUJBJUU1JThEJUIzJUU1JThGJUFGJUU2JTlGJUE1JUU3JTlDJThCJUU1JUI5JUI2JUU3JTk0JTlGJUU2JTg4JTkwJUU1JUFEJTkwJUU1JUJBJTk3JUU5JTkzJUJBJUU3JTlBJTg0JUU1JUE0JTg3JUU4JUI0JUE3JUU1JThEJTk1JUVGJUJDJThDJUU3JTlCJUI0JUU2JThFJUE1JUU2JTg5JTkzJUU1JThEJUIwJTJGJUU1JUFGJUJDJUU1JTg3JUJBJUU1JUE0JTg3JUU4JUI0JUE3JUU1JThEJTk1JUUzJTgwJTgyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc3olMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydmFsdWUlMjIlM0ExMiUyQyUyMnN6VW5pdCUyMiUzQSUyMnB0JTIyJTdEJTdEJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydXVpZCUyMiUzQSUyMmx3dWhweGd1ZDJvM3Y3ZXp2dHAlMjIlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIyaW5saW5lJTIyJTJDJTIydHlwZSUyMiUzQSUyMmltYWdlJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMmlkJTIyJTNBJTIyODJhYnFnJTIyJTJDJTIybmFtZSUyMiUzQSUyMmltYWdlLnBuZyUyMiUyQyUyMnNpemUlMjIlM0EzMDQzOTQlMkMlMjJ3aWR0aCUyMiUzQTc0NyUyQyUyMmhlaWdodCUyMiUzQTMxMS4xMjU1JTJDJTIydXVpZCUyMiUzQSUyMmx3dWhweHAwcnYzejNwM2M3byUyMiUyQyUyMnNyYyUyMiUzQSUyMmh0dHBzJTNBJTJGJTJGYWxpZG9jcy5kaW5ndGFsay5jb20lMkZjb3JlJTJGYXBpJTJGcmVzb3VyY2VzJTJGaW1nJTJGNWVlY2RhZjQ4NDYwY2RlNTMwMmRjM2NhNDhiZGY5MzdlYTg2MTYxZjExYTBjOGU0ZmRjMzY0OWNjMzE3Y2RkMzZmZDgwMDRjY2E2MjhhN2U2NWExMTdlOTY5Mjg3MDY0MWY2MzI3M2QzMTJiMmFkYTlmNDA3OGI3ZDAxM2VlZWZhM2FjODBmYzU2N2EzMDA1Njc3NDYxMGEyMjQwMjQ2OWQyNmJlYWQyNDQ4ZGU0OTlmMzlmMTAwNDQ2ZWI4NjI3JTNGdG1wQ29kZSUzRGZjNGUwYTQ1LWQ4YzctNGVlNS05YmEwLWFjY2U3ZGIzZjg2YSUyMiUyQyUyMmV4dHJhRGF0YSUyMiUzQSU3QiUyMnJlc291cmNlSWQlMjIlM0ElMjI0ZmUyNTE0MC1iYWIyLTQzNTAtOWU5YS1mMTNmMzdiYTI2N2UlMjIlMkMlMjJtZXRhRGF0YSUyMiUzQSU3QiUyMnNpemUlMjIlM0EzMDQzOTQlMkMlMjJvcmlnaW5XaWR0aCUyMiUzQTIwMDAlMkMlMjJvcmlnaW5IZWlnaHQlMjIlM0E4MzMlMkMlMjJmb3JtYXQlMjIlM0ElMjJwbmclMjIlMkMlMjJyYXRpbyUyMiUzQTElN0QlN0QlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCU1RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCU1RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIyYmxvY2slMjIlMkMlMjJ0eXBlJTIyJTNBJTIycGFyYWdyYXBoJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMnV1aWQlMjIlM0ElMjJsd3VocHhwMXBlajVuMXY3cHNpJTIyJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlNUQlN0QlNUQlN0QlNUQlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMmJsb2NrJTIyJTJDJTIydHlwZSUyMiUzQSUyMnBhcmFncmFwaCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJ1dWlkJTIyJTNBJTIybHd1aHVjYjRobHFhOTdoNW5jcCUyMiU3RCUyQyUyMm5vZGVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMjQuJUU0JUI4JUJCJUU1JUJBJTk3JUU5JTkzJUJBJUU3JTlBJTg0JUU1JUJGJUFCJUU5JTgwJTkyJUU2JUE4JUExJUU2JTlEJUJGJUU1JThGJUFGJUU0JUJCJUE1JUU4JUFFJUJFJUU3JUJEJUFFJUU0JUI4JThEJUU3JUJCJTk5JUU1JUFEJTkwJUU1JUJBJTk3JUU5JTkzJUJBJUU0JUJEJUJGJUU3JTk0JUE4JUVGJUJDJThDJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc3olMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydmFsdWUlMjIlM0ExMiUyQyUyMnN6VW5pdCUyMiUzQSUyMnB0JTIyJTdEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMiVFNSU5QyVBOCVFNCVCOCVCQiVFNSVCQSU5NyVFOSU5MyVCQSVFNSU4RCVCMyVFNSU4RiVBRiVFNiU5MyU4RCVFNCVCRCU5QyVFNiU4OSU5MyVFNSU4RCU5NSVFRiVCQyU4QyVFNCVCOCU4RCVFNCVCQyU5QSVFNSU4NyVCQSVFNyU4RSVCMCVFNSVBRCU5MCVFNSVCQSU5NyVFOSU5MyVCQSVFNCVCRCVCRiVFNyU5NCVBOCVFNCVCOCVCQiVFNSVCQSU5NyVFOSU5MyVCQSVFNSU4RCU5NSVFNSU4RiVCNyVFNyU5QSU4NCVFOSU5NyVBRSVFOSVBMiU5OCVFMyU4MCU4MiUyMiUyQyUyMm1hcmtzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJtYXJrJTIyJTJDJTIydHlwZSUyMiUzQSUyMnN6JTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMnZhbHVlJTIyJTNBMTIlMkMlMjJzelVuaXQlMjIlM0ElMjJwdCUyMiU3RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIybWFyayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJjb2xvciUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJ2YWx1ZSUyMiUzQSUyMiUyM0ZFMDMwMCUyMiU3RCU3RCU1RCU3RCU1RCU3RCU1RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIyYmxvY2slMjIlMkMlMjJ0eXBlJTIyJTNBJTIycGFyYWdyYXBoJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMnV1aWQlMjIlM0ElMjJsd3VodjQ2amxpZTl0OGJ1ZXVnJTIyJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlNUQlN0QlNUQlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMmlubGluZSUyMiUyQyUyMnR5cGUlMjIlM0ElMjJpbWFnZSUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJpZCUyMiUzQSUyMjlkNzlpbCUyMiUyQyUyMm5hbWUlMjIlM0ElMjJpbWFnZS5wbmclMjIlMkMlMjJzaXplJTIyJTNBMjgxNjIzJTJDJTIyd2lkdGglMjIlM0E3NDclMkMlMjJoZWlnaHQlMjIlM0EzMTkuMDc2Mjc1NjQ0Mzk3NyUyQyUyMnV1aWQlMjIlM0ElMjJsd3VodmxkcGt6b2RxaTBzYWIlMjIlMkMlMjJzcmMlMjIlM0ElMjJodHRwcyUzQSUyRiUyRmFsaWRvY3MuZGluZ3RhbGsuY29tJTJGY29yZSUyRmFwaSUyRnJlc291cmNlcyUyRmltZyUyRjVlZWNkYWY0ODQ2MGNkZTUzMDJkYzNjYTQ4YmRmOTM3ZWE4NjE2MWYxMWEwYzhlNGZkYzM2NDljYzMxN2NkZDM2ZmQ4MDA0Y2NhNjI4YTdlNjVhMTE3ZTk2OTI4NzA2NDI3YzMzNGE2OGZiZDkwZTg2NTUwNGNlY2M1Y2YyMTJlODE2Y2JiYzNjZmIxNDQ4OTk1MGQyODlmNDk2ZGNjNDVhZmE5NzVjNjA1MjQzYjBhMDdhZmJiZGQ0MjI1ZmU5YiUzRnRtcENvZGUlM0RmYzRlMGE0NS1kOGM3LTRlZTUtOWJhMC1hY2NlN2RiM2Y4NmElMjIlMkMlMjJleHRyYURhdGElMjIlM0ElN0IlMjJyZXNvdXJjZUlkJTIyJTNBJTIyNDUxNzZkMzItYmU0NC00MmUwLWI0OGQtNGRjYzA1ZjE3YzUwJTIyJTJDJTIybWV0YURhdGElMjIlM0ElN0IlMjJzaXplJTIyJTNBMjgxNjIzJTJDJTIyb3JpZ2luV2lkdGglMjIlM0ExOTAxJTJDJTIyb3JpZ2luSGVpZ2h0JTIyJTNBODEyJTJDJTIyZm9ybWF0JTIyJTNBJTIycG5nJTIyJTJDJTIycmF0aW8lMjIlM0ExJTdEJTdEJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlNUQlN0QlNUQlN0QlNUQlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlNUQlN0QlNUQlN0QlNUQlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMmJsb2NrJTIyJTJDJTIydHlwZSUyMiUzQSUyMnBhcmFncmFwaCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJ1dWlkJTIyJTNBJTIybHd1aHZsZHFmdWZveG9ucnAxJTIyJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlNUQlN0QlNUQlN0QlNUQlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMmJsb2NrJTIyJTJDJTIydHlwZSUyMiUzQSUyMnBhcmFncmFwaCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJ1dWlkJTIyJTNBJTIybHd1aHY0aXAxaTJ3Mml6a2EyZCUyMiU3RCUyQyUyMm5vZGVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMjUuJUU0JUI4JUJCJUU1JUJBJTk3JUU5JTkzJUJBJUU1JThGJUFGJUU0JUJCJUE1JUU1JUFGJUI5JUU1JUI4JUI4JUU2JTg5JTkzJUU1JThEJTk1JUU3JTlBJTg0JUU1JUFEJTkwJUU1JUJBJTk3JUU5JTkzJUJBJUU4JUJGJTlCJUU4JUExJThDJUU3JUJEJUFFJUU5JUExJUI2JUVGJUJDJThDJUU1JTlDJUE4JUU3JUFEJTlCJUU5JTgwJTg5JUU1JUJBJTk3JUU5JTkzJUJBJUU2JTk3JUI2JUU3JUJEJUFFJUU5JUExJUI2JUU3JTlBJTg0JUU1JUJBJTk3JUU5JTkzJUJBJUU0JUJDJTlBJUU1JTlDJUE4JUU2JTlDJTgwJUU0JUI4JThBJUU2JTk2JUI5JUUzJTgwJTgyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc3olMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydmFsdWUlMjIlM0ExMiUyQyUyMnN6VW5pdCUyMiUzQSUyMnB0JTIyJTdEJTdEJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydXVpZCUyMiUzQSUyMmx3dWh4NGtvOGt4OGFpeGl4cDUlMjIlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIyaW5saW5lJTIyJTJDJTIydHlwZSUyMiUzQSUyMmltYWdlJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMmV4dHJhRGF0YSUyMiUzQSU3QiUyMm1ldGFEYXRhJTIyJTNBJTdCJTIyZm9ybWF0JTIyJTNBJTIycG5nJTIyJTJDJTIyb3JpZ2luSGVpZ2h0JTIyJTNBODU5JTJDJTIyb3JpZ2luV2lkdGglMjIlM0EyMDAwJTJDJTIycmF0aW8lMjIlM0ExJTJDJTIyc2l6ZSUyMiUzQTMyOTQ5MyU3RCUyQyUyMnJlc291cmNlSWQlMjIlM0ElMjIyNjVlMDU5OS1mOTE1LTRjZGMtYmJjNi03ZGNiYTMyYzFjZGYlMjIlN0QlMkMlMjJoZWlnaHQlMjIlM0EzMjAuODM2NSUyQyUyMmlkJTIyJTNBJTIydmFoMGJkJTIyJTJDJTIybmFtZSUyMiUzQSUyMmltYWdlLnBuZyUyMiUyQyUyMnNpemUlMjIlM0EzMjk0OTMlMkMlMjJzcmMlMjIlM0ElMjJodHRwcyUzQSUyRiUyRmFsaWRvY3MuZGluZ3RhbGsuY29tJTJGY29yZSUyRmFwaSUyRnJlc291cmNlcyUyRmltZyUyRjVlZWNkYWY0ODQ2MGNkZTUzMDJkYzNjYTQ4YmRmOTM3ZWE4NjE2MWYxMWEwYzhlNGZkYzM2NDljYzMxN2NkZDM2ZmQ4MDA0Y2NhNjI4YTdlNjVhMTE3ZTk2OTI4NzA2NGEyNjM4NTI1YTQyNDFhZTk5MTIzZmM0ODZhNzM2MjUwM2I3ZWE0NzgwYjJiZWJjMmZhOWJlNjk0YzRjODYzMzNmMjI1NTgxN2Y4ZWMwMDUzNjA2NjAxZmUyM2I1NDk2NyUzRnRtcENvZGUlM0RmYzRlMGE0NS1kOGM3LTRlZTUtOWJhMC1hY2NlN2RiM2Y4NmElMjIlMkMlMjJ1dWlkJTIyJTNBJTIybHd1aHg0cWY0eHlxZGplNjN3biUyMiUyQyUyMndpZHRoJTIyJTNBNzQ3JTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlNUQlN0QlNUQlN0QlNUQlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlNUQlN0QlNUQlN0QlNUQlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMmJsb2NrJTIyJTJDJTIydHlwZSUyMiUzQSUyMnBhcmFncmFwaCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJ1dWlkJTIyJTNBJTIybHd1aHg0cWd6eDc2Z2l5YXd2JTIyJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlNUQlN0QlNUQlN0QlNUQlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMmJsb2NrJTIyJTJDJTIydHlwZSUyMiUzQSUyMnBhcmFncmFwaCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJ1dWlkJTIyJTNBJTIybHd1aWhic2twYXJ6eG5ydXcxJTIyJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJUU1JUE2JTgyJUU1JTlCJUJFJUU2JTg5JTgwJUU3JUE0JUJBJUVGJUJDJThDJUU2JTg5JTkzJUU0JUJBJTg2JUU2JTk4JTlGJUU2JUEwJTg3JUU3JTlBJTg0JUU1JUFEJTkwJUU1JUJBJTk3JUU5JTkzJUJBJUU0JUJDJTlBJUU1JUIxJTk1JUU3JUE0JUJBJUU1JTlDJUE4JUU0JUI4JUJCJUU1JUJBJTk3JUU5JTkzJUJBJUU3JTlBJTg0JUU0JUI4JThCJUU2JTk2JUI5JUUzJTgwJTgyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc3olMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydmFsdWUlMjIlM0ExMiUyQyUyMnN6VW5pdCUyMiUzQSUyMnB0JTIyJTdEJTdEJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydXVpZCUyMiUzQSUyMmx3dWloNzd5OG9leXUyN3NpeW0lMjIlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIyaW5saW5lJTIyJTJDJTIydHlwZSUyMiUzQSUyMmltYWdlJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMmlkJTIyJTNBJTIyYWFneHd5JTIyJTJDJTIybmFtZSUyMiUzQSUyMmltYWdlLnBuZyUyMiUyQyUyMnNpemUlMjIlM0E4MDkxOCUyQyUyMndpZHRoJTIyJTNBNjA0JTJDJTIyaGVpZ2h0JTIyJTNBNjMxJTJDJTIydXVpZCUyMiUzQSUyMmx3dWloN2YyZ20xcW5pcHY1eiUyMiUyQyUyMnNyYyUyMiUzQSUyMmh0dHBzJTNBJTJGJTJGYWxpZG9jcy5kaW5ndGFsay5jb20lMkZjb3JlJTJGYXBpJTJGcmVzb3VyY2VzJTJGaW1nJTJGNWVlY2RhZjQ4NDYwY2RlNTMwMmRjM2NhNDhiZGY5MzdlYTg2MTYxZjExYTBjOGU0ZmRjMzY0OWNjMzE3Y2RkMzZmZDgwMDRjY2E2MjhhN2U2NWExMTdlOTY5Mjg3MDY0YzcxNTMzMTk5NWM1YzliMTBlYjY1Mjk2OGFjMTg2NjEyMjg0OTgyYjMzMWEwZTYwNTRlMjcxMWRlOGQ1OWE3NTdlNGYyMjY2M2VhOTEwOTNhOGFmNDQzMDAwOWRlMGIxJTNGdG1wQ29kZSUzRGZjNGUwYTQ1LWQ4YzctNGVlNS05YmEwLWFjY2U3ZGIzZjg2YSUyMiUyQyUyMmV4dHJhRGF0YSUyMiUzQSU3QiUyMnJlc291cmNlSWQlMjIlM0ElMjI4NWY3NDliNS1jMDQzLTQ5NjYtOTk0Yi05MGE5MWJjYzA5NTYlMjIlMkMlMjJtZXRhRGF0YSUyMiUzQSU3QiUyMnNpemUlMjIlM0E4MDkxOCUyQyUyMm9yaWdpbldpZHRoJTIyJTNBNjA0JTJDJTIyb3JpZ2luSGVpZ2h0JTIyJTNBNjMxJTJDJTIyZm9ybWF0JTIyJTNBJTIycG5nJTIyJTJDJTIycmF0aW8lMjIlM0ExJTdEJTdEJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlNUQlN0QlNUQlN0QlNUQlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlNUQlN0QlNUQlN0QlNUQlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMmJsb2NrJTIyJTJDJTIydHlwZSUyMiUzQSUyMnBhcmFncmFwaCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJ1dWlkJTIyJTNBJTIybHd1aWlyc2FpbWhzeGd3NGd6JTIyJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlNUQlN0QlNUQlN0QlNUQlN0QlMkMlN0IlMjJrbGFzcyUyMiUzQSUyMmJsb2NrJTIyJTJDJTIydHlwZSUyMiUzQSUyMnBhcmFncmFwaCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJ1dWlkJTIyJTNBJTIybHd1aW1qbTE2dTR3aWN4b2gyaiUyMiU3RCUyQyUyMm5vZGVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMjYuJUU1JThGJUFGJUU0JUJCJUE1JUU1JTlDJUE4JUU1JUJBJTk3JUU5JTkzJUJBJUU3JUFEJTlCJUU5JTgwJTg5JUU5JTg3JThDJUU5JTlEJUEyJUU2JUEwJUI5JUU2JThEJUFFJUU2JTlDJTgwJUU2JTk2JUIwJUU1JTg1JUIzJUU4JTgxJTk0JUU3JTlBJTg0JUU1JUJBJTk3JUU5JTkzJUJBJUU2JThFJTkyJUU1JTlDJUE4JUU2JTlDJTgwJUU1JTg5JThEJUU2JThFJTkyJUU1JUJBJThGJUUzJTgwJTgyJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc3olMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydmFsdWUlMjIlM0ExMiUyQyUyMnN6VW5pdCUyMiUzQSUyMnB0JTIyJTdEJTdEJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydXVpZCUyMiUzQSUyMmx3dWltaHJ1dnMwaGFzd3I1dCUyMiU3RCUyQyUyMm5vZGVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMiUyMiUyQyUyMm1hcmtzJTIyJTNBJTVCJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJpbmxpbmUlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyaW1hZ2UlMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIyaWQlMjIlM0ElMjI1cHJ2bXglMjIlMkMlMjJuYW1lJTIyJTNBJTIyaW1hZ2UucG5nJTIyJTJDJTIyc2l6ZSUyMiUzQTU0MTAyNyUyQyUyMndpZHRoJTIyJTNBNzQ3JTJDJTIyaGVpZ2h0JTIyJTNBMzM1LjQwMyUyQyUyMnV1aWQlMjIlM0ElMjJsd3VpbWk5eWl4YmF4Mm42eGhlJTIyJTJDJTIyc3JjJTIyJTNBJTIyaHR0cHMlM0ElMkYlMkZhbGlkb2NzLmRpbmd0YWxrLmNvbSUyRmNvcmUlMkZhcGklMkZyZXNvdXJjZXMlMkZpbWclMkY1ZWVjZGFmNDg0NjBjZGU1MzAyZGMzY2E0OGJkZjkzN2VhODYxNjFmMTFhMGM4ZTRmZGMzNjQ5Y2MzMTdjZGQzNmZkODAwNGNjYTYyOGE3ZTY1YTExN2U5NjkyODcwNjQ4MzEwMWFjZjg0NTU4ZjRhODg1MjY2NzQ1NTg2MGJiZWU2NjE2ZWI2YzE2NWFlYzI1YmU5N2YyNDI5YmRkMjMwZjE3ZGYwNmVhNmEzMTJjMjk1MDhmZDU5ZmVkZDBlOGYlM0Z0bXBDb2RlJTNEZmM0ZTBhNDUtZDhjNy00ZWU1LTliYTAtYWNjZTdkYjNmODZhJTIyJTJDJTIyZXh0cmFEYXRhJTIyJTNBJTdCJTIycmVzb3VyY2VJZCUyMiUzQSUyMjU3NmU0N2RiLWI4M2ItNGUxMy05NWMwLTI1MTQ5ZjMwZmUxOSUyMiUyQyUyMm1ldGFEYXRhJTIyJTNBJTdCJTIyc2l6ZSUyMiUzQTU0MTAyNyUyQyUyMm9yaWdpbldpZHRoJTIyJTNBMjAwMCUyQyUyMm9yaWdpbkhlaWdodCUyMiUzQTg5OCUyQyUyMmZvcm1hdCUyMiUzQSUyMnBuZyUyMiUyQyUyMnJhdGlvJTIyJTNBMSU3RCU3RCU3RCUyQyUyMm5vZGVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMiUyMiUyQyUyMm1hcmtzJTIyJTNBJTVCJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMiUyMiUyQyUyMm1hcmtzJTIyJTNBJTVCJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydXVpZCUyMiUzQSUyMmx3dWltaTl6bTBzczk5YWw1NTglMjIlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCU3RCU1RCU3RCU1RCU3RCUyQyU3QiUyMmtsYXNzJTIyJTNBJTIyYmxvY2slMjIlMkMlMjJ0eXBlJTIyJTNBJTIycGFyYWdyYXBoJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiUyMnV1aWQlMjIlM0ElMjJsd3VpaXJ6a29kc2pmbHlleTlyJTIyJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJUU2JTg4JTkxJUU0JUJCJUFDJUU2JUFDJUEyJUU4JUJGJThFJUU1JUE0JUE3JUU1JUFFJUI2JUU1JUFGJUI5JUU2JTg4JTkxJUU0JUJCJUFDJUU3JUIzJUJCJUU3JUJCJTlGJUU3JTlBJTg0JUU0JUI4JThEJUU4JUI2JUIzJUU0JUI5JThCJUU1JUE0JTg0JUU2JThGJTkwJUU1JTg3JUJBJUU1JThGJThEJUU5JUE2JTg4JUVGJUJDJThDJUU0JUI5JTlGJUU1JUI4JThDJUU2JTlDJTlCJUU1JUE0JUE3JUU1JUFFJUI2JUU0JUJEJUJGJUU3JTk0JUE4JUU2JTg4JTkxJUU0JUJCJUFDJUU3JUIzJUJCJUU3JUJCJTlGJUU4JTgzJUJEJUU2JTlCJUI0JUU1JThBJUEwJUU2JUI1JTgxJUU3JTk1JTg1JUVGJUJDJTgxJUU4JThCJUE1JUU1JUE0JUE3JUU1JUFFJUI2JUU1JUFGJUI5JUU3JUIzJUJCJUU3JUJCJTlGJUU0JUI4JThBJUU2JTlDJTg5JUU0JUJEJUJGJUU3JTk0JUE4JUU0JUI4JThEJUU1JUE0JUFBJUU2JTk4JThFJUU3JTk5JUJEJUU3JTlBJTg0JUU1JTlDJUIwJUU2JTk2JUI5JUVGJUJDJThDJUU2JTg4JTk2JUU2JTk4JUFGJUU2JTlDJTg5JUU0JUJCJTgwJUU0JUI5JTg4JUU5JTlDJTgwJUU2JUIxJTgyJUU1JThGJUFGJUU0JUJCJUE1JUU1JThGJThEJUU5JUE2JTg4JUU1JTg4JUIwJUU2JTg4JTkxJUU0JUJCJUFDJUU3JTlBJTg0JUU1JUFFJUEyJUU2JTlDJThEJUU1JTkwJThDJUU0JUJBJThCJUVGJUJDJThDJUU2JTg0JTlGJUU4JUIwJUEyJUU1JUE0JUE3JUU1JUFFJUI2JUU1JUFGJUI5JUU1JUJBJTk3JUU3JUFFJUExJUU1JUFFJUI2JUU3JTlBJTg0JUU2JTk0JUFGJUU2JThDJTgxJUVGJUJDJTgxJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc3olMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydmFsdWUlMjIlM0ExMiUyQyUyMnN6VW5pdCUyMiUzQSUyMnB0JTIyJTdEJTdEJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydXVpZCUyMiUzQSUyMmx3dWpiY2R5czlmbTc4NXEyYSUyMiU3RCUyQyUyMm5vZGVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIya2xhc3MlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMiVFNSVBRSVBMiVFNiU5QyU4RCVFNSU4MCVCQyVFNyU4RiVBRCVFNiU5NyVCNiVFOSU5NyVCNCVFRiVCQyU5QTklM0EwMC0yMyUzQTAwJTIwJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc3olMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydmFsdWUlMjIlM0ExMiUyQyUyMnN6VW5pdCUyMiUzQSUyMnB0JTIyJTdEJTdEJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydXVpZCUyMiUzQSUyMmx3dWpicHdlMjJheGxlbnVlMWwlMjIlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlRTglODElOTQlRTclQjMlQkIlRTYlOTYlQjklRTUlQkMlOEYlRUYlQkMlOUFRUSUyMDgwMDE4MzczMSVFRiVCQyU4QyVFOSU5OCVCRiVFOSU4NyU4QyUyMGJuY3NtJUVGJUJDJThDJUU2JTk3JUJBJUU2JTk3JUJBJTIwJUU0JUI4JUFEJUU2JTgxJTkyJUU3JTk0JUI1JUU1JTk1JTg2JTIyJTJDJTIybWFya3MlMjIlM0ElNUIlN0IlMjJrbGFzcyUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc3olMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydmFsdWUlMjIlM0ExMiUyQyUyMnN6VW5pdCUyMiUzQSUyMnB0JTIyJTdEJTdEJTVEJTdEJTVEJTdEJTVEJTdEJTJDJTdCJTIya2xhc3MlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTIydXVpZCUyMiUzQSUyMmx3dWpjaWdjNHA0MGF6ZGRsZ3YlMjIlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjIlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU3QiUyMmtsYXNzJTIyJTNBJTIybWFyayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJzeiUyMiUyQyUyMmRhdGElMjIlM0ElN0IlMjJ2YWx1ZSUyMiUzQTEyJTJDJTIyc3pVbml0JTIyJTNBJTIycHQlMjIlN0QlN0QlNUQlN0QlNUQlN0QlNUQlN0QlNUQlN0Q=" data-identifier-application__slash__x-doc-key="3M0OzBYNa3N6OzeE"><h2 style="font-size: 16pt; margin-top: 21.3333px; margin-bottom: 9px; margin-left: 0px; line-height: 3em;"><span data-type="text" style="font-size: 16pt;">关闭迁移模式和开启迁移模式有什么区别？</span></h2><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><strong><span data-type="text" style="font-size:12pt;font-family:PingFang SC, PingFang SC, PingFang SC, PingFang SC">关闭迁移模式：</span></strong><span data-type="text" style="font-size:12pt;font-family:PingFang SC, PingFang SC, PingFang SC, PingFang SC">适用于代发他人店铺场景，在关联上子店铺后，不用等待子店铺数据迁移，直接可以在主店铺这边选择子店铺操作打单发货。</span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><strong><span data-type="text" style="font-size:12pt;font-family:PingFang SC, PingFang SC, PingFang SC, PingFang SC">开启迁移模式：</span></strong><span data-type="text" style="font-size:12pt;font-family:PingFang SC, PingFang SC, PingFang SC, PingFang SC">适用于自己开了多个店铺，主店铺和所有子店铺的订单需要混合一起打单发货。</span><span style="font-family: &quot;PingFang SC&quot;, &quot;PingFang SC&quot;, &quot;PingFang SC&quot;, &quot;PingFang SC&quot;; font-size: 12pt;">但是在获取子店铺的订单的时候需要数据迁移，主店铺需要等待迁移完后才可以对子店铺进行打单发货。</span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em; text-align: left;"><span data-type="text"></span><img src="/public/images/midleAloaigPic/1717410120105image1.png" width="924" style="width: 924px; height: 397.32px;" height="397"/></p><h2 style="font-size: 16pt; margin-top: 21.3333px; margin-bottom: 9px; margin-left: 0px; line-height: 3em;"><span data-type="text" style="font-size: 18pt;"><br/>关闭迁移模式的优点：</span></h2><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span style="font-size: 18px;">1.无需等待子店铺数据迁移，直接在主店铺这边查看到子店铺的订单，勾选子店铺快速打单发货。</span></p><p style="margin-top: 0px; margin-bottom: 0px; text-align: left; line-height: 3em;"><span data-type="text"></span><img src="/public/images/midleAloaigPic/1717410176950image2.png" width="933" style="width: 933px; height: 355.007px;" height="355"/><span data-type="text"></span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span data-type="text"></span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span style="font-size: 18px;"><br/>2.在主店铺即可查询导出子店铺的打印发货数据，无需切换到子店铺。</span></p><p style="margin-top: 0px; margin-bottom: 0px; text-align: left; line-height: 3em;"><span data-type="text"></span><img src="/public/images/midleAloaigPic/1717410317774image3.png" width="928" style="width: 928px; height: 263.305px;" height="263"/><span data-type="text"></span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span data-type="text"></span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span style="font-size: 18px;"><br/>3.在主店铺即可查看并生成子店铺的备货单，直接打印/导出备货单。</span></p><p style="margin-top: 0px; margin-bottom: 0px; text-align: left; line-height: 3em;"><span data-type="text"></span><img src="/public/images/midleAloaigPic/1717410469603image4.png" width="898" style="width: 898px; height: 374.017px;" height="374"/><span data-type="text"></span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span data-type="text"></span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span style="font-size: 18px;"><br/>4.主店铺的快递模板可以设置不给子店铺使用，<span data-type="text" style="color: rgb(254, 3, 0);">在主店铺即可操作打单，不会出现子店铺使用主店铺单号的问题。</span></span></p><p style="margin-top: 0px; margin-bottom: 0px; text-align: left; line-height: 3em;"><span data-type="text"></span><img src="/public/images/midleAloaigPic/1717410490891image5.png" width="919" style="width: 919px; height: 392.545px;" height="393"/><span data-type="text"></span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span data-type="text"></span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span style="font-size: 18px;"><br/>5.主店铺可以对常打单的子店铺进行置顶，在筛选店铺时置顶的店铺会在最上方。</span></p><p style="margin-top: 0px; margin-bottom: 0px; text-align: left; line-height: 3em;"><span data-type="text"></span><img src="/public/images/midleAloaigPic/1717410541726image6.png" width="917" style="width: 917px; height: 393.851px;" height="394"/><span data-type="text"></span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span data-type="text"></span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span style="font-size: 18px;">如图所示，打了星标的子店铺会展示在主店铺的下方。</span></p><p style="margin-top: 0px; margin-bottom: 0px; text-align: left; line-height: 3em;"><span data-type="text"></span><img src="/public/images/midleAloaigPic/1717410572031image7.png"/><span data-type="text"></span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span data-type="text"></span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px;"><br/>6.可以在店铺筛选里面根据最新关联的店铺排在最前排序。</span></p><p style="margin-top: 0px; margin-bottom: 0px; text-align: left; line-height: 3em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span><img src="/public/images/midleAloaigPic/1717410665466image8.png" width="926" style="width: 926px; height: 428.714px;" height="429"/><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span style="font-size: 16px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"><br/>我们欢迎大家对我们系统的不足之处提出反馈，也希望大家使用我们系统能更加流畅！若大家对系统上有使用不太明白的地方，或是有什么需求可以反馈到我们的客服同事，感谢大家对店管家的支持！</span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span style="font-size: 16px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">客服值班时间：9:00-23:00&nbsp;</span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span style="font-size: 16px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">联系方式：QQ&nbsp;800183731，阿里&nbsp;bncsm，旺旺&nbsp;中恒电商</span></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span data-type="text" style="font-size:12pt"></span></p></article><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span data-type="text" style="font-weight:bold;color:#FE0300;font-size:12pt"></span><br/></p><p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;"><span data-type="text"></span></p></article><p><br/></p>
+                
+
+                <!-- <div class="ask_main_content">
+                    <div  class="ask_main_content_li">
+                        <i class="askIcon">1</i>
+                        <span>进入1688首页，登录已经购买的账号</span>
+                    </div>
+                    <img src="http://101.37.106.230/help/images/1688shouye.png" alt="">
+                </div>
+                <div class="ask_main_content">
+                    <div  class="ask_main_content_li">
+                        <i class="askIcon">1</i>
+                        <span>进入1688首页，登录已经购买的账号</span>
+                    </div>
+                    <img src="http://101.37.106.230/help/images/1688shouye.png" alt="">
+                </div> -->
+
+            </div>
+            <style>
+    .shareWebs{
+        padding: 10px;
+    }
+
+    .shareWebs>span>i {
+        font-size: 18px;
+        margin-right: 20px;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border-radius: 13px;
+        text-align: center;
+        line-height: 25px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    #qrcodeShare {
+        position: absolute;
+        top: -120px;
+        left: 0;
+        display: none;
+    }
+
+    .doubian {
+        color: #658014;
+        background-color: #edf3e3;
+        font-size: 14px !important;
+        font-weight: 700;
+    }
+
+    .tieba {
+        color: #118ce4;
+        background-color: #e1f3ff;
+        font-size: 14px !important;
+        font-weight: 700;
+        font-family: 雅黑;
+    }
+    .shareWebs>span>.shoucang{
+        display: inline-block;
+        padding: 2px 3px;
+        background-color: #e1f3ff;
+        border-radius: 4px;
+        color: #3aadff;
+        cursor: pointer;
+    }
+</style>
+
+<div class="shareWebs">
+    <span>分享：
+        <i class="iconfont icon-weixin" style="color:#77bf04;background-color: #ebf9d4;">
+            <div id="qrcodeShare"></div>
+        </i>
+        <i class="iconfont icon-qq" style="color:#3aadff;background-color: #e1f3ff;"
+            onclick="shareMoule.shareToQzone(event)"></i>
+        <i class="iconfont icon-tubiaozhizuo-" style="color:#fe6f4f;background-color: #ffe7e1;"
+            onclick="shareMoule.shareToSinaWB(event)"></i>
+        <i class="iconfont doubian" onclick="shareMoule.shareToDouban(event)">豆</i>
+        <s class="shoucang" onclick="shareMoule.addFavorite()">收藏</s>
+    </span>
+</div>
+<div style="padding:10px;">
+    <a href="http://q.url.cn/ABC8fP?_type=wpa&qidian=true" target="_blank">举报</a>
+</div>
+
+<!-- <script src="../../public/js/qrcode.min.js"></script>
+<script src="../../public/js/shadeCommunity.js"></script>
+<script>
+    var url = window.location.href;
+
+    var obj = $$.GetUrlParamObj(window.location.href);
+
+    var qrcode = new QRCode("qrcodeShare", {   //分享生成二维码
+        text: url,
+        width: 120,
+        height: 120,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+    });
+
+    $(".icon-weixin").on('mouseover', function () {
+
+        $(this).children().css({ display: 'inline-block' })
+
+    })
+
+
+    $('.icon-weixin').on('mouseleave', function () {
+        $(this).children().css({ display: 'none' });
+
+    })
+
+
+</script> -->
+            <div class="discussShow">
+    <div class="discussShow-title"><span><s id="discussShow-title-s">评论:</s><i
+                style="font-size: 12px;margin: 0 10px;color:#888;">共<s id="pageNum" style="padding: 0 5px;">3</s>条</i></span></div>
+    <ul class="discussShow-main" id="discussShow_main">
+        
+        
+        <li class="discussShow-main-item clearfix">
+            <div class="discussShow-main-itemImg"><span class="iconfont icon-zhucedengluyonghuming"></span></div>
+            <ul class="discussShow-main-ul">
+                <li>游客sy5N9202504291401</li>
+                <li class="discussShow-main-content">开发一个能全选店铺的功能  能不能</li>
+                <li>2025-04-29 14:01:42</li>
+            </ul>
+        </li>
+        
+        <li class="discussShow-main-item clearfix">
+            <div class="discussShow-main-itemImg"><span class="iconfont icon-zhucedengluyonghuming"></span></div>
+            <ul class="discussShow-main-ul">
+                <li>游客arLkA202503271140</li>
+                <li class="discussShow-main-content">1688批量开通分销产品 下面的 选择密文面单  显示无法开通
+
+原因是  “ 选择密文面单   需至少选择一个面单渠道  ”
+
+出现的问题是，主店铺  的快递面单  未 同步到子店铺  
+
+想在子店铺解决，多渠道面单开通，（子店铺共用主店铺的面单渠道）怎么弄呢？
+</li>
+                <li>2025-03-27 11:40:41</li>
+            </ul>
+        </li>
+        
+        <li class="discussShow-main-item clearfix">
+            <div class="discussShow-main-itemImg"><span class="iconfont icon-zhucedengluyonghuming"></span></div>
+            <ul class="discussShow-main-ul">
+                <li>游客TK4Zi202411271328</li>
+                <li class="discussShow-main-content">更新之后好卡啊，老是error，503，</li>
+                <li>2024-11-27 13:28:42</li>
+            </ul>
+        </li>
+        
+        
+    </ul>
+    <div class="page" style="width:600px;"></div>
+</div>
+<div class="discussAdd">
+    <textarea id="discussContent" placeholder="请输入您意见，我们会第一时间处理！"></textarea>
+    <input type="text" id="discussContact" class="discussContact" placeholder="请输入您的联系方式，保密处理!">
+    <div class="discussAdd-setBtn clearfix">
+        <div>
+            <span class="iconfont icon-zhucedengluyonghuming"></span>
+            <span>用户名字</span>
+        </div>
+        <div class="discussAdd-setBtn-btn">
+            <input type="text" placeholder="输入验证码" id="inputCode">
+            <img src="/getCode" id="getCode02" alt="" onclick="headerLoginCommon.getCheckForm(this);">
+            <span onclick="mainCommons.addUserDiscuss()">留言</span>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+
+</div>
+
+    
+    <div class="wrapper_video">
+        <div class="wrapper_video_close">关闭视频</div>
+        <div>
+            <video controls="controls" id="videoMain">
+            </video>
+            <span class="video_close"></span>
+            <ul class="controlVedioWidth">
+                <li onclick="mainCommons.changeVedioWidth(750)">750</li>
+                <li onclick="mainCommons.changeVedioWidth(950)">950</li>
+                <li onclick="mainCommons.changeVedioWidth(1000)">全屏</li>
+            </ul>
+        </div>   
+</div>
+    
+    
+<div  class="contact_box">
+    <div class="shrink clearfix" onmouseover="mainCommons.contactOnGzh(this)" onmouseout="mainCommons.contactOutGzh(this)">
+        <div class="contact_box_right">
+            <i class="contact_box_right_icon02"></i>
+        </div>
+        <div class="contact_box_right_img">
+            <img src="../../public/images/gzhwx-min.png" alt="">
+            <div class="img-title">公众号：扫一扫</div>
+        </div>
+    </div>
+    <div class="shrink clearfix" onmouseover="mainCommons.contactOn(this)" onmouseout="mainCommons.contactOut(this)">
+            <div class="contact_box_left">
+                <ul>
+                    <li><i></i><a href="https://wpa1.qq.com/grOmv1mS?_type=wpa&qidian=true" target="_blank">QQ客服</a></li>
+                    <li><i></i><a href="http://www.taobao.com/webww/ww.php?ver=3&touid=dianguanjia2011&siteid=cntaobao&status=1&charset=utf-8" target="_blank">淘宝客服</a></li>
+                    <li><i></i><a href="tel:4008638288">400 863 8288</a></li>
+                </ul>
+            </div>
+            <div class="contact_box_right">
+                <div class="contact_box_right_title"><i class="contact_box_right_icon"></i></div>
+                <!-- <span>咨</span><span>询</span><span>客</span><span>服</span> -->
+            </div>
+            <div class="contact_box_animation"></div>
+    </div>
+</div>
+
+
+
+
+<!-- 返回顶部或底部 -->
+<div class="allUpAndDown">
+        <div class="allUpAndDown_up iconfont icon-fanhuidingbu1"></div>
+        <div class="allUpAndDown_down iconfont icon-fanhuidingbu1"></div>
+</div>
+    <!-- <footer>
+    <span style="margin-right: 20px;"><a href="https://beian.miit.gov.cn/" target="_blank" style="color:#fff">粤ICP备14060770号</a></span>
+    <span> 深圳店管家软件有限公司（店管家官网-<a style="color:#fff" href="http://www.dgjapp.com">www.dgjapp.com</a>）</span>
+</footer> -->
+<div class="newfooter">
+    <div class="newfooter-content">
+        <div class="newfooter-title"><span>店管家</span>：电商一体化解决方案服务商</div>
+        <div class="newfooter-mid">
+            <div class="newfooter-main">
+                <dl class="newfooter-nav">
+                    <dt>产品与服务</dt>
+                    <dd><a href="/newShareWayBillAccount.html">批量打单发货</a></dd>  
+                    <dd><a href="/Sharefendan.html">分销代发ERP</a></dd>  
+                    <dd><a href="/puHuo.html">铺货代发</a></dd>  
+                </dl>
+                <dl class="newfooter-nav">
+                    <dt>开放平台</dt>
+                    <dd><a href="/openPlatform.html">开放平台介绍</a></dd>  
+                </dl>
+                <dl class="newfooter-nav">
+                    <dt>产品试用</dt>
+                    <dd><a href="http://erp.dgjapp.com/Account">批量打单发货试用</a></dd>  
+                    <dd><a href="/Sharefendan.html">分销代发ERP试用</a></dd>  
+                    <dd><a href="/puHuo.html">铺货代发试用</a></dd>  
+                </dl>
+                <dl class="newfooter-nav">
+                    <dt>帮助中心</dt>
+                    <dd><a href="/newHelps.html">批量打单发货教程</a></dd>  
+                    <dd><a href="/newHelps.html?stystemPlatform=distributiontOrder">分销代发ERP教程</a></dd>  
+                    <dd><a href="/newHelps.html?stystemPlatform=1688distributiont">铺货代发教程</a></dd>
+					<dd><a href="/widgeDownload/index.html" target="_blank">打印控件下载</a></dd> 					
+                </dl>
+                <dl class="newfooter-nav">
+                    <dt>关于我们</dt>
+                    <dd><a href="/news.html">新闻动态</a></dd>  
+                    <dd><a href="/aboutMy.html">公司介绍</a></dd>  
+                </dl>
+            </div>
+            <ul class="newfooter-contact">
+                <li>服务时间：周一~周天，9：00-23：00</li>
+                <li>联系方式：400 863 8288</li>
+                <li>旺旺联系：中恒电商</li>
+                <li>QQ联系：800183731</li>
+                <li class="newfooter-contact-icons">
+                    <span class="iconfont icon-dianhua"></span>
+                    <a class="iconfont icon-qq" href="https://wpa1.qq.com/grOmv1mS?_type=wpa&amp;qidian=true" target="_blank"></a>
+                    <a class="iconfont icon-ww" href="https://amos.alicdn.com/getcid.aw?v=2&amp;uid=%E4%B8%AD%E6%81%92%E7%94%B5%E5%95%86&amp;site=cntaobao&amp;s=1&amp;groupid=0&amp;charset=utf-8&amp;token=EB1BBA6E1EEF0757" target="_blank"></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="newfooter-down">
+        <div class="newfooter-down-content">
+            <div class="newfooter-down-left">
+                <span><a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备14060770号</a></span>
+                <span>深圳店管家软件有限公司（店管家官网-www.dgjapp.com）</span>
+            </div>
+            <div class="newfooter-down-right">地址：广东省深圳市福田区福田街道办深南中路3039号深圳国际文化大厦</div>
+        </div>
+
+
+    </div>
+</div>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/public/js/wuku.js"></script>
+    <script src="/public/js/headerLogin.js"></script>
+    <script src="/public/js/xcConfirm.js"></script>
+    
+    
+    <script src="/public/js/newHelp.js"></script>
+    
+    <script src="/public/js/common.js"></script>
+    <script src="/public/js/listenweb.js"></script>
+    
+<script src="../public/js/qrcode.min.js"></script>
+<script src="../public/js/shadeCommunity.js"></script>
+<script src="../../public/js/articleClickNum.js"></script>
+<script src="../public/js/jquery.page.js"></script>
+
+<script>
+
+
+    $(function () {
+        var url = window.location.search;
+
+        id = url.substr(4);
+        $(".platform_helpInformation dd").each(function () {
+            if ($(this).attr("data-id").replace(/"/g, "") == id) {
+                $(this).children('a').addClass('active')
+            }
+
+        })
+
+        var href = window.location.href;
+        var qrcode = new QRCode("qrcodeShare", {   //分享生成二维码
+            text: href,
+            width: 120,
+            height: 120,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+
+        var obj = $$.GetUrlParamObj(window.location.href);
+        if (obj.type == 'xcx') {
+            $(".header").hide();
+            $(".content_main_content_title").hide();
+            $(".contact_box").hide();
+            $(".shareWebs").hide();
+        }
+
+
+        $('.page').createPage(function (n) {
+
+            var data = {};
+            data.Pages = 5 * (n - 1);
+            data.PageSize = 5;
+            data.article_id = $$.GetUrlParam("id");
+            var url = '/new/newsDiscuss';
+            $.ajax({
+                type: "get",
+                url: url,
+                data: data,
+                success: function (res) {
+                    //点击量成功加1，则打印信息                    
+                    if (res.success) {
+                        var data = res.discussData;
+                        var html = '';
+                        for (var i = 0; i < data.length; i++) {
+
+                            html += '<li class="discussShow-main-item clearfix">';
+                            html += '<div class="discussShow-main-itemImg"><span class="iconfont icon-zhucedengluyonghuming"></span></div>';
+                            html += '<ul class="discussShow-main-ul">';
+                            html += '<li>' + data[i].from_uid + '</li>';
+                            html += '<li class="discussShow-main-content">' + data[i].content + '</li>';
+                            html += '<li>' + data[i].create_time + '</li>';
+                            html += '</ul>';
+                            html += '</li>';
+
+                        }
+                        $("#discussShow_main").html(html);
+                    }
+
+                },
+                error: function (res) {
+
+                }
+            });
+
+        }, {
+            pageCount: '1'//总页码
+        })
+        $("#discussShow-title-s").text("您的意见");
+    })
+
+    $(".icon-weixin").on('mouseover', function () {
+        $(this).children().css({ display: 'inline-block' })
+    })
+
+    $('.icon-weixin').on('mouseleave', function () {
+        $(this).children().css({ display: 'none' });
+
+    })
+
+
+        ; (function () {
+
+            function addclick() {  //计算文章浏览量
+
+                var id = $$.GetUrlParam("id");
+                var cookieName = 'jiaAddclick' + id;//组合独一无二的专属该文章的cookie名
+                var jsonString = { "id": id };
+                var url = '/news/newsSddclick';//调后台的接口
+
+                var getCookieName = $$.getCookie(cookieName);
+
+                if (getCookieName == "") {
+
+                    $.ajax({
+                        type: "post",
+                        url: url,
+                        data: jsonString,
+                        async: true,
+                        success: function (msg) {
+                            $$.setcookie(cookieName, cookieName, 30)
+                            //点击量成功加1，则打印信息
+                        },
+                        error: function (XMLHttpRequest, textStatus, errorThrown) {
+                            console.log("连接超时！");
+                        }
+                    });
+                }
+            };
+
+
+            addclick();
+
+            if ($("#videoMain").attr("data-type") == 1) {
+                $("#videoMain").addClass('telType')
+            } else {
+                $("#videoMain").addClass('normalType')
+
+            }
+
+
+        }())
+
+</script>
+
+    <script>
+        var active = 'help';
+        $("." + active + "").css({ color: '#3aadff' });
+
+        (function () {
+            var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?57357edf8405414ee76469b60ce6e67b" : "https://jspassport.ssl.qhimg.com/11.0.1.js?57357edf8405414ee76469b60ce6e67b";
+            document.write('<script src="' + src + '" id="sozz"><\/script>');
+
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+
+    </script>
+</body>
+
+</html>

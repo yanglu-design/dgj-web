@@ -1,0 +1,8 @@
+.product-placeholder-page{background:#f5f7fa}
+.product-placeholder-main{min-height:calc(100vh - 64px);padding:64px 24px;display:flex;align-items:center;justify-content:center}
+.product-placeholder-card{width:min(800px,100%);padding:64px 24px;background:#fff;border-radius:12px;text-align:center}
+.product-placeholder-card img{display:block;width:64px;height:64px;object-fit:contain;margin:0 auto 24px}
+.product-placeholder-card h1{margin:0 0 16px;font-size:clamp(24px,4vw,32px);line-height:1.4;font-weight:500}
+.product-placeholder-card p{margin:0 0 32px;color:#6d7480;font-size:16px;line-height:1.6}
+.product-placeholder-card>a{display:inline-block;color:#0888ff;font-size:16px}
+@media(max-width:640px){.product-placeholder-main{padding:32px 16px}.product-placeholder-card{padding:40px 20px}}

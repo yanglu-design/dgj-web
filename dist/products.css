@@ -1,7 +1,7 @@
 .product-intro-page{background:#fff;color:rgba(0,0,0,.9)}
 .product-intro-page .site-header{position:sticky}
 .product-shell{width:min(1200px,calc(100% - 48px));margin:0 auto}
-.product-hero{height:480px;background:url("assets/images/banner1.svg") center/cover no-repeat}
+.product-hero{position:relative;overflow:hidden;height:480px;background:url("assets/images/banner1.svg") center/cover no-repeat}
 .product-hero-content{display:none}
 .product-hero h1{margin:0 0 12px;font-size:40px;line-height:1.4;font-weight:600}
 .product-hero p{margin:0 0 20px;font-size:18px;line-height:28px}

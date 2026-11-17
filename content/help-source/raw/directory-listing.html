@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>店管家-各平台帮助中心</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="/public/css/setBase.css">
+    <link rel="stylesheet" href="/public/css/newCommon.css">
+    <link rel="stylesheet" href="/public/fonts/iconfont.css">
+    <link rel="stylesheet" href="../../public/css/xcConfirm.css">
+    <link rel="shortcut icon" type="image/ico" href="/public/images/favicon.ico">
+
+    
+    
+<meta name="keywords" content="帮助中心,打印视频教程,新手问题,模板设置,电子面单,打印位置调整,打印位置调整,浏览器设置">
+<meta name="description" content="帮助中心为打单的用户提供了打单发货过程所遇到的问题，这里有文字教程，图片示范，还有打印视频教程，让用户更快速的使用店管家打印系统。">
+<style>
+    body {
+        background-color: #fff;
+    }
+
+    .content {
+        padding-bottom: 50px;
+    }
+
+    .helpContent_01 {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    header {
+        position: static;
+        /* background-color: #8958ff; */
+        box-shadow: 0 2px 3px 2px #e9e9e9;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 5px;
+    }
+
+    .header-center {
+        display: none;
+    }
+
+    .content-main {
+        width: 1350px;
+        margin: 0 auto;
+        min-height: 800px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content-search {
+        padding-top: 25px;
+        padding-bottom: 5px;
+        position: relative;
+        width: 500px;
+        box-sizing: border-box;
+    }
+
+    .content-search-main {
+        width: 482px;
+        border: 1px solid #48b3ff;
+        position: absolute;
+        top: 64px;
+        left: 7px;
+        background-color: #fff;
+        z-index: 1000;
+        display: none;
+    }
+
+    .content-search-main>li {
+        padding: 5px 10px;
+        cursor: pointer;
+        background-color: #eff8ff
+    }
+
+    .content-search-main>li:nth-child(2n) {
+
+        background-color: #fff;
+    }
+
+    .content-search>input {
+        border: 1px solid rgb(58 173 255);
+        width: 100%;
+        height: 40px;
+        border-radius: 8px;
+        background-color: rgba(255,255,255,0.8);
+    }
+
+    .search-icon {
+        display: block;
+        width: 23px;
+        height: 23px;
+        background-image: url(./public/images/new/search_icon.png);
+        position: absolute;
+        right: 13px;
+        top: 33px;
+        cursor: pointer;
+    }
+
+    .content-search input {
+        padding-left: 10px;
+        box-sizing: border-box;
+
+    }
+
+    .content-search input::-webkit-input-placeholder {
+        color: #aab2bd;
+        font-size: 14px;
+        padding-left: 10px;
+        box-sizing: border-box;
+
+    }
+
+    .content-helps {
+        width: 1050px;
+        margin: 0 auto;
+    }
+
+    .helps-list {
+        border-bottom: 1px solid #d7d7d7;
+        position: relative;
+    }
+
+    .helps-list-title {
+        font-size: 20px;
+        color: #000;
+        height: 75px;
+        /* padding-left: 20px; */
+        font-weight: 700;
+        line-height: 75px;
+    }
+
+    .helps-list-content {
+        position: relative;
+        padding: 2px;
+    }
+
+    .helps-list-content>li {
+        float: left;
+        flex-direction: column;
+        margin-right: 45px;
+        display: flex;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    .helps-list-content>li>img {
+        box-shadow: 1px 1px 2px 1px #e2e2e2;
+        border: 1px solid #fff;
+    }
+
+    .helps-list-content>li>img:hover {
+        box-shadow: 0 0 3px 2px #72c4ff;
+    }
+
+    .helps-list-content>li>span {
+        display: inline;
+        width: 180px;
+        height: 38px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        margin-top: 5px;
+    }
+
+    .helps-list-content>li>span {
+        text-align: left;
+    }
+
+    .helps-list-content>li>span:hover {
+        color: #48b3ff;
+    }
+
+    .content-leftNav {
+        box-sizing: border-box;
+        margin-top: 30px;
+        width: 230px;
+    }
+    .content-leftNav .content-leftNav-ul{
+        border: 1px solid #3aadff;
+        border-radius: 14px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .content-leftNav .content-leftNav-ul .content-leftNav-ul-title{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        text-align: center;
+        padding: 18px 0;
+        display: flex;
+        background-color: #3aadff;
+        color:#fff;
+        font-size: 18px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .content-leftNav>ul>li {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin: 0 10px;
+        padding: 15px 0;
+        border-bottom: 1px solid #e2e2e2;
+        font-size: 16px;
+        /* font-weight: 700; */
+        justify-content: center;
+    }
+
+    .content-leftNav-icon {
+        display: inline-block;
+        height: 40px;
+        width: 2px;
+        background-color: #e2e2e2;
+        margin: 0 20px;
+        position: relative;
+
+    }
+
+    .content-leftNav-icon::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        background-color: #eee;
+        top: 13px;
+        left: -6px;
+        border-radius: 7px;
+    }
+
+    .content-leftNav-icon::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #e2e2e2;
+        top: 15px;
+        left: -4px;
+        border-radius: 5px;
+    }
+    .content-leftNav-ul .active,
+    .helps-list .active {
+        color: #48b3ff;
+    }
+
+    .content-search-main {
+        max-height: 500px;
+        overflow: auto;
+    }
+
+    .moreShowVideo {
+        width: 45px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 1px;
+        right: 0;
+        background-color: #48b3ff;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+
+    }
+
+    .helps-list-content>li {
+        width: 15%;
+    }
+
+    .noImage>li {
+        width: 24%;
+        margin-right: 5px;
+
+    }
+
+    .wrapper_video>div>.telType {
+        height: 600px;
+        width: unset;
+    }
+
+    .noImage>li>a {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    @media (max-width:1440px) {
+        .content-leftNav {
+            position: relative;
+            top: 0;
+            left: 0;
+            margin-top: 10px;
+        }
+
+        .content-leftNav>ul>li {
+            float: left;
+        }
+    }
+
+    @media (max-width:768px) {
+        .vedioImg {
+            width: 100% !important;
+        }
+
+        .helps-list-content {
+            max-height: 2000px;
+        }
+
+        .content-main {
+            width: 100%;
+
+        }
+
+        .content-search {
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            background-color: #f5f5f5;
+        }
+
+        .search-icon {
+            top: 18px;
+        }
+
+        .content-search-main {
+            width: 91%;
+            position: absolute;
+            top: 49px;
+            left: 16px;
+        }
+
+        .content-leftNav>ul>li {
+            width: 130px;
+        }
+
+        .helps-list-title {
+            font-size: 18px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .helps-list {
+            border-bottom: 5px solid #f5f5f5;
+        }
+
+        .helps-list-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .content-helps {
+            width: 100%;
+        }
+
+        .helps-list-content>li {
+            margin-right: 0;
+            width: 45%
+        }
+
+        .noImage {
+            max-height: 1000px;
+        }
+
+        .noImage>li {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .helps-list-content {
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        .wrapper_video>div>video {
+            width: 92%;
+        }
+
+        .wrapper_video>div>video {
+            box-shadow: none;
+        }
+
+        .wrapper_video>div {
+            position: relative;
+            /* display: flex; */
+            text-align: center;
+        }
+
+        .wrapper_video {
+            flex-direction: column;
+        }
+
+        .wrapper_video_close {
+            background-color: #fff;
+        }
+
+        .moreShowVideo {
+            display: none;
+        }
+
+        .wrapper_video>div>.telType {
+            height: 500px;
+        }
+
+    }
+    .header{
+        box-shadow: unset;
+    }
+
+    .content-banner{
+        width: 100%;
+        background-color: #3aadff;
+        display: flex;
+        justify-content: center;
+    }
+    .content-banner .content-banner-main{
+        width: 1350px;
+        position: relative;
+    }
+
+    .content-banner .content-banner-main .content-nav{
+        display: flex;
+        position: relative;
+        padding:40px 0;
+    }
+    .content-banner .content-banner-main .content-nav>li{
+        margin-right:60px;
+        font-size: 20px;
+        color:#fff;
+        cursor: pointer;
+        font-weight: 700;
+    }
+    .content-banner .content-banner-main .content-nav>li.active{
+        font-size: 22px;
+        color:#fec958;
+        position: relative;
+    }
+    .content-banner .content-banner-main .content-nav>li.active::after{
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: rgba(255,255,255,0.5);
+        bottom:-40px;
+        left:0;
+    }
+    .content-banner .content-banner-main .content-nav>li .icon-jiantou2{
+        font-size: 22px;
+        margin-right: 5px;
+        display: none;
+    }
+    .content-banner .content-banner-main .content-nav>li.active .icon-jiantou2{
+        display: inline-block;
+    }
+    .content-banner .content-banner-main .content-banner-main-leftIcon,.content-banner .content-banner-main .content-banner-main-rightIcon{
+        width: 470px;
+        height: 150px;
+        background-image: url(./../../public/images/2022-5-12-help-banner-left.png);
+        display: block;
+        position: absolute;
+        top:0;
+        left:-100px;
+    }
+    .content-banner .content-banner-main .content-banner-main-leftIcon{
+        transform: rotate(180deg);
+    }
+    .content-banner .content-banner-main .content-banner-main-rightIcon{
+        position: absolute;
+        left:unset; 
+        right:-100px;
+        top:unset;
+        bottom:0;
+    }
+    @media (max-width:768px) {
+        .content-banner .content-banner-main .content-nav>li{
+            font-size: 18px;
+            margin-right: 30px;
+        }
+        .content-banner .content-banner-main .content-nav>li.active{
+            font-size: 18px;
+        }
+        .content-leftNav>ul>li{
+            padding: 5px 0;
+            box-sizing: border-box;
+            font-size: 12px;
+            margin: 0;
+        }
+        .content-leftNav{
+            width: 132px;
+        }
+        .content-leftNav .content-leftNav-ul .content-leftNav-ul-title{
+            font-size: 14px;
+        }
+        .content-leftNav .content-leftNav-ul .content-leftNav-ul-title{
+            padding: 10px 0;
+        }
+        .content-helps{
+            padding-left: 5px;
+            box-sizing: border-box;
+            flex:1;
+            width: unset;
+        }
+        .helps-list-content{
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            padding: 2px 0;
+            
+        }
+        .helps-list{
+            display: flex!important;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .helps-list-content{
+            justify-content: flex-start;
+        }
+        .content-banner .content-banner-main{
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .content-banner .content-banner-main .content-banner-main-leftIcon, .content-banner .content-banner-main .content-banner-main-rightIcon{
+            width: 100%;
+            right:unset;
+            left:0;
+        }
+        .helps-list-content {
+            flex-direction: column;
+        }
+        .noImage>li>a{
+            width: 250px;
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+        }
+
+    }
+
+</style>
+
+    <script src="/public/js/shanqian.js"></script>
+    <script> var _hmt = _hmt || []; (function () { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?7fe1adc7d0527596576659f543a531ea"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })();</script>
+</head>
+
+<body>
+    <!-- <div class="loginAilogin" onclick="headerLoginCommon.openOrCloselogin(true)"> -->
+<div class="loginAilogin">
+
+    <div class="loginWrap_content_inputDiv" onclick="$$.stopM(event)">
+        <div class="loginWrap_title">登录</div>
+        <div class="iconfont icon-dengchu" style="font-size: 22px;color: #666;position: absolute;top: 20px;right: 20px;cursor: pointer;" onclick="headerLoginCommon.openOrCloselogin(true)"></div>
+        <div class="loginWrap_content_warn"></div>
+        <ul class="loginWrap_content_inputUl" id="intoLoginSelf" style="display: flex;">
+            <li><input type="text" placeholder="请输入11位手机号" id="loginTelePhone" maxlength="11"></li>
+            <li><input type="password" placeholder="请输入密码:大于6位，由数字和字母组成" id="loginPassword"></li>
+            <li>
+
+                <!-- <input type="text" style="width: 135px" placeholder="请输入验证码" id="loginValidCode"  maxlength="6">
+                <div  class="loginCode"> <img id="vCodeId" src="http://erp.dgjapp.com/Account/ValidCode?t=1" onclick="headerLoginCommon.validCode()" /></div> -->
+                <input type="text" id="code_input" value="" placeholder="请输入验证码" style="width: 120px;"/>
+                <!-- <div id="v_container" style="width: 150px;height: 50px;display: inline-block;position: relative;top: 12px;"></div> -->
+                <img src="/getCode" id="getCode" alt=""  onclick='headerLoginCommon.getCheckForm(this);'>
+
+
+            </li>
+            <li>
+                <span  id="check-btn2" class="loginWrap_content_btn login" onclick="headerLoginCommon.login()" >登录</span>
+                <span class="loginWrap_content_btn Loading" onclick="headerLoginCommon.login()" >登录中<i class="loading"></i></span>
+            </li>
+        </ul>
+
+        <ul class="loginWrap_content_inputUl" id="intoRegisterSelf" style="display: none;">
+            <li><input type="text" placeholder="请输入11位手机号" id="intoRegisterTelePhone" maxlength="11"></li>
+            <li><input type="text" style="width: 135px" placeholder="请输入短信验证码" id="intoRegisterValidCode" maxlength="8">
+                <input type="button" class="getCode" id="LoginCode1" value="免费获取验证码"
+                    onclick="headerLoginCommon.postMobileMessageCode('1')"></li>
+            <li><input type="password" placeholder="请输入密码" id="intoRegisterTelePass"></li>
+            <li><input type="password" placeholder="请确认密码" id="sureIntoRegisterTelePass"></li>
+            <li><span class="loginWrap_content_btn" onclick="headerLoginCommon.register()">注册</span></li>
+        </ul>
+
+        <ul class="loginWrap_content_inputUl" id="setLoginPwd" style="display: none;">
+            <li><input type="text" placeholder="请输入11位手机号" id="againSetPhone" maxlength="11"></li>
+            <li><input type="text" style="width: 135px" placeholder="请输入短信验证码" id="againRegisterValidCode"
+                    maxlength="8"> <input type="button" class="getCode" id="LoginCode2" value="免费获取验证码"
+                    onclick="headerLoginCommon.postMobileMessageCode('2')"></li>
+            <li><input type="password" placeholder="请输入密码" id="againSetPassword"></li>
+            <li><input type="password" placeholder="请确认密码" id="sureAgainSetPassword"></li>
+            <li><span class="loginWrap_content_btn" onclick="headerLoginCommon.againSetPassword()">重设密码</span></li>
+        </ul>
+
+        <div class="loginWrap_content_btns"><span onclick="headerLoginCommon.registerSkip()">注册</span><span onclick="headerLoginCommon.amendPwdSkip()">忘记密码</span><span onclick="headerLoginCommon.goBackLogin()" style="margin-left: 80px;color: #3cc3a2;">返回登录</span></div>
+
+    </div>
+</div>
+
+    <header class="header">
+    <div class="nav"></div>
+    <div id="menu_hover_bg" style="height: 0px; overflow: hidden;"></div>
+    <div class="w1200">
+        <div class="logo">
+            <a href="./index.html">
+                <span class="header-left-icon"></span>
+                <span class="header-left-fuTitle">批量打印发货系统</span>
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="yidong-log">
+                    <span></span>
+                    <span>深圳店管家软件有限公司</span>
+                </li>
+                <li id="men_pro">
+                    <h2><a href="./../index.html" class="index"><span class="iconfont icon-002-home2"></span>首页</a></h2>
+                </li>
+                <li id="men_sol" class="men_list">
+                    <h2><a href="./../productIntroduce.html" class="productIntroduce"><span style="font-size: 16px"
+                                class="iconfont icon-renshifuwu"></span>产品与服务</a></h2>
+
+                    <div class="sub_menu">
+                        <ul id="sub_menu_ul" style="display: flex;">
+                            <li class="more-list" id="platform-primaryHeader" style="width: 250px;">
+                                <div class="w1200">
+                                    <h3>主流平台</h3>
+                                </div>
+                            </li>
+                            <li class="more-list" id="platform-optimizedHeader" style="width: 750px;">
+                                <div class="w1200">
+                                    <h3>优选平台</h3>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+                <!-- <li id="men_fuwu" class="men_list">
+                    <h2>
+                        <a href="#" class="fuwu"><span class="iconfont icon-fangan2"
+                                style="font-size: 19px"></span>行业方案</a>
+                        <span class="menu-new-icon"><i style="margin-top: -1px;display: block;">hot</i></span>
+                    </h2>
+                    <div class="sub_menu">
+                        <div class="w1200">
+                            <h3>企业服务方案</h3>
+                        </div>
+                        <div class="sub_menu_list02">
+                            <a class="youzhanfu" href="./../kuaishouPlatform.html">快手服务</a>
+                        </div>
+                        <div class="sub_menu_list02">
+                            <a class="youzhanfu" href="./../youzhanCatalog.html">有赞服务</a>
+                        </div>
+                    </div>
+                </li> -->
+                <li>
+                    <h2>
+                        <a href="./../newShareWayBillAccount.html" class="newShareWayBillAccount"><span
+                                class="iconfont icon-002-home2"></span>快递单号共用</a>
+                        <span class="menu-new-icon"><i style="margin-top: -1px;display: block;">hot</i></span>
+                    </h2>
+                </li>
+                <li id="men_new">
+                    <h2>
+                        <a href="./../Sharefendan.html" class="Sharefendan"><span
+                                class="iconfont icon-002-home2"></span>分销代发ERP</a>
+                        <!-- <span class="menu-new-icon"><i style="margin-top: -1px;display: block;">new</i></span> -->
+                    </h2>
+                </li>
+                <li id="men_new">
+                    <h2>
+                        <a href="./../puHuo.html" class="puHuo"><span
+                                class="iconfont icon-002-home2"></span>铺货代发</a>
+                        <span class="menu-new-icon"><i style="margin-top: -1px;display: block;">new</i></span>
+                    </h2>
+                </li>
+                <li class="menu-new">
+                    <h2>
+                        <a href="./../openPlatform.html" class="openPlatform"><span class="iconfont icon-shiyong-"
+                                style="font-size: 19px"></span>开放平台</a>
+                    </h2>
+                </li>
+                <li>
+                    <h2><a href="http://erp.dgjapp.com/" target="_blank"><span class="iconfont icon-shiyong-"
+                                style="font-size: 19px"></span>产品试用</a></h2>
+                </li>
+                <li>
+                    <h2><a href="./../newHelps.html" class="help"><span
+                                class="iconfont icon-shiyongshouce"></span>帮助中心</a></h2>
+                </li>
+                <li>
+                    <h2><a href="./../news.html" class="news"><span class="iconfont icon-xinwenzhongxin"></span>新闻动态</a>
+                    </h2>
+                </li>
+                <!-- <li>
+                    <h2><a href="./../PreLiveVideo.html" class="PreLive"><span
+                                class="iconfont icon-guanyuwomen1"></span>直播预告</a></h2>
+                </li> -->
+                <li>
+                    <h2><a href="./../aboutMy.html" class="aboutMy"><span
+                                class="iconfont icon-guanyuwomen1"></span>关于我们</a></h2>
+                </li>
+
+            </ul>
+        </div>
+        <div class="login">
+            <!--            <a href="#">登陆</a>-->
+            <a href="#">服务热线</a>
+            <a href="#">400 863 8288</a>
+        </div>
+        <div class="fixedShade"></div>
+
+    </div>
+    <!-- <div class="usersLogin">
+        <span class="usersLogin-into"><i onclick="headerLoginCommon.showLogin('AppStore')">登录</i>|<i  onclick="headerLoginCommon.showRegister()">注册</i></span>
+        <span id="loginSuccess">
+            <i class="iconfont icon-zhucedengluyonghuming">：</i><a id="loginUserName" target="_blank"></a>
+            <i style="margin-left: 5px;" class="iconfont icon-dengchu" title="登出" onclick="headerLoginCommon.loginOut()"></i>
+        </span>
+    </div> -->
+    <div class="xeixinshop" style="display:none;">
+        视频号小店入口
+        <span class="xeixinshop-ad-back"></span>
+        <div class="xeixinshop-wrap">
+            <img src="../../public/images/kaifang/xiaodianerweima.png" alt="">
+            <span class="xeixinshop-wrap-title">扫码添加好友，优先使用打单功能</span>
+        </div>
+    </div>
+</header>
+
+
+
+    
+    
+
+
+<div class="content-banner">
+    <div class="content-banner-main">
+        <span class="content-banner-main-leftIcon"></span>
+        <span class="content-banner-main-rightIcon"></span>
+        <div class="content-search">
+            <input id="helpSearch-input" type="text" placeholder="请输入您要搜索的文档的关键词">
+            <i class="search-icon"></i>
+            <ul class="content-search-main clearfix"></ul>
+        </div>
+        <ul class="content-nav" id="banner_nav"></ul>
+
+    </div>
+</div>
+<div class="content-main clearfix">
+
+
+
+    <div class="content-leftNav">
+        <ul class="content-leftNav-ul">
+            <li class="content-leftNav-ul-title" id="leftNav_title">批量打印发货系统</li>
+            
+            <li onclick="helps.navChange('0')"><a href="#anchor0"
+                    id="nav0">铺货助手</a></li>
+            
+            <li onclick="helps.navChange('1')"><a href="#anchor1"
+                    id="nav1">PC-铺货助手</a></li>
+            
+        </ul>
+
+    </div>
+
+    <div class="content-helps">
+	<div style="display:none;margin-top:30px" id="showFvideo">
+        <a href="https://www.sohu.com/a/869893367_120542292" rel="nofollow" target="_blank">
+            <img src="/public/images/screenshot_2025-03-14.png">
+        </a>
+                
+                <a href="https://www.sohu.com/a/869901312_120542292" rel="nofollow" target="_blank" style="
+    margin: 0 5px;
+">
+            <img src="/public/images/screenshot_2025-03-14_15.png">
+        </a>
+        <a href="https://www.sohu.com/a/869951888_120542292" rel="nofollow" target="_blank">
+            <img src="/public/images/screenshot_2025-03-14_16.png">
+        </a>
+    </div>
+
+        
+
+        
+
+        <div class="helps-list" style="display:block">
+            <div class="helps-list-title" id="anchor0">铺货助手</div>
+            <ul class="helps-list-content noImage clearfix">
+                
+                <li>
+                    <a href="./newHelpsShow.html?id=1626145591864"
+                        title="首次进入店管家铺货代发助手，操作绑定店铺并铺货">首次进入店管家铺货代发助手，操作绑定店铺并铺货</a>
+                </li>
+                
+                <li>
+                    <a href="./newHelpsShow.html?id=1626145667983"
+                        title="完成订购授权后再次选择商品进行铺货">完成订购授权后再次选择商品进行铺货</a>
+                </li>
+                
+                <li>
+                    <a href="./newHelpsShow.html?id=1626145739303"
+                        title="关联已有抖音、快手店铺商品">关联已有抖音、快手店铺商品</a>
+                </li>
+                
+                <li>
+                    <a href="./newHelpsShow.html?id=1626145769430"
+                        title="查看快手、抖音代销商品订单并进行采购">查看快手、抖音代销商品订单并进行采购</a>
+                </li>
+                
+                <li>
+                    <a href="./newHelpsShow.html?id=1626145823910"
+                        title="代销商品">代销商品</a>
+                </li>
+                
+                <li>
+                    <a href="./newHelpsShow.html?id=1626145861845"
+                        title="铺货设置">铺货设置</a>
+                </li>
+                
+                <li>
+                    <a href="./newHelpsShow.html?id=1626145907734"
+                        title="个人中心">个人中心</a>
+                </li>
+                
+
+            </ul>
+        </div>
+
+
+        
+        
+
+        
+
+        <div class="helps-list" style="display:block">
+            <div class="helps-list-title" id="anchor1">PC-铺货助手</div>
+            <ul class="helps-list-content noImage clearfix">
+                
+                <li>
+                    <a href="./newHelpsShow.html?id=1634183919938"
+                        title="如何将1688商品铺货到我的店铺">如何将1688商品铺货到我的店铺</a>
+                </li>
+                
+                <li>
+                    <a href="./newHelpsShow.html?id=1765351792316"
+                        title="app端官方仓操作指引">app端官方仓操作指引</a>
+                </li>
+                
+                <li>
+                    <a href="./newHelpsShow.html?id=1634197343656"
+                        title="如何查看店铺订单并采购发货">如何查看店铺订单并采购发货</a>
+                </li>
+                
+                <li>
+                    <a href="./newHelpsShow.html?id=1634268346954"
+                        title="如何关联店铺已有商品">如何关联店铺已有商品</a>
+                </li>
+                
+                <li>
+                    <a href="./newHelpsShow.html?id=1669788671590"
+                        title="视频号小店铺货代发操作教程">视频号小店铺货代发操作教程</a>
+                </li>
+                
+
+            </ul>
+        </div>
+
+
+        
+        
+    </div>
+</div>
+
+    
+    <div class="wrapper_video">
+        <div class="wrapper_video_close">关闭视频</div>
+        <div>
+            <video controls="controls" id="videoMain">
+            </video>
+            <span class="video_close"></span>
+            <ul class="controlVedioWidth">
+                <li onclick="mainCommons.changeVedioWidth(750)">750</li>
+                <li onclick="mainCommons.changeVedioWidth(950)">950</li>
+                <li onclick="mainCommons.changeVedioWidth(1000)">全屏</li>
+            </ul>
+        </div>   
+</div>
+    
+    
+<div  class="contact_box">
+    <div class="shrink clearfix" onmouseover="mainCommons.contactOnGzh(this)" onmouseout="mainCommons.contactOutGzh(this)">
+        <div class="contact_box_right">
+            <i class="contact_box_right_icon02"></i>
+        </div>
+        <div class="contact_box_right_img">
+            <img src="../../public/images/gzhwx-min.png" alt="">
+            <div class="img-title">公众号：扫一扫</div>
+        </div>
+    </div>
+    <div class="shrink clearfix" onmouseover="mainCommons.contactOn(this)" onmouseout="mainCommons.contactOut(this)">
+            <div class="contact_box_left">
+                <ul>
+                    <li><i></i><a href="https://wpa1.qq.com/grOmv1mS?_type=wpa&qidian=true" target="_blank">QQ客服</a></li>
+                    <li><i></i><a href="http://www.taobao.com/webww/ww.php?ver=3&touid=dianguanjia2011&siteid=cntaobao&status=1&charset=utf-8" target="_blank">淘宝客服</a></li>
+                    <li><i></i><a href="tel:4008638288">400 863 8288</a></li>
+                </ul>
+            </div>
+            <div class="contact_box_right">
+                <div class="contact_box_right_title"><i class="contact_box_right_icon"></i></div>
+                <!-- <span>咨</span><span>询</span><span>客</span><span>服</span> -->
+            </div>
+            <div class="contact_box_animation"></div>
+    </div>
+</div>
+
+
+
+
+<!-- 返回顶部或底部 -->
+<div class="allUpAndDown">
+        <div class="allUpAndDown_up iconfont icon-fanhuidingbu1"></div>
+        <div class="allUpAndDown_down iconfont icon-fanhuidingbu1"></div>
+</div>
+    <!-- <footer>
+    <span style="margin-right: 20px;"><a href="https://beian.miit.gov.cn/" target="_blank" style="color:#fff">粤ICP备14060770号</a></span>
+    <span> 深圳店管家软件有限公司（店管家官网-<a style="color:#fff" href="http://www.dgjapp.com">www.dgjapp.com</a>）</span>
+</footer> -->
+<div class="newfooter">
+    <div class="newfooter-content">
+        <div class="newfooter-title"><span>店管家</span>：电商一体化解决方案服务商</div>
+        <div class="newfooter-mid">
+            <div class="newfooter-main">
+                <dl class="newfooter-nav">
+                    <dt>产品与服务</dt>
+                    <dd><a href="/newShareWayBillAccount.html">批量打单发货</a></dd>  
+                    <dd><a href="/Sharefendan.html">分销代发ERP</a></dd>  
+                    <dd><a href="/puHuo.html">铺货代发</a></dd>  
+                </dl>
+                <dl class="newfooter-nav">
+                    <dt>开放平台</dt>
+                    <dd><a href="/openPlatform.html">开放平台介绍</a></dd>  
+                </dl>
+                <dl class="newfooter-nav">
+                    <dt>产品试用</dt>
+                    <dd><a href="http://erp.dgjapp.com/Account">批量打单发货试用</a></dd>  
+                    <dd><a href="/Sharefendan.html">分销代发ERP试用</a></dd>  
+                    <dd><a href="/puHuo.html">铺货代发试用</a></dd>  
+                </dl>
+                <dl class="newfooter-nav">
+                    <dt>帮助中心</dt>
+                    <dd><a href="/newHelps.html">批量打单发货教程</a></dd>  
+                    <dd><a href="/newHelps.html?stystemPlatform=distributiontOrder">分销代发ERP教程</a></dd>  
+                    <dd><a href="/newHelps.html?stystemPlatform=1688distributiont">铺货代发教程</a></dd>
+					<dd><a href="/widgeDownload/index.html" target="_blank">打印控件下载</a></dd> 					
+                </dl>
+                <dl class="newfooter-nav">
+                    <dt>关于我们</dt>
+                    <dd><a href="/news.html">新闻动态</a></dd>  
+                    <dd><a href="/aboutMy.html">公司介绍</a></dd>  
+                </dl>
+            </div>
+            <ul class="newfooter-contact">
+                <li>服务时间：周一~周天，9：00-23：00</li>
+                <li>联系方式：400 863 8288</li>
+                <li>旺旺联系：中恒电商</li>
+                <li>QQ联系：800183731</li>
+                <li class="newfooter-contact-icons">
+                    <span class="iconfont icon-dianhua"></span>
+                    <a class="iconfont icon-qq" href="https://wpa1.qq.com/grOmv1mS?_type=wpa&amp;qidian=true" target="_blank"></a>
+                    <a class="iconfont icon-ww" href="https://amos.alicdn.com/getcid.aw?v=2&amp;uid=%E4%B8%AD%E6%81%92%E7%94%B5%E5%95%86&amp;site=cntaobao&amp;s=1&amp;groupid=0&amp;charset=utf-8&amp;token=EB1BBA6E1EEF0757" target="_blank"></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="newfooter-down">
+        <div class="newfooter-down-content">
+            <div class="newfooter-down-left">
+                <span><a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备14060770号</a></span>
+                <span>深圳店管家软件有限公司（店管家官网-www.dgjapp.com）</span>
+            </div>
+            <div class="newfooter-down-right">地址：广东省深圳市福田区福田街道办深南中路3039号深圳国际文化大厦</div>
+        </div>
+
+
+    </div>
+</div>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/public/js/wuku.js"></script>
+    <script src="/public/js/headerLogin.js"></script>
+    <script src="/public/js/xcConfirm.js"></script>
+    
+    
+    <script src="/public/js/newHelp.js"></script>
+    
+    <script src="/public/js/common.js"></script>
+    <script src="/public/js/listenweb.js"></script>
+    
+
+<script>
+
+    ; (function (w) {
+	
+		if(window.location.href.indexOf('stystemPlatform=distributiontOrder')>-1){
+			$("#showFvideo").show();
+		}
+	
+        w.helps = {};
+        var stystemPlatforms=[  //店管家系统平台
+            { id: 0, platformName: 'batchPrintOrder', title: '批量打印发货系统', checked: true },
+            { id: 1, platformName: 'distributiontOrder', title: '分销代发ERP系统', checked: false },
+            { id: 2, platformName: '1688distributiont', title: '1688铺货代发系统', checked: false },
+            { id: 3, platformName: 'tiktokbutiont', title: '跨境分销代发系统', checked: false },
+
+        ];
+
+        $("#anchor0").addClass("active");
+        $("#nav0").addClass("active");
+        helps.navChange=function(id) {
+            $(".content-leftNav-ul a").removeClass('active');
+            $(".helps-list>div").removeClass('active');
+            $("#anchor" + id).addClass("active");
+            $("#nav" + id).addClass("active");
+        }
+        function videShow(isThis) {
+            var href = $(isThis).attr("data-url");
+            $('.wrapper_video').css({ display: "flex" });
+            var video = document.querySelector('video');
+            video.src = href;
+        }
+        $('.video_close').on('click', function (e) {
+            e.stopPropagation();
+            $('.wrapper_video').css({ display: "none" });
+            var video = document.querySelector('video');
+            video.pause();
+        })
+        $(".search-icon").on("click", function (e) {
+            e.stopPropagation();
+            searchHelpShow();
+        })
+        $('#helpSearch-input').bind('keyup', function (event) {
+            if (event.keyCode == "13") {
+                //回车执行查询
+                searchHelpShow();
+            }
+        });
+
+        function searchHelpShow() {
+            var val = $$.trim($("#helpSearch-input").val());
+            if (val != "") {
+                var data = {};
+                data.searchTitle = val;
+                $.ajax({
+                    url: '/searcNewhHelp.html',
+                    data: data,
+                    type: 'get',
+                    dataType: 'json',
+                    success: function (data) {
+                        $(".content-search-main").fadeIn(800);
+                        var $data = data.data;
+                        var str = '';
+                        if ($data.length == 0) {
+                            str += '<li>暂无数据</li>'
+                        } else {
+                            for (var i = 0; i < $data.length; i++) {
+                                if ($data[i].isVideo == "1") {
+                                    str += '<li><a href="javascript:;" onclick="mainCommons.videShow(this)"  data-type="' + $data[i].videoType + '"  data-id="' + $data[i].articleId + '" data-url="' + $data[i].articleVideoUrl + '">' + (i - 0 + 1) + '、' + $data[i].articletitle + '<span style="padding-left:8px;color:#8958ff">(视频)</span></a></li>'
+                                } else {
+                                    str += '<li><a href="./newHelpsShow.html?id=' + $data[i].articleId + '" target="_blank">' + (i - 0 + 1) + '、' + $data[i].articletitle + '</a></li>'
+                                }
+                            }
+                        }
+                        $(".content-search-main").html(str)
+                    }
+                })
+
+            } else {
+
+                $(".content-search-main").hide();
+            }
+        }
+
+        $(document).on("click", function () {
+            $(".content-search-main").hide();
+
+        })
+
+        function initNav(){
+            var html="";
+            for(var i=0;i<stystemPlatforms.length;i++){
+                if(stystemPlatforms[i].checked)
+                html+='<li id="'+stystemPlatforms[i].platformName+'" data-title="'+stystemPlatforms[i].title+'" data-platformName="'+stystemPlatforms[i].platformName+'" onclick=\'helps.changeNav("'+stystemPlatforms[i].platformName+'")\' class="active"><i class="iconfont icon-jiantou2"></i>'+stystemPlatforms[i].title+'</li>'
+                else
+                html+='<li id="'+stystemPlatforms[i].platformName+'" data-title="'+stystemPlatforms[i].title+'" data-platformName="'+stystemPlatforms[i].platformName+'" onclick=\'helps.changeNav("'+stystemPlatforms[i].platformName+'")\' ><i class="iconfont icon-jiantou2"></i>'+stystemPlatforms[i].title+'</li>'
+            }
+            $("#banner_nav").html(html);
+            //$("#distributiontOrder").hide();
+            var type=$$.GetUrlParam("stystemPlatform");
+            if(type=="distributiontOrder"){
+                //$(".content-banner").hide();
+                $(".header").css({borderBottom:'1px solid #e2e2e2'})
+
+            }
+        }
+        initNav();
+        var urlStystemPlatform=$$.GetUrlParam("stystemPlatform");
+        if(urlStystemPlatform){
+            $("#banner_nav>li").each(function(index,item){
+                if($(item).attr("data-platformName")==urlStystemPlatform){
+                    $(item).addClass("active");
+                    $("#leftNav_title").html($(item).attr("data-title"))
+                }else{
+                    $(item).removeClass("active");
+                }
+            })
+        }
+        helps.changeNav=function(platformName){
+            var fdUrl = "newHelps.html?stystemPlatform="+platformName;
+            window.open(fdUrl, "_self");
+        }
+
+
+    })(window);
+
+
+
+
+</script>
+
+
+    <script>
+        var active = 'help';
+        $("." + active + "").css({ color: '#3aadff' });
+
+        (function () {
+            var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?57357edf8405414ee76469b60ce6e67b" : "https://jspassport.ssl.qhimg.com/11.0.1.js?57357edf8405414ee76469b60ce6e67b";
+            document.write('<script src="' + src + '" id="sozz"><\/script>');
+
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+
+    </script>
+</body>
+
+</html>

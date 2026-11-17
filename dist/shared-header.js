@@ -2,10 +2,10 @@
   const header = document.querySelector('.site-header');
   if (!header) return;
 
-  const chevron = '<svg class="nav-chevron" viewBox="0 0 1024 1024" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.4-13 6.4L512 642 228 262.4a16 16 0 0 0-13-6.4h-75c-6.5 0-10.3 7.4-6.5 12.6l352 470.9a32 32 0 0 0 51 0l352-470.9c3.8-5.2 0-12.6-6.5-12.6z"/></svg>';
+  const chevron = '<span class="nav-chevron" aria-hidden="true"></span>';
   const normalizedPath = decodeURIComponent(location.pathname).replace(/\/+$/, '');
   const currentPage = (normalizedPath.split('/').pop() || 'index').replace(/\.html$/i, '');
-  const productsActive = currentPage === 'products';
+  const productsActive = currentPage === 'products' || currentPage.startsWith('product-');
 
   const productGroups = [
     {
@@ -41,7 +41,7 @@
       <h2 id="product-group-${groupIndex}">${group.title}</h2>
       <div class="product-menu-list">
         ${group.items.map(([name, description, icon, view]) => `
-          <a class="product-menu-item" href="products.html?view=${view}">
+          <a class="product-menu-item" href="${view === 'order-printing' ? 'products.html' : 'product-' + view + '.html'}">
             <img src="assets/icon/nav-products/${icon}" alt="" aria-hidden="true">
             <span><strong>${name}</strong><small>${description}</small></span>
           </a>

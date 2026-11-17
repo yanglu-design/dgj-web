@@ -1,0 +1,38 @@
+[
+  {
+    "articleId": "1573630500314",
+    "sourceUrl": "https://pic4.zhimg.com/50/v2-5e6cba9c2069ec0006e26beb505a0f99_qhd.jpg",
+    "status": "resolved",
+    "order": 1,
+    "suggestedFile": "配图/新闻补图/1573630500314-1.png",
+    "sourceFile": "配图/新闻补图/1573630500314-1.png",
+    "localFile": "assets/news-articles/1573630500314-1.png"
+  },
+  {
+    "articleId": "1573630500314",
+    "sourceUrl": "https://pic4.zhimg.com/v2-3e4e2236afa1ace465d91c06df3e56c2_xl.jpg",
+    "status": "resolved",
+    "order": 2,
+    "suggestedFile": "配图/新闻补图/1573630500314-2.png",
+    "sourceFile": "配图/新闻补图/1573630500314-2.png",
+    "localFile": "assets/news-articles/1573630500314-2.png"
+  },
+  {
+    "articleId": "1573630500314",
+    "sourceUrl": "https://pic1.zhimg.com/80/v2-0dabfe187f25d7b20b904e56e32a8727_qhd.jpg",
+    "status": "resolved",
+    "order": 3,
+    "suggestedFile": "配图/新闻补图/1573630500314-3.png",
+    "sourceFile": "配图/新闻补图/1573630500314-3.jpg",
+    "localFile": "assets/news-articles/1573630500314-3.png"
+  },
+  {
+    "articleId": "1573630500314",
+    "sourceUrl": "https://pic2.zhimg.com/80/v2-541fc6abdeda723a5b8d20322a5f00b8_qhd.jpg",
+    "status": "resolved",
+    "order": 4,
+    "suggestedFile": "配图/新闻补图/1573630500314-4.png",
+    "sourceFile": "配图/新闻补图/1573630500314-4.png",
+    "localFile": "assets/news-articles/1573630500314-4.png"
+  }
+]

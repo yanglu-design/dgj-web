@@ -1,0 +1,18 @@
+# macOS metadata
+.DS_Store
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Local credentials and configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Local logs and historical export archives
+*.log
+/dianguanjia-home-site*.zip
+
+# dist/ is the maintained website source, not a disposable build directory.

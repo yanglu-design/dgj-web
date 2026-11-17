@@ -1,0 +1,471 @@
+{
+  "expected": 51,
+  "imported": 51,
+  "pending": 0,
+  "categories": {
+    "企业荣誉": 6,
+    "企业资讯": 6,
+    "行业新闻": 18,
+    "电商干货": 21
+  },
+  "sourceCategories": {
+    "公司动态": 12,
+    "行业新闻": 18,
+    "电商干货": 21
+  },
+  "issues": [
+    "https://pic1.zhimg.com/80/v2-0dabfe187f25d7b20b904e56e32a8727_qhd.jpg curl: (56) The requested URL returned error: 403\n articles ['1573630500314']",
+    "https://pic4.zhimg.com/50/v2-5e6cba9c2069ec0006e26beb505a0f99_qhd.jpg curl: (22) The requested URL returned error: 567\n articles ['1573630500314']",
+    "https://pic4.zhimg.com/v2-3e4e2236afa1ace465d91c06df3e56c2_xl.jpg curl: (22) The requested URL returned error: 567\n articles ['1573630500314']",
+    "https://pic2.zhimg.com/80/v2-541fc6abdeda723a5b8d20322a5f00b8_qhd.jpg curl: (22) The requested URL returned error: 567\n articles ['1573630500314']"
+  ],
+  "inventory": [
+    {
+      "id": "1777370433932",
+      "title": "喜报｜店管家荣获京东2026年度「京卓越」认证",
+      "date": "2026-04-28",
+      "category": "企业荣誉",
+      "sourceCategory": "公司动态",
+      "status": "imported"
+    },
+    {
+      "id": "1770622508836",
+      "title": "2026年店管家春节放假客服值班通知",
+      "date": "2026-02-09",
+      "category": "企业资讯",
+      "sourceCategory": "公司动态",
+      "status": "imported"
+    },
+    {
+      "id": "1770279484976",
+      "title": "店管家--爱奇艺电商重磅上线，欢迎新老商家免费试用！",
+      "date": "2026-02-05",
+      "category": "企业资讯",
+      "sourceCategory": "公司动态",
+      "status": "imported"
+    },
+    {
+      "id": "1770276244345",
+      "title": "爆款总溜走？AI选品神器上线，1分钟锁定1688爆品！",
+      "date": "2026-02-05",
+      "category": "行业新闻",
+      "sourceCategory": "行业新闻",
+      "status": "imported"
+    },
+    {
+      "id": "1758855009692",
+      "title": "店管家荣获2025年度【1688分销优秀工具年度奖】",
+      "date": "2025-09-26",
+      "category": "企业荣誉",
+      "sourceCategory": "公司动态",
+      "status": "imported"
+    },
+    {
+      "id": "1745979452839",
+      "title": "店管家首次荣获【京东潜力合作伙伴】奖项",
+      "date": "2025-04-30",
+      "category": "企业荣誉",
+      "sourceCategory": "公司动态",
+      "status": "imported"
+    },
+    {
+      "id": "1737083280109",
+      "title": "2025年店管家春节放假客服值班通知",
+      "date": "2025-01-17",
+      "category": "企业资讯",
+      "sourceCategory": "公司动态",
+      "status": "imported"
+    },
+    {
+      "id": "1687849503793",
+      "title": "【喜讯】店管家荣获阿里2022年度应用市场星工具订单管理类目第一名",
+      "date": "2023-06-27",
+      "category": "企业荣誉",
+      "sourceCategory": "公司动态",
+      "status": "imported"
+    },
+    {
+      "id": "1635491394228",
+      "title": "1688店铺新手商家打单发货福利",
+      "date": "2021-10-29",
+      "category": "行业新闻",
+      "sourceCategory": "行业新闻",
+      "status": "imported"
+    },
+    {
+      "id": "1630916339830",
+      "title": "【1688x美博会】服务商巡礼——深圳店管家软件有限公司",
+      "date": "2021-09-06",
+      "category": "企业荣誉",
+      "sourceCategory": "公司动态",
+      "status": "imported"
+    },
+    {
+      "id": "1601264831676",
+      "title": "店管家荣获1688服务市场2019年度TOP星工具！",
+      "date": "2020-09-28",
+      "category": "企业荣誉",
+      "sourceCategory": "公司动态",
+      "status": "imported"
+    },
+    {
+      "id": "1596682297533",
+      "title": "电商直播打单辅助软件，直播卖货快递单打印软件哪个好？",
+      "date": "2020-08-06",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported"
+    },
+    {
+      "id": "1596681420952",
+      "title": "直播卖货打单发货用什么软件",
+      "date": "2020-08-06",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported"
+    },
+    {
+      "id": "1596266471482",
+      "title": "拼多多打印组件怎么下载，打印组件设置使用教程",
+      "date": "2020-08-01",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported"
+    },
+    {
+      "id": "1588926221049",
+      "title": "天天特卖工厂店C2M怎么打单发货？",
+      "date": "2020-05-08",
+      "category": "行业新闻",
+      "sourceCategory": "行业新闻",
+      "status": "imported"
+    },
+    {
+      "id": "1588924558544",
+      "title": "​淘工厂怎么批量打单发货",
+      "date": "2020-05-08",
+      "category": "行业新闻",
+      "sourceCategory": "行业新闻",
+      "status": "imported"
+    },
+    {
+      "id": "1588924378326",
+      "title": "阿里淘工厂入驻后怎么打单发货？",
+      "date": "2020-05-08",
+      "category": "行业新闻",
+      "sourceCategory": "行业新闻",
+      "status": "imported"
+    },
+    {
+      "id": "1588924244009",
+      "title": "​C2M订单怎么打印快递单号和发货",
+      "date": "2020-05-08",
+      "category": "行业新闻",
+      "sourceCategory": "行业新闻",
+      "status": "imported"
+    },
+    {
+      "id": "1586919804571",
+      "title": "【网点，承包区，快递中介等】单号分享快递对账教程",
+      "date": "2020-04-15",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported"
+    },
+    {
+      "id": "1579223874068",
+      "title": "如何提高淘宝权重，提交宝贝的排名",
+      "date": "2020-01-17",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported"
+    },
+    {
+      "id": "1579143798223",
+      "title": "手机小程序如何打单发货",
+      "date": "2020-01-16",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported"
+    },
+    {
+      "id": "1578384054869",
+      "title": "千牛 经营管店新手指南",
+      "date": "2020-01-07",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported"
+    },
+    {
+      "id": "1577324191056",
+      "title": "快手直播打印快递单都用什么软件？",
+      "date": "2019-12-26",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported"
+    },
+    {
+      "id": "1576805030664",
+      "title": "电商发货神器商家不能不知道",
+      "date": "2019-12-20",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported"
+    },
+    {
+      "id": "1576575410380",
+      "title": "阿里巴巴怎么才能打印出带图片单发货单？",
+      "date": "2019-12-17",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported"
+    },
+    {
+      "id": "1575357530037",
+      "title": "1688卖家-专业的移动管店工具介绍",
+      "date": "2019-12-03",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported"
+    },
+    {
+      "id": "1575255553460",
+      "title": "手机阿里卖家版 接待客户、手机改价轻松搞定",
+      "date": "2019-12-02",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported"
+    },
+    {
+      "id": "1574752636895",
+      "title": "快手小店打印电子面单如何设置sku编码",
+      "date": "2019-11-26",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported"
+    },
+    {
+      "id": "1574739096155",
+      "title": "1688商家工作台---手机阿里卖家版下载",
+      "date": "2019-11-26",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported"
+    },
+    {
+      "id": "1574663968624",
+      "title": "使用店管家系统怎么打印订单发货",
+      "date": "2019-11-25",
+      "category": "行业新闻",
+      "sourceCategory": "行业新闻",
+      "status": "imported"
+    },
+    {
+      "id": "1573630500314",
+      "title": "最佳变现方式——玩短视频！",
+      "date": "2019-11-13",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported-images-restored"
+    },
+    {
+      "id": "1573529616575",
+      "title": "2684亿! “剁手”2019，天猫双十一再创新纪录",
+      "date": "2019-11-12",
+      "category": "行业新闻",
+      "sourceCategory": "行业新闻",
+      "status": "imported"
+    },
+    {
+      "id": "1572937025336",
+      "title": "淘宝、天猫账号如何开通菜鸟电子面单",
+      "date": "2019-11-05",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported"
+    },
+    {
+      "id": "1572425677417",
+      "title": "今天你加入直播了吗？",
+      "date": "2019-10-30",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported"
+    },
+    {
+      "id": "1569837556211",
+      "title": "阿里巴巴商品智能改价工具",
+      "date": "2019-09-30",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported"
+    },
+    {
+      "id": "1567149668069",
+      "title": "韵达一联单模板已经发布",
+      "date": "2019-08-30",
+      "category": "行业新闻",
+      "sourceCategory": "行业新闻",
+      "status": "imported"
+    },
+    {
+      "id": "1567059498587",
+      "title": "阿里巴巴924商人节如何助力提效",
+      "date": "2019-08-29",
+      "category": "行业新闻",
+      "sourceCategory": "行业新闻",
+      "status": "imported"
+    },
+    {
+      "id": "1566542741569",
+      "title": "拼多多将降低交易服务津贴",
+      "date": "2019-08-23",
+      "category": "行业新闻",
+      "sourceCategory": "行业新闻",
+      "status": "imported"
+    },
+    {
+      "id": "1566539406103",
+      "title": "店管家对接多个平台店铺，实现多店铺管理打单发货啦！",
+      "date": "2019-08-23",
+      "category": "企业资讯",
+      "sourceCategory": "公司动态",
+      "status": "imported"
+    },
+    {
+      "id": "1566354911277",
+      "title": "快递单结构调整",
+      "date": "2019-08-21",
+      "category": "行业新闻",
+      "sourceCategory": "行业新闻",
+      "status": "imported"
+    },
+    {
+      "id": "1565927502645",
+      "title": "全民娱乐APP,我用它月入过万",
+      "date": "2019-08-16",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported"
+    },
+    {
+      "id": "1565839370659",
+      "title": "流量困局，平台电商和社交电商出路在哪里？",
+      "date": "2019-08-15",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported"
+    },
+    {
+      "id": "1565169892714",
+      "title": "月销百万店铺实操解析，起好款，预好热，金九银十直逼双11!",
+      "date": "2019-08-07",
+      "category": "电商干货",
+      "sourceCategory": "电商干货",
+      "status": "imported"
+    },
+    {
+      "id": "1565166007542",
+      "title": "店管家正式上线多平台，真正实现一体化服务！",
+      "date": "2019-08-07",
+      "category": "企业资讯",
+      "sourceCategory": "公司动态",
+      "status": "imported"
+    },
+    {
+      "id": "1565158695352",
+      "title": "有赞店铺详情页优化技巧",
+      "date": "2019-08-07",
+      "category": "行业新闻",
+      "sourceCategory": "行业新闻",
+      "status": "imported"
+    },
+    {
+      "id": "1564717646885",
+      "title": "微盟微商城对接店管家，携手实现新零售一体化服务",
+      "date": "2019-08-02",
+      "category": "行业新闻",
+      "sourceCategory": "行业新闻",
+      "status": "imported"
+    },
+    {
+      "id": "1563421503486",
+      "title": "怎么用有赞做好生意？精选文章总结电商大咖经验",
+      "date": "2019-07-18",
+      "category": "行业新闻",
+      "sourceCategory": "行业新闻",
+      "status": "imported"
+    },
+    {
+      "id": "1562316089524",
+      "title": "淘宝不开直通车也能提高搜索排名",
+      "date": "2019-07-05",
+      "category": "行业新闻",
+      "sourceCategory": "行业新闻",
+      "status": "imported"
+    },
+    {
+      "id": "1562309311913",
+      "title": "电子面单垃圾分类号召",
+      "date": "2019-07-05",
+      "category": "行业新闻",
+      "sourceCategory": "行业新闻",
+      "status": "imported"
+    },
+    {
+      "id": "1562307740916",
+      "title": "菜鸟联手快递公司首推绿色一联单",
+      "date": "2019-07-05",
+      "category": "行业新闻",
+      "sourceCategory": "行业新闻",
+      "status": "imported"
+    },
+    {
+      "id": "1562305819417",
+      "title": "店管家打单系统新版本发布",
+      "date": "2019-07-05",
+      "category": "企业资讯",
+      "sourceCategory": "公司动态",
+      "status": "imported"
+    }
+  ],
+  "missingImages": [
+    {
+      "articleId": "1573630500314",
+      "sourceUrl": "https://pic4.zhimg.com/50/v2-5e6cba9c2069ec0006e26beb505a0f99_qhd.jpg",
+      "status": "resolved",
+      "order": 1,
+      "suggestedFile": "配图/新闻补图/1573630500314-1.png",
+      "sourceFile": "配图/新闻补图/1573630500314-1.png",
+      "localFile": "assets/news-articles/1573630500314-1.png"
+    },
+    {
+      "articleId": "1573630500314",
+      "sourceUrl": "https://pic4.zhimg.com/v2-3e4e2236afa1ace465d91c06df3e56c2_xl.jpg",
+      "status": "resolved",
+      "order": 2,
+      "suggestedFile": "配图/新闻补图/1573630500314-2.png",
+      "sourceFile": "配图/新闻补图/1573630500314-2.png",
+      "localFile": "assets/news-articles/1573630500314-2.png"
+    },
+    {
+      "articleId": "1573630500314",
+      "sourceUrl": "https://pic1.zhimg.com/80/v2-0dabfe187f25d7b20b904e56e32a8727_qhd.jpg",
+      "status": "resolved",
+      "order": 3,
+      "suggestedFile": "配图/新闻补图/1573630500314-3.png",
+      "sourceFile": "配图/新闻补图/1573630500314-3.jpg",
+      "localFile": "assets/news-articles/1573630500314-3.png"
+    },
+    {
+      "articleId": "1573630500314",
+      "sourceUrl": "https://pic2.zhimg.com/80/v2-541fc6abdeda723a5b8d20322a5f00b8_qhd.jpg",
+      "status": "resolved",
+      "order": 4,
+      "suggestedFile": "配图/新闻补图/1573630500314-4.png",
+      "sourceFile": "配图/新闻补图/1573630500314-4.png",
+      "localFile": "assets/news-articles/1573630500314-4.png"
+    }
+  ],
+  "unresolvedImageCount": 0
+}
