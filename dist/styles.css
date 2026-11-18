@@ -111,6 +111,7 @@
 }
 .platform-card em.long{width:108px}
 .platform-card em.invite{background:#0fb5c1}
+.platform-card em.free{background:#0888ff}
 
 /* MasterGo: 首页 / 资讯动态 / 选项卡 */
 .news-tabs{
@@ -306,7 +307,10 @@ footer .footer-contact :is(p:hover,a:hover,a:focus-visible)>.footer-contact-icon
 .feature-grid article>img{transition:transform .4s cubic-bezier(.22,1,.36,1),opacity .24s ease}
 .feature-grid .feature-copy{width:100%;display:flex;flex-direction:column;gap:8px;transition:transform .4s cubic-bezier(.22,1,.36,1)}
 .feature-grid .feature-copy h3{margin:0}
-.feature-grid article button{
+.feature-grid article .feature-details{
+  display:flex;
+  align-items:center;
+  justify-content:center;
   position:absolute;
   left:24px;
   right:24px;
@@ -323,15 +327,21 @@ footer .footer-contact :is(p:hover,a:hover,a:focus-visible)>.footer-contact-icon
   pointer-events:none;
   cursor:pointer;
 }
-.feature-grid article:hover{
+.feature-grid article:not(.is-dismissed):is(:hover,:has(:focus-visible)){
   background:linear-gradient(180deg,rgba(0,196,245,.06) 0%,rgba(26,137,255,.06) 100%),linear-gradient(0deg,#fff 0%,#fff 100%);
   box-shadow:0 10px 24px rgba(50,90,130,.07);
 }
-.feature-grid article:hover>img{opacity:0;transform:translateY(-36px)}
-.feature-grid article:hover .feature-copy{transform:translateY(-80px)}
-.feature-grid article:hover p{font-size:14px}
-.feature-grid article:hover button{opacity:1;transform:translateY(0);pointer-events:auto}
+.feature-grid article:not(.is-dismissed):is(:hover,:has(:focus-visible))>img{opacity:0;transform:translateY(-36px)}
+.feature-grid article:not(.is-dismissed):is(:hover,:has(:focus-visible)) .feature-copy{transform:translateY(-80px)}
+.feature-grid article:not(.is-dismissed):is(:hover,:has(:focus-visible)) p{font-size:14px}
+.feature-grid article:not(.is-dismissed):is(:hover,:has(:focus-visible)) .feature-details{opacity:1;transform:translateY(0);pointer-events:auto}
+.feature-grid article.is-dismissed,.feature-grid article.is-dismissed>img,.feature-grid article.is-dismissed .feature-copy,.feature-grid article.is-dismissed .feature-details{transition:none}
 
+.matrix-slider{width:min(1200px,100%);margin:auto;overflow:hidden}
+.matrix-track{display:flex;transition:transform .4s cubic-bezier(.22,1,.36,1)}
+.matrix-slider[data-active=printing] .matrix-track{transform:translateX(-100%)}
+.matrix-track>.matrix-grid{width:100%;flex:0 0 100%;margin:0;align-content:start}
+@media(prefers-reduced-motion:reduce){.matrix-track{transition:none}}
 .matrix-grid article{
   border-radius:12px;
   transition:transform .36s cubic-bezier(.22,1,.36,1),box-shadow .36s ease;
@@ -351,29 +361,6 @@ footer .footer-contact :is(p:hover,a:hover,a:focus-visible)>.footer-contact-icon
 .benefit-grid article:hover{
   background:linear-gradient(180deg,#ffffff99 7%,#fff 100%);
   box-shadow:0 12px 28px rgba(50,90,130,.04);
-}
-
-/* MasterGo platform card hover state */
-.platform-card .platform-trial{display:none}
-.platform-card:hover{padding:16px 24px}
-.platform-card:hover>img,
-.platform-card:hover>span,
-.platform-card:hover>em{display:none}
-.platform-card:hover .platform-trial{
-  width:100%;
-  height:48px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:8px 16px;
-  color:rgba(255,255,255,.9);
-  background:#0888ff;
-  border:0;
-  border-radius:6px;
-  font-size:16px;
-  font-weight:500;
-  line-height:26px;
-  cursor:pointer;
 }
 
 /* MasterGo: 产品与服务下拉菜单 */

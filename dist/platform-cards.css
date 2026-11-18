@@ -1,0 +1,35 @@
+/* Shared card presentation only. Page grids and category tabs stay with each page. */
+.platform-cards .platform-card{--platform-card-action-inset:24px;position:relative;min-width:0}
+.platform-cards .platform-trial{
+  position:absolute;
+  left:var(--platform-card-action-inset);
+  right:var(--platform-card-action-inset);
+  top:50%;
+  transform:translateY(-50%);
+  width:auto;
+  min-width:0;
+  height:48px;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:8px 16px;
+  color:rgba(255,255,255,.9);
+  background:#0888ff;
+  border:0;
+  border-radius:6px;
+  font:inherit;
+  font-size:16px;
+  font-weight:500;
+  line-height:26px;
+  white-space:nowrap;
+  opacity:0;
+  pointer-events:none;
+  cursor:pointer;
+}
+.platform-cards .platform-card:not(.is-dismissed):is(:hover,:has(:focus-visible)) .platform-trial{opacity:1;pointer-events:auto}
+.platform-cards .platform-card:not(.is-dismissed):is(:hover,:has(:focus-visible))>img,
+.platform-cards .platform-card:not(.is-dismissed):is(:hover,:has(:focus-visible))>span,
+.platform-cards .platform-card:not(.is-dismissed):is(:hover,:has(:focus-visible))>em{visibility:hidden}
+.platform-cards .platform-trial:focus-visible{outline:2px solid #0888ff;outline-offset:3px}
+@media(max-width:1100px){.platform-cards .platform-card{--platform-card-action-inset:16px}}

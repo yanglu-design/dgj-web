@@ -1,6 +1,6 @@
 # 店管家新官网交接
 
-更新时间：2026-11-17（Asia/Shanghai，最新 Sites 发布后）。本文件替代此前过时描述；只处理最新明确要求，不重做已验收页面或重跑全量抓取。
+更新时间：2026-11-18（Asia/Shanghai，首页平台入口已本地接入）。本文件替代此前过时描述；只处理最新明确要求，不重做已验收页面或重跑全量抓取。
 
 ## 1. 我们在做什么
 
@@ -10,7 +10,27 @@
 
 **2026-11-17 17:00（Asia/Shanghai）用户重新授权后已发布当前 dist。** 包含导航分割线修复及新版反馈交互。用户已明确知悉反馈仅保存在当前浏览器，无后台接收端；本轮按原方案发布，访问权限保持不变。
 
-当前网站代码任务、Sites部署及首次GitHub上传均已完成。GitHub上传不重新发布Sites。下一轮以用户新增标注、补图或接口信息为准。
+最新要求：继续本地修改，暂不提交或推送GitHub，也不发布Sites。首页六个功能“查看详情”已改新页签tfxportal入口，两处订购分别进入抖店service_id=24069和7；功能矩阵支持点击/键盘左右滑动切换，两个独立面板各12张相同占位卡片，非当前面板aria-hidden/inert，支持减少动态效果偏好。功能卡片点击后复原，离开后再悬停或键盘重新聚焦可再次展开。改动在dist/index.html、script.js、styles.css，tests/home-actions.test.cjs已通过；加载版本20261117-home-motion。以上尚未上传或发布。
+
+平台入口：2026-11-18用户更新原Excel并回复“清单已确认”，51项全部已确认。已核对并本地接入首页：48项沿用外链、爱库存/鲸灵2项复用现有客服咨询气泡、开放平台新页签进新站open-platform.html。得物/人人商城含testauth域名和部分HTTP/特殊域名均按用户确认沿用，不擅改参数。确认存档content/platform-links-confirmed.json保留Excel SHA256及逐项来源；dist/platform-links.js为运行映射，只在首页加载。产品页和开放平台页的卡片入口未改。tests/platform-links.test.cjs、customer-service、home-actions、home-news通过。详见content/platform-links.md。本轮未提交/推送GitHub或发布Sites。
+
+用户另纠正平台名称：微信小店/视频号→微信小店、咸鱼→闲鱼，已修改本地platform-data.js及相关名称判断、更新加载缓存版本20261117-platform-names；共享平台数据调用方同步显示正确名称，未按特定断点写死。未提交或发布。
+
+2026-11-18追加本地修复：首页平台卡片点击后立即恢复默认样式，移开再悬停/键盘重新聚焦可再次展开；外链原生新页签和两项客服咨询行为保留。script.js/styles.css加载版本20261118-platform-reset，platform-links、customer-service、home-actions测试通过。仍不提交GitHub或发布Sites。
+
+2026-11-18平台标签样式追加：仅“免费使用”标签增加free语义类，共用.platform-card em.free背景为主题蓝#0888ff；首页、产品页及开放平台页统一，免费试用橙色与内测邀请青色保留。相关样式/脚本入口版本20261118-free-badge；语法与平台/首页交互检查通过。仅本地修改。
+
+平台卡片离开复原后续修正：pointerleave保持is-dismissed，pointerenter解除；CSS用:has(:focus-visible)替代:focus-within，普通残留焦点不再展开，window blur同步复原。index脚本/样式最新版本20261118-platform-leave，相关状态回归通过。本地未提交或发布。
+
+六大核心功能卡片追加相同复原行为：点击、pointerleave、window blur均保持is-dismissed；重新pointerenter或:focus-visible键盘聚焦解除。复原时禁用反向过渡，立即显示默认内容，重新悬停仍有原展开动画。index脚本/样式最新版本20261118-feature-leave；home-actions与platform-links回归通过。仍仅本地修改，不提交GitHub或发布Sites。
+
+最新标注已扩展平台同步范围（覆盖此前“仅首页”范围说明）：新建dist/platform-cards.js，首页、产品页32卡、开放平台四类51卡共用已确认映射、悬停/点击/离开/失焦复原及客服咨询；新闻列表侧栏10个平台通过data-platform-link映射同一链接（淘宝映射淘宝/淘特）。产品页对比CTA新页签去抖店service_id=7；开放平台底部咨询去既有QQ客服完整链接，四个核心优势选项卡的coreAction均去https://www.wjx.top/m/42955488.aspx。魔筷星选从用户icon/魔筷星选20.svg重新复制并统一SVG引用，logo版本20261118-logo。四页相关加载版本20261118-platform-sync；platform-sync、platform-links、customer-service、home-actions、news-list、banner-hitarea检查通过。本轮仍未提交/推送GitHub或发布Sites。
+
+平台卡片组件后续收敛：render(grid, items)不接收分类，分类选择/选项卡保留各页；新建platform-cards.css统一悬停/聚焦按钮样式，清除styles.css旧width:100%冲突。按钮left/right配合width:auto填满内容区，沿用1100px断点左右内边距24/16px，悬停不再改变卡片尺寸。三处页面均加载组件CSS/JS，相关加载最新版本20261118-card-component。platform-sync覆盖共享样式引用及分类边界；检查通过，仅本地修改。
+
+独立内测咨询弹窗已完成（覆盖前文使用全局气泡的历史说明）：用户补充图层链接layer_id=124:37596后，成功读取四种方位。新增dist/platform-consult.js/css及assets/platform-consult，原设计二维码/SVG背景由Asset Session按SHA256复制到永久资源。334×192布局，含微信二维码、QQ800183731、客服电话400-863-8288及186-0306-5384；卡片改调DGJPlatformConsult.open，不调用DGJCustomerService.openOnline。按可用空间选右/左/下/上，缺空间限位视口；scroll/resize跟随，离屏/外部点击/Esc/焦点移出/窗口失焦关闭，Esc返回原触发点。三页弹窗依赖版本20261118-independent；platform-consult、platform-links、platform-sync、banner-hitarea测试通过。设计截图工具报不可导出/页面不匹配，未声称浏览器视觉验收。详见content/platform-links.md。无待提供设计链接事项；仍仅本地修改，未提交/推送GitHub或发布Sites。
+
+同轮独立完成：open-platform底部slogan6.svg为1920x284，原图按钮x880/y176/w160/h44。open-platform.css点击热区改为图像比例百分比，删除720px下固定100x36热区覆盖；CSS缓存20261118-cta-fit。banner-hitarea测试增加390/720/1130/1920/2560宽度比例检查并通过，platform-sync回归通过。仅本地修改，未提交或发布。
 
 ### GitHub源码管理
 
@@ -175,3 +195,13 @@ python3 tests/test_news_richtext.py
 - CUA曾明确拒绝file://，不得绕过；工具超时/未验收如实说明。截图蓝框、编号、预览属性不是页面设计，不写入源码。
 - 工作区既有修改/未跟踪素材很多，不清理回滚、不重解压历史zip；源码增量用apply_patch，生成和资源用脚本/复制。
 - 用户要求先方案时不执行；确认后持续推进，不重复请求已授权内容。实际缺资源或权限限制集中请协助，不编造内容。明确local-only时不提交、不推送、不部署。
+
+2026-11-18二维码更新：独立平台咨询弹窗的assets/platform-consult/wechat-qr.png替换为用户提供的原图，逐字节核对一致；contain完整显示，缓存版本20261118-user-qr。全局客服二维码未改。仅本地，未发布。
+
+2026-11-18：独立咨询浮层已整理为公用组件，open(source,{anchor,label})不再依赖platform-card或平台数据；支持普通按钮data-consult声明式调用，重复引入保护。平台卡片显式传anchor保持原交互，接入说明见content/platform-links.md。platform-consult、platform-links、platform-sync测试通过；脚本缓存20261118-shared-consult。仅本地未发布。
+
+2026-11-18：开放平台顶部Banner“联系我们”热区改为data-consult按钮，复用独立咨询组件；使用banner-hitarea.js按原图1920×480、按钮380/293/160/49及cover裁切定位，移除移动端隐藏。底部立即咨询保持原链接。仅本地。
+
+2026-11-18 Sites发布成功：版本12，源码ae12cf161c170f4216bdcc95e8842d2f21910b91，版本ID appgprj_6ad19323460c819197cc07f35a283cd1~appgver_e38687055400819193bd8f80bc5cf556，部署appgdep_6afd194cdf288191ae776db1ec47f4b4，status=succeeded。线上https://dianguanjia-home.toasty-bay-2879.chatgpt.site，保留public。归档/private/tmp/dgj-sites-release-20261118-consult.tar.gz。仅同步Sites专用源码仓库，未推送GitHub。
+
+2026-11-18 GitHub同步：保留远端6edf551新增的Pages工作流（上传./dist），本轮包含平台映射、公用卡片/独立咨询组件、二维码、Banner和首页交互及相关测试。14项Node检查、diff空白检查、改动文件大小和常见凭据模式检查通过。删除的三个历史ZIP此前已忽略，不产生源码删除。

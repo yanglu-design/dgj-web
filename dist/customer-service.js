@@ -31,6 +31,7 @@
   document.body.append(root);
   const items = [...root.querySelectorAll('.customer-service-item')];
   let pinned = null;
+  let returnFocus = null;
   const show = selected => {
     items.forEach(item => {
       const open = item === selected;
@@ -39,19 +40,29 @@
       item.querySelector('.customer-service-panel').hidden = !open;
     });
   };
+  window.DGJCustomerService = {
+    openOnline(trigger) {
+      returnFocus = trigger;
+      pinned = items[1];
+      show(pinned);
+      pinned.querySelector('.customer-service-trigger').focus();
+    }
+  };
   items.forEach(item => {
     const button = item.querySelector('.customer-service-trigger');
     item.addEventListener('mouseenter', () => show(item));
     item.addEventListener('mouseleave', () => { if (pinned !== item) show(null); });
     item.addEventListener('focusin', () => show(item));
     item.addEventListener('focusout', event => { if (!item.contains(event.relatedTarget) && pinned !== item) show(null); });
-    button.addEventListener('click', () => { pinned = pinned === item ? null : item; show(pinned); });
+    button.addEventListener('click', () => { returnFocus = null; pinned = pinned === item ? null : item; show(pinned); });
   });
-  document.addEventListener('pointerdown', event => { if (!root.contains(event.target)) { pinned = null; show(null); } });
+  document.addEventListener('pointerdown', event => { if (!root.contains(event.target)) { returnFocus = null; pinned = null; show(null); } });
   root.addEventListener('keydown', event => {
     if (event.key === 'Escape') {
       const active = items.find(item => item.contains(document.activeElement));
-      active?.querySelector('.customer-service-trigger').focus();
+      const target = returnFocus || active?.querySelector('.customer-service-trigger');
+      returnFocus = null;
+      target?.focus();
       pinned = null; show(null);
     }
   });

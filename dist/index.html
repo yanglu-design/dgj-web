@@ -6,9 +6,9 @@
   <meta name="description" content="店管家——面向电商卖家的全渠道订单管理与打单发货平台。" />
   <title>店管家官网</title>
   <link rel="icon" type="image/png" href="favicon.png" />
-  <link rel="stylesheet" href="styles.css?v=20261117-contact-hover" />
+  <link rel="stylesheet" href="styles.css?v=20261118-card-component" />
   <link rel="stylesheet" href="shared-header.css?v=20261117-divider" />
-<link rel="stylesheet" href="customer-service.css?v=20261117-option-hover"></head>
+<link rel="stylesheet" href="customer-service.css?v=20261117-option-hover"><link rel="stylesheet" href="platform-cards.css?v=20261118-card-component"><link rel="stylesheet" href="platform-consult.css?v=20261118-user-qr"></head>
 <body class="home-page">
   <header class="site-header">
     <a class="brand" href="#top"><img src="assets/icon/dgjlogo1.svg" alt="店管家" /></a>
@@ -49,19 +49,20 @@
     <section class="section core" id="features">
       <div class="section-heading"><h2>六大核心功能 让难题迎刃而解</h2><p>覆盖订单发货全流程，助力商家降本增效</p></div>
       <div class="feature-grid">
-        <article><img src="assets/icon/多店铺关联@2x.png" alt=""/><div class="feature-copy"><h3>多店铺关联</h3><p>全平台多店铺统一管理，操作更轻松</p></div><button type="button">查看详情</button></article>
-        <article><img src="assets/icon/自动合并@2x.png" alt=""/><div class="feature-copy"><h3>自动合并</h3><p>自动合并同买家订单，省单又省成本</p></div><button type="button">查看详情</button></article>
-        <article><img src="assets/icon/自动打单@2x.png" alt=""/><div class="feature-copy"><h3>自动打单</h3><p>智能识别订单，单量再大也从容</p></div><button type="button">查看详情</button></article>
-        <article><img src="assets/icon/物流预警@2x.png" alt=""/><div class="feature-copy"><h3>物流预警</h3><p>实时监控物流，异常信息及时提醒</p></div><button type="button">查看详情</button></article>
-        <article><img src="assets/icon/异常售后单通知@2x.png" alt=""/><div class="feature-copy"><h3>异常售后单通知</h3><p>拦截订单异常，一键处理更高效</p></div><button type="button">查看详情</button></article>
-        <article><img src="assets/icon/拣货@2x.png" alt=""/><div class="feature-copy"><h3>拣货 / 备货</h3><p>自动生成拣货单，快速完成出库</p></div><button type="button">查看详情</button></article>
+        <article><img src="assets/icon/多店铺关联@2x.png" alt=""/><div class="feature-copy"><h3>多店铺关联</h3><p>全平台多店铺统一管理，操作更轻松</p></div><a class="feature-details" href="https://tfxportal.dgjapp.com/FFAccount" target="_blank" rel="noopener noreferrer">查看详情</a></article>
+        <article><img src="assets/icon/自动合并@2x.png" alt=""/><div class="feature-copy"><h3>自动合并</h3><p>自动合并同买家订单，省单又省成本</p></div><a class="feature-details" href="https://tfxportal.dgjapp.com/FFAccount" target="_blank" rel="noopener noreferrer">查看详情</a></article>
+        <article><img src="assets/icon/自动打单@2x.png" alt=""/><div class="feature-copy"><h3>自动打单</h3><p>智能识别订单，单量再大也从容</p></div><a class="feature-details" href="https://tfxportal.dgjapp.com/FFAccount" target="_blank" rel="noopener noreferrer">查看详情</a></article>
+        <article><img src="assets/icon/物流预警@2x.png" alt=""/><div class="feature-copy"><h3>物流预警</h3><p>实时监控物流，异常信息及时提醒</p></div><a class="feature-details" href="https://tfxportal.dgjapp.com/FFAccount" target="_blank" rel="noopener noreferrer">查看详情</a></article>
+        <article><img src="assets/icon/异常售后单通知@2x.png" alt=""/><div class="feature-copy"><h3>异常售后单通知</h3><p>拦截订单异常，一键处理更高效</p></div><a class="feature-details" href="https://tfxportal.dgjapp.com/FFAccount" target="_blank" rel="noopener noreferrer">查看详情</a></article>
+        <article><img src="assets/icon/拣货@2x.png" alt=""/><div class="feature-copy"><h3>拣货 / 备货</h3><p>自动生成拣货单，快速完成出库</p></div><a class="feature-details" href="https://tfxportal.dgjapp.com/FFAccount" target="_blank" rel="noopener noreferrer">查看详情</a></article>
       </div>
     </section>
 
     <section class="section matrix">
       <div class="section-heading"><h2>多元特色功能矩阵 直击传统代发痛点</h2></div>
-      <div class="tabs segmented"><button class="active">分销代发</button><button>打单发货</button></div>
-      <div class="matrix-grid">
+      <div class="tabs segmented matrix-tabs" role="tablist" aria-label="功能矩阵切换"><button type="button" class="active" id="matrix-tab-distribution" role="tab" data-matrix="distribution" aria-selected="true" aria-controls="matrix-panel-distribution" tabindex="0">分销代发</button><button type="button" id="matrix-tab-printing" role="tab" data-matrix="printing" aria-selected="false" aria-controls="matrix-panel-printing" tabindex="-1">打单发货</button></div>
+      <div class="matrix-slider" data-active="distribution"><div class="matrix-track">
+      <div class="matrix-grid" id="matrix-panel-distribution" data-matrix-panel="distribution" role="tabpanel" aria-labelledby="matrix-tab-distribution" aria-hidden="false" tabindex="0">
         <article><b><img src="assets/icon/占位图.svg" alt=""/></b><h3>功能名称</h3><p>订单一键多平台同步处理，轻松实现高效发货</p></article>
         <article><b><img src="assets/icon/占位图.svg" alt=""/></b><h3>功能名称</h3><p>订单一键多平台同步处理，轻松实现高效发货</p></article>
         <article><b><img src="assets/icon/占位图.svg" alt=""/></b><h3>功能名称</h3><p>订单一键多平台同步处理，轻松实现高效发货</p></article>
@@ -75,6 +76,21 @@
         <article><b><img src="assets/icon/占位图.svg" alt=""/></b><h3>功能名称</h3><p>订单一键多平台同步处理，轻松实现高效发货</p></article>
         <article><b><img src="assets/icon/占位图.svg" alt=""/></b><h3>功能名称</h3><p>订单一键多平台同步处理，轻松实现高效发货</p></article>
       </div>
+      <div class="matrix-grid" id="matrix-panel-printing" data-matrix-panel="printing" role="tabpanel" aria-labelledby="matrix-tab-printing" aria-hidden="true" inert tabindex="0">
+        <article><b><img src="assets/icon/占位图.svg" alt=""/></b><h3>功能名称</h3><p>订单一键多平台同步处理，轻松实现高效发货</p></article>
+        <article><b><img src="assets/icon/占位图.svg" alt=""/></b><h3>功能名称</h3><p>订单一键多平台同步处理，轻松实现高效发货</p></article>
+        <article><b><img src="assets/icon/占位图.svg" alt=""/></b><h3>功能名称</h3><p>订单一键多平台同步处理，轻松实现高效发货</p></article>
+        <article><b><img src="assets/icon/占位图.svg" alt=""/></b><h3>功能名称</h3><p>订单一键多平台同步处理，轻松实现高效发货</p></article>
+        <article><b><img src="assets/icon/占位图.svg" alt=""/></b><h3>功能名称</h3><p>订单一键多平台同步处理，轻松实现高效发货</p></article>
+        <article><b><img src="assets/icon/占位图.svg" alt=""/></b><h3>功能名称</h3><p>订单一键多平台同步处理，轻松实现高效发货</p></article>
+        <article><b><img src="assets/icon/占位图.svg" alt=""/></b><h3>功能名称</h3><p>订单一键多平台同步处理，轻松实现高效发货</p></article>
+        <article><b><img src="assets/icon/占位图.svg" alt=""/></b><h3>功能名称</h3><p>订单一键多平台同步处理，轻松实现高效发货</p></article>
+        <article><b><img src="assets/icon/占位图.svg" alt=""/></b><h3>功能名称</h3><p>订单一键多平台同步处理，轻松实现高效发货</p></article>
+        <article><b><img src="assets/icon/占位图.svg" alt=""/></b><h3>功能名称</h3><p>订单一键多平台同步处理，轻松实现高效发货</p></article>
+        <article><b><img src="assets/icon/占位图.svg" alt=""/></b><h3>功能名称</h3><p>订单一键多平台同步处理，轻松实现高效发货</p></article>
+        <article><b><img src="assets/icon/占位图.svg" alt=""/></b><h3>功能名称</h3><p>订单一键多平台同步处理，轻松实现高效发货</p></article>
+      </div>
+      </div></div>
     </section>
 
     <section class="section benefits">
@@ -93,11 +109,11 @@
       <div class="solution-slider" data-active="distribution">
         <div class="solution-track">
           <div class="solution-showcase solution-slide" data-plan-panel="distribution" role="tabpanel" aria-hidden="false">
-            <div><h3>分销代发</h3><p>低至20元/月，功能更全面，适合全平台多店铺卖家</p><a class="primary-btn small" href="#contact">立即订购 <span class="asset-arrow-right" aria-hidden="true"></span></a></div>
+            <div><h3>分销代发</h3><p>低至20元/月，功能更全面，适合全平台多店铺卖家</p><a class="primary-btn small" href="https://fuwu.jinritemai.com/detail?service_id=24069&amp;from=isv.detail" target="_blank" rel="noopener noreferrer">立即订购 <span class="asset-arrow-right" aria-hidden="true"></span></a></div>
             <img src="assets/images/分销代发方案.svg" alt="分销代发产品界面" />
           </div>
           <div class="solution-showcase solution-slide" data-plan-panel="printing" role="tabpanel" aria-hidden="true" inert>
-            <div><h3>打单发货</h3><p>低至18元/月，单平台多店铺卖家首选</p><a class="primary-btn small" href="#contact">立即订购 <span class="asset-arrow-right" aria-hidden="true"></span></a></div>
+            <div><h3>打单发货</h3><p>低至18元/月，单平台多店铺卖家首选</p><a class="primary-btn small" href="https://fuwu.jinritemai.com/detail?service_id=7&amp;from=isv.detail" target="_blank" rel="noopener noreferrer">立即订购 <span class="asset-arrow-right" aria-hidden="true"></span></a></div>
             <img src="assets/images/打单发货方案.svg" alt="打单发货产品界面" />
           </div>
         </div>
@@ -136,10 +152,13 @@
 
   <footer id="contact" data-shared-footer></footer>
   <script src="shared-footer.js?v=20261117-contact-hover"></script>
-  <script src="platform-data.js?v=20261113-1"></script>
-  <script src="script.js?v=20261113-1"></script>
+  <script src="platform-data.js?v=20261118-douyin-instant"></script>
+  <script src="platform-links.js?v=20261118-douyin-instant"></script>
+  <script src="platform-consult.js?v=20261118-shared-consult"></script>
+  <script src="platform-cards.js?v=20261118-shared-consult"></script>
+  <script src="script.js?v=20261118-card-component"></script>
   <script src="news-data.js?v=20261116-images1"></script>
   <script src="home-news.js?v=20261116-1"></script>
   <script src="banner-hitarea.js?v=20261117-banner-fit"></script>
-<script src="customer-service.js?v=20261117-option-hover"></script></body>
+<script src="customer-service.js?v=20261118-platform-consult"></script></body>
 </html>

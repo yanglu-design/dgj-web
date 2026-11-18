@@ -25,9 +25,9 @@
   }));
   renderCore('quick');
 
-  const { groups: platformGroups, trialText, badgeText } = window.DGJPlatformCatalog;
+  const { groups: platformGroups } = window.DGJPlatformCatalog;
   const grid = document.querySelector('#openPlatformGrid');
-  const renderPlatforms = key => { grid.innerHTML = platformGroups[key].map((item,index) => { const [name,icon] = item; const badge = badgeText(key,item,index); const badgeClass = [badge.length > 4 ? 'long' : '', badge === '商家内测邀请' ? 'invite' : ''].filter(Boolean).join(' '); return `<article class="platform-card"><img src="assets/icon/${icon}" alt=""><span>${name}</span>${badge ? `<em class="${badgeClass}">${badge}</em>` : ''}<button class="platform-trial" type="button"><span>${trialText(name)}</span></button></article>`; }).join(''); };
+  const renderPlatforms = key => window.DGJPlatformCards.render(grid, platformGroups[key]);
   document.querySelectorAll('.platform-tabs button').forEach(button => button.addEventListener('click', () => {
     document.querySelectorAll('.platform-tabs button').forEach(item => item.classList.toggle('active', item === button));
     renderPlatforms(button.dataset.platform);

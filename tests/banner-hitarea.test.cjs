@@ -21,4 +21,22 @@ for (const filename of ['index.html', 'products.html']) {
   assert.ok(/class="banner-button-hitarea" href="https:\/\/erp\.dgjapp\.com\/Account" target="_blank" rel="noopener noreferrer"/.test(html));
   assert.ok(html.includes('banner-hitarea.js?'));
 }
-console.log('Banner hit areas match centered cover geometry at desktop/mobile widths, resize correctly, and share the same new-tab ERP URL.');
+const openCss = fs.readFileSync(path.join(__dirname, '../dist/open-platform.css'), 'utf8');
+const ctaRule = openCss.match(/\.open-cta>a\{([^}]+)\}/)[1];
+const percent = property => Number(ctaRule.match(new RegExp(property + ':([\\d.]+)%'))[1]) / 100;
+for (const width of [390, 720, 1130, 1920, 2560]) {
+  const height = width * 284 / 1920;
+  const scale = width / 1920;
+  const hitWidth = width * percent('width');
+  assert.ok(Math.abs(width * percent('left') - hitWidth / 2 - 880 * scale) < .001);
+  assert.ok(Math.abs(height * percent('top') - 176 * scale) < .001);
+  assert.ok(Math.abs(hitWidth - 160 * scale) < .001);
+  assert.ok(Math.abs(height * percent('height') - 44 * scale) < .001);
+}
+assert.equal((openCss.match(/\.open-cta>a\{/g) || []).length, 1);
+console.log('Cover banner and proportional open-platform CTA hit areas match source buttons across desktop/mobile widths.');
+
+const openHtml = fs.readFileSync(path.join(__dirname, '../dist/open-platform.html'), 'utf8');
+assert.ok(openHtml.includes('class="open-hero-hit banner-button-hitarea" type="button" data-consult="开放平台咨询"'));
+assert.ok(openHtml.includes('banner-hitarea.js?'));
+assert.ok(!openCss.includes('.open-hero-hit{display:none}'));
