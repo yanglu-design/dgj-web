@@ -36,12 +36,17 @@
     }
   ];
 
+  const externalProducts = {
+    'listing-assistant': 'https://pc.1688.com/product/detail.htm?productCode=ZDnqm0eDP8Rbe8wo8SJioyjmSoo%2BTOhwpqz1xDy2mlI%3D&productType=PACKAGE&apid=6q1pROB0Q8U6%2B%2B4znWxsI4pGADXqtNn380DqRsaf30TVLYfqB9IrpMr7%2BDhrbLyHKK3%2FV1n8BqQwo3u6HqJ7%2BzsP',
+    'ai-image': 'https://fximg.dgjapp.com/',
+    'live-assistant': 'https://live.dgjapp.com/'
+  };
   const productMenu = productGroups.map((group, groupIndex) => `
     <section class="product-menu-group" aria-labelledby="product-group-${groupIndex}">
       <h2 id="product-group-${groupIndex}">${group.title}</h2>
       <div class="product-menu-list">
         ${group.items.map(([name, description, icon, view]) => `
-          <a class="product-menu-item" href="${view === 'order-printing' ? 'products.html' : 'product-' + view + '.html'}">
+          <a class="product-menu-item" href="${externalProducts[view] || (view === 'order-printing' ? 'products.html' : 'product-' + view + '.html')}"${externalProducts[view] ? ' target="_blank" rel="noopener noreferrer"' : ''}>
             <img src="assets/icon/nav-products/${icon}" alt="" aria-hidden="true">
             <span><strong>${name}</strong><small>${description}</small></span>
           </a>

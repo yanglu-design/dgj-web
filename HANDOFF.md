@@ -205,3 +205,21 @@ python3 tests/test_news_richtext.py
 2026-11-18 Sites发布成功：版本12，源码ae12cf161c170f4216bdcc95e8842d2f21910b91，版本ID appgprj_6ad19323460c819197cc07f35a283cd1~appgver_e38687055400819193bd8f80bc5cf556，部署appgdep_6afd194cdf288191ae776db1ec47f4b4，status=succeeded。线上https://dianguanjia-home.toasty-bay-2879.chatgpt.site，保留public。归档/private/tmp/dgj-sites-release-20261118-consult.tar.gz。仅同步Sites专用源码仓库，未推送GitHub。
 
 2026-11-18 GitHub同步：保留远端6edf551新增的Pages工作流（上传./dist），本轮包含平台映射、公用卡片/独立咨询组件、二维码、Banner和首页交互及相关测试。14项Node检查、diff空白检查、改动文件大小和常见凭据模式检查通过。删除的三个历史ZIP此前已忽略，不产生源码删除。
+
+2026-11-18 分销代发产品页：MasterGo当前选中54:00449（产品与服务-分销代发，1920×4433）读取成功。替换product-distribution.html占位页，新增同名CSS/JS，优先复制icon/聚合管理、高效代发、精准对账和三项服务保障原PNG，配图/三类角色SVG及解决方案SVG到dist永久资源；沿用banner2.svg。含3项优势、12个共享平台卡片、3类角色痛点、6项解决方案、14行3版本对比、服务保障。订购沿用首页分销代发service_id=24069。功能描述按设计占位保留；设计部分断尾痛点文案按语义补齐。桌面1200px内容，<=1000平台4列，<=700平台2列/角色和保障1列、解决方案顺排、对比表独立横滚；小屏Banner单独排版文字避免图中按钮被裁掉。浏览器1130/390宽检查图片无损坏、页面无横向溢出；product-distribution、banner-hitarea测试通过。仅本地，未推送GitHub或发布Sites。
+
+2026-11-18图标更新：有赞/微盟共享平台SVG、三项服务保障PNG更新为icon目录最新原图；分销代发版本表勾叉改用icon/check.svg和close.svg（24px），保留支持语义和版本矩阵。相关资源及脚本缓存20261118-icons-update。仅本地未发布。
+
+2026-11-18分销代发表头优化：按products.css高级版表头使用独立圆角橙色伪元素，灰底连续；角标改用icon/推荐版本@2x.png，订购箭头使用icon/arrow-right.svg遮罩继承按钮色；素材复制到dist并更新缓存，仅本地。
+
+2026-11-18解决方案配图更新：从配图/解决方案.svg复制最新版747×518到dist，内含顶部效率气泡；移除独立distribution-efficiency DOM/CSS，小屏主图排首位，图片补充效率文案alt并更新缓存。仅本地未发布。
+
+2026-11-18订购箭头修复：file://预览外部SVG mask受加载限制，改为将icon/arrow-right.svg原始字节内嵌为data URI遮罩，保留18px及currentColor。增加原素材字节一致性检查，缓存20261118-arrow-file-fix。仅本地。
+
+2026-11-18导航入口更新：公用顶部产品菜单AI生图→https://fximg.dgjapp.com/，直播助手→https://live.dgjapp.com/；均_blank及noopener noreferrer，其他产品入口保留；所有页面header脚本缓存20261118-external-products。仅本地未发布。
+
+2026-11-18：公用产品导航“铺货助手”改为用户指定1688 PACKAGE完整链接，保留productCode/apid编码参数，复用外链_blank及noopener noreferrer；导航缓存20261118-listing-link。仅本地未发布。
+
+2026-11-18：经用户授权删除product-ai-image.html、product-live-assistant.html、product-listing-assistant.html三个占位页；对应导航均已有外链，检查无直接内部页面引用。导航图标与其余占位页共用CSS/JS保留。仅本地未发布。
+
+2026-11-18 GitHub第二轮同步：分销代发完整页面与本轮素材更新、三项产品导航外链、删除AI生图/直播助手/铺货助手占位页；15项Node检查、diff检查和常见凭据/文件大小检查通过。保留Pages工作流。临时inspect.ndjson不上传。
