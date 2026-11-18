@@ -231,3 +231,7 @@ python3 tests/test_news_richtext.py
 2026-11-18开放平台接入流程“合作洽谈”改为用户提供的完整企点客服链接，新页签打开，保留参数和箭头。链接一致性检查通过，仅本地未发布。
 
 2026-11-18 Sites第14版发布成功：源码2574cc84b8c457984b1daf4f6b23d27231ee23ab，版本appgprj_6ad19323460c819197cc07f35a283cd1~appgver_81d6fa537b3c8191aa93f46c50f13978，部署appgdep_6afd4b3f3a388191b0e22223b081e39d，succeeded，保留public。同步页尾铺货代发和开放平台合作洽谈链接。归档/private/tmp/dgj-sites-release-20261118-footer-links.tar.gz。
+
+2026-11-18：分销代发核心功能表14条占位描述全部按用户逐行标注文案替换，去除标注中的前导制表符；沿用现有可换行与行高自适应，版本支持矩阵不变。逐行文本一致性检查通过，仅本地未发布。
+
+2026-11-18 Sites第15版发布成功：源码1c14ab6e1df976bd2e9b9ce1c62bb32f2758e0e6，版本appgprj_6ad19323460c819197cc07f35a283cd1~appgver_235763da75188191bd144a9d602680c4，部署appgdep_6afd4f4d57988191a1a18a6df770d745，succeeded，保留public。同步分销代发14条正式功能描述。归档/private/tmp/dgj-sites-release-20261118-feature-copy.tar.gz。
