@@ -6,7 +6,7 @@
         <h4>产品与服务</h4><span class="footer-rule"></span>
         <a href="products.html">批量打单发货</a>
         <a href="product-distribution.html">分销代发ERP</a>
-        <a href="product-distribution-listing.html">铺货代发</a>
+        <a href="https://pc.1688.com/product/detail.htm?productCode=ZDnqm0eDP8Rbe8wo8SJioyjmSoo%2BTOhwpqz1xDy2mlI%3D&amp;productType=PACKAGE&amp;apid=6q1pROB0Q8U6%2B%2B4znWxsI4pGADXqtNn380DqRsaf30TVLYfqB9IrpMr7%2BDhrbLyHKK3%2FV1n8BqQwo3u6HqJ7%2BzsP" target="_blank" rel="noopener noreferrer">铺货代发</a>
         <a href="https://www.dgjapp.com/widgeDownload/index.html" target="_blank" rel="noopener noreferrer">打印控件下载</a>
       </div>
       <div class="footer-nav-column">

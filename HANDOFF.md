@@ -223,3 +223,11 @@ python3 tests/test_news_richtext.py
 2026-11-18：经用户授权删除product-ai-image.html、product-live-assistant.html、product-listing-assistant.html三个占位页；对应导航均已有外链，检查无直接内部页面引用。导航图标与其余占位页共用CSS/JS保留。仅本地未发布。
 
 2026-11-18 GitHub第二轮同步：分销代发完整页面与本轮素材更新、三项产品导航外链、删除AI生图/直播助手/铺货助手占位页；15项Node检查、diff检查和常见凭据/文件大小检查通过。保留Pages工作流。临时inspect.ndjson不上传。
+
+2026-11-18 Sites第13版发布成功：源码b9600f17f0032df4fb04ba24657a43aa4a75e928，版本appgprj_6ad19323460c819197cc07f35a283cd1~appgver_d7e2eb4bd65c8191aa13ebc6e7269c3d，部署appgdep_6afd47f05ab481919a5439a9e2064c55，succeeded，保留public。包含分销代发完整页、最新图标/配图及3项导航外链，删除3个占位页。归档/private/tmp/dgj-sites-release-20261118-distribution.tar.gz。
+
+2026-11-18公用页尾“铺货代发”同步导航“铺货助手”的1688完整链接，新页签打开并保留编码参数；页尾脚本缓存20261118-listing-link。链接一致性检查通过，仅本地未发布。
+
+2026-11-18开放平台接入流程“合作洽谈”改为用户提供的完整企点客服链接，新页签打开，保留参数和箭头。链接一致性检查通过，仅本地未发布。
+
+2026-11-18 Sites第14版发布成功：源码2574cc84b8c457984b1daf4f6b23d27231ee23ab，版本appgprj_6ad19323460c819197cc07f35a283cd1~appgver_81d6fa537b3c8191aa93f46c50f13978，部署appgdep_6afd4b3f3a388191b0e22223b081e39d，succeeded，保留public。同步页尾铺货代发和开放平台合作洽谈链接。归档/private/tmp/dgj-sites-release-20261118-footer-links.tar.gz。
