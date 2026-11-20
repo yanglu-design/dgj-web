@@ -12,7 +12,7 @@ detailLinks.forEach(([, attrs]) => {
 });
 const orders = [...html.matchAll(/<a class="primary-btn small"([^>]+)>立即订购/g)];
 assert.equal(orders.length, 2);
-['24069', '7'].forEach((service, index) => {
+['7', '24069'].forEach((service, index) => {
   assert.ok(orders[index][1].includes(`href="https://fuwu.jinritemai.com/detail?service_id=${service}&amp;from=isv.detail"`));
   assert.ok(orders[index][1].includes('target="_blank" rel="noopener noreferrer"'));
 });

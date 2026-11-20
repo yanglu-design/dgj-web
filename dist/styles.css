@@ -239,7 +239,7 @@ footer{background:#232932;padding:64px 20px 32px}
 @media(max-width:640px){.stats-body>.stats-grid{grid-template-columns:repeat(2,1fr)}}
 .solution-slider{width:min(1200px,100%);margin:0 auto;overflow:hidden}
 .solution-track{display:flex;transform:translate3d(0,0,0);transition:transform .55s cubic-bezier(.22,.61,.36,1);will-change:transform}
-.solution-slider[data-active="printing"] .solution-track{transform:translate3d(-100%,0,0)}
+.solution-slider[data-active="distribution"] .solution-track{transform:translate3d(-100%,0,0)}
 .solution-slider .solution-showcase{width:100%;margin:0;flex:0 0 100%}
 @media(prefers-reduced-motion:reduce){.solution-track{transition:none}}
 
@@ -339,7 +339,7 @@ footer .footer-contact :is(p:hover,a:hover,a:focus-visible)>.footer-contact-icon
 
 .matrix-slider{width:min(1200px,100%);margin:auto;overflow:hidden}
 .matrix-track{display:flex;transition:transform .4s cubic-bezier(.22,1,.36,1)}
-.matrix-slider[data-active=printing] .matrix-track{transform:translateX(-100%)}
+.matrix-slider[data-active=distribution] .matrix-track{transform:translateX(-100%)}
 .matrix-track>.matrix-grid{width:100%;flex:0 0 100%;margin:0;align-content:start}
 @media(prefers-reduced-motion:reduce){.matrix-track{transition:none}}
 .matrix-grid article{
@@ -441,3 +441,10 @@ footer .footer-contact :is(p:hover,a:hover,a:focus-visible)>.footer-contact-icon
   .nav a.product-menu-item{height:62px;padding:7px}
   .product-menu-item small{white-space:normal}
 }
+
+/* MasterGo 124:53155: each icon sits beside one compact title/description stack. */
+.matrix-track>.matrix-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px;align-items:stretch}
+.matrix-grid article{min-width:0;min-height:130px;padding:24px;display:grid;grid-template-columns:32px minmax(0,1fr);grid-template-rows:auto auto;gap:8px;align-content:start;align-items:start;background:#fff;border:1.5px solid #f2f8ff;border-radius:12px}
+.matrix-grid article>b{grid-column:1;grid-row:1 / 3;margin:0}
+.matrix-grid article>h3{grid-column:2;grid-row:1;margin:0;font-size:20px;font-weight:500;line-height:32px;overflow-wrap:break-word}
+.matrix-grid article>p{grid-column:2;grid-row:2;margin:0;font-size:16px;line-height:24px;color:rgba(0,0,0,.7)}

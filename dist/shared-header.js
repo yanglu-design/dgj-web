@@ -37,6 +37,12 @@
   ];
 
   const externalProducts = {
+    'instant-retail': 'https://fuwu.jinritemai.com/detail?service_id=34004',
+    'ai-data': 'https://erp.dgjapp.com/Account',
+    'vendor-printing': 'https://fuwu.jinritemai.com/detail?btm_ppre=a2427.b76571.c4158.d20759_i4&btm_pre=a0254.b7465.c97409.c2380541.c199565.d063923&from=fwsc.search.ultra.service&isSearch=true&page_from=1k7rrjrno_b7465&pre_show_id=5afe6784-b4ac-412d-b7e1-81312fe27f02&searchKey=%E5%8E%82%E5%95%86&service_id=20383',
+    'distribution-management': 'https://fuwu.kwaixiaodian.com/new/detail?id=1640236816583',
+    'distribution-listing': 'https://fuwu.jinritemai.com/detail?btm_ppre=a0254.b7465.c97409.c2380541.d930270&btm_pre=a0254.b30541.c7579.d6976_8&from=fwsc.appList%40%2FsearchResult&page_from=1k7rrjrno_b30541&pre_show_id=94b0df39-6897-4263-9d73-d112457dec7c&searchKey=%E4%B8%8A%E8%B4%A7&service_id=32883',
+
     'listing-assistant': 'https://pc.1688.com/product/detail.htm?productCode=ZDnqm0eDP8Rbe8wo8SJioyjmSoo%2BTOhwpqz1xDy2mlI%3D&productType=PACKAGE&apid=6q1pROB0Q8U6%2B%2B4znWxsI4pGADXqtNn380DqRsaf30TVLYfqB9IrpMr7%2BDhrbLyHKK3%2FV1n8BqQwo3u6HqJ7%2BzsP',
     'ai-image': 'https://fximg.dgjapp.com/',
     'live-assistant': 'https://live.dgjapp.com/'
